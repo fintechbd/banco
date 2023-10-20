@@ -16,7 +16,7 @@ class BankBranchRepository extends MongodbRepository implements InterfacesBankBr
 {
     public function __construct()
     {
-        $model = app(config('fintech.banco.bankbranch_model', \Fintech\Banco\Models\BankBranch::class));
+        $model = app(config('fintech.banco.bank_branch_model', \Fintech\Banco\Models\BankBranch::class));
 
         if (! $model instanceof Model) {
             throw new InvalidArgumentException("Mongodb repository require model class to be `MongoDB\Laravel\Eloquent\Model` instance.");

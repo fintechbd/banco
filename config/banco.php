@@ -9,7 +9,7 @@ return [
     |--------------------------------------------------------------------------
     | this setting enable the api will be available or not
     */
-    'enabled' => true,
+    'enabled' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -40,7 +40,7 @@ return [
     |
     | This value will be used to across system where model is needed
     */
-    'bankbranch_model' => \Fintech\Banco\Models\BankBranch::class,
+    'bank_branch_model' => \Fintech\Banco\Models\BankBranch::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -49,7 +49,7 @@ return [
     |
     | This value will be used to across system where model is needed
     */
-    'beneficiarytype_model' => \Fintech\Banco\Models\BeneficiaryType::class,
+    'beneficiary_type_model' => \Fintech\Banco\Models\BeneficiaryType::class,
 
     /*
     |--------------------------------------------------------------------------
