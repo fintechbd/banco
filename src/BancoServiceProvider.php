@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Fintech\Banco;
 
 use Illuminate\Support\ServiceProvider;
-use VendorName\Skeleton\Commands\InstallCommand;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use Fintech\Banco\Commands\InstallCommand;
+use Fintech\Banco\Commands\BancoCommand;
 
-class SkeletonServiceProvider extends ServiceProvider
+class BancoServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
@@ -16,7 +16,7 @@ class SkeletonServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/../config/skeleton.php', 'fintech.skeleton'
+            __DIR__.'/../config/banco.php', 'fintech.banco'
         );
 
         $this->app->register(RouteServiceProvider::class);
@@ -28,27 +28,27 @@ class SkeletonServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->publishes([
-            __DIR__.'/../config/skeleton.php' => config_path('fintech/skeleton.php'),
+            __DIR__.'/../config/banco.php' => config_path('fintech/banco.php'),
         ]);
 
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
-        $this->loadTranslationsFrom(__DIR__.'/../lang', 'skeleton');
+        $this->loadTranslationsFrom(__DIR__.'/../lang', 'banco');
 
         $this->publishes([
-            __DIR__.'/../lang' => $this->app->langPath('vendor/skeleton'),
+            __DIR__.'/../lang' => $this->app->langPath('vendor/banco'),
         ]);
 
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'skeleton');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'banco');
 
         $this->publishes([
-            __DIR__.'/../resources/views' => resource_path('views/vendor/skeleton'),
+            __DIR__.'/../resources/views' => resource_path('views/vendor/banco'),
         ]);
 
         if ($this->app->runningInConsole()) {
             $this->commands([
                 InstallCommand::class,
-                SkeletonCommand::class,
+                BancoCommand::class,
             ]);
         }
     }

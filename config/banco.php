@@ -1,15 +1,15 @@
 <?php
 
-// config for VendorName/Skeleton
+// config for Fintech/Banco
 return [
 
     /*
     |--------------------------------------------------------------------------
-    | Skeleton Group Root Prefix
+    | Banco Group Root Prefix
     |--------------------------------------------------------------------------
     |
     | This value will be added to all your routes from this package
-    | Example: APP_URL/{root_prefix}/api/skeleton/action
+    | Example: APP_URL/{root_prefix}/api/banco/action
     |
     | Note: while adding prefix add closing ending slash '/'
     */

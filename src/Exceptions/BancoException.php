@@ -1,14 +1,14 @@
 <?php
 
-namespace VendorName\Skeleton\Exceptions;
+namespace Fintech\Banco\Exceptions;
 
 use Exception;
 use Throwable;
 
 /**
- * Class SkeletonException
+ * Class BancoException
  */
-class SkeletonException extends Exception
+class BancoException extends Exception
 {
     /**
      * CoreException constructor.

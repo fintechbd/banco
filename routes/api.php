@@ -12,6 +12,6 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "API" middleware group. Enjoy building your API!
 |
 */
-Route::prefix('skeleton')->group(function () {
+Route::prefix('banco')->group(function () {
 
 });
