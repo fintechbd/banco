@@ -24,7 +24,6 @@ return [
 
     'root_prefix' => 'test/',
 
-
     /*
     |--------------------------------------------------------------------------
     | Bank Model
@@ -33,7 +32,6 @@ return [
     | This value will be used to across system where model is needed
     */
     'bank_model' => \Fintech\Banco\Models\Bank::class,
-
 
     /*
     |--------------------------------------------------------------------------
@@ -44,7 +42,6 @@ return [
     */
     'bankbranch_model' => \Fintech\Banco\Models\BankBranch::class,
 
-
     /*
     |--------------------------------------------------------------------------
     | BeneficiaryType Model
@@ -53,7 +50,6 @@ return [
     | This value will be used to across system where model is needed
     */
     'beneficiarytype_model' => \Fintech\Banco\Models\BeneficiaryType::class,
-
 
     /*
     |--------------------------------------------------------------------------
@@ -75,13 +71,13 @@ return [
     */
 
     'repositories' => [
-                \Fintech\Banco\Interfaces\BankRepository::class => \Fintech\Banco\Repositories\Eloquent\BankRepository::class,
+        \Fintech\Banco\Interfaces\BankRepository::class => \Fintech\Banco\Repositories\Eloquent\BankRepository::class,
 
-                \Fintech\Banco\Interfaces\BankBranchRepository::class => \Fintech\Banco\Repositories\Eloquent\BankBranchRepository::class,
+        \Fintech\Banco\Interfaces\BankBranchRepository::class => \Fintech\Banco\Repositories\Eloquent\BankBranchRepository::class,
 
-                \Fintech\Banco\Interfaces\BeneficiaryTypeRepository::class => \Fintech\Banco\Repositories\Eloquent\BeneficiaryTypeRepository::class,
+        \Fintech\Banco\Interfaces\BeneficiaryTypeRepository::class => \Fintech\Banco\Repositories\Eloquent\BeneficiaryTypeRepository::class,
 
-                \Fintech\Banco\Interfaces\BeneficiaryRepository::class => \Fintech\Banco\Repositories\Eloquent\BeneficiaryRepository::class,
+        \Fintech\Banco\Interfaces\BeneficiaryRepository::class => \Fintech\Banco\Repositories\Eloquent\BeneficiaryRepository::class,
 
         //** Repository Binding Config Point Do not Remove **//
     ],

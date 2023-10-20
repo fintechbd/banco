@@ -2,32 +2,30 @@
 
 namespace Fintech\Banco\Http\Controllers;
 
-use Fintech\Core\Exceptions\StoreOperationException;
-use Fintech\Core\Exceptions\UpdateOperationException;
-use Fintech\Core\Exceptions\DeleteOperationException;
-use Fintech\Core\Exceptions\RestoreOperationException;
-use Fintech\Core\Traits\ApiResponseTrait;
-use Fintech\Banco\Http\Resources\BankBranchResource;
-use Fintech\Banco\Http\Resources\BankBranchCollection;
 use Fintech\Banco\Http\Requests\ImportBankBranchRequest;
+use Fintech\Banco\Http\Requests\IndexBankBranchRequest;
 use Fintech\Banco\Http\Requests\StoreBankBranchRequest;
 use Fintech\Banco\Http\Requests\UpdateBankBranchRequest;
-use Fintech\Banco\Http\Requests\IndexBankBranchRequest;
+use Fintech\Banco\Http\Resources\BankBranchCollection;
+use Fintech\Banco\Http\Resources\BankBranchResource;
+use Fintech\Core\Exceptions\DeleteOperationException;
+use Fintech\Core\Exceptions\RestoreOperationException;
+use Fintech\Core\Exceptions\StoreOperationException;
+use Fintech\Core\Exceptions\UpdateOperationException;
+use Fintech\Core\Traits\ApiResponseTrait;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;
 
 /**
  * Class BankBranchController
- * @package Fintech\Banco\Http\Controllers
  *
  * @lrd:start
  * This class handle create, display, update, delete & restore
  * operation related to bankBranch
- * @lrd:end
  *
+ * @lrd:end
  */
-
 class BankBranchController extends Controller
 {
     use ApiResponseTrait;
@@ -37,10 +35,8 @@ class BankBranchController extends Controller
      * Return a listing of the bankBranch resource as collection.
      *
      * *```paginate=false``` returns all resource as list not pagination*
-     * @lrd:end
      *
-     * @param IndexBankBranchRequest $request
-     * @return BankBranchCollection|JsonResponse
+     * @lrd:end
      */
     public function index(IndexBankBranchRequest $request): BankBranchCollection|JsonResponse
     {
@@ -60,10 +56,9 @@ class BankBranchController extends Controller
     /**
      * @lrd:start
      * Create a new bankBranch resource in storage.
+     *
      * @lrd:end
      *
-     * @param StoreBankBranchRequest $request
-     * @return JsonResponse
      * @throws StoreOperationException
      */
     public function store(StoreBankBranchRequest $request): JsonResponse
@@ -73,14 +68,14 @@ class BankBranchController extends Controller
 
             $bankBranch = \Banco::bankBranch()->create($inputs);
 
-            if (!$bankBranch) {
+            if (! $bankBranch) {
                 throw (new StoreOperationException)->setModel(config('fintech.banco.bankBranch_model'));
             }
 
             return $this->created([
                 'message' => __('core::messages.resource.created', ['model' => 'BankBranch']),
-                'id' => $bankBranch->id
-             ]);
+                'id' => $bankBranch->id,
+            ]);
 
         } catch (\Exception $exception) {
 
@@ -91,10 +86,9 @@ class BankBranchController extends Controller
     /**
      * @lrd:start
      * Return a specified bankBranch resource found by id.
+     *
      * @lrd:end
      *
-     * @param string|int $id
-     * @return BankBranchResource|JsonResponse
      * @throws ModelNotFoundException
      */
     public function show(string|int $id): BankBranchResource|JsonResponse
@@ -103,7 +97,7 @@ class BankBranchController extends Controller
 
             $bankBranch = \Banco::bankBranch()->find($id);
 
-            if (!$bankBranch) {
+            if (! $bankBranch) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.bankBranch_model'), $id);
             }
 
@@ -122,11 +116,9 @@ class BankBranchController extends Controller
     /**
      * @lrd:start
      * Update a specified bankBranch resource using id.
+     *
      * @lrd:end
      *
-     * @param UpdateBankBranchRequest $request
-     * @param string|int $id
-     * @return JsonResponse
      * @throws ModelNotFoundException
      * @throws UpdateOperationException
      */
@@ -136,13 +128,13 @@ class BankBranchController extends Controller
 
             $bankBranch = \Banco::bankBranch()->read($id);
 
-            if (!$bankBranch) {
+            if (! $bankBranch) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.bankBranch_model'), $id);
             }
 
             $inputs = $request->validated();
 
-            if (!\Banco::bankBranch()->update($id, $inputs)) {
+            if (! \Banco::bankBranch()->update($id, $inputs)) {
 
                 throw (new UpdateOperationException)->setModel(config('fintech.banco.bankBranch_model'), $id);
             }
@@ -162,10 +154,11 @@ class BankBranchController extends Controller
     /**
      * @lrd:start
      * Soft delete a specified bankBranch resource using id.
+     *
      * @lrd:end
      *
-     * @param string|int $id
      * @return JsonResponse
+     *
      * @throws ModelNotFoundException
      * @throws DeleteOperationException
      */
@@ -175,11 +168,11 @@ class BankBranchController extends Controller
 
             $bankBranch = \Banco::bankBranch()->read($id);
 
-            if (!$bankBranch) {
+            if (! $bankBranch) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.bankBranch_model'), $id);
             }
 
-            if (!\Banco::bankBranch()->destroy($id)) {
+            if (! \Banco::bankBranch()->destroy($id)) {
 
                 throw (new DeleteOperationException())->setModel(config('fintech.banco.bankBranch_model'), $id);
             }
@@ -200,9 +193,9 @@ class BankBranchController extends Controller
      * @lrd:start
      * Restore the specified bankBranch resource from trash.
      * ** ```Soft Delete``` needs to enabled to use this feature**
+     *
      * @lrd:end
      *
-     * @param string|int $id
      * @return JsonResponse
      */
     public function restore(string|int $id)
@@ -211,11 +204,11 @@ class BankBranchController extends Controller
 
             $bankBranch = \Banco::bankBranch()->find($id, true);
 
-            if (!$bankBranch) {
+            if (! $bankBranch) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.bankBranch_model'), $id);
             }
 
-            if (!\Banco::bankBranch()->restore($id)) {
+            if (! \Banco::bankBranch()->restore($id)) {
 
                 throw (new RestoreOperationException())->setModel(config('fintech.banco.bankBranch_model'), $id);
             }
@@ -238,9 +231,6 @@ class BankBranchController extends Controller
      * After export job is done system will fire  export completed event
      *
      * @lrd:end
-     *
-     * @param IndexBankBranchRequest $request
-     * @return JsonResponse
      */
     public function export(IndexBankBranchRequest $request): JsonResponse
     {
@@ -264,7 +254,6 @@ class BankBranchController extends Controller
      *
      * @lrd:end
      *
-     * @param ImportBankBranchRequest $request
      * @return BankBranchCollection|JsonResponse
      */
     public function import(ImportBankBranchRequest $request): JsonResponse

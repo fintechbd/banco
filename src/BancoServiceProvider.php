@@ -2,9 +2,9 @@
 
 namespace Fintech\Banco;
 
-use Illuminate\Support\ServiceProvider;
-use Fintech\Banco\Commands\InstallCommand;
 use Fintech\Banco\Commands\BancoCommand;
+use Fintech\Banco\Commands\InstallCommand;
+use Illuminate\Support\ServiceProvider;
 
 class BancoServiceProvider extends ServiceProvider
 {
