@@ -3,27 +3,19 @@
 namespace Fintech\Banco;
 
 use Illuminate\Contracts\Support\DeferrableProvider;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider implements DeferrableProvider
 {
-    public array $repositories = [
-        //        interface => [
-        //            'default' => eloquent repository,
-        //            'mongodb' => mongodb repository,
-        //        ],
-    ];
-
     /**
      * Register services.
      */
     public function register(): void
     {
-        foreach ($this->repositories as $interface => $bindings) {
-            $this->app->bind($interface, function ($app) use ($bindings) {
-                return (config('database.default') == 'mongodb')
-                    ? $app->make($bindings['mongodb'])
-                    : $app->make($bindings['default']);
+        foreach (Config::get('fintech.banco.repositories', []) as $interface => $binding) {
+            $this->app->bind($interface, function ($app) use ($binding) {
+                return $app->make($binding);
             });
         }
     }
@@ -35,6 +27,6 @@ class RepositoryServiceProvider extends ServiceProvider implements DeferrablePro
      */
     public function provides(): array
     {
-        return array_keys($this->repositories);
+        return array_keys(Config::get('fintech.banco.repositories', []));
     }
 }
