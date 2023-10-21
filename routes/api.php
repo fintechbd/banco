@@ -18,11 +18,11 @@ if (Config::get('fintech.banco.enabled')) {
         Route::apiResource('banks', \Fintech\Banco\Http\Controllers\BankController::class);
         Route::post('banks/bank/restore', [\Fintech\Banco\Http\Controllers\BankController::class, 'restore'])->name('banks.restore');
 
-        Route::apiResource('bankbranches', \Fintech\Banco\Http\Controllers\BankBranchController::class);
-        Route::post('bankbranches/bankbranch/restore', [\Fintech\Banco\Http\Controllers\BankBranchController::class, 'restore'])->name('bankbranches.restore');
+        Route::apiResource('bank-branches', \Fintech\Banco\Http\Controllers\BankBranchController::class);
+        Route::post('bank-branches/{bank_branch}/restore', [\Fintech\Banco\Http\Controllers\BankBranchController::class, 'restore'])->name('bankbranches.restore');
 
-        Route::apiResource('beneficiarytypes', \Fintech\Banco\Http\Controllers\BeneficiaryTypeController::class);
-        Route::post('beneficiarytypes/beneficiarytype/restore', [\Fintech\Banco\Http\Controllers\BeneficiaryTypeController::class, 'restore'])->name('beneficiarytypes.restore');
+        Route::apiResource('beneficiary-types', \Fintech\Banco\Http\Controllers\BeneficiaryTypeController::class);
+        Route::post('beneficiary-types/{beneficiary_type}/restore', [\Fintech\Banco\Http\Controllers\BeneficiaryTypeController::class, 'restore'])->name('beneficiarytypes.restore');
 
         Route::apiResource('beneficiaries', \Fintech\Banco\Http\Controllers\BeneficiaryController::class);
         Route::post('beneficiaries/beneficiary/restore', [\Fintech\Banco\Http\Controllers\BeneficiaryController::class, 'restore'])->name('beneficiaries.restore');
