@@ -2,8 +2,6 @@
 
 namespace Fintech\Banco;
 
-
-
 use Fintech\Banco\Services\BankBranchService;
 use Fintech\Banco\Services\BankService;
 use Fintech\Banco\Services\BeneficiaryService;
@@ -13,7 +11,6 @@ class Banco
 {
     /**
      * @return BankService
-     *
      */
     public function bank()
     {
@@ -22,7 +19,6 @@ class Banco
 
     /**
      * @return BankBranchService
-     *
      */
     public function bankBranch()
     {
@@ -31,7 +27,6 @@ class Banco
 
     /**
      * @return BeneficiaryTypeService
-     *
      */
     public function beneficiaryType()
     {
@@ -40,7 +35,6 @@ class Banco
 
     /**
      * @return BeneficiaryService
-     *
      */
     public function beneficiary()
     {
