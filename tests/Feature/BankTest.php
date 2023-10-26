@@ -24,3 +24,9 @@ function createBank(): MYSQLDBLEBUPAY|MONGODB|null
         "enabled" => "1",
     ]);
 }
+
+
+test('Bank list', function () {
+    getJson('/api/banco/banks')->assertStatus(200);
+});
+
