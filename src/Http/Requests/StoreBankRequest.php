@@ -29,7 +29,7 @@ class StoreBankRequest extends FormRequest
             'bank_name' => ['required', 'string', 'max:255', $uniqueRule],
             'bank_category' => ['required', 'string', 'max:255'],
             'transaction_type' => ['nullable', 'string', 'max:255'],
-            'bank_currency' => ['required', 'string', 'max:255'],
+            'bank_currency' => ['required', 'string', 'min:3', 'max:3'],
             'bank_data' => ['nullable', 'array']
         ];
     }
