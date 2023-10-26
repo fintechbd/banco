@@ -3,34 +3,47 @@
 namespace Fintech\Banco\Tests;
 
 use Fintech\Banco\BancoServiceProvider;
-use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
+    use DatabaseMigrations;
+
+    /**
+     * @return void
+     */
     protected function setUp(): void
     {
         parent::setUp();
 
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Fintech\\Banco\\Database\\Factories\\'.class_basename($modelName).'Factory'
-        );
     }
 
-    protected function getPackageProviders($app)
+    /**
+     * @param $app
+     * @return string[]
+     */
+    protected function getPackageProviders($app): array
     {
         return [
             BancoServiceProvider::class,
         ];
     }
 
-    public function getEnvironmentSetUp($app)
+    /**
+     * @param $app
+     * @return void
+     */
+    public function getEnvironmentSetUp($app): void
     {
+        config()->set('app.env', 'testing');
         config()->set('database.default', 'testing');
 
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_banco_table.php.stub';
-        $migration->up();
-        */
+        $migrations = [
+        ];
+
+        foreach ($migrations as $migration) {
+            $migration->up();
+        }
     }
 }
