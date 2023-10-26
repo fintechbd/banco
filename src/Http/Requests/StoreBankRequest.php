@@ -22,7 +22,13 @@ class StoreBankRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'country_id' => ['required', 'integer'],
+            'beneficiary_type_id' => ['required', 'integer'],
+            'bank_name' => ['required', 'string'],
+            'bank_category' => ['required', 'string'],
+            'transaction_type' => ['required', 'string'],
+            'bank_currency' => ['required', 'string'],
+            'bank_data' => ['nullable', 'array']
         ];
     }
 
