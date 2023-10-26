@@ -59,10 +59,10 @@ class Bank extends Model
         $primaryKey = $this->getKey();
 
         $links = [
-            'show' => action_link(route('banco.Banks.show', $primaryKey), __('core::messages.action.show'), 'get'),
-            'update' => action_link(route('banco.Banks.update', $primaryKey), __('core::messages.action.update'), 'put'),
-            'destroy' => action_link(route('banco.Banks.destroy', $primaryKey), __('core::messages.action.destroy'), 'delete'),
-            'restore' => action_link(route('banco.Banks.restore', $primaryKey), __('core::messages.action.restore'), 'post'),
+            'show' => action_link(route('banco.banks.show', $primaryKey), __('core::messages.action.show'), 'get'),
+            'update' => action_link(route('banco.banks.update', $primaryKey), __('core::messages.action.update'), 'put'),
+            'destroy' => action_link(route('banco.banks.destroy', $primaryKey), __('core::messages.action.destroy'), 'delete'),
+            'restore' => action_link(route('banco.banks.restore', $primaryKey), __('core::messages.action.restore'), 'post'),
         ];
 
         if ($this->getAttribute('deleted_at') == null) {
