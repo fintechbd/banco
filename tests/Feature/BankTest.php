@@ -47,3 +47,20 @@ test('Bank create for blank all field validation expect status code 422', functi
     //expect($remittancePurpose['message'])->toBe('The name field is required. (and 1 more error)');
 });
 
+test('Bank create for blank all field validation expect The name field is required.', function () {
+    $remittancePurpose = postJson('/api/banco/banks', [
+        "country_id" => null,
+        "beneficiary_type_id" => null,
+        "bank_name" => null,
+        "bank_category" => null,
+        "transaction_type" => null,
+        "bank_currency" => null,
+        "bank_data" => [
+            "nrbms_id" => null,
+            "trans_fast_id" => null,
+        ],
+        "enabled" => null,
+    ]);
+    expect($remittancePurpose['message'])->toBe('The name field is required.');
+});
+
