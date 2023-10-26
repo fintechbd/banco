@@ -2,6 +2,7 @@
 
 namespace Fintech\Banco\Http\Requests;
 
+use Fintech\Banco\Models\Bank;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ImportBankRequest extends FormRequest
@@ -21,8 +22,15 @@ class ImportBankRequest extends FormRequest
      */
     public function rules(): array
     {
+        $uniqueRule = 'unique:'.config('fintech.banco.bank_model', Bank::class).',bank_name,id';
         return [
-            //
+            'country_id' => ['required', 'integer'],
+            'beneficiary_type_id' => ['required', 'integer'],
+            'bank_name' => ['required', 'string', 'max:255', $uniqueRule],
+            'bank_category' => ['required', 'string', 'max:255'],
+            'transaction_type' => ['nullable', 'string', 'max:255'],
+            'bank_currency' => ['required', 'string', 'min:3', 'max:3'],
+            'bank_data' => ['nullable', 'array']
         ];
     }
 
