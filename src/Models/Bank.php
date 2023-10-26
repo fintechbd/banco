@@ -58,7 +58,6 @@ class Bank extends Model
     {
         $primaryKey = $this->getKey();
 
-
         $links = [
             'show' => action_link(route('banco.banks.show', $primaryKey), __('core::messages.action.show'), 'get'),
             'update' => action_link(route('banco.banks.update', $primaryKey), __('core::messages.action.update'), 'put'),
