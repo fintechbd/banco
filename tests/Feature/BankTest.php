@@ -81,7 +81,7 @@ test('Bank create for blank all field expect country_id validation expect The be
     expect($remittancePurpose['message'])->toBe('The beneficiary type id field is required. (and 3 more errors)');
 });
 
-test('Bank create for blank all field expect country_id, beneficiary_type_id validation expect The country id field is required. (and 2 more errors)', function () {
+test('Bank create for blank all field expect country_id, beneficiary_type_id validation expect The bank name field is required. (and 2 more errors)', function () {
     $remittancePurpose = postJson('/api/banco/banks', [
         "country_id" => 1,
         "beneficiary_type_id" => 1,
@@ -95,7 +95,7 @@ test('Bank create for blank all field expect country_id, beneficiary_type_id val
         ],
         "enabled" => null,
     ]);
-    expect($remittancePurpose['message'])->toBe('The name field is required.');
+    expect($remittancePurpose['message'])->toBe('The bank name field is required. (and 2 more errors)');
 });
 
 test('Bank create for name field validation expect The name field must be at least 5 characters.', function () {
