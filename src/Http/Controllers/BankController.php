@@ -2,6 +2,7 @@
 
 namespace Fintech\Banco\Http\Controllers;
 
+use Fintech\Banco\Facades\Banco;
 use Fintech\Banco\Http\Requests\ImportBankRequest;
 use Fintech\Banco\Http\Requests\IndexBankRequest;
 use Fintech\Banco\Http\Requests\StoreBankRequest;
@@ -43,7 +44,7 @@ class BankController extends Controller
         try {
             $inputs = $request->validated();
 
-            $bankPaginate = \Banco::bank()->list($inputs);
+            $bankPaginate = Banco::bank()->list($inputs);
 
             return new BankCollection($bankPaginate);
 
@@ -66,7 +67,7 @@ class BankController extends Controller
         try {
             $inputs = $request->validated();
 
-            $bank = \Banco::bank()->create($inputs);
+            $bank = Banco::bank()->create($inputs);
 
             if (! $bank) {
                 throw (new StoreOperationException)->setModel(config('fintech.banco.bank_model'));
@@ -95,7 +96,7 @@ class BankController extends Controller
     {
         try {
 
-            $bank = \Banco::bank()->find($id);
+            $bank = Banco::bank()->find($id);
 
             if (! $bank) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.bank_model'), $id);
