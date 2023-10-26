@@ -31,6 +31,14 @@ class IndexBankRequest extends FormRequest
             'sort' => ['string', 'nullable', 'min:2', 'max:255'],
             'dir' => ['string', 'min:3', 'max:4'],
             'trashed' => ['boolean', 'nullable'],
+            'country_id' => ['required', 'integer'],
+            'beneficiary_type_id' => ['required', 'integer'],
+            'bank_name' => ['required', 'string'],
+            'bank_category' => ['required', 'string'],
+            'transaction_type' => ['nullable', 'string'],
+            'bank_currency' => ['required', 'string'],
+            'bank_data' => ['nullable', 'array'],
+            'enabled' => ['boolean', 'nullable'],
         ];
     }
 
