@@ -14,13 +14,13 @@ return new class() extends Migration
         Schema::create('banks', function (Blueprint $table) {
             $table->id();
             $table->foreignId('country_id');
-            $table->foreignId('recipient_type_id')->nullable();
-            $table->string('name');
-            $table->string('category')->nullable();
+            $table->foreignId('beneficiary_type_id')->nullable();
+            $table->string('bank_name');
+            $table->string('bank_category')->nullable();
             $table->string('transaction_type')->nullable();
-            $table->string('currency')->nullable();
-            $table->boolean('enabled')->nullable();
+            $table->string('bank_currency')->nullable();
             $table->json('bank_data')->nullable();
+            $table->boolean('enabled')->nullable();
             $table->foreignId('creator_id')->nullable();
             $table->foreignId('editor_id')->nullable();
             $table->foreignId('destroyer_id')->nullable();
