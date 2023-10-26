@@ -64,3 +64,19 @@ test('Bank create for blank all field validation expect The name field is requir
     expect($remittancePurpose['message'])->toBe('The name field is required.');
 });
 
+test('Bank create for name field validation expect The name field must be at least 5 characters.', function () {
+    $remittancePurpose = postJson('/api/banco/banks', [
+        "country_id" => 1,
+        "beneficiary_type_id" => "1",
+        "bank_name" => Str::random(20),
+        "bank_category" => "Private Bank",
+        "transaction_type" => "Account Deposit",
+        "bank_currency" => "BDT",
+        "bank_data" => [
+            "nrbms_id" => 1,
+            "trans_fast_id" => 1,
+        ],
+        "enabled" => "1",
+    ]);
+    expect($remittancePurpose['message'])->toBe('The name field must be at least 5 characters.');
+});
