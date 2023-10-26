@@ -18,6 +18,9 @@ if (Config::get('fintech.banco.enabled')) {
         Route::apiResource('banks', \Fintech\Banco\Http\Controllers\BankController::class);
     Route::post('banks/{bank}/restore', [\Fintech\Banco\Http\Controllers\BankController::class, 'restore'])->name('banks.restore');
 
+    Route::apiResource('bank-branches', \Fintech\Banco\Http\Controllers\BankBranchController::class);
+    Route::post('bank-branches/{bank_branch}/restore', [\Fintech\Banco\Http\Controllers\BankBranchController::class, 'restore'])->name('bank-branches.restore');
+
     //DO NOT REMOVE THIS LINE//
     });
 }

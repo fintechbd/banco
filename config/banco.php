@@ -34,6 +34,16 @@ return [
     */
     'bank_model' => \Fintech\Banco\Models\Bank::class,
 
+    
+    /*
+    |--------------------------------------------------------------------------
+    | BankBranch Model
+    |--------------------------------------------------------------------------
+    |
+    | This value will be used to across system where model is needed
+    */
+    'bank_branch_model' => \Fintech\Banco\Models\BankBranch::class,
+
     //** Model Config Point Do not Remove **//
 
     /*
@@ -46,6 +56,8 @@ return [
 
     'repositories' => [
         \Fintech\Banco\Interfaces\BankRepository::class => \Fintech\Banco\Repositories\Eloquent\BankRepository::class,
+
+        \Fintech\Banco\Interfaces\BankBranchRepository::class => \Fintech\Banco\Repositories\Eloquent\BankBranchRepository::class,
 
         //** Repository Binding Config Point Do not Remove **//
     ],
