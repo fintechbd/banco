@@ -31,7 +31,7 @@ test('Bank list', function () {
 });
 
 test('Bank create for blank all field validation expect status code 422', function () {
-    $remittancePurpose = postJson('/api/banco/banks', [
+    postJson('/api/banco/banks', [
         "country_id" => null,
         "beneficiary_type_id" => null,
         "bank_name" => null,
@@ -47,10 +47,44 @@ test('Bank create for blank all field validation expect status code 422', functi
     //expect($remittancePurpose['message'])->toBe('The name field is required. (and 1 more error)');
 });
 
-test('Bank create for blank all field validation expect The name field is required.', function () {
+test('Bank create for blank all field validation expect The country id field is required. (and 4 more errors)', function () {
     $remittancePurpose = postJson('/api/banco/banks', [
         "country_id" => null,
         "beneficiary_type_id" => null,
+        "bank_name" => null,
+        "bank_category" => null,
+        "transaction_type" => null,
+        "bank_currency" => null,
+        "bank_data" => [
+            "nrbms_id" => null,
+            "trans_fast_id" => null,
+        ],
+        "enabled" => null,
+    ]);
+    expect($remittancePurpose['message'])->toBe('The country id field is required. (and 4 more errors)');
+});
+
+test('Bank create for blank all field expect country_id validation expect The country id field is required. (and 3 more errors)', function () {
+    $remittancePurpose = postJson('/api/banco/banks', [
+        "country_id" => 1,
+        "beneficiary_type_id" => null,
+        "bank_name" => null,
+        "bank_category" => null,
+        "transaction_type" => null,
+        "bank_currency" => null,
+        "bank_data" => [
+            "nrbms_id" => null,
+            "trans_fast_id" => null,
+        ],
+        "enabled" => null,
+    ]);
+    expect($remittancePurpose['message'])->toBe('The name field is required.');
+});
+
+test('Bank create for blank all field expect country_id, beneficiary_type_id validation expect The country id field is required. (and 2 more errors)', function () {
+    $remittancePurpose = postJson('/api/banco/banks', [
+        "country_id" => 1,
+        "beneficiary_type_id" => 1,
         "bank_name" => null,
         "bank_category" => null,
         "transaction_type" => null,
