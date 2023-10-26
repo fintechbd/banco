@@ -23,6 +23,7 @@ class UpdateBankRequest extends FormRequest
     public function rules(): array
     {
         $uniqueRule = 'unique:'.config('fintech.banco.bank_model', Bank::class).',bank_name,id';
+
         return [
             'country_id' => ['required', 'integer'],
             'beneficiary_type_id' => ['required', 'integer'],
@@ -30,7 +31,7 @@ class UpdateBankRequest extends FormRequest
             'bank_category' => ['required', 'string', 'max:255'],
             'transaction_type' => ['nullable', 'string', 'max:255'],
             'bank_currency' => ['required', 'string', 'min:3', 'max:3'],
-            'bank_data' => ['nullable', 'array']
+            'bank_data' => ['nullable', 'array'],
         ];
     }
 

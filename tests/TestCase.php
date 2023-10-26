@@ -10,9 +10,6 @@ class TestCase extends Orchestra
 {
     use DatabaseMigrations;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         parent::setUp();
@@ -20,7 +17,6 @@ class TestCase extends Orchestra
     }
 
     /**
-     * @param $app
      * @return string[]
      */
     protected function getPackageProviders($app): array
@@ -30,10 +26,6 @@ class TestCase extends Orchestra
         ];
     }
 
-    /**
-     * @param $app
-     * @return void
-     */
     public function getEnvironmentSetUp($app): void
     {
         config()->set('app.env', 'testing');
