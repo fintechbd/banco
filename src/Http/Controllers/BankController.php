@@ -2,6 +2,7 @@
 
 namespace Fintech\Banco\Http\Controllers;
 
+use Exception;
 use Fintech\Banco\Facades\Banco;
 use Fintech\Banco\Http\Requests\ImportBankRequest;
 use Fintech\Banco\Http\Requests\IndexBankRequest;
@@ -9,10 +10,10 @@ use Fintech\Banco\Http\Requests\StoreBankRequest;
 use Fintech\Banco\Http\Requests\UpdateBankRequest;
 use Fintech\Banco\Http\Resources\BankCollection;
 use Fintech\Banco\Http\Resources\BankResource;
-use Fintech\Core\Exceptions\DeleteOperationException;
-use Fintech\Core\Exceptions\RestoreOperationException;
-use Fintech\Core\Exceptions\StoreOperationException;
-use Fintech\Core\Exceptions\UpdateOperationException;
+use Fintech\CoreExceptions\DeleteOperationException;
+use Fintech\CoreExceptions\RestoreOperationException;
+use Fintech\CoreExceptions\StoreOperationException;
+use Fintech\CoreExceptions\UpdateOperationException;
 use Fintech\Core\Traits\ApiResponseTrait;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\JsonResponse;
@@ -48,7 +49,7 @@ class BankController extends Controller
 
             return new BankCollection($bankPaginate);
 
-        } catch (\Exception $exception) {
+        } catch (Exception $exception) {
 
             return $this->failed($exception->getMessage());
         }
@@ -78,7 +79,7 @@ class BankController extends Controller
                 'id' => $bank->id,
             ]);
 
-        } catch (\Exception $exception) {
+        } catch (Exception $exception) {
 
             return $this->failed($exception->getMessage());
         }
@@ -108,7 +109,7 @@ class BankController extends Controller
 
             return $this->notfound($exception->getMessage());
 
-        } catch (\Exception $exception) {
+        } catch (Exception $exception) {
 
             return $this->failed($exception->getMessage());
         }
@@ -146,7 +147,7 @@ class BankController extends Controller
 
             return $this->notfound($exception->getMessage());
 
-        } catch (\Exception $exception) {
+        } catch (Exception $exception) {
 
             return $this->failed($exception->getMessage());
         }
@@ -184,7 +185,7 @@ class BankController extends Controller
 
             return $this->notfound($exception->getMessage());
 
-        } catch (\Exception $exception) {
+        } catch (Exception $exception) {
 
             return $this->failed($exception->getMessage());
         }
@@ -220,7 +221,7 @@ class BankController extends Controller
 
             return $this->notfound($exception->getMessage());
 
-        } catch (\Exception $exception) {
+        } catch (Exception $exception) {
 
             return $this->failed($exception->getMessage());
         }
@@ -242,7 +243,7 @@ class BankController extends Controller
 
             return $this->exported(__('core::messages.resource.exported', ['model' => 'Bank']));
 
-        } catch (\Exception $exception) {
+        } catch (Exception $exception) {
 
             return $this->failed($exception->getMessage());
         }
@@ -266,7 +267,7 @@ class BankController extends Controller
 
             return new BankCollection($bankPaginate);
 
-        } catch (\Exception $exception) {
+        } catch (Exception $exception) {
 
             return $this->failed($exception->getMessage());
         }
