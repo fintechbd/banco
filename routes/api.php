@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 if (Config::get('fintech.banco.enabled')) {
-    Route::prefix('banco')->group(function () {
+    Route::prefix('banco')->name('banco.')->group(function () {
         Route::apiResource('banks', \Fintech\Banco\Http\Controllers\BankController::class);
         Route::post('banks/{bank}/restore', [\Fintech\Banco\Http\Controllers\BankController::class, 'restore'])->name('banks.restore');
 
