@@ -1,0 +1,285 @@
+<?php
+
+namespace Fintech\Banco\Http\Controllers;
+use Exception;
+use Fintech\Core\Exceptions\StoreOperationException;
+use Fintech\Core\Exceptions\UpdateOperationException;
+use Fintech\Core\Exceptions\DeleteOperationException;
+use Fintech\Core\Exceptions\RestoreOperationException;
+use Fintech\Core\Traits\ApiResponseTrait;
+use Fintech\Banco\Facades\Banco;
+use Fintech\Banco\Http\Resources\BankResource;
+use Fintech\Banco\Http\Resources\BankCollection;
+use Fintech\Banco\Http\Requests\ImportBankRequest;
+use Fintech\Banco\Http\Requests\StoreBankRequest;
+use Fintech\Banco\Http\Requests\UpdateBankRequest;
+use Fintech\Banco\Http\Requests\IndexBankRequest;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Routing\Controller;
+
+/**
+ * Class BankController
+ * @package Fintech\Banco\Http\Controllers
+ *
+ * @lrd:start
+ * This class handle create, display, update, delete & restore
+ * operation related to Bank
+ * @lrd:end
+ *
+ */
+
+class BankController extends Controller
+{
+    use ApiResponseTrait;
+
+    /**
+     * @lrd:start
+     * Return a listing of the *Bank* resource as collection.
+     *
+     * *```paginate=false``` returns all resource as list not pagination*
+     * @lrd:end
+     *
+     * @param IndexBankRequest $request
+     * @return BankCollection|JsonResponse
+     */
+    public function index(IndexBankRequest $request): BankCollection|JsonResponse
+    {
+        try {
+            $inputs = $request->validated();
+
+            $bankPaginate = Banco::bank()->list($inputs);
+
+            return new BankCollection($bankPaginate);
+
+        } catch (Exception $exception) {
+
+            return $this->failed($exception->getMessage());
+        }
+    }
+
+    /**
+     * @lrd:start
+     * Create a new *Bank* resource in storage.
+     * @lrd:end
+     *
+     * @param StoreBankRequest $request
+     * @return JsonResponse
+     * @throws StoreOperationException
+     */
+    public function store(StoreBankRequest $request): JsonResponse
+    {
+        try {
+            $inputs = $request->validated();
+
+            $bank = Banco::bank()->create($inputs);
+
+            if (!$bank) {
+                throw (new StoreOperationException)->setModel(config('fintech.banco.bank_model'));
+            }
+
+            return $this->created([
+                'message' => __('core::messages.resource.created', ['model' => 'Bank']),
+                'id' => $bank->id
+             ]);
+
+        } catch (Exception $exception) {
+
+            return $this->failed($exception->getMessage());
+        }
+    }
+
+    /**
+     * @lrd:start
+     * Return a specified *Bank* resource found by id.
+     * @lrd:end
+     *
+     * @param string|int $id
+     * @return BankResource|JsonResponse
+     * @throws ModelNotFoundException
+     */
+    public function show(string|int $id): BankResource|JsonResponse
+    {
+        try {
+
+            $bank = Banco::bank()->find($id);
+
+            if (!$bank) {
+                throw (new ModelNotFoundException)->setModel(config('fintech.banco.bank_model'), $id);
+            }
+
+            return new BankResource($bank);
+
+        } catch (ModelNotFoundException $exception) {
+
+            return $this->notfound($exception->getMessage());
+
+        } catch (Exception $exception) {
+
+            return $this->failed($exception->getMessage());
+        }
+    }
+
+    /**
+     * @lrd:start
+     * Update a specified *Bank* resource using id.
+     * @lrd:end
+     *
+     * @param UpdateBankRequest $request
+     * @param string|int $id
+     * @return JsonResponse
+     * @throws ModelNotFoundException
+     * @throws UpdateOperationException
+     */
+    public function update(UpdateBankRequest $request, string|int $id): JsonResponse
+    {
+        try {
+
+            $bank = Banco::bank()->find($id);
+
+            if (!$bank) {
+                throw (new ModelNotFoundException)->setModel(config('fintech.banco.bank_model'), $id);
+            }
+
+            $inputs = $request->validated();
+
+            if (!Banco::bank()->update($id, $inputs)) {
+
+                throw (new UpdateOperationException)->setModel(config('fintech.banco.bank_model'), $id);
+            }
+
+            return $this->updated(__('core::messages.resource.updated', ['model' => 'Bank']));
+
+        } catch (ModelNotFoundException $exception) {
+
+            return $this->notfound($exception->getMessage());
+
+        } catch (Exception $exception) {
+
+            return $this->failed($exception->getMessage());
+        }
+    }
+
+    /**
+     * @lrd:start
+     * Soft delete a specified *Bank* resource using id.
+     * @lrd:end
+     *
+     * @param string|int $id
+     * @return JsonResponse
+     * @throws ModelNotFoundException
+     * @throws DeleteOperationException
+     */
+    public function destroy(string|int $id)
+    {
+        try {
+
+            $bank = Banco::bank()->find($id);
+
+            if (!$bank) {
+                throw (new ModelNotFoundException)->setModel(config('fintech.banco.bank_model'), $id);
+            }
+
+            if (!Banco::bank()->destroy($id)) {
+
+                throw (new DeleteOperationException())->setModel(config('fintech.banco.bank_model'), $id);
+            }
+
+            return $this->deleted(__('core::messages.resource.deleted', ['model' => 'Bank']));
+
+        } catch (ModelNotFoundException $exception) {
+
+            return $this->notfound($exception->getMessage());
+
+        } catch (Exception $exception) {
+
+            return $this->failed($exception->getMessage());
+        }
+    }
+
+    /**
+     * @lrd:start
+     * Restore the specified *Bank* resource from trash.
+     * ** ```Soft Delete``` needs to enabled to use this feature**
+     * @lrd:end
+     *
+     * @param string|int $id
+     * @return JsonResponse
+     */
+    public function restore(string|int $id)
+    {
+        try {
+
+            $bank = Banco::bank()->find($id, true);
+
+            if (!$bank) {
+                throw (new ModelNotFoundException)->setModel(config('fintech.banco.bank_model'), $id);
+            }
+
+            if (!Banco::bank()->restore($id)) {
+
+                throw (new RestoreOperationException())->setModel(config('fintech.banco.bank_model'), $id);
+            }
+
+            return $this->restored(__('core::messages.resource.restored', ['model' => 'Bank']));
+
+        } catch (ModelNotFoundException $exception) {
+
+            return $this->notfound($exception->getMessage());
+
+        } catch (Exception $exception) {
+
+            return $this->failed($exception->getMessage());
+        }
+    }
+
+    /**
+     * @lrd:start
+     * Create a exportable list of the *Bank* resource as document.
+     * After export job is done system will fire  export completed event
+     *
+     * @lrd:end
+     *
+     * @param IndexBankRequest $request
+     * @return JsonResponse
+     */
+    public function export(IndexBankRequest $request): JsonResponse
+    {
+        try {
+            $inputs = $request->validated();
+
+            $bankPaginate = Banco::bank()->export($inputs);
+
+            return $this->exported(__('core::messages.resource.exported', ['model' => 'Bank']));
+
+        } catch (Exception $exception) {
+
+            return $this->failed($exception->getMessage());
+        }
+    }
+
+    /**
+     * @lrd:start
+     * Create a exportable list of the *Bank* resource as document.
+     * After export job is done system will fire  export completed event
+     *
+     * @lrd:end
+     *
+     * @param ImportBankRequest $request
+     * @return BankCollection|JsonResponse
+     */
+    public function import(ImportBankRequest $request): JsonResponse
+    {
+        try {
+            $inputs = $request->validated();
+
+            $bankPaginate = Banco::bank()->list($inputs);
+
+            return new BankCollection($bankPaginate);
+
+        } catch (Exception $exception) {
+
+            return $this->failed($exception->getMessage());
+        }
+    }
+}

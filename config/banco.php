@@ -24,6 +24,16 @@ return [
 
     'root_prefix' => 'test/',
 
+    
+    /*
+    |--------------------------------------------------------------------------
+    | Bank Model
+    |--------------------------------------------------------------------------
+    |
+    | This value will be used to across system where model is needed
+    */
+    'bank_model' => \Fintech\Banco\Models\Bank::class,
+
     //** Model Config Point Do not Remove **//
 
     /*
@@ -35,6 +45,8 @@ return [
     */
 
     'repositories' => [
+        \Fintech\Banco\Interfaces\BankRepository::class => \Fintech\Banco\Repositories\Eloquent\BankRepository::class,
+
         //** Repository Binding Config Point Do not Remove **//
     ],
 
