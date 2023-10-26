@@ -1,34 +1,33 @@
 <?php
 
 namespace Fintech\Banco\Http\Controllers;
+
 use Exception;
-use Fintech\Core\Exceptions\StoreOperationException;
-use Fintech\Core\Exceptions\UpdateOperationException;
-use Fintech\Core\Exceptions\DeleteOperationException;
-use Fintech\Core\Exceptions\RestoreOperationException;
-use Fintech\Core\Traits\ApiResponseTrait;
 use Fintech\Banco\Facades\Banco;
-use Fintech\Banco\Http\Resources\BeneficiaryTypeResource;
-use Fintech\Banco\Http\Resources\BeneficiaryTypeCollection;
 use Fintech\Banco\Http\Requests\ImportBeneficiaryTypeRequest;
+use Fintech\Banco\Http\Requests\IndexBeneficiaryTypeRequest;
 use Fintech\Banco\Http\Requests\StoreBeneficiaryTypeRequest;
 use Fintech\Banco\Http\Requests\UpdateBeneficiaryTypeRequest;
-use Fintech\Banco\Http\Requests\IndexBeneficiaryTypeRequest;
+use Fintech\Banco\Http\Resources\BeneficiaryTypeCollection;
+use Fintech\Banco\Http\Resources\BeneficiaryTypeResource;
+use Fintech\Core\Exceptions\DeleteOperationException;
+use Fintech\Core\Exceptions\RestoreOperationException;
+use Fintech\Core\Exceptions\StoreOperationException;
+use Fintech\Core\Exceptions\UpdateOperationException;
+use Fintech\Core\Traits\ApiResponseTrait;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;
 
 /**
  * Class BeneficiaryTypeController
- * @package Fintech\Banco\Http\Controllers
  *
  * @lrd:start
  * This class handle create, display, update, delete & restore
  * operation related to BeneficiaryType
- * @lrd:end
  *
+ * @lrd:end
  */
-
 class BeneficiaryTypeController extends Controller
 {
     use ApiResponseTrait;
@@ -38,10 +37,8 @@ class BeneficiaryTypeController extends Controller
      * Return a listing of the *BeneficiaryType* resource as collection.
      *
      * *```paginate=false``` returns all resource as list not pagination*
-     * @lrd:end
      *
-     * @param IndexBeneficiaryTypeRequest $request
-     * @return BeneficiaryTypeCollection|JsonResponse
+     * @lrd:end
      */
     public function index(IndexBeneficiaryTypeRequest $request): BeneficiaryTypeCollection|JsonResponse
     {
@@ -61,10 +58,9 @@ class BeneficiaryTypeController extends Controller
     /**
      * @lrd:start
      * Create a new *BeneficiaryType* resource in storage.
+     *
      * @lrd:end
      *
-     * @param StoreBeneficiaryTypeRequest $request
-     * @return JsonResponse
      * @throws StoreOperationException
      */
     public function store(StoreBeneficiaryTypeRequest $request): JsonResponse
@@ -74,14 +70,14 @@ class BeneficiaryTypeController extends Controller
 
             $beneficiaryType = Banco::beneficiaryType()->create($inputs);
 
-            if (!$beneficiaryType) {
+            if (! $beneficiaryType) {
                 throw (new StoreOperationException)->setModel(config('fintech.banco.beneficiary_type_model'));
             }
 
             return $this->created([
                 'message' => __('core::messages.resource.created', ['model' => 'Beneficiary Type']),
-                'id' => $beneficiaryType->id
-             ]);
+                'id' => $beneficiaryType->id,
+            ]);
 
         } catch (Exception $exception) {
 
@@ -92,10 +88,9 @@ class BeneficiaryTypeController extends Controller
     /**
      * @lrd:start
      * Return a specified *BeneficiaryType* resource found by id.
+     *
      * @lrd:end
      *
-     * @param string|int $id
-     * @return BeneficiaryTypeResource|JsonResponse
      * @throws ModelNotFoundException
      */
     public function show(string|int $id): BeneficiaryTypeResource|JsonResponse
@@ -104,7 +99,7 @@ class BeneficiaryTypeController extends Controller
 
             $beneficiaryType = Banco::beneficiaryType()->find($id);
 
-            if (!$beneficiaryType) {
+            if (! $beneficiaryType) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.beneficiary_type_model'), $id);
             }
 
@@ -123,11 +118,9 @@ class BeneficiaryTypeController extends Controller
     /**
      * @lrd:start
      * Update a specified *BeneficiaryType* resource using id.
+     *
      * @lrd:end
      *
-     * @param UpdateBeneficiaryTypeRequest $request
-     * @param string|int $id
-     * @return JsonResponse
      * @throws ModelNotFoundException
      * @throws UpdateOperationException
      */
@@ -137,13 +130,13 @@ class BeneficiaryTypeController extends Controller
 
             $beneficiaryType = Banco::beneficiaryType()->find($id);
 
-            if (!$beneficiaryType) {
+            if (! $beneficiaryType) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.beneficiary_type_model'), $id);
             }
 
             $inputs = $request->validated();
 
-            if (!Banco::beneficiaryType()->update($id, $inputs)) {
+            if (! Banco::beneficiaryType()->update($id, $inputs)) {
 
                 throw (new UpdateOperationException)->setModel(config('fintech.banco.beneficiary_type_model'), $id);
             }
@@ -163,10 +156,11 @@ class BeneficiaryTypeController extends Controller
     /**
      * @lrd:start
      * Soft delete a specified *BeneficiaryType* resource using id.
+     *
      * @lrd:end
      *
-     * @param string|int $id
      * @return JsonResponse
+     *
      * @throws ModelNotFoundException
      * @throws DeleteOperationException
      */
@@ -176,11 +170,11 @@ class BeneficiaryTypeController extends Controller
 
             $beneficiaryType = Banco::beneficiaryType()->find($id);
 
-            if (!$beneficiaryType) {
+            if (! $beneficiaryType) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.beneficiary_type_model'), $id);
             }
 
-            if (!Banco::beneficiaryType()->destroy($id)) {
+            if (! Banco::beneficiaryType()->destroy($id)) {
 
                 throw (new DeleteOperationException())->setModel(config('fintech.banco.beneficiary_type_model'), $id);
             }
@@ -201,9 +195,9 @@ class BeneficiaryTypeController extends Controller
      * @lrd:start
      * Restore the specified *BeneficiaryType* resource from trash.
      * ** ```Soft Delete``` needs to enabled to use this feature**
+     *
      * @lrd:end
      *
-     * @param string|int $id
      * @return JsonResponse
      */
     public function restore(string|int $id)
@@ -212,11 +206,11 @@ class BeneficiaryTypeController extends Controller
 
             $beneficiaryType = Banco::beneficiaryType()->find($id, true);
 
-            if (!$beneficiaryType) {
+            if (! $beneficiaryType) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.beneficiary_type_model'), $id);
             }
 
-            if (!Banco::beneficiaryType()->restore($id)) {
+            if (! Banco::beneficiaryType()->restore($id)) {
 
                 throw (new RestoreOperationException())->setModel(config('fintech.banco.beneficiary_type_model'), $id);
             }
@@ -239,9 +233,6 @@ class BeneficiaryTypeController extends Controller
      * After export job is done system will fire  export completed event
      *
      * @lrd:end
-     *
-     * @param IndexBeneficiaryTypeRequest $request
-     * @return JsonResponse
      */
     public function export(IndexBeneficiaryTypeRequest $request): JsonResponse
     {
@@ -265,7 +256,6 @@ class BeneficiaryTypeController extends Controller
      *
      * @lrd:end
      *
-     * @param ImportBeneficiaryTypeRequest $request
      * @return BeneficiaryTypeCollection|JsonResponse
      */
     public function import(ImportBeneficiaryTypeRequest $request): JsonResponse

@@ -2,8 +2,8 @@
 
 namespace Fintech\Banco\Repositories\Eloquent;
 
-use Fintech\Core\Repositories\EloquentRepository;
 use Fintech\Banco\Interfaces\BankBranchRepository as InterfacesBankBranchRepository;
+use Fintech\Core\Repositories\EloquentRepository;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -11,19 +11,18 @@ use InvalidArgumentException;
 
 /**
  * Class BankBranchRepository
- * @package Fintech\Banco\Repositories\Eloquent
  */
 class BankBranchRepository extends EloquentRepository implements InterfacesBankBranchRepository
 {
     public function __construct()
     {
-       $model = app(config('fintech.banco.bank_branch_model', \Fintech\Banco\Models\BankBranch::class));
+        $model = app(config('fintech.banco.bank_branch_model', \Fintech\Banco\Models\BankBranch::class));
 
-       if (!$model instanceof Model) {
-           throw new InvalidArgumentException("Eloquent repository require model class to be `Illuminate\Database\Eloquent\Model` instance.");
-       }
+        if (! $model instanceof Model) {
+            throw new InvalidArgumentException("Eloquent repository require model class to be `Illuminate\Database\Eloquent\Model` instance.");
+        }
 
-       $this->model = $model;
+        $this->model = $model;
     }
 
     /**
@@ -46,7 +45,7 @@ class BankBranchRepository extends EloquentRepository implements InterfacesBankB
         }
 
         //Display Trashed
-        if (isset($filters['trashed']) && !empty($filters['trashed'])) {
+        if (isset($filters['trashed']) && ! empty($filters['trashed'])) {
             $query->onlyTrashed();
         }
 

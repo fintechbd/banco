@@ -1,34 +1,33 @@
 <?php
 
 namespace Fintech\Banco\Http\Controllers;
+
 use Exception;
-use Fintech\Core\Exceptions\StoreOperationException;
-use Fintech\Core\Exceptions\UpdateOperationException;
-use Fintech\Core\Exceptions\DeleteOperationException;
-use Fintech\Core\Exceptions\RestoreOperationException;
-use Fintech\Core\Traits\ApiResponseTrait;
 use Fintech\Banco\Facades\Banco;
-use Fintech\Banco\Http\Resources\BankResource;
-use Fintech\Banco\Http\Resources\BankCollection;
 use Fintech\Banco\Http\Requests\ImportBankRequest;
+use Fintech\Banco\Http\Requests\IndexBankRequest;
 use Fintech\Banco\Http\Requests\StoreBankRequest;
 use Fintech\Banco\Http\Requests\UpdateBankRequest;
-use Fintech\Banco\Http\Requests\IndexBankRequest;
+use Fintech\Banco\Http\Resources\BankCollection;
+use Fintech\Banco\Http\Resources\BankResource;
+use Fintech\Core\Exceptions\DeleteOperationException;
+use Fintech\Core\Exceptions\RestoreOperationException;
+use Fintech\Core\Exceptions\StoreOperationException;
+use Fintech\Core\Exceptions\UpdateOperationException;
+use Fintech\Core\Traits\ApiResponseTrait;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;
 
 /**
  * Class BankController
- * @package Fintech\Banco\Http\Controllers
  *
  * @lrd:start
  * This class handle create, display, update, delete & restore
  * operation related to Bank
- * @lrd:end
  *
+ * @lrd:end
  */
-
 class BankController extends Controller
 {
     use ApiResponseTrait;
@@ -38,10 +37,8 @@ class BankController extends Controller
      * Return a listing of the *Bank* resource as collection.
      *
      * *```paginate=false``` returns all resource as list not pagination*
-     * @lrd:end
      *
-     * @param IndexBankRequest $request
-     * @return BankCollection|JsonResponse
+     * @lrd:end
      */
     public function index(IndexBankRequest $request): BankCollection|JsonResponse
     {
@@ -61,10 +58,9 @@ class BankController extends Controller
     /**
      * @lrd:start
      * Create a new *Bank* resource in storage.
+     *
      * @lrd:end
      *
-     * @param StoreBankRequest $request
-     * @return JsonResponse
      * @throws StoreOperationException
      */
     public function store(StoreBankRequest $request): JsonResponse
@@ -74,14 +70,14 @@ class BankController extends Controller
 
             $bank = Banco::bank()->create($inputs);
 
-            if (!$bank) {
+            if (! $bank) {
                 throw (new StoreOperationException)->setModel(config('fintech.banco.bank_model'));
             }
 
             return $this->created([
                 'message' => __('core::messages.resource.created', ['model' => 'Bank']),
-                'id' => $bank->id
-             ]);
+                'id' => $bank->id,
+            ]);
 
         } catch (Exception $exception) {
 
@@ -92,10 +88,9 @@ class BankController extends Controller
     /**
      * @lrd:start
      * Return a specified *Bank* resource found by id.
+     *
      * @lrd:end
      *
-     * @param string|int $id
-     * @return BankResource|JsonResponse
      * @throws ModelNotFoundException
      */
     public function show(string|int $id): BankResource|JsonResponse
@@ -104,7 +99,7 @@ class BankController extends Controller
 
             $bank = Banco::bank()->find($id);
 
-            if (!$bank) {
+            if (! $bank) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.bank_model'), $id);
             }
 
@@ -123,11 +118,9 @@ class BankController extends Controller
     /**
      * @lrd:start
      * Update a specified *Bank* resource using id.
+     *
      * @lrd:end
      *
-     * @param UpdateBankRequest $request
-     * @param string|int $id
-     * @return JsonResponse
      * @throws ModelNotFoundException
      * @throws UpdateOperationException
      */
@@ -137,13 +130,13 @@ class BankController extends Controller
 
             $bank = Banco::bank()->find($id);
 
-            if (!$bank) {
+            if (! $bank) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.bank_model'), $id);
             }
 
             $inputs = $request->validated();
 
-            if (!Banco::bank()->update($id, $inputs)) {
+            if (! Banco::bank()->update($id, $inputs)) {
 
                 throw (new UpdateOperationException)->setModel(config('fintech.banco.bank_model'), $id);
             }
@@ -163,10 +156,11 @@ class BankController extends Controller
     /**
      * @lrd:start
      * Soft delete a specified *Bank* resource using id.
+     *
      * @lrd:end
      *
-     * @param string|int $id
      * @return JsonResponse
+     *
      * @throws ModelNotFoundException
      * @throws DeleteOperationException
      */
@@ -176,11 +170,11 @@ class BankController extends Controller
 
             $bank = Banco::bank()->find($id);
 
-            if (!$bank) {
+            if (! $bank) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.bank_model'), $id);
             }
 
-            if (!Banco::bank()->destroy($id)) {
+            if (! Banco::bank()->destroy($id)) {
 
                 throw (new DeleteOperationException())->setModel(config('fintech.banco.bank_model'), $id);
             }
@@ -201,9 +195,9 @@ class BankController extends Controller
      * @lrd:start
      * Restore the specified *Bank* resource from trash.
      * ** ```Soft Delete``` needs to enabled to use this feature**
+     *
      * @lrd:end
      *
-     * @param string|int $id
      * @return JsonResponse
      */
     public function restore(string|int $id)
@@ -212,11 +206,11 @@ class BankController extends Controller
 
             $bank = Banco::bank()->find($id, true);
 
-            if (!$bank) {
+            if (! $bank) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.bank_model'), $id);
             }
 
-            if (!Banco::bank()->restore($id)) {
+            if (! Banco::bank()->restore($id)) {
 
                 throw (new RestoreOperationException())->setModel(config('fintech.banco.bank_model'), $id);
             }
@@ -239,9 +233,6 @@ class BankController extends Controller
      * After export job is done system will fire  export completed event
      *
      * @lrd:end
-     *
-     * @param IndexBankRequest $request
-     * @return JsonResponse
      */
     public function export(IndexBankRequest $request): JsonResponse
     {
@@ -265,7 +256,6 @@ class BankController extends Controller
      *
      * @lrd:end
      *
-     * @param ImportBankRequest $request
      * @return BankCollection|JsonResponse
      */
     public function import(ImportBankRequest $request): JsonResponse

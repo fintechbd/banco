@@ -24,7 +24,6 @@ return [
 
     'root_prefix' => 'test/',
 
-    
     /*
     |--------------------------------------------------------------------------
     | Bank Model
@@ -34,7 +33,6 @@ return [
     */
     'bank_model' => \Fintech\Banco\Models\Bank::class,
 
-    
     /*
     |--------------------------------------------------------------------------
     | BankBranch Model
@@ -44,7 +42,6 @@ return [
     */
     'bank_branch_model' => \Fintech\Banco\Models\BankBranch::class,
 
-    
     /*
     |--------------------------------------------------------------------------
     | Beneficiary Model
@@ -54,7 +51,6 @@ return [
     */
     'beneficiary_model' => \Fintech\Banco\Models\Beneficiary::class,
 
-    
     /*
     |--------------------------------------------------------------------------
     | BeneficiaryType Model

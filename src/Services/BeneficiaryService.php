@@ -2,26 +2,22 @@
 
 namespace Fintech\Banco\Services;
 
-
 use Fintech\Banco\Interfaces\BeneficiaryRepository;
 
 /**
  * Class BeneficiaryService
- * @package Fintech\Banco\Services
- *
  */
 class BeneficiaryService
 {
     /**
      * BeneficiaryService constructor.
-     * @param BeneficiaryRepository $beneficiaryRepository
      */
-    public function __construct(BeneficiaryRepository $beneficiaryRepository) {
+    public function __construct(BeneficiaryRepository $beneficiaryRepository)
+    {
         $this->beneficiaryRepository = $beneficiaryRepository;
     }
 
     /**
-     * @param array $filters
      * @return mixed
      */
     public function list(array $filters = [])
