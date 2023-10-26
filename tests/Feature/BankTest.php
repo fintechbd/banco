@@ -98,6 +98,23 @@ test('Bank create for blank all field expect country_id, beneficiary_type_id val
     expect($remittancePurpose['message'])->toBe('The bank name field is required. (and 2 more errors)');
 });
 
+test('Bank create for blank all field expect country_id, beneficiary_type_id, bank_name validation expect The bank category field is required. (and 1 more error)', function () {
+    $remittancePurpose = postJson('/api/banco/banks', [
+        "country_id" => 1,
+        "beneficiary_type_id" => 1,
+        "bank_name" => Str::random(20),
+        "bank_category" => null,
+        "transaction_type" => null,
+        "bank_currency" => null,
+        "bank_data" => [
+            "nrbms_id" => null,
+            "trans_fast_id" => null,
+        ],
+        "enabled" => null,
+    ]);
+    expect($remittancePurpose['message'])->toBe('The bank category field is required. (and 1 more error)');
+});
+
 test('Bank create for name field validation expect The name field must be at least 5 characters.', function () {
     $remittancePurpose = postJson('/api/banco/banks', [
         "country_id" => 1,
