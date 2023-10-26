@@ -17,7 +17,7 @@ return new class() extends Migration
             $table->foreignId('beneficiary_type_id')->nullable();
             $table->string('bank_name');
             $table->string('bank_category')->nullable();
-            $table->string('transaction_type')->nullable();
+            $table->string('transaction_type')->nullable()->default('Account Deposit');
             $table->string('bank_currency')->nullable();
             $table->json('bank_data')->nullable();
             $table->boolean('enabled')->nullable();
