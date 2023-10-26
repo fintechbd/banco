@@ -13,7 +13,7 @@ return new class() extends Migration
     {
         Schema::create('banks', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('country_id');
+            $table->foreignId('country_id')->nullable();
             $table->foreignId('beneficiary_type_id')->nullable();
             $table->string('bank_name');
             $table->string('bank_category')->nullable();
