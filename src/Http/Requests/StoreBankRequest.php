@@ -26,10 +26,10 @@ class StoreBankRequest extends FormRequest
         return [
             'country_id' => ['required', 'integer'],
             'beneficiary_type_id' => ['required', 'integer'],
-            'bank_name' => ['required', 'string', $uniqueRule],
-            'bank_category' => ['required', 'string'],
-            'transaction_type' => ['nullable', 'string'],
-            'bank_currency' => ['required', 'string'],
+            'bank_name' => ['required', 'string', 'max:255', $uniqueRule],
+            'bank_category' => ['required', 'string', 'max:255'],
+            'transaction_type' => ['nullable', 'string', 'max:255'],
+            'bank_currency' => ['required', 'string', 'max:255'],
             'bank_data' => ['nullable', 'array']
         ];
     }
