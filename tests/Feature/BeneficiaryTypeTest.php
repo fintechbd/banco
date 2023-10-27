@@ -31,3 +31,7 @@ function createBeneficiaryType(): MYSQLDBLEBUPAY|MONGODB|null
         'enabled' => '1',
     ]);
 }
+
+test('Beneficiary Type list', function () {
+    getJson('/api/banco/beneficiary-types')->assertStatus(200);
+});
