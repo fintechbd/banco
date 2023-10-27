@@ -9,9 +9,6 @@ use function Pest\Laravel\getJson;
 use function Pest\Laravel\postJson;
 use function Pest\Laravel\putJson;
 
-/**
- * @return MYSQLDBLEBUPAY|MONGODB|null
- */
 function createBankBranch(): MYSQLDBLEBUPAY|MONGODB|null
 {
     return \Fintech\Banco\Facades\Banco::bankBranch()->create([
@@ -21,7 +18,7 @@ function createBankBranch(): MYSQLDBLEBUPAY|MONGODB|null
             'routing_number' => Str::random(8), ////10010048
             'trans_fast_bank_branch_code' => Str::random(4),
             'emq_bank_branch_code' => Str::random(6),
-            'ifcs_code' => Str::random(12)
+            'ifcs_code' => Str::random(12),
         ],
         'enabled' => '1',
     ]);
@@ -124,7 +121,7 @@ test('Bank Branch create for blank all field expect bank_id, bank_branch_name va
             'routing_number' => Str::random(8), ////10010048
             'trans_fast_bank_branch_code' => Str::random(4),
             'emq_bank_branch_code' => null,
-            'ifcs_code' => null
+            'ifcs_code' => null,
         ],
         'enabled' => '1',
     ]);
@@ -139,7 +136,7 @@ test('Bank Branch create for blank all field expect bank_id, bank_branch_name va
             'routing_number' => Str::random(8), ////10010048
             'trans_fast_bank_branch_code' => Str::random(4),
             'emq_bank_branch_code' => Str::random(6),
-            'ifcs_code' => null
+            'ifcs_code' => null,
         ],
         'enabled' => '1',
     ]);
@@ -154,7 +151,7 @@ test('Bank Branch create expected message The Bank Branch created successfully',
             'routing_number' => Str::random(8), ////10010048
             'trans_fast_bank_branch_code' => Str::random(4),
             'emq_bank_branch_code' => Str::random(6),
-            'ifcs_code' => Str::random(12)
+            'ifcs_code' => Str::random(12),
         ],
         'enabled' => '1',
     ]);
@@ -189,9 +186,9 @@ test('Bank Branch update expect status code 200', function () {
         'bank_id' => 1,
         'bank_branch_name' => Str::random(20),
         'bank_branch_data' => [
-            'routing_number' => "1",
-            'trans_fast_bank_branch_code' => "1",
-            'emq_bank_branch_code' => "1"
+            'routing_number' => '1',
+            'trans_fast_bank_branch_code' => '1',
+            'emq_bank_branch_code' => '1',
         ],
         'enabled' => '1',
     ])->assertStatus(200);
@@ -203,9 +200,9 @@ test('Bank Branch update expect message Bank Branch updated successfully.', func
         'bank_id' => 1,
         'bank_branch_name' => Str::random(20),
         'bank_branch_data' => [
-            'routing_number' => "1",
-            'trans_fast_bank_branch_code' => "1",
-            'emq_bank_branch_code' => "1"
+            'routing_number' => '1',
+            'trans_fast_bank_branch_code' => '1',
+            'emq_bank_branch_code' => '1',
         ],
         'enabled' => '1',
     ]);

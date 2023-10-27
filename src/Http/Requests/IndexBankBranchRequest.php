@@ -32,7 +32,7 @@ class IndexBankBranchRequest extends FormRequest
             'dir' => ['string', 'min:3', 'max:4'],
             'bank_id' => ['integer', 'nullable'],
             'bank_branch_name' => ['string', 'nullable'],
-            'bank_branch_data' => ['string', 'nullable']
+            'bank_branch_data' => ['string', 'nullable'],
         ];
     }
 
