@@ -219,3 +219,9 @@ test('Bank not found expected status code 404', function () {
     createBank();
     getJson('/api/banco/banks/100')->assertStatus(404);
 });
+
+test('Bank not found expected message No query results for model [Fintech\Banco\Models\Bank] 100', function () {
+    createBank();
+    $bank = getJson('/api/banco/banks/100');
+    expect($bank['message'])->toBe('No query results for model [Fintech\Banco\Models\Bank] 100');
+});
