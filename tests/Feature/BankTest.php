@@ -319,6 +319,11 @@ test('Bank deleted expected status code 200', function () {
     deleteJson('/api/banco/banks/'.$preStoreBank['id'])->assertStatus(200);
 });
 
+test('Bank deleted expected status code 404', function () {
+    createBank();
+    deleteJson('/api/banco/banks/2')->assertStatus(404);
+});
+
 test('Bank deleted expected message The Bank deleted successfully.', function () {
     $preStoreBank = createBank();
     $bank = deleteJson('/api/banco/banks/'.$preStoreBank['id']);
