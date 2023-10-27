@@ -98,5 +98,21 @@ test('Bank Branch create for blank all field expect bank_id, bank_branch_name va
         ],
         'enabled' => '1',
     ]);
-    expect($bank['message'])->toBe('The bank_branch_data.routing_number field must be an array. (and 7 more errors)');
+    expect($bank['message'])->toBe('The bank_branch_data.routing_number field must be a string. (and 7 more errors)');
 });
+
+test('Bank Branch create for blank all field expect bank_id, bank_branch_name validation expect The Bank Branch Data Trans Fast Bank Branch Code field is required. (and 5 more errors)', function () {
+    $bank = postJson('/api/banco/bank-branches', [
+        'bank_id' => 1,
+        'bank_branch_name' => Str::random(20),
+        'bank_branch_data' => [
+            'routing_number' => Str::random(8), ////10010048
+            'trans_fast_bank_branch_code' => null,
+            'emq_bank_branch_code' => null,
+            'ifcs_code' => null,
+        ],
+        'enabled' => '1',
+    ]);
+    expect($bank['message'])->toBe('The bank_branch_data.trans_fast_bank_branch_code field must be a string. (and 5 more errors)');
+});
+
