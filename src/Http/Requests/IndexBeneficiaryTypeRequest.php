@@ -31,6 +31,9 @@ class IndexBeneficiaryTypeRequest extends FormRequest
             'sort' => ['string', 'nullable', 'min:2', 'max:255'],
             'dir' => ['string', 'min:3', 'max:4'],
             'trashed' => ['boolean', 'nullable'],
+            'beneficiary_type_name' => ['nullable', 'string'],
+            'beneficiary_type_data' => ['nullable', 'string'],
+            'enabled' => ['nullable', 'boolean'],
         ];
     }
 
