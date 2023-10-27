@@ -29,3 +29,18 @@ function createBankBranch(): MYSQLDBLEBUPAY|MONGODB|null
 test('Bank Branch list', function () {
     getJson('/api/banco/bank-branches')->assertStatus(200);
 });
+
+test('Bank Branch create for blank all field validation expect status code 422', function () {
+    postJson('/api/banco/bank-branches', [
+        'bank_id' => null,
+        'bank_branch_name' => null,
+        'bank_branch_data' => [
+            'routing_number' => null,
+            'trans_fast_bank_branch_code' => null,
+            'emq_bank_branch_code' => null,
+            'ifcs_code' => null,
+        ],
+        'enabled' => '1',
+    ])->assertStatus(422);
+    //expect($bank['message'])->toBe('The name field is required. (and 1 more error)');
+});
