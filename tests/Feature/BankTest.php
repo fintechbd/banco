@@ -180,3 +180,20 @@ test('Bank created expect status code 201', function () {
     ])->assertStatus(201);
 });
 
+test('Bank created expect message was bank created successfully.', function () {
+    $bank =  postJson('/api/banco/banks', [
+        "country_id" => 1,
+        "beneficiary_type_id" => "1",
+        "bank_name" => Str::random(20),
+        "bank_category" => "Private Bank",
+        "transaction_type" => "Account Deposit",
+        "bank_currency" => "BDT",
+        "bank_data" => [
+            "nrbms_id" => 1,
+            "trans_fast_id" => 1,
+        ],
+        "enabled" => "1",
+    ]);
+    expect($bank['message'])->toBe(trans('core::messages.resource.created', ['model' => 'Bank']));
+});
+
