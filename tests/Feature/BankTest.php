@@ -275,3 +275,22 @@ test('Bank update expect message Bank updated successfully.', function () {
     ]);
     expect($bank['message'])->toBe(trans('core::messages.resource.updated', ['model' => 'Bank']));
 });
+
+test('Bank update unique validation check expect message The bank name has already been taken.', function () {
+    $preStoreBank = createBank();
+    $preStoreBank2 = createBank();
+    $bank = putJson('/api/banco/banks/'.$preStoreBank['id'], [
+        "country_id" => 1,
+        "beneficiary_type_id" => "1",
+        "bank_name" => $preStoreBank2['bank_name'],
+        "bank_category" => "Private Bank",
+        "transaction_type" => "Account Deposit",
+        "bank_currency" => "BDT",
+        "bank_data" => [
+            "nrbms_id" => 1,
+            "trans_fast_id" => 1,
+        ],
+        "enabled" => "1",
+    ]);
+    expect($bank['message'])->toBe(trans('core::messages.resource.updated', ['model' => 'Bank']));
+});
