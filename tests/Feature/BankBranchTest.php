@@ -177,6 +177,12 @@ test('Bank Branch detail expected status code 200', function () {
     getJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'])->assertStatus(200);
 });
 
+test('Bank Branch detail expected message bank branch name are same', function () {
+    $preStoreBankBranch = createBankBranch();
+    $bankBranch = getJson('/api/banco/bank-branches/'.$preStoreBankBranch['id']);
+    expect($bankBranch->json()['data']['bank_branch_name'])->toBe($preStoreBankBranch['bank_branch_name']);
+});
+
 test('Bank Branch update expect status code 200', function () {
     $preStoreBankBranch = createBankBranch();
     putJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'], [
