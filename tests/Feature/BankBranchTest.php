@@ -145,3 +145,18 @@ test('Bank Branch create for blank all field expect bank_id, bank_branch_name va
     ]);
     expect($bank['message'])->toBe('The bank_branch_data.ifcs_code field must be a string. (and 1 more error)');
 });
+
+test('Bank Branch create expected message The Bank Branch created successfully', function () {
+    $bank = postJson('/api/banco/bank-branches', [
+        'bank_id' => 1,
+        'bank_branch_name' => Str::random(20),
+        'bank_branch_data' => [
+            'routing_number' => Str::random(8), ////10010048
+            'trans_fast_bank_branch_code' => Str::random(4),
+            'emq_bank_branch_code' => Str::random(6),
+            'ifcs_code' => Str::random(12)
+        ],
+        'enabled' => '1',
+    ]);
+    expect($bank['message'])->toBe(trans('core::messages.resource.created', ['model' => 'Bank Branch']));
+});
