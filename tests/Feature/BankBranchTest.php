@@ -216,3 +216,8 @@ test('Bank Branch deleted expected status code 200', function () {
     $preStoreBankBranch = createBankBranch();
     deleteJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'])->assertStatus(200);
 });
+
+test('Bank Branch deleted expected status code 404', function () {
+    createBankBranch();
+    deleteJson('/api/banco/bank-branches/2')->assertStatus(404);
+});
