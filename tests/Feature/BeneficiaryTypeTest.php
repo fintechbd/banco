@@ -9,3 +9,25 @@ use function Pest\Laravel\getJson;
 use function Pest\Laravel\postJson;
 use function Pest\Laravel\putJson;
 
+/**
+ * @return MYSQLDBLEBUPAY|MONGODB|null
+ */
+function createBeneficiaryType(): MYSQLDBLEBUPAY|MONGODB|null
+{
+    return \Fintech\Banco\Facades\Banco::beneficiaryType()->create([
+        'beneficiary_type_name' => Str::random(20),
+        'beneficiary_type_data' => [
+            [
+                "user_recipient_type_condition_name" => "Cash Name",
+                "user_recipient_type_condition_field_name" => "cash_id",
+                "user_recipient_type_condition_field_type" => "select"
+            ],
+            [
+                "user_recipient_type_condition_name" => "Cash Account Number",
+                "user_recipient_type_condition_field_name" => "cash_account_number",
+                "user_recipient_type_condition_field_type" => "text"
+            ]
+        ],
+        'enabled' => '1',
+    ]);
+}
