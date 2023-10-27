@@ -6,6 +6,10 @@ use MongoDB\Laravel\Eloquent\Model as MONGODB;
 
 use function Pest\Laravel\getJson;
 use function Pest\Laravel\postJson;
+use function Pest\Laravel\putJson;
+use function Pest\Laravel\patchJson;
+use function Pest\Laravel\deleteJson;
+use function Pest\Laravel\optionsJson;
 
 function createBank(): MYSQLDBLEBUPAY|MONGODB|null
 {
@@ -235,4 +239,21 @@ test('Bank detail expected message bank name are same', function () {
     $preStoreBank = createBank();
     $bank = getJson('/api/banco/banks/'.$preStoreBank['id']);
     expect($bank->json()['data']['bank_name'])->toBe($preStoreBank['bank_name']);
+});
+
+test('Bank update expect status code 200', function () {
+    $preStoreBank = createBank();
+    $bank = putJson('/api/banco/banks/'.$preStoreBank['id'], [
+        "country_id" => 1,
+        "beneficiary_type_id" => "1",
+        "bank_name" => Str::random(20),
+        "bank_category" => "Private Bank",
+        "transaction_type" => "Account Deposit",
+        "bank_currency" => "BDT",
+        "bank_data" => [
+            "nrbms_id" => 1,
+            "trans_fast_id" => 1,
+        ],
+        "enabled" => "1",
+    ])->assertStatus(200);
 });
