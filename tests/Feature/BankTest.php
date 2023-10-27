@@ -313,3 +313,8 @@ test('Bank update unique validation check expect message The bank name duplicate
     ]);
     expect($bank['message'])->toBe(trans('core::messages.resource.updated', ['model' => 'Bank']));
 });
+
+test('Bank deleted expected status code 200', function () {
+    $preStoreBank = createBank();
+    deleteJson('/api/banco/banks/'.$preStoreBank['id'])->assertStatus(200);
+});
