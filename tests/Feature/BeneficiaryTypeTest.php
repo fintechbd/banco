@@ -164,7 +164,7 @@ test('BeneficiaryType create for blank all field validation expect status code 4
     //expect($beneficiaryType['message'])->toBe('The name field is required. (and 1 more error)');
 });
 
-test('BeneficiaryType create for blank all field validation expect The beneficiary type name field is required.', function () {
+test('Beneficiary Type create for blank all field validation expect The beneficiary type name field is required.', function () {
     $beneficiaryType = postJson('/api/banco/beneficiary-types', [
         'beneficiary_type_name' => null,
         'beneficiary_type_data' => [
@@ -184,4 +184,12 @@ test('BeneficiaryType create for blank all field validation expect The beneficia
     expect($beneficiaryType['message'])->toBe('The beneficiary type name field is required.');
 });
 
-
+test('Beneficiary Type create for blank beneficiary_type_data field validation expect The beneficiary type create successfully.', function () {
+    $beneficiaryType = postJson('/api/banco/beneficiary-types', [
+        'beneficiary_type_name' => Str::random(20),
+        'beneficiary_type_data' => [
+        ],
+        'enabled' => null,
+    ]);
+    expect($beneficiaryType['message'])->toBe(trans('core::messages.resource.created', ['model' => 'BeneficiaryType']));
+});
