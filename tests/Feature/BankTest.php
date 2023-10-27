@@ -231,4 +231,8 @@ test('Bank detail expected status code 200', function () {
     getJson('/api/banco/banks/'.$preStoreBank['id'])->assertStatus(200);
 });
 
-
+test('Bank detail expected message bank name are same', function () {
+    $preStoreBank = createBank();
+    $bank = getJson('/api/banco/banks/'.$preStoreBank['id']);
+    expect($bank->json()['data']['bank_name'])->toBe($preStoreBank['bank_name']);
+});
