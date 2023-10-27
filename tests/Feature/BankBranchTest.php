@@ -171,3 +171,9 @@ test('Bank Branch not found expected message No query results for model [Fintech
     $bank = getJson('/api/banco/bank-branches/100');
     expect($bank['message'])->toBe('No query results for model [Fintech\Banco\Models\BankBranch] 100');
 });
+
+test('Bank Branch detail expected status code 200', function () {
+    $preStoreBankBranch = createBankBranch();
+    getJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'])->assertStatus(200);
+});
+
