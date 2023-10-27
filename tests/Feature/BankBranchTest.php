@@ -165,3 +165,9 @@ test('Bank Branch not found expected status code 404', function () {
     createBankBranch();
     getJson('/api/banco/bank-branches/100')->assertStatus(404);
 });
+
+test('Bank Branch not found expected message No query results for model [Fintech\Banco\Models\BankBranch] 100', function () {
+    createBankBranch();
+    $bank = getJson('/api/banco/bank-branches/100');
+    expect($bank['message'])->toBe('No query results for model [Fintech\Banco\Models\BankBranch] 100');
+});
