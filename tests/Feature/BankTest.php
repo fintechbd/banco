@@ -325,6 +325,12 @@ test('Bank deleted expected message The Bank deleted successfully.', function ()
     expect($bank['message'])->toBe(trans('core::messages.resource.deleted', ['model' => 'Bank']));
 });
 
+test('Bank deleted expected message No query results for model [Fintech\Banco\Models\Bank] 2', function () {
+    createBank();
+    $bank = deleteJson('/api/banco/banks/2');
+    expect($bank['message'])->toBe('No query results for model [Fintech\Banco\Models\Bank] 2');
+});
+
 test('Bank restored expected status code 200', function () {
     $preStoreBank = createBank();
     $preStoreBank->delete();
