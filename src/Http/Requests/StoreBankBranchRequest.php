@@ -25,7 +25,7 @@ class StoreBankBranchRequest extends FormRequest
             'bank_id' => ['integer', 'required'],
             'bank_branch_name' => ['string', 'required'],
             'bank_branch_data' => ['array', 'required'],
-            'bank_branch_data.*' => ['array', 'required'],
+            'bank_branch_data.*' => ['string', 'required'],
         ];
     }
 
