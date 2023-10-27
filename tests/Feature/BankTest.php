@@ -225,3 +225,10 @@ test('Bank not found expected message No query results for model [Fintech\Banco\
     $bank = getJson('/api/banco/banks/100');
     expect($bank['message'])->toBe('No query results for model [Fintech\Banco\Models\Bank] 100');
 });
+
+test('Bank detail expected status code 200', function () {
+    $preStoreBank = createBank();
+    getJson('/api/banco/banks/'.$preStoreBank['id'])->assertStatus(200);
+});
+
+
