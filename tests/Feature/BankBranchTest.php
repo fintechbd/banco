@@ -60,3 +60,18 @@ test('Bank Branch create for blank all field validation expect The bank id field
     ]);
     expect($bank['message'])->toBe('The bank id field must be an integer. (and 11 more errors)');
 });
+
+test('Bank Branch create for blank all field expect bank_id validation expect The bank branch name field must be a string. (and 9 more errors)', function () {
+    $bank = postJson('/api/banco/bank-branches', [
+        'bank_id' => 1,
+        'bank_branch_name' => null,
+        'bank_branch_data' => [
+            'routing_number' => null,
+            'trans_fast_bank_branch_code' => null,
+            'emq_bank_branch_code' => null,
+            'ifcs_code' => null,
+        ],
+        'enabled' => '1',
+    ]);
+    expect($bank['message'])->toBe('The bank branch name field must be a string. (and 9 more errors)');
+});
