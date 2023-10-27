@@ -228,3 +228,9 @@ test('Bank Branch deleted expected message The Bank Branch deleted successfully.
     expect($bankBranch['message'])->toBe(trans('core::messages.resource.deleted', ['model' => 'BankBranch']));
 });
 
+test('Bank Branch deleted expected message No query results for model [Fintech\Banco\Models\BankBranch] 2', function () {
+    createBankBranch();
+    $bankBranch = deleteJson('/api/banco/bank-branches/2');
+    expect($bankBranch['message'])->toBe('No query results for model [Fintech\Banco\Models\BankBranch] 2');
+});
+
