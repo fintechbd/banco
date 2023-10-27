@@ -196,3 +196,18 @@ test('Bank Branch update expect status code 200', function () {
         'enabled' => '1',
     ])->assertStatus(200);
 });
+
+test('Bank Branch update expect message Bank Branch updated successfully.', function () {
+    $preStoreBankBranch = createBankBranch();
+    $bankBranch = putJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'], [
+        'bank_id' => 1,
+        'bank_branch_name' => Str::random(20),
+        'bank_branch_data' => [
+            'routing_number' => "1",
+            'trans_fast_bank_branch_code' => "1",
+            'emq_bank_branch_code' => "1"
+        ],
+        'enabled' => '1',
+    ]);
+    expect($bankBranch['message'])->toBe(trans('core::messages.resource.updated', ['model' => 'BankBranch']));
+});
