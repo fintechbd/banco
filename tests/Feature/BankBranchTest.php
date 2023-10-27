@@ -239,3 +239,10 @@ test('Bank Branch restored expected status code 200', function () {
     $preStoreBankBranch->delete();
     postJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'].'/restore')->assertStatus(200);
 });
+
+test('Bank Branch restored expected message The Bank Branch restored successfully.', function () {
+    $preStoreBankBranch = createBankBranch();
+    $preStoreBankBranch->delete();
+    $bankBranch = postJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'].'/restore')->assertStatus(200);
+    expect($bankBranch['message'])->toBe(trans('core::messages.resource.restored', ['model' => 'BankBranch']));
+});
