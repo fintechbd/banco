@@ -160,3 +160,8 @@ test('Bank Branch create expected message The Bank Branch created successfully',
     ]);
     expect($bank['message'])->toBe(trans('core::messages.resource.created', ['model' => 'Bank Branch']));
 });
+
+test('Bank Branch not found expected status code 404', function () {
+    createBankBranch();
+    getJson('/api/banco/bank-branches/100')->assertStatus(404);
+});
