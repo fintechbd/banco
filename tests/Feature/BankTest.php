@@ -324,3 +324,16 @@ test('Bank deleted expected message The Bank deleted successfully.', function ()
     $bank = deleteJson('/api/banco/banks/'.$preStoreBank['id']);
     expect($bank['message'])->toBe(trans('core::messages.resource.deleted', ['model' => 'Bank']));
 });
+
+test('Bank restored expected status code 200', function () {
+    $preStoreBank = createBank();
+    $preStoreBank->delete();
+    postJson('/api/banco/banks/'.$preStoreBank['id'].'/restore')->assertStatus(200);
+});
+
+test('Bank restored expected message The Bank restored successfully.', function () {
+    $preStoreBank = createBank();
+    $preStoreBank->delete();
+    $bank = postJson('/api/banco/banks/'.$preStoreBank['id'].'/restore')->assertStatus(200);
+    expect($bank['message'])->toBe(trans('core::messages.resource.restored', ['model' => 'Bank']));
+});
