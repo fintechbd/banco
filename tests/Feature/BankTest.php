@@ -199,7 +199,6 @@ test('Bank created expect message was bank created successfully.', function () {
 
 test('Bank created bank name unique validation check expected message The bank name has already been taken.', function () {
     $preStoreBank = createBank();
-    //dd($preStoreBank['bank_name']);
     $bank =  postJson('/api/banco/banks', [
         "country_id" => 1,
         "beneficiary_type_id" => "1",
@@ -214,4 +213,9 @@ test('Bank created bank name unique validation check expected message The bank n
         "enabled" => "1",
     ]);
     expect($bank['message'])->toBe('The bank name has already been taken.');
+});
+
+test('Bank not found expected status code 404', function () {
+    createBank();
+    getJson('/api/banco/banks/100')->assertStatus(404);
 });
