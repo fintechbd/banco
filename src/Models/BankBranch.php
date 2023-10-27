@@ -23,7 +23,7 @@ class BankBranch extends Model
 
     protected $appends = ['links'];
 
-    protected $casts = ['bankbranch_data' => 'array', 'restored_at' => 'datetime', 'enabled' => 'bool'];
+    protected $casts = ['bank_branch_data' => 'array', 'restored_at' => 'datetime', 'enabled' => 'bool'];
 
     protected $hidden = ['creator_id', 'editor_id', 'destroyer_id', 'restorer_id'];
 
