@@ -211,3 +211,8 @@ test('Bank Branch update expect message Bank Branch updated successfully.', func
     ]);
     expect($bankBranch['message'])->toBe(trans('core::messages.resource.updated', ['model' => 'BankBranch']));
 });
+
+test('Bank Branch deleted expected status code 200', function () {
+    $preStoreBankBranch = createBankBranch();
+    deleteJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'])->assertStatus(200);
+});
