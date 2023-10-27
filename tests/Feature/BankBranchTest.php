@@ -221,3 +221,10 @@ test('Bank Branch deleted expected status code 404', function () {
     createBankBranch();
     deleteJson('/api/banco/bank-branches/2')->assertStatus(404);
 });
+
+test('Bank Branch deleted expected message The Bank Branch deleted successfully.', function () {
+    $preStoreBankBranch = createBankBranch();
+    $bankBranch = deleteJson('/api/banco/bank-branches/'.$preStoreBankBranch['id']);
+    expect($bankBranch['message'])->toBe(trans('core::messages.resource.deleted', ['model' => 'BankBranch']));
+});
+
