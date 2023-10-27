@@ -163,3 +163,20 @@ test('Bank create for The bank currency field must be at least 3 characters.', f
     ]);
     expect($bank['message'])->toBe('The bank currency field must be at least 3 characters.');
 });
+
+test('Bank created expect status code 201', function () {
+    postJson('/api/banco/banks', [
+        "country_id" => 1,
+        "beneficiary_type_id" => "1",
+        "bank_name" => Str::random(20),
+        "bank_category" => "Private Bank",
+        "transaction_type" => "Account Deposit",
+        "bank_currency" => "BDT",
+        "bank_data" => [
+            "nrbms_id" => 1,
+            "trans_fast_id" => 1,
+        ],
+        "enabled" => "1",
+    ])->assertStatus(201);
+});
+
