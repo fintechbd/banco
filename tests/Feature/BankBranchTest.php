@@ -234,3 +234,8 @@ test('Bank Branch deleted expected message No query results for model [Fintech\B
     expect($bankBranch['message'])->toBe('No query results for model [Fintech\Banco\Models\BankBranch] 2');
 });
 
+test('Bank Branch restored expected status code 200', function () {
+    $preStoreBankBranch = createBankBranch();
+    $preStoreBankBranch->delete();
+    postJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'].'/restore')->assertStatus(200);
+});
