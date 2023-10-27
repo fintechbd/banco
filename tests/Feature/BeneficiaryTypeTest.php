@@ -163,3 +163,25 @@ test('BeneficiaryType create for blank all field validation expect status code 4
     ])->assertStatus(422);
     //expect($beneficiaryType['message'])->toBe('The name field is required. (and 1 more error)');
 });
+
+test('BeneficiaryType create for blank all field validation expect The beneficiary type name field is required.', function () {
+    $beneficiaryType = postJson('/api/banco/beneficiary-types', [
+        'beneficiary_type_name' => null,
+        'beneficiary_type_data' => [
+            [
+                "user_recipient_type_condition_name" => null,
+                "user_recipient_type_condition_field_name" => null,
+                "user_recipient_type_condition_field_type" => null
+            ],
+            [
+                "user_recipient_type_condition_name" => null,
+                "user_recipient_type_condition_field_name" => null,
+                "user_recipient_type_condition_field_type" => null
+            ]
+        ],
+        'enabled' => null,
+    ]);
+    expect($beneficiaryType['message'])->toBe('The beneficiary type name field is required.');
+});
+
+
