@@ -6,6 +6,10 @@ use Fintech\Banco\Models\Beneficiary;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * @property int $user_id
+ * @property int $beneficiary_type_id
+ */
 class UpdateBeneficiaryRequest extends FormRequest
 {
     /**
@@ -25,7 +29,7 @@ class UpdateBeneficiaryRequest extends FormRequest
     {
         /** @phpstan-ignore-next-line */
         $beneficiary_id = (int) collect(request()->segments())->last(); //id of the resource
-        $uniqueRule = 'unique:'.config('fintech.banco.beneficiary_model', Beneficiary::class).',beneficiary_mobile,'.$beneficiary_id.',id,beneficiary_type_id,'.$this->beneficiary_type_id[0].',deleted_at,NULL';
+        $uniqueRule = 'unique:'.config('fintech.banco.beneficiary_model', Beneficiary::class).',beneficiary_mobile,'.$beneficiary_id.',id,user_id,'.$this->user_id.',beneficiary_type_id,'.$this->beneficiary_type_id[0].',deleted_at,NULL';
 
         return [
             'user_id' => ['required', 'integer'],
