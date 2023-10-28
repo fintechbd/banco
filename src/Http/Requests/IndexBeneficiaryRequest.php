@@ -31,6 +31,17 @@ class IndexBeneficiaryRequest extends FormRequest
             'sort' => ['string', 'nullable', 'min:2', 'max:255'],
             'dir' => ['string', 'min:3', 'max:4'],
             'trashed' => ['boolean', 'nullable'],
+            'user_id' => ['nullable', 'integer'],
+            'city_id' => ['nullable', 'integer'],
+            'state_id' => ['nullable', 'integer'],
+            'country_id' => ['nullable', 'integer'],
+            'relation_id' => ['nullable', 'integer'],
+            'beneficiary_type_id' => ['nullable', 'integer'],
+            'beneficiary_name' => ['nullable', 'string'],
+            'beneficiary_mobile' => ['nullable', 'string', 'min:8', 'max:16', 'regex:/[0-9]{9}/'],
+            'beneficiary_address' => ['nullable', 'string'],
+            'beneficiary_data' => ['nullable', 'array'],
+            'enabled' => ['nullable', 'string'],
         ];
     }
 
