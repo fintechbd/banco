@@ -239,3 +239,24 @@ test('Beneficiary Type update expect status code 200', function () {
         'enabled' => '1',
     ])->assertStatus(200);
 });
+
+test('Beneficiary Type update expect message Beneficiary Type updated successfully.', function () {
+    $preStoreBeneficiaryType = createBeneficiaryType();
+    $beneficiaryType = putJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id'], [
+        'beneficiary_type_name' => Str::random(20),
+        'beneficiary_type_data' => [
+            [
+                "user_recipient_type_condition_name" => Str::random(20),
+                "user_recipient_type_condition_field_name" => Str::random(20),
+                "user_recipient_type_condition_field_type" => Str::random(20)
+            ],
+            [
+                "user_recipient_type_condition_name" => Str::random(20),
+                "user_recipient_type_condition_field_name" => Str::random(20),
+                "user_recipient_type_condition_field_type" => Str::random(20)
+            ]
+        ],
+        'enabled' => '1',
+    ]);
+    expect($beneficiaryType['message'])->toBe(trans('core::messages.resource.updated', ['model' => 'BeneficiaryType']));
+});
