@@ -201,3 +201,9 @@ test('Beneficiary Type not found expected status code 404', function () {
     createBeneficiaryType();
     getJson('/api/banco/beneficiary-types/100')->assertStatus(404);
 });
+
+test('Beneficiary Type not found expected message No query results for model [Fintech\Banco\Models\BeneficiaryType] 100', function () {
+    createBeneficiaryType();
+    $beneficiaryType = getJson('/api/banco/beneficiary-types/100');
+    expect($beneficiaryType['message'])->toBe('No query results for model [Fintech\Banco\Models\BeneficiaryType] 100');
+});
