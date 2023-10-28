@@ -316,3 +316,9 @@ test('Beneficiary Type deleted expected status code 404', function () {
     createBeneficiaryType();
     deleteJson('/api/banco/beneficiary-types/2')->assertStatus(404);
 });
+
+test('Beneficiary Type deleted expected message The Beneficiary Type deleted successfully.', function () {
+    $preStoreBeneficiaryType = createBeneficiaryType();
+    $beneficiaryType = deleteJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id']);
+    expect($beneficiaryType['message'])->toBe(trans('core::messages.resource.deleted', ['model' => 'BeneficiaryType']));
+});
