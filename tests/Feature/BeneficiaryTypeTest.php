@@ -212,3 +212,9 @@ test('Beneficiary Type detail expected status code 200', function () {
     $preStoreBeneficiaryType = createBeneficiaryType();
     getJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id'])->assertStatus(200);
 });
+
+test('Beneficiary Type detail expected message Beneficiary Type name are same', function () {
+    $preStoreBeneficiaryType = createBeneficiaryType();
+    $beneficiaryType = getJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id']);
+    expect($beneficiaryType->json()['data']['beneficiary_type_name'])->toBe($preStoreBeneficiaryType['beneficiary_type_name']);
+});
