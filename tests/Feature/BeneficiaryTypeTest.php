@@ -258,7 +258,7 @@ test('Beneficiary Type update expect message Beneficiary Type updated successful
         ],
         'enabled' => '1',
     ]);
-    expect($beneficiaryType['message'])->toBe(trans('core::messages.resource.updated', ['model' => 'BeneficiaryType']));
+    expect($beneficiaryType['message'])->toBe(trans('core::messages.resource.updated', ['model' => 'Beneficiary Type']));
 });
 
 test('Beneficiary Type update unique validation check expect message The beneficiary type name has already been taken.', function () {
@@ -281,4 +281,26 @@ test('Beneficiary Type update unique validation check expect message The benefic
         'enabled' => '1',
     ]);
     expect($beneficiaryType['message'])->toBe('The beneficiary type name has already been taken.');
+});
+
+test('Beneficiary Type update unique validation check expect message The beneficiary type name duplicate allow same beneficiary type id.
+', function () {
+    $preStoreBeneficiaryType = createBeneficiaryType();
+    $beneficiaryType = putJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id'], [
+        'beneficiary_type_name' => $preStoreBeneficiaryType['beneficiary_type_name'],
+        'beneficiary_type_data' => [
+            [
+                "user_recipient_type_condition_name" => Str::random(20),
+                "user_recipient_type_condition_field_name" => Str::random(20),
+                "user_recipient_type_condition_field_type" => Str::random(20)
+            ],
+            [
+                "user_recipient_type_condition_name" => Str::random(20),
+                "user_recipient_type_condition_field_name" => Str::random(20),
+                "user_recipient_type_condition_field_type" => Str::random(20)
+            ]
+        ],
+        'enabled' => '1',
+    ]);
+    expect($beneficiaryType['message'])->toBe(trans('core::messages.resource.updated', ['model' => 'BeneficiaryType']));
 });
