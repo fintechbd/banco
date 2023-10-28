@@ -7,6 +7,8 @@ use MongoDB\Laravel\Eloquent\Model as MONGODB;
 use function Pest\Laravel\getJson;
 use function Pest\Laravel\postJson;
 use function Pest\Laravel\putJson;
+use function Pest\Laravel\deleteJson;
+use function Pest\Laravel\optionsJson;
 
 function createBeneficiaryType(): MYSQLDBLEBUPAY|MONGODB|null
 {
@@ -303,4 +305,9 @@ test('Beneficiary Type update unique validation check expect message The benefic
         'enabled' => '1',
     ]);
     expect($beneficiaryType['message'])->toBe(trans('core::messages.resource.updated', ['model' => 'BeneficiaryType']));
+});
+
+test('Beneficiary Type deleted expected status code 200', function () {
+    $preStoreBeneficiaryType = createBeneficiaryType();
+    deleteJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id'])->assertStatus(200);
 });
