@@ -334,3 +334,10 @@ test('Beneficiary Type restored expected status code 200', function () {
     $preStoreBeneficiaryType->delete();
     postJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id'].'/restore')->assertStatus(200);
 });
+
+test('Beneficiary Type restored expected message The Beneficiary Type restored successfully.', function () {
+    $preStoreBeneficiaryType = createBeneficiaryType();
+    $preStoreBeneficiaryType->delete();
+    $beneficiaryType = postJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id'].'/restore')->assertStatus(200);
+    expect($beneficiaryType['message'])->toBe(trans('core::messages.resource.restored', ['model' => 'BeneficiaryType']));
+});
