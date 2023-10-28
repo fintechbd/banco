@@ -139,7 +139,7 @@ test('Beneficiary Type list', function () {
     getJson('/api/banco/beneficiary-types')->assertStatus(200);
 });
 
-test('BeneficiaryType create for blank all field validation expect status code 422', function () {
+test('Beneficiary Type create for blank all field validation expect status code 422', function () {
     postJson('/api/banco/beneficiary-types', [
         'beneficiary_type_name' => null,
         'beneficiary_type_data' => [
@@ -186,13 +186,18 @@ test('Beneficiary Type create for blank beneficiary_type_data field validation e
         ],
         'enabled' => null,
     ]);
-    expect($beneficiaryType['message'])->toBe(trans('core::messages.resource.created', ['model' => 'BeneficiaryType']));
+    expect($beneficiaryType['message'])->toBe(trans('core::messages.resource.created', ['model' => 'Beneficiary Type']));
 });
 
-test('BeneficiaryType created beneficiary type name unique validation check expected message The beneficiary type name has already been taken.', function () {
+test('Beneficiary Type created beneficiary type name unique validation check expected message The beneficiary type name has already been taken.', function () {
     $preStoreBeneficiaryType = createBeneficiaryType();
     $beneficiaryType = postJson('/api/banco/beneficiary-types', [
         'beneficiary_type_name' => $preStoreBeneficiaryType['beneficiary_type_name'],
     ]);
     expect($beneficiaryType['message'])->toBe('The beneficiary type name has already been taken.');
+});
+
+test('Beneficiary Type not found expected status code 404', function () {
+    createBeneficiaryType();
+    getJson('/api/banco/beneficiary-types/100')->assertStatus(404);
 });
