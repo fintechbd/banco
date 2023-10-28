@@ -188,3 +188,11 @@ test('Beneficiary Type create for blank beneficiary_type_data field validation e
     ]);
     expect($beneficiaryType['message'])->toBe(trans('core::messages.resource.created', ['model' => 'BeneficiaryType']));
 });
+
+test('BeneficiaryType created beneficiary type name unique validation check expected message The beneficiary type name has already been taken.', function () {
+    $preStoreBeneficiaryType = createBeneficiaryType();
+    $beneficiaryType = postJson('/api/banco/beneficiary-types', [
+        'beneficiary_type_name' => $preStoreBeneficiaryType['beneficiary_type_name'],
+    ]);
+    expect($beneficiaryType['message'])->toBe('The beneficiary type name has already been taken.');
+});
