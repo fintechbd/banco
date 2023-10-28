@@ -2,8 +2,13 @@
 
 namespace Fintech\Banco\Http\Requests;
 
+use Fintech\Banco\Models\Beneficiary;
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * @property mixed $beneficiary_type_id
+ * @property mixed $user_id
+ */
 class ImportBeneficiaryRequest extends FormRequest
 {
     /**
@@ -21,8 +26,21 @@ class ImportBeneficiaryRequest extends FormRequest
      */
     public function rules(): array
     {
+        /** @phpstan-ignore-next-line */
+        $beneficiary_id = (int) collect(request()->segments())->last(); //id of the resource
+        $uniqueRule = 'unique:'.config('fintech.banco.beneficiary_model', Beneficiary::class).',beneficiary_mobile,'.$beneficiary_id.',id,user_id,'.$this->user_id.',beneficiary_type_id,'.$this->beneficiary_type_id[0].',deleted_at,NULL';
+
         return [
-            //
+            'user_id' => ['required', 'integer'],
+            'city_id' => ['required', 'integer'],
+            'state_id' => ['required', 'integer'],
+            'country_id' => ['required', 'integer'],
+            'relation_id' => ['required', 'integer'],
+            'beneficiary_type_id' => ['required', 'integer'],
+            'beneficiary_name' => ['required', 'string', 'max:255'],
+            'beneficiary_mobile' => ['required', 'string', 'min:8', 'max:16', 'regex:/[0-9]{9}/', $uniqueRule],
+            'beneficiary_address' => ['nullable', 'string'],
+            'beneficiary_data' => ['nullable', 'array'],
         ];
     }
 
