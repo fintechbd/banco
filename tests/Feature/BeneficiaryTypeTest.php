@@ -322,3 +322,9 @@ test('Beneficiary Type deleted expected message The Beneficiary Type deleted suc
     $beneficiaryType = deleteJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id']);
     expect($beneficiaryType['message'])->toBe(trans('core::messages.resource.deleted', ['model' => 'BeneficiaryType']));
 });
+
+test('Beneficiary Type deleted expected message No query results for model [Fintech\Banco\Models\BeneficiaryType] 2', function () {
+    createBeneficiaryType();
+    $beneficiaryType = deleteJson('/api/banco/beneficiary-types/2');
+    expect($beneficiaryType['message'])->toBe('No query results for model [Fintech\Banco\Models\BeneficiaryType] 2');
+});
