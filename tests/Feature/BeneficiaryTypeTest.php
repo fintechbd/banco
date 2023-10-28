@@ -6,6 +6,7 @@ use MongoDB\Laravel\Eloquent\Model as MONGODB;
 
 use function Pest\Laravel\getJson;
 use function Pest\Laravel\postJson;
+use function Pest\Laravel\putJson;
 
 function createBeneficiaryType(): MYSQLDBLEBUPAY|MONGODB|null
 {
@@ -217,4 +218,24 @@ test('Beneficiary Type detail expected message Beneficiary Type name are same', 
     $preStoreBeneficiaryType = createBeneficiaryType();
     $beneficiaryType = getJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id']);
     expect($beneficiaryType->json()['data']['beneficiary_type_name'])->toBe($preStoreBeneficiaryType['beneficiary_type_name']);
+});
+
+test('Beneficiary Type update expect status code 200', function () {
+    $preStoreBeneficiaryType = createBeneficiaryType();
+    $beneficiaryType = putJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id'], [
+        'beneficiary_type_name' => Str::random(20),
+        'beneficiary_type_data' => [
+            [
+                "user_recipient_type_condition_name" => Str::random(20),
+                "user_recipient_type_condition_field_name" => Str::random(20),
+                "user_recipient_type_condition_field_type" => Str::random(20)
+            ],
+            [
+                "user_recipient_type_condition_name" => Str::random(20),
+                "user_recipient_type_condition_field_name" => Str::random(20),
+                "user_recipient_type_condition_field_type" => Str::random(20)
+            ]
+        ],
+        'enabled' => '1',
+    ])->assertStatus(200);
 });
