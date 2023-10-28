@@ -35,7 +35,7 @@ class UpdateBeneficiaryRequest extends FormRequest
             'beneficiary_type_id' => ['required', 'integer'],
             'beneficiary_name' => ['required', 'string', 'max:255'],
             'beneficiary_relation' => ['required', 'string', 'max:255'],
-            'beneficiary_mobile' => ['required', 'string', $uniqueRule],
+            'beneficiary_mobile' => ['required', 'string', 'min:8', 'max:16', 'regex:/[0-9]{9}/', $uniqueRule],
             'beneficiary_address' => ['nullable', 'string'],
             'beneficiary_data' => ['nullable', 'array'],
         ];
