@@ -409,3 +409,8 @@ test('Beneficiary created user id, beneficiary type id and change beneficiary mo
     ]);
     expect($beneficiary['message'])->toBe(trans('core::messages.resource.created'));
 });
+
+test('Beneficiary not found expected status code 404', function () {
+    createBeneficiary();
+    getJson('/api/banco/beneficiaries/100')->assertStatus(404);
+});
