@@ -291,6 +291,29 @@ test('Beneficiary create expected status code 201', function () {
     ])->assertStatus(201);
 });
 
+test('Beneficiary created expected message The beneficiary stored successfully.', function () {
+    $beneficiary = postJson('/api/banco/beneficiaries', [
+        'user_id' => 1,
+        'city_id' => 1,
+        'state_id' => 1,
+        'country_id' => 1,
+        'beneficiary_type_id' => 2,
+        'relation_id' => 1,
+        'beneficiary_name' => "MD ARIFUL HAQUE",
+        'beneficiary_mobile' => "01614747054",
+        'beneficiary_address' => '2 No, Muslim Nagar, Matuail, Tushardhara, Dhaka - 1362',
+        'beneficiary_data' => [
+            "bank_id" => 1,
+            "bank_branch_id" => 1,
+            "bank_account_number" => "123456789",
+            "beneficiary_type" => "individual",
+            "beneficiary_type_condition_name" => "Bank Name"
+        ],
+        'enabled' => '1',
+    ]);
+    expect($beneficiary['message'])->toBe(trans('core::messages.resource.created'));
+});
+
 test('Beneficiary created beneficiary mobile, user id and beneficiary type was unique validation check expected message The beneficiary mobile has already been taken.', function () {
     $preStoreBeneficiary = createBeneficiary();
     $beneficiary = postJson('/api/banco/beneficiaries', [
