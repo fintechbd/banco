@@ -32,9 +32,9 @@ class ImportBeneficiaryRequest extends FormRequest
 
         return [
             'user_id' => ['required', 'integer'],
-            'city_id' => ['required', 'integer'],
-            'state_id' => ['required', 'integer'],
             'country_id' => ['required', 'integer'],
+            'state_id' => ['required', 'integer'],
+            'city_id' => ['required', 'integer'],
             'relation_id' => ['required', 'integer'],
             'beneficiary_type_id' => ['required', 'integer'],
             'beneficiary_name' => ['required', 'string', 'max:255'],
