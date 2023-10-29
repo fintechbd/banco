@@ -525,3 +525,9 @@ test('Beneficiary deleted expected message No query results for model [Fintech\B
     $beneficiary = deleteJson('/api/banco/beneficiaries/2');
     expect($beneficiary['message'])->toBe('No query results for model [Fintech\Banco\Models\Beneficiary] 2');
 });
+
+test('Beneficiary restored expected status code 200', function () {
+    $preStoreBeneficiary = createBeneficiary();
+    $preStoreBeneficiary->delete();
+    postJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'].'/restore')->assertStatus(200);
+});
