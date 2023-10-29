@@ -23,7 +23,7 @@ class BeneficiaryType extends Model
 
     protected $appends = ['links'];
 
-    protected $casts = ['beneficiarytype_data' => 'array', 'restored_at' => 'datetime', 'enabled' => 'bool'];
+    protected $casts = ['beneficiary_type_data' => 'array', 'restored_at' => 'datetime', 'enabled' => 'bool'];
 
     protected $hidden = ['creator_id', 'editor_id', 'destroyer_id', 'restorer_id'];
 
@@ -59,10 +59,10 @@ class BeneficiaryType extends Model
         $primaryKey = $this->getKey();
 
         $links = [
-            'show' => action_link(route('banco.BeneficiaryTypes.show', $primaryKey), __('core::messages.action.show'), 'get'),
-            'update' => action_link(route('banco.BeneficiaryTypes.update', $primaryKey), __('core::messages.action.update'), 'put'),
-            'destroy' => action_link(route('banco.BeneficiaryTypes.destroy', $primaryKey), __('core::messages.action.destroy'), 'delete'),
-            'restore' => action_link(route('banco.BeneficiaryTypes.restore', $primaryKey), __('core::messages.action.restore'), 'post'),
+            'show' => action_link(route('banco.beneficiary-types.show', $primaryKey), __('core::messages.action.show'), 'get'),
+            'update' => action_link(route('banco.beneficiary-types.update', $primaryKey), __('core::messages.action.update'), 'put'),
+            'destroy' => action_link(route('banco.beneficiary-types.destroy', $primaryKey), __('core::messages.action.destroy'), 'delete'),
+            'restore' => action_link(route('banco.beneficiary-types.restore', $primaryKey), __('core::messages.action.restore'), 'post'),
         ];
 
         if ($this->getAttribute('deleted_at') == null) {
