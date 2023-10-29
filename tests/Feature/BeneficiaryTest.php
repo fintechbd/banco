@@ -478,3 +478,28 @@ test('Beneficiary update expect message Beneficiary updated successfully.', func
     ]);
     expect($beneficiary['message'])->toBe(trans('core::messages.resource.updated', ['model' => 'Beneficiary']));
 });
+
+test('Beneficiary update unique validation check expect message The beneficiary name has already been taken.', function () {
+    $preStoreBeneficiary = createBeneficiary();
+    $preStoreBeneficiary2 = createBeneficiary();
+    $beneficiary = putJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'], [
+        'user_id' => $preStoreBeneficiary['beneficiary_type_id'],
+        'city_id' => 1,
+        'state_id' => 1,
+        'country_id' => 1,
+        'beneficiary_type_id' => $preStoreBeneficiary['beneficiary_type_id'],
+        'relation_id' => $preStoreBeneficiary['relation_id'],
+        'beneficiary_name' => "MD ARIFUL HAQUE",
+        'beneficiary_mobile' => $preStoreBeneficiary['beneficiary_mobile'],
+        'beneficiary_address' => '2 No, Muslim Nagar, Matuail, Tushardhara, Dhaka - 1362',
+        'beneficiary_data' => [
+            "bank_id" => 1,
+            "bank_branch_id" => 1,
+            "bank_account_number" => "123456789",
+            "beneficiary_type" => "individual",
+            "beneficiary_type_condition_name" => "Bank Name"
+        ],
+        'enabled' => '1',
+    ]);
+    expect($beneficiary['message'])->toBe('The beneficiary name has already been taken.');
+});
