@@ -35,4 +35,7 @@
             <directory suffix=".php">./src</directory>
         </include>
     </source>
+    <php>
+        <env name="LOCALIZATION_HIDE_DEFAULT_LOCALE" value="false"/>
+    </php>
 </phpunit>
