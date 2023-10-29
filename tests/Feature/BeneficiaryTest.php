@@ -40,3 +40,25 @@ test('Beneficiary list expected status code 200', function () {
     createBeneficiary();
     getJson('/api/banco/beneficiaries')->assertStatus(200);
 });
+
+test('Beneficiary create for empty all field validation expect status code 422', function () {
+    postJson('/api/banco/beneficiaries', [
+        'user_id' => null,
+        'city_id' => null,
+        'state_id' => null,
+        'country_id' => null,
+        'beneficiary_type_id' => null,
+        'relation_id' => null,
+        'beneficiary_name' => null,
+        'beneficiary_mobile' => null,
+        'beneficiary_address' => null,
+        'beneficiary_data' => [
+            "bank_id" => null,
+            "bank_branch_id" => null,
+            "bank_account_number" => null,
+            "beneficiary_type" => null,
+            "beneficiary_type_condition_name" => null
+        ],
+        'enabled' => null,
+    ])->assertStatus(422);
+});
