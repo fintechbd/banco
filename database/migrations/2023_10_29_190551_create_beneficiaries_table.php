@@ -18,8 +18,8 @@ return new class() extends Migration
             $table->foreignId('state_id')->nullable();
             $table->foreignId('country_id')->nullable();
             $table->foreignId('beneficiary_type_id')->nullable();
+            $table->foreignId('relation_id')->nullable();
             $table->string('beneficiary_name');
-            $table->string('beneficiary_relation')->nullable();
             $table->string('beneficiary_mobile');
             $table->string('beneficiary_address')->nullable();
             $table->json('beneficiary_data')->nullable();
