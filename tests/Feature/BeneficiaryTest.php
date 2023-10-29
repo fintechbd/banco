@@ -519,3 +519,9 @@ test('Beneficiary deleted expected message The Beneficiary deleted successfully.
     $beneficiary = deleteJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id']);
     expect($beneficiary['message'])->toBe(trans('core::messages.resource.deleted', ['model' => 'Beneficiary']));
 });
+
+test('Beneficiary deleted expected message No query results for model [Fintech\Banco\Models\Beneficiary] 2', function () {
+    createBeneficiary();
+    $beneficiary = deleteJson('/api/banco/beneficiaries/2');
+    expect($beneficiary['message'])->toBe('No query results for model [Fintech\Banco\Models\Beneficiary] 2');
+});
