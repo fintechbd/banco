@@ -1,18 +1,13 @@
 <?php
 
 use Illuminate\Database\Eloquent\Model as MYSQLDBLEBUPAY;
-use Illuminate\Support\Str;
 use MongoDB\Laravel\Eloquent\Model as MONGODB;
 
+use function Pest\Laravel\deleteJson;
 use function Pest\Laravel\getJson;
 use function Pest\Laravel\postJson;
 use function Pest\Laravel\putJson;
-use function Pest\Laravel\deleteJson;
-use function Pest\Laravel\optionsJson;
 
-/**
- * @return MYSQLDBLEBUPAY|MONGODB|null
- */
 function createBeneficiary(): MYSQLDBLEBUPAY|MONGODB|null
 {
     return \Fintech\Banco\Facades\Banco::beneficiary()->create([
@@ -22,15 +17,15 @@ function createBeneficiary(): MYSQLDBLEBUPAY|MONGODB|null
         'country_id' => 1,
         'beneficiary_type_id' => 1,
         'relation_id' => 1,
-        'beneficiary_name' => "MD ARIFUL HAQUE",
+        'beneficiary_name' => 'MD ARIFUL HAQUE',
         'beneficiary_mobile' => '01614747054',
         'beneficiary_address' => '2 No, Muslim Nagar, Matuail, Tushardhara, Dhaka - 1362',
         'beneficiary_data' => [
-            "bank_id" => 1,
-            "bank_branch_id" => 1,
-            "bank_account_number" => "123456789",
-            "beneficiary_type" => "individual",
-            "beneficiary_type_condition_name" => "Bank Name"
+            'bank_id' => 1,
+            'bank_branch_id' => 1,
+            'bank_account_number' => '123456789',
+            'beneficiary_type' => 'individual',
+            'beneficiary_type_condition_name' => 'Bank Name',
         ],
         'enabled' => '1',
     ]);
@@ -53,11 +48,11 @@ test('Beneficiary create for empty all field validation expect status code 422',
         'beneficiary_mobile' => null,
         'beneficiary_address' => null,
         'beneficiary_data' => [
-            "bank_id" => null,
-            "bank_branch_id" => null,
-            "bank_account_number" => null,
-            "beneficiary_type" => null,
-            "beneficiary_type_condition_name" => null
+            'bank_id' => null,
+            'bank_branch_id' => null,
+            'bank_account_number' => null,
+            'beneficiary_type' => null,
+            'beneficiary_type_condition_name' => null,
         ],
         'enabled' => null,
     ])->assertStatus(422);
@@ -75,11 +70,11 @@ test('Beneficiary create for empty all field validation expect The user id field
         'beneficiary_mobile' => null,
         'beneficiary_address' => null,
         'beneficiary_data' => [
-            "bank_id" => null,
-            "bank_branch_id" => null,
-            "bank_account_number" => null,
-            "beneficiary_type" => null,
-            "beneficiary_type_condition_name" => null
+            'bank_id' => null,
+            'bank_branch_id' => null,
+            'bank_account_number' => null,
+            'beneficiary_type' => null,
+            'beneficiary_type_condition_name' => null,
         ],
         'enabled' => null,
     ]);
@@ -98,11 +93,11 @@ test('Beneficiary create for empty all field validation expect The country id fi
         'beneficiary_mobile' => null,
         'beneficiary_address' => null,
         'beneficiary_data' => [
-            "bank_id" => null,
-            "bank_branch_id" => null,
-            "bank_account_number" => null,
-            "beneficiary_type" => null,
-            "beneficiary_type_condition_name" => null
+            'bank_id' => null,
+            'bank_branch_id' => null,
+            'bank_account_number' => null,
+            'beneficiary_type' => null,
+            'beneficiary_type_condition_name' => null,
         ],
         'enabled' => null,
     ]);
@@ -121,11 +116,11 @@ test('Beneficiary create for empty all field validation expect The state id fiel
         'beneficiary_mobile' => null,
         'beneficiary_address' => null,
         'beneficiary_data' => [
-            "bank_id" => null,
-            "bank_branch_id" => null,
-            "bank_account_number" => null,
-            "beneficiary_type" => null,
-            "beneficiary_type_condition_name" => null
+            'bank_id' => null,
+            'bank_branch_id' => null,
+            'bank_account_number' => null,
+            'beneficiary_type' => null,
+            'beneficiary_type_condition_name' => null,
         ],
         'enabled' => null,
     ]);
@@ -144,11 +139,11 @@ test('Beneficiary create for empty all field validation expect The city id field
         'beneficiary_mobile' => null,
         'beneficiary_address' => null,
         'beneficiary_data' => [
-            "bank_id" => null,
-            "bank_branch_id" => null,
-            "bank_account_number" => null,
-            "beneficiary_type" => null,
-            "beneficiary_type_condition_name" => null
+            'bank_id' => null,
+            'bank_branch_id' => null,
+            'bank_account_number' => null,
+            'beneficiary_type' => null,
+            'beneficiary_type_condition_name' => null,
         ],
         'enabled' => null,
     ]);
@@ -167,11 +162,11 @@ test('Beneficiary create for empty all field validation expect The relation id f
         'beneficiary_mobile' => null,
         'beneficiary_address' => null,
         'beneficiary_data' => [
-            "bank_id" => null,
-            "bank_branch_id" => null,
-            "bank_account_number" => null,
-            "beneficiary_type" => null,
-            "beneficiary_type_condition_name" => null
+            'bank_id' => null,
+            'bank_branch_id' => null,
+            'bank_account_number' => null,
+            'beneficiary_type' => null,
+            'beneficiary_type_condition_name' => null,
         ],
         'enabled' => null,
     ]);
@@ -190,11 +185,11 @@ test('Beneficiary create for empty all field validation expect The beneficiary t
         'beneficiary_mobile' => null,
         'beneficiary_address' => null,
         'beneficiary_data' => [
-            "bank_id" => null,
-            "bank_branch_id" => null,
-            "bank_account_number" => null,
-            "beneficiary_type" => null,
-            "beneficiary_type_condition_name" => null
+            'bank_id' => null,
+            'bank_branch_id' => null,
+            'bank_account_number' => null,
+            'beneficiary_type' => null,
+            'beneficiary_type_condition_name' => null,
         ],
         'enabled' => null,
     ]);
@@ -213,11 +208,11 @@ test('Beneficiary create for empty all field validation expect The beneficiary n
         'beneficiary_mobile' => null,
         'beneficiary_address' => null,
         'beneficiary_data' => [
-            "bank_id" => null,
-            "bank_branch_id" => null,
-            "bank_account_number" => null,
-            "beneficiary_type" => null,
-            "beneficiary_type_condition_name" => null
+            'bank_id' => null,
+            'bank_branch_id' => null,
+            'bank_account_number' => null,
+            'beneficiary_type' => null,
+            'beneficiary_type_condition_name' => null,
         ],
         'enabled' => null,
     ]);
@@ -232,15 +227,15 @@ test('Beneficiary create for empty all field validation expect The beneficiary m
         'city_id' => 1,
         'beneficiary_type_id' => 1,
         'relation_id' => 1,
-        'beneficiary_name' => "MD ARIFUL HAQUE",
+        'beneficiary_name' => 'MD ARIFUL HAQUE',
         'beneficiary_mobile' => null,
         'beneficiary_address' => null,
         'beneficiary_data' => [
-            "bank_id" => null,
-            "bank_branch_id" => null,
-            "bank_account_number" => null,
-            "beneficiary_type" => null,
-            "beneficiary_type_condition_name" => null
+            'bank_id' => null,
+            'bank_branch_id' => null,
+            'bank_account_number' => null,
+            'beneficiary_type' => null,
+            'beneficiary_type_condition_name' => null,
         ],
         'enabled' => null,
     ]);
@@ -255,15 +250,15 @@ test('Beneficiary create and some field are empty expected status code 201', fun
         'city_id' => 1,
         'beneficiary_type_id' => 1,
         'relation_id' => 1,
-        'beneficiary_name' => "MD ARIFUL HAQUE",
-        'beneficiary_mobile' => "01614747054",
+        'beneficiary_name' => 'MD ARIFUL HAQUE',
+        'beneficiary_mobile' => '01614747054',
         'beneficiary_address' => null,
         'beneficiary_data' => [
-            "bank_id" => null,
-            "bank_branch_id" => null,
-            "bank_account_number" => null,
-            "beneficiary_type" => null,
-            "beneficiary_type_condition_name" => null
+            'bank_id' => null,
+            'bank_branch_id' => null,
+            'bank_account_number' => null,
+            'beneficiary_type' => null,
+            'beneficiary_type_condition_name' => null,
         ],
         'enabled' => null,
     ])->assertStatus(201);
@@ -277,15 +272,15 @@ test('Beneficiary create expected status code 201', function () {
         'country_id' => 1,
         'beneficiary_type_id' => 1,
         'relation_id' => 1,
-        'beneficiary_name' => "MD ARIFUL HAQUE",
+        'beneficiary_name' => 'MD ARIFUL HAQUE',
         'beneficiary_mobile' => '01614747054',
         'beneficiary_address' => '2 No, Muslim Nagar, Matuail, Tushardhara, Dhaka - 1362',
         'beneficiary_data' => [
-            "bank_id" => 1,
-            "bank_branch_id" => 1,
-            "bank_account_number" => "123456789",
-            "beneficiary_type" => "individual",
-            "beneficiary_type_condition_name" => "Bank Name"
+            'bank_id' => 1,
+            'bank_branch_id' => 1,
+            'bank_account_number' => '123456789',
+            'beneficiary_type' => 'individual',
+            'beneficiary_type_condition_name' => 'Bank Name',
         ],
         'enabled' => '1',
     ])->assertStatus(201);
@@ -299,15 +294,15 @@ test('Beneficiary created expected message The beneficiary stored successfully.'
         'country_id' => 1,
         'beneficiary_type_id' => 2,
         'relation_id' => 1,
-        'beneficiary_name' => "MD ARIFUL HAQUE",
-        'beneficiary_mobile' => "01614747054",
+        'beneficiary_name' => 'MD ARIFUL HAQUE',
+        'beneficiary_mobile' => '01614747054',
         'beneficiary_address' => '2 No, Muslim Nagar, Matuail, Tushardhara, Dhaka - 1362',
         'beneficiary_data' => [
-            "bank_id" => 1,
-            "bank_branch_id" => 1,
-            "bank_account_number" => "123456789",
-            "beneficiary_type" => "individual",
-            "beneficiary_type_condition_name" => "Bank Name"
+            'bank_id' => 1,
+            'bank_branch_id' => 1,
+            'bank_account_number' => '123456789',
+            'beneficiary_type' => 'individual',
+            'beneficiary_type_condition_name' => 'Bank Name',
         ],
         'enabled' => '1',
     ]);
@@ -323,15 +318,15 @@ test('Beneficiary created beneficiary mobile, user id and beneficiary type was u
         'country_id' => 1,
         'beneficiary_type_id' => $preStoreBeneficiary['beneficiary_type_id'],
         'relation_id' => $preStoreBeneficiary['relation_id'],
-        'beneficiary_name' => "MD ARIFUL HAQUE",
+        'beneficiary_name' => 'MD ARIFUL HAQUE',
         'beneficiary_mobile' => $preStoreBeneficiary['beneficiary_mobile'],
         'beneficiary_address' => '2 No, Muslim Nagar, Matuail, Tushardhara, Dhaka - 1362',
         'beneficiary_data' => [
-            "bank_id" => 1,
-            "bank_branch_id" => 1,
-            "bank_account_number" => "123456789",
-            "beneficiary_type" => "individual",
-            "beneficiary_type_condition_name" => "Bank Name"
+            'bank_id' => 1,
+            'bank_branch_id' => 1,
+            'bank_account_number' => '123456789',
+            'beneficiary_type' => 'individual',
+            'beneficiary_type_condition_name' => 'Bank Name',
         ],
         'enabled' => '1',
     ]);
@@ -347,15 +342,15 @@ test('Beneficiary created beneficiary mobile, user id and change beneficiary typ
         'country_id' => 1,
         'beneficiary_type_id' => 2,
         'relation_id' => $preStoreBeneficiary['relation_id'],
-        'beneficiary_name' => "MD ARIFUL HAQUE",
+        'beneficiary_name' => 'MD ARIFUL HAQUE',
         'beneficiary_mobile' => $preStoreBeneficiary['beneficiary_mobile'],
         'beneficiary_address' => '2 No, Muslim Nagar, Matuail, Tushardhara, Dhaka - 1362',
         'beneficiary_data' => [
-            "bank_id" => 1,
-            "bank_branch_id" => 1,
-            "bank_account_number" => "123456789",
-            "beneficiary_type" => "individual",
-            "beneficiary_type_condition_name" => "Bank Name"
+            'bank_id' => 1,
+            'bank_branch_id' => 1,
+            'bank_account_number' => '123456789',
+            'beneficiary_type' => 'individual',
+            'beneficiary_type_condition_name' => 'Bank Name',
         ],
         'enabled' => '1',
     ]);
@@ -371,15 +366,15 @@ test('Beneficiary created beneficiary mobile, beneficiary type id and change use
         'country_id' => 1,
         'beneficiary_type_id' => $preStoreBeneficiary['beneficiary_type_id'],
         'relation_id' => $preStoreBeneficiary['relation_id'],
-        'beneficiary_name' => "MD ARIFUL HAQUE",
+        'beneficiary_name' => 'MD ARIFUL HAQUE',
         'beneficiary_mobile' => $preStoreBeneficiary['beneficiary_mobile'],
         'beneficiary_address' => '2 No, Muslim Nagar, Matuail, Tushardhara, Dhaka - 1362',
         'beneficiary_data' => [
-            "bank_id" => 1,
-            "bank_branch_id" => 1,
-            "bank_account_number" => "123456789",
-            "beneficiary_type" => "individual",
-            "beneficiary_type_condition_name" => "Bank Name"
+            'bank_id' => 1,
+            'bank_branch_id' => 1,
+            'bank_account_number' => '123456789',
+            'beneficiary_type' => 'individual',
+            'beneficiary_type_condition_name' => 'Bank Name',
         ],
         'enabled' => '1',
     ]);
@@ -395,15 +390,15 @@ test('Beneficiary created user id, beneficiary type id and change beneficiary mo
         'country_id' => 1,
         'beneficiary_type_id' => $preStoreBeneficiary['beneficiary_type_id'],
         'relation_id' => $preStoreBeneficiary['relation_id'],
-        'beneficiary_name' => "MD ARIFUL HAQUE",
-        'beneficiary_mobile' => "01760233030",
+        'beneficiary_name' => 'MD ARIFUL HAQUE',
+        'beneficiary_mobile' => '01760233030',
         'beneficiary_address' => '2 No, Muslim Nagar, Matuail, Tushardhara, Dhaka - 1362',
         'beneficiary_data' => [
-            "bank_id" => 1,
-            "bank_branch_id" => 1,
-            "bank_account_number" => "123456789",
-            "beneficiary_type" => "individual",
-            "beneficiary_type_condition_name" => "Bank Name"
+            'bank_id' => 1,
+            'bank_branch_id' => 1,
+            'bank_account_number' => '123456789',
+            'beneficiary_type' => 'individual',
+            'beneficiary_type_condition_name' => 'Bank Name',
         ],
         'enabled' => '1',
     ]);
@@ -441,15 +436,15 @@ test('Beneficiary update expect status code 200', function () {
         'country_id' => 1,
         'beneficiary_type_id' => $preStoreBeneficiary['beneficiary_type_id'],
         'relation_id' => $preStoreBeneficiary['relation_id'],
-        'beneficiary_name' => "MD ARIFUL HAQUE SHAMIM",
-        'beneficiary_mobile' => "01760233030",
+        'beneficiary_name' => 'MD ARIFUL HAQUE SHAMIM',
+        'beneficiary_mobile' => '01760233030',
         'beneficiary_address' => '2 No, Muslim Nagar, Matuail, Tushardhara, Dhaka - 1362',
         'beneficiary_data' => [
-            "bank_id" => 1,
-            "bank_branch_id" => 1,
-            "bank_account_number" => "123456789",
-            "beneficiary_type" => "individual",
-            "beneficiary_type_condition_name" => "Bank Name"
+            'bank_id' => 1,
+            'bank_branch_id' => 1,
+            'bank_account_number' => '123456789',
+            'beneficiary_type' => 'individual',
+            'beneficiary_type_condition_name' => 'Bank Name',
         ],
         'enabled' => '1',
     ])->assertStatus(200);
@@ -464,15 +459,15 @@ test('Beneficiary update expect message Beneficiary updated successfully.', func
         'country_id' => 1,
         'beneficiary_type_id' => $preStoreBeneficiary['beneficiary_type_id'],
         'relation_id' => $preStoreBeneficiary['relation_id'],
-        'beneficiary_name' => "MD ARIFUL HAQUE SHAMIM",
-        'beneficiary_mobile' => "01760233030",
+        'beneficiary_name' => 'MD ARIFUL HAQUE SHAMIM',
+        'beneficiary_mobile' => '01760233030',
         'beneficiary_address' => '2 No, Muslim Nagar, Matuail, Tushardhara, Dhaka - 1362',
         'beneficiary_data' => [
-            "bank_id" => 1,
-            "bank_branch_id" => 1,
-            "bank_account_number" => "123456789",
-            "beneficiary_type" => "individual",
-            "beneficiary_type_condition_name" => "Bank Name"
+            'bank_id' => 1,
+            'bank_branch_id' => 1,
+            'bank_account_number' => '123456789',
+            'beneficiary_type' => 'individual',
+            'beneficiary_type_condition_name' => 'Bank Name',
         ],
         'enabled' => '1',
     ]);
@@ -489,15 +484,15 @@ test('Beneficiary update unique validation check expect message The beneficiary 
         'country_id' => 1,
         'beneficiary_type_id' => $preStoreBeneficiary2['beneficiary_type_id'],
         'relation_id' => $preStoreBeneficiary['relation_id'],
-        'beneficiary_name' => "MD ARIFUL HAQUE",
+        'beneficiary_name' => 'MD ARIFUL HAQUE',
         'beneficiary_mobile' => $preStoreBeneficiary['beneficiary_mobile'],
         'beneficiary_address' => '2 No, Muslim Nagar, Matuail, Tushardhara, Dhaka - 1362',
         'beneficiary_data' => [
-            "bank_id" => 1,
-            "bank_branch_id" => 1,
-            "bank_account_number" => "123456789",
-            "beneficiary_type" => "individual",
-            "beneficiary_type_condition_name" => "Bank Name"
+            'bank_id' => 1,
+            'bank_branch_id' => 1,
+            'bank_account_number' => '123456789',
+            'beneficiary_type' => 'individual',
+            'beneficiary_type_condition_name' => 'Bank Name',
         ],
         'enabled' => '1',
     ]);
