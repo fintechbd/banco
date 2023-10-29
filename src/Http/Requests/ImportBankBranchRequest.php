@@ -22,7 +22,9 @@ class ImportBankBranchRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'bank_id' => ['integer', 'required'],
+            'bank_branch_name' => ['string', 'required'],
+            'bank_branch_data' => ['array', 'nullable'],
         ];
     }
 

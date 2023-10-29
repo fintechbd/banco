@@ -23,7 +23,7 @@ class BankBranch extends Model
 
     protected $appends = ['links'];
 
-    protected $casts = ['bankbranch_data' => 'array', 'restored_at' => 'datetime', 'enabled' => 'bool'];
+    protected $casts = ['bank_branch_data' => 'array', 'restored_at' => 'datetime', 'enabled' => 'bool'];
 
     protected $hidden = ['creator_id', 'editor_id', 'destroyer_id', 'restorer_id'];
 
@@ -59,10 +59,10 @@ class BankBranch extends Model
         $primaryKey = $this->getKey();
 
         $links = [
-            'show' => action_link(route('banco.BankBranches.show', $primaryKey), __('core::messages.action.show'), 'get'),
-            'update' => action_link(route('banco.BankBranches.update', $primaryKey), __('core::messages.action.update'), 'put'),
-            'destroy' => action_link(route('banco.BankBranches.destroy', $primaryKey), __('core::messages.action.destroy'), 'delete'),
-            'restore' => action_link(route('banco.BankBranches.restore', $primaryKey), __('core::messages.action.restore'), 'post'),
+            'show' => action_link(route('banco.bank-branches.show', $primaryKey), __('core::messages.action.show'), 'get'),
+            'update' => action_link(route('banco.bank-branches.update', $primaryKey), __('core::messages.action.update'), 'put'),
+            'destroy' => action_link(route('banco.bank-branches.destroy', $primaryKey), __('core::messages.action.destroy'), 'delete'),
+            'restore' => action_link(route('banco.bank-branches.restore', $primaryKey), __('core::messages.action.restore'), 'post'),
         ];
 
         if ($this->getAttribute('deleted_at') == null) {

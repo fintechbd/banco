@@ -2,6 +2,7 @@
 
 namespace Fintech\Banco\Http\Requests;
 
+use Fintech\Banco\Models\BeneficiaryType;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateBeneficiaryTypeRequest extends FormRequest
@@ -21,8 +22,14 @@ class UpdateBeneficiaryTypeRequest extends FormRequest
      */
     public function rules(): array
     {
+        /** @phpstan-ignore-next-line */
+        $beneficiary_type_id = (int) collect(request()->segments())->last(); //id of the resource
+
+        $uniqueRule = 'unique:'.config('fintech.banco.beneficiary_type_model', BeneficiaryType::class).',beneficiary_type_name,'.$beneficiary_type_id.',id,deleted_at,NULL';
+
         return [
-            //
+            'beneficiary_type_name' => ['required', 'string', 'max:255', $uniqueRule],
+            'beneficiary_type_data' => ['nullable', 'array'],
         ];
     }
 
