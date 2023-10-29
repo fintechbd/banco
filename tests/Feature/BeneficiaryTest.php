@@ -487,7 +487,7 @@ test('Beneficiary update unique validation check expect message The beneficiary 
         'city_id' => 1,
         'state_id' => 1,
         'country_id' => 1,
-        'beneficiary_type_id' => $preStoreBeneficiary['beneficiary_type_id'],
+        'beneficiary_type_id' => $preStoreBeneficiary2['beneficiary_type_id'],
         'relation_id' => $preStoreBeneficiary['relation_id'],
         'beneficiary_name' => "MD ARIFUL HAQUE",
         'beneficiary_mobile' => $preStoreBeneficiary['beneficiary_mobile'],
@@ -502,4 +502,9 @@ test('Beneficiary update unique validation check expect message The beneficiary 
         'enabled' => '1',
     ]);
     expect($beneficiary['message'])->toBe('The beneficiary mobile has already been taken.');
+});
+
+test('Beneficiary deleted expected status code 200', function () {
+    $preStoreBeneficiary = createBeneficiary();
+    deleteJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'])->assertStatus(200);
 });
