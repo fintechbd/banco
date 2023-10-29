@@ -431,3 +431,27 @@ test('Beneficiary detail expected message Beneficiary name are same', function (
     $beneficiary = getJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id']);
     expect($beneficiary->json()['data']['beneficiary_name'])->toBe($preStoreBeneficiary['beneficiary_name']);
 });
+
+test('Beneficiary update expect status code 200', function () {
+    $preStoreBeneficiary = createBeneficiary();
+    putJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'], [
+        'user_id' => $preStoreBeneficiary['user_id'],
+        'city_id' => 1,
+        'state_id' => 1,
+        'country_id' => 1,
+        'beneficiary_type_id' => $preStoreBeneficiary['beneficiary_type_id'],
+        'relation_id' => $preStoreBeneficiary['relation_id'],
+        'beneficiary_name' => "MD ARIFUL HAQUE SHAMIM",
+        'beneficiary_mobile' => "01760233030",
+        'beneficiary_address' => '2 No, Muslim Nagar, Matuail, Tushardhara, Dhaka - 1362',
+        'beneficiary_data' => [
+            "bank_id" => 1,
+            "bank_branch_id" => 1,
+            "bank_account_number" => "123456789",
+            "beneficiary_type" => "individual",
+            "beneficiary_type_condition_name" => "Bank Name"
+        ],
+        'enabled' => '1',
+    ])->assertStatus(200);
+});
+
