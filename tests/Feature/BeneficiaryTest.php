@@ -22,7 +22,7 @@ function createBeneficiary(): MYSQLDBLEBUPAY|MONGODB|null
         'country_id' => 1,
         'beneficiary_type_id' => 1,
         'relation_id' => 1,
-        'beneficiary_name' => Str::random(20),
+        'beneficiary_name' => "MD ARIFUL HAQUE",
         'beneficiary_mobile' => '01614747054',
         'beneficiary_address' => '2 No, Muslim Nagar, Matuail, Tushardhara, Dhaka - 1362',
         'beneficiary_data' => [
