@@ -425,3 +425,9 @@ test('Beneficiary detail expected status code 200', function () {
     $preStoreBeneficiary = createBeneficiary();
     getJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'])->assertStatus(200);
 });
+
+test('Beneficiary detail expected message Beneficiary name are same', function () {
+    $preStoreBeneficiary = createBeneficiary();
+    $beneficiary = getJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id']);
+    expect($beneficiary->json()['data']['beneficiary_name'])->toBe($preStoreBeneficiary['beneficiary_name']);
+});
