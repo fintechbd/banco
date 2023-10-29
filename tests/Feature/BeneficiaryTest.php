@@ -531,3 +531,10 @@ test('Beneficiary restored expected status code 200', function () {
     $preStoreBeneficiary->delete();
     postJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'].'/restore')->assertStatus(200);
 });
+
+test('Beneficiary restored expected message The Beneficiary restored successfully.', function () {
+    $preStoreBeneficiary = createBeneficiary();
+    $preStoreBeneficiary->delete();
+    $beneficiary = postJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'].'/restore')->assertStatus(200);
+    expect($beneficiary['message'])->toBe(trans('core::messages.resource.restored', ['model' => 'Beneficiary']));
+});
