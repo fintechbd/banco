@@ -508,3 +508,8 @@ test('Beneficiary deleted expected status code 200', function () {
     $preStoreBeneficiary = createBeneficiary();
     deleteJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'])->assertStatus(200);
 });
+
+test('Beneficiary deleted expected status code 404', function () {
+    createBeneficiary();
+    deleteJson('/api/banco/beneficiaries/2')->assertStatus(404);
+});
