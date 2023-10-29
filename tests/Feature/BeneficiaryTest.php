@@ -479,7 +479,7 @@ test('Beneficiary update expect message Beneficiary updated successfully.', func
     expect($beneficiary['message'])->toBe(trans('core::messages.resource.updated', ['model' => 'Beneficiary']));
 });
 
-test('Beneficiary update unique validation check expect message The beneficiary name has already been taken.', function () {
+test('Beneficiary update unique validation check expect message The beneficiary mobile has already been taken.', function () {
     $preStoreBeneficiary = createBeneficiary();
     $preStoreBeneficiary2 = createBeneficiary();
     $beneficiary = putJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'], [
@@ -501,5 +501,5 @@ test('Beneficiary update unique validation check expect message The beneficiary 
         ],
         'enabled' => '1',
     ]);
-    expect($beneficiary['message'])->toBe('The beneficiary name has already been taken.');
+    expect($beneficiary['message'])->toBe('The beneficiary mobile has already been taken.');
 });
