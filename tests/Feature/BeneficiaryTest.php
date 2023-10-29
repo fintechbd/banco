@@ -201,7 +201,7 @@ test('Beneficiary create for empty all field validation expect The beneficiary t
     expect($beneficiary['message'])->toBe('The beneficiary type id field is required. (and 2 more errors)');
 });
 
-test('Beneficiary create for empty all field validation expect The beneficiary name id field is required. (and 1 more errors)', function () {
+test('Beneficiary create for empty all field validation expect The beneficiary name field is required. (and 1 more error)', function () {
     $beneficiary = postJson('/api/banco/beneficiaries', [
         'user_id' => 1,
         'country_id' => 1,
@@ -221,5 +221,28 @@ test('Beneficiary create for empty all field validation expect The beneficiary n
         ],
         'enabled' => null,
     ]);
-    expect($beneficiary['message'])->toBe('The beneficiary name id field is required. (and 1 more errors)');
+    expect($beneficiary['message'])->toBe('The beneficiary name field is required. (and 1 more error)');
+});
+
+test('Beneficiary create for empty all field validation expect The beneficiary mobile field is required.', function () {
+    $beneficiary = postJson('/api/banco/beneficiaries', [
+        'user_id' => 1,
+        'country_id' => 1,
+        'state_id' => 1,
+        'city_id' => 1,
+        'beneficiary_type_id' => 1,
+        'relation_id' => 1,
+        'beneficiary_name' => "MD ARIFUL HAQUE",
+        'beneficiary_mobile' => null,
+        'beneficiary_address' => null,
+        'beneficiary_data' => [
+            "bank_id" => null,
+            "bank_branch_id" => null,
+            "bank_account_number" => null,
+            "beneficiary_type" => null,
+            "beneficiary_type_condition_name" => null
+        ],
+        'enabled' => null,
+    ]);
+    expect($beneficiary['message'])->toBe('The beneficiary mobile field is required. (and 1 more error)');
 });
