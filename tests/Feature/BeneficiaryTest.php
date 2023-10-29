@@ -177,3 +177,26 @@ test('Beneficiary create for empty all field validation expect The relation id f
     ]);
     expect($beneficiary['message'])->toBe('The relation id field is required. (and 3 more errors)');
 });
+
+test('Beneficiary create for empty all field validation expect The beneficiary type id field is required. (and 2 more errors)', function () {
+    $beneficiary = postJson('/api/banco/beneficiaries', [
+        'user_id' => 1,
+        'country_id' => 1,
+        'state_id' => 1,
+        'city_id' => 1,
+        'beneficiary_type_id' => null,
+        'relation_id' => 1,
+        'beneficiary_name' => null,
+        'beneficiary_mobile' => null,
+        'beneficiary_address' => null,
+        'beneficiary_data' => [
+            "bank_id" => null,
+            "bank_branch_id" => null,
+            "bank_account_number" => null,
+            "beneficiary_type" => null,
+            "beneficiary_type_condition_name" => null
+        ],
+        'enabled' => null,
+    ]);
+    expect($beneficiary['message'])->toBe('The beneficiary type id field is required. (and 2 more errors)');
+});
