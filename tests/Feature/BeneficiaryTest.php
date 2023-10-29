@@ -15,7 +15,7 @@ use function Pest\Laravel\optionsJson;
  */
 function createBeneficiary(): MYSQLDBLEBUPAY|MONGODB|null
 {
-    return \Fintech\Banco\Facades\Banco::bank()->create([
+    return \Fintech\Banco\Facades\Banco::beneficiary()->create([
         'user_id' => 1,
         'city_id' => 1,
         'state_id' => 1,
