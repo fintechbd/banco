@@ -420,3 +420,8 @@ test('Beneficiary not found expected message No query results for model [Fintech
     $beneficiary = getJson('/api/banco/beneficiaries/100');
     expect($beneficiary['message'])->toBe('No query results for model [Fintech\Banco\Models\Beneficiary] 100');
 });
+
+test('Beneficiary detail expected status code 200', function () {
+    $preStoreBeneficiary = createBeneficiary();
+    getJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'])->assertStatus(200);
+});
