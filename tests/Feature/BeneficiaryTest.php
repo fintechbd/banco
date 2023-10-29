@@ -35,3 +35,8 @@ function createBeneficiary(): MYSQLDBLEBUPAY|MONGODB|null
         'enabled' => '1',
     ]);
 }
+
+test('Beneficiary list expected status code 200', function () {
+    createBeneficiary();
+    getJson('/api/banco/beneficiaries')->assertStatus(200);
+});
