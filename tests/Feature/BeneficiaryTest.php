@@ -247,7 +247,7 @@ test('Beneficiary create for empty all field validation expect The beneficiary m
     expect($beneficiary['message'])->toBe('The beneficiary mobile field is required.');
 });
 
-test('Beneficiary create expected status code 201', function () {
+test('Beneficiary create and some field are empty expected status code 201', function () {
     postJson('/api/banco/beneficiaries', [
         'user_id' => 1,
         'country_id' => 1,
@@ -266,5 +266,27 @@ test('Beneficiary create expected status code 201', function () {
             "beneficiary_type_condition_name" => null
         ],
         'enabled' => null,
+    ])->assertStatus(201);
+});
+
+test('Beneficiary create expected status code 201', function () {
+    postJson('/api/banco/beneficiaries', [
+        'user_id' => 1,
+        'city_id' => 1,
+        'state_id' => 1,
+        'country_id' => 1,
+        'beneficiary_type_id' => 1,
+        'relation_id' => 1,
+        'beneficiary_name' => "MD ARIFUL HAQUE",
+        'beneficiary_mobile' => '01614747054',
+        'beneficiary_address' => '2 No, Muslim Nagar, Matuail, Tushardhara, Dhaka - 1362',
+        'beneficiary_data' => [
+            "bank_id" => 1,
+            "bank_branch_id" => 1,
+            "bank_account_number" => "123456789",
+            "beneficiary_type" => "individual",
+            "beneficiary_type_condition_name" => "Bank Name"
+        ],
+        'enabled' => '1',
     ])->assertStatus(201);
 });
