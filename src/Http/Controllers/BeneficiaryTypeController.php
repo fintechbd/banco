@@ -76,7 +76,7 @@ class BeneficiaryTypeController extends Controller
 
             return $this->created([
                 'message' => __('core::messages.resource.created', ['model' => 'Beneficiary Type']),
-                'id' => $beneficiaryType->id,
+                'id' => $beneficiaryType->getKey(),
             ]);
 
         } catch (Exception $exception) {

@@ -76,7 +76,7 @@ class BankController extends Controller
 
             return $this->created([
                 'message' => __('core::messages.resource.created', ['model' => 'Bank']),
-                'id' => $bank->id,
+                'id' => $bank->getKey(),
             ]);
 
         } catch (Exception $exception) {
