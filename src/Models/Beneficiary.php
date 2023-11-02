@@ -5,11 +5,14 @@ namespace Fintech\Banco\Models;
 use Fintech\Core\Traits\AuditableTrait;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 
-class Beneficiary extends Model
+class Beneficiary extends Model implements HasMedia
 {
     use AuditableTrait;
     use SoftDeletes;
+    use InteractsWithMedia;
 
     /*
     |--------------------------------------------------------------------------
@@ -32,7 +35,13 @@ class Beneficiary extends Model
     | FUNCTIONS
     |--------------------------------------------------------------------------
     */
-
+    public function registerMediaCollections(): void
+    {
+        $this->addMediaCollection('photo')
+            ->acceptsMimeTypes(['image/png', 'image/jpg', 'image/jpeg', 'image/bmp', 'image/svg+xml'])
+            ->singleFile()
+            ->useDisk(config('filesystems.default', 'public'));
+    }
     /*
     |--------------------------------------------------------------------------
     | RELATIONS
