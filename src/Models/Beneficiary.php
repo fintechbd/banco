@@ -11,8 +11,8 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 class Beneficiary extends Model implements HasMedia
 {
     use AuditableTrait;
-    use SoftDeletes;
     use InteractsWithMedia;
+    use SoftDeletes;
 
     /*
     |--------------------------------------------------------------------------

@@ -11,8 +11,8 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 class Bank extends Model implements HasMedia
 {
     use AuditableTrait;
-    use SoftDeletes;
     use InteractsWithMedia;
+    use SoftDeletes;
 
     /*
     |--------------------------------------------------------------------------
