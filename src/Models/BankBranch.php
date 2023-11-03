@@ -38,6 +38,10 @@ class BankBranch extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
+    public function bank()
+    {
+        return $this->belongsTo(config('fintech.banco.bank_model', \Fintech\Banco\Models\Bank::class));
+    }
 
     /*
     |--------------------------------------------------------------------------

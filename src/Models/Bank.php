@@ -53,6 +53,15 @@ class Bank extends Model implements HasMedia
     | RELATIONS
     |--------------------------------------------------------------------------
     */
+    public function branches()
+    {
+        return $this->hasMany(config('fintech.banco.bank_branch_model', \Fintech\Banco\Models\BankBranch::class));
+    }
+
+    public function country()
+    {
+        return $this->hasMany(config('fintech.metadata.country_model', \Fintech\MetaData\Models\Country::class));
+    }
 
     /*
     |--------------------------------------------------------------------------
