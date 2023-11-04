@@ -4,11 +4,10 @@ use Illuminate\Database\Eloquent\Model as MYSQLDBLEBUPAY;
 use Illuminate\Support\Str;
 use MongoDB\Laravel\Eloquent\Model as MONGODB;
 
+use function Pest\Laravel\deleteJson;
 use function Pest\Laravel\getJson;
 use function Pest\Laravel\postJson;
 use function Pest\Laravel\putJson;
-use function Pest\Laravel\deleteJson;
-use function Pest\Laravel\optionsJson;
 
 function createBeneficiaryType(): MYSQLDBLEBUPAY|MONGODB|null
 {
@@ -228,15 +227,15 @@ test('Beneficiary Type update expect status code 200', function () {
         'beneficiary_type_name' => Str::random(20),
         'beneficiary_type_data' => [
             [
-                "user_recipient_type_condition_name" => Str::random(20),
-                "user_recipient_type_condition_field_name" => Str::random(20),
-                "user_recipient_type_condition_field_type" => Str::random(20)
+                'user_recipient_type_condition_name' => Str::random(20),
+                'user_recipient_type_condition_field_name' => Str::random(20),
+                'user_recipient_type_condition_field_type' => Str::random(20),
             ],
             [
-                "user_recipient_type_condition_name" => Str::random(20),
-                "user_recipient_type_condition_field_name" => Str::random(20),
-                "user_recipient_type_condition_field_type" => Str::random(20)
-            ]
+                'user_recipient_type_condition_name' => Str::random(20),
+                'user_recipient_type_condition_field_name' => Str::random(20),
+                'user_recipient_type_condition_field_type' => Str::random(20),
+            ],
         ],
         'enabled' => '1',
     ])->assertStatus(200);
@@ -248,15 +247,15 @@ test('Beneficiary Type update expect message Beneficiary Type updated successful
         'beneficiary_type_name' => Str::random(20),
         'beneficiary_type_data' => [
             [
-                "user_recipient_type_condition_name" => Str::random(20),
-                "user_recipient_type_condition_field_name" => Str::random(20),
-                "user_recipient_type_condition_field_type" => Str::random(20)
+                'user_recipient_type_condition_name' => Str::random(20),
+                'user_recipient_type_condition_field_name' => Str::random(20),
+                'user_recipient_type_condition_field_type' => Str::random(20),
             ],
             [
-                "user_recipient_type_condition_name" => Str::random(20),
-                "user_recipient_type_condition_field_name" => Str::random(20),
-                "user_recipient_type_condition_field_type" => Str::random(20)
-            ]
+                'user_recipient_type_condition_name' => Str::random(20),
+                'user_recipient_type_condition_field_name' => Str::random(20),
+                'user_recipient_type_condition_field_type' => Str::random(20),
+            ],
         ],
         'enabled' => '1',
     ]);
@@ -270,15 +269,15 @@ test('Beneficiary Type update unique validation check expect message The benefic
         'beneficiary_type_name' => $preStoreBeneficiaryType2['beneficiary_type_name'],
         'beneficiary_type_data' => [
             [
-                "user_recipient_type_condition_name" => Str::random(20),
-                "user_recipient_type_condition_field_name" => Str::random(20),
-                "user_recipient_type_condition_field_type" => Str::random(20)
+                'user_recipient_type_condition_name' => Str::random(20),
+                'user_recipient_type_condition_field_name' => Str::random(20),
+                'user_recipient_type_condition_field_type' => Str::random(20),
             ],
             [
-                "user_recipient_type_condition_name" => Str::random(20),
-                "user_recipient_type_condition_field_name" => Str::random(20),
-                "user_recipient_type_condition_field_type" => Str::random(20)
-            ]
+                'user_recipient_type_condition_name' => Str::random(20),
+                'user_recipient_type_condition_field_name' => Str::random(20),
+                'user_recipient_type_condition_field_type' => Str::random(20),
+            ],
         ],
         'enabled' => '1',
     ]);
@@ -292,15 +291,15 @@ test('Beneficiary Type update unique validation check expect message The benefic
         'beneficiary_type_name' => $preStoreBeneficiaryType['beneficiary_type_name'],
         'beneficiary_type_data' => [
             [
-                "user_recipient_type_condition_name" => Str::random(20),
-                "user_recipient_type_condition_field_name" => Str::random(20),
-                "user_recipient_type_condition_field_type" => Str::random(20)
+                'user_recipient_type_condition_name' => Str::random(20),
+                'user_recipient_type_condition_field_name' => Str::random(20),
+                'user_recipient_type_condition_field_type' => Str::random(20),
             ],
             [
-                "user_recipient_type_condition_name" => Str::random(20),
-                "user_recipient_type_condition_field_name" => Str::random(20),
-                "user_recipient_type_condition_field_type" => Str::random(20)
-            ]
+                'user_recipient_type_condition_name' => Str::random(20),
+                'user_recipient_type_condition_field_name' => Str::random(20),
+                'user_recipient_type_condition_field_type' => Str::random(20),
+            ],
         ],
         'enabled' => '1',
     ]);
