@@ -26,7 +26,10 @@ class ImportBeneficiaryTypeRequest extends FormRequest
 
         return [
             'beneficiary_type_name' => ['required', 'string', 'max:255', $uniqueRule],
-            'beneficiary_type_data' => ['nullable', 'array'],
+            'beneficiary_type_data' => ['required', 'array'],
+            'beneficiary_type_data.user_beneficiary_type_condition_name.*' => ['nullable', 'string'],
+            'beneficiary_type_data.user_beneficiary_type_condition_field_name.*' => ['nullable', 'string'],
+            'beneficiary_type_data.user_beneficiary_type_condition_field_type.*' => ['nullable', 'string'],
         ];
     }
 

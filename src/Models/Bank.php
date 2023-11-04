@@ -5,10 +5,13 @@ namespace Fintech\Banco\Models;
 use Fintech\Core\Traits\AuditableTrait;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 
-class Bank extends Model
+class Bank extends Model implements HasMedia
 {
     use AuditableTrait;
+    use InteractsWithMedia;
     use SoftDeletes;
 
     /*
@@ -32,12 +35,33 @@ class Bank extends Model
     | FUNCTIONS
     |--------------------------------------------------------------------------
     */
+    public function registerMediaCollections(): void
+    {
+        $this->addMediaCollection('logo_png')
+            ->acceptsMimeTypes(['image/png'])
+            ->singleFile()
+            ->useDisk(config('filesystems.default', 'public'));
+
+        $this->addMediaCollection('logo_svg')
+            ->acceptsMimeTypes(['image/svg+xml'])
+            ->singleFile()
+            ->useDisk(config('filesystems.default', 'public'));
+    }
 
     /*
     |--------------------------------------------------------------------------
     | RELATIONS
     |--------------------------------------------------------------------------
     */
+    public function branches()
+    {
+        return $this->hasMany(config('fintech.banco.bank_branch_model', \Fintech\Banco\Models\BankBranch::class));
+    }
+
+    public function country()
+    {
+        return $this->hasMany(config('fintech.metadata.country_model', \Fintech\MetaData\Models\Country::class));
+    }
 
     /*
     |--------------------------------------------------------------------------
