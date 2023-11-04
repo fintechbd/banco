@@ -22,7 +22,9 @@ class StoreBankRequest extends FormRequest
      */
     public function rules(): array
     {
-        $uniqueRule = 'unique:'.config('fintech.banco.bank_model', Bank::class).',bank_name';
+        /** @phpstan-ignore-next-line */
+        $bank_id = (int) collect(request()->segments())->last(); //id of the resource
+        $uniqueRule = 'unique:'.config('fintech.banco.bank_model', Bank::class).',bank_name,'.$bank_id.',id,deleted_at,NULL';
 
         return [
             'country_id' => ['required', 'integer'],
@@ -32,7 +34,7 @@ class StoreBankRequest extends FormRequest
             'transaction_type' => ['nullable', 'string', 'max:255'],
             'bank_currency' => ['required', 'string', 'min:3', 'max:3'],
             'bank_data' => ['required', 'array'],
-            'bank_data.bank_image.*' => ['nullable', 'string'],
+            'bank_data.*.bank_image' => ['nullable', 'string'],
         ];
     }
 
