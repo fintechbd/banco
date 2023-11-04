@@ -33,8 +33,9 @@ class ImportBankRequest extends FormRequest
             'bank_category' => ['required', 'string', 'max:255'],
             'transaction_type' => ['nullable', 'string', 'max:255'],
             'bank_currency' => ['required', 'string', 'min:3', 'max:3'],
-            'bank_data' => ['required', 'array'],
-            'bank_data.*.bank_image' => ['nullable', 'string'],
+            'logo_png' => ['nullable', 'string'],
+            'logo_svg' => ['nullable', 'string'],
+            'bank_data' => ['nullable', 'array'],
         ];
     }
 
