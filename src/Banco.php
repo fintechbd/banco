@@ -40,4 +40,6 @@ class Banco
     {
         return app(BeneficiaryService::class);
     }
+
+    //** Crud Service Method Point Do not Remove **//
 }
