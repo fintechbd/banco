@@ -28,7 +28,7 @@ class Branch4Seeder extends Seeder
             0 => [
                 'id' => '3001',
                 'bank_id' => '16',
-                'bank_branch_name' => 'MADANPUR',
+                'name' => 'MADANPUR',
                 'bank_branch_data' => [
                     'routing_no' => '90670974',
                 ],
@@ -37,7 +37,7 @@ class Branch4Seeder extends Seeder
             1 => [
                 'id' => '3002',
                 'bank_id' => '16',
-                'bank_branch_name' => 'NARAYANGANJ',
+                'name' => 'NARAYANGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '90671186',
                 ],
@@ -46,7 +46,7 @@ class Branch4Seeder extends Seeder
             2 => [
                 'id' => '3003',
                 'bank_id' => '16',
-                'bank_branch_name' => 'PAGLA',
+                'name' => 'PAGLA',
                 'bank_branch_data' => [
                     'routing_no' => '90671302',
                 ],
@@ -55,7 +55,7 @@ class Branch4Seeder extends Seeder
             3 => [
                 'id' => '3004',
                 'bank_id' => '16',
-                'bank_branch_name' => 'SHIMRAIL',
+                'name' => 'SHIMRAIL',
                 'bank_branch_data' => [
                     'routing_no' => '90671573',
                 ],
@@ -64,7 +64,7 @@ class Branch4Seeder extends Seeder
             4 => [
                 'id' => '3005',
                 'bank_id' => '16',
-                'bank_branch_name' => 'SONARGAON',
+                'name' => 'SONARGAON',
                 'bank_branch_data' => [
                     'routing_no' => '90671694',
                 ],
@@ -73,7 +73,7 @@ class Branch4Seeder extends Seeder
             5 => [
                 'id' => '3006',
                 'bank_id' => '16',
-                'bank_branch_name' => 'BABURHAT',
+                'name' => 'BABURHAT',
                 'bank_branch_data' => [
                     'routing_no' => '90680106',
                 ],
@@ -82,7 +82,7 @@ class Branch4Seeder extends Seeder
             6 => [
                 'id' => '3007',
                 'bank_id' => '16',
-                'bank_branch_name' => 'MONOHARDI',
+                'name' => 'MONOHARDI',
                 'bank_branch_data' => [
                     'routing_no' => '90680735',
                 ],
@@ -91,7 +91,7 @@ class Branch4Seeder extends Seeder
             7 => [
                 'id' => '3008',
                 'bank_id' => '16',
-                'bank_branch_name' => 'NARSHINGDI',
+                'name' => 'NARSHINGDI',
                 'bank_branch_data' => [
                     'routing_no' => '90680885',
                 ],
@@ -100,7 +100,7 @@ class Branch4Seeder extends Seeder
             8 => [
                 'id' => '3009',
                 'bank_id' => '16',
-                'bank_branch_name' => 'VELA NAGAR',
+                'name' => 'VELA NAGAR',
                 'bank_branch_data' => [
                     'routing_no' => '90681392',
                 ],
@@ -109,7 +109,7 @@ class Branch4Seeder extends Seeder
             9 => [
                 'id' => '3010',
                 'bank_id' => '16',
-                'bank_branch_name' => 'NATORE',
+                'name' => 'NATORE',
                 'bank_branch_data' => [
                     'routing_no' => '90691090',
                 ],
@@ -118,7 +118,7 @@ class Branch4Seeder extends Seeder
             10 => [
                 'id' => '3011',
                 'bank_id' => '16',
-                'bank_branch_name' => 'CHAPAI NAWABGANJ',
+                'name' => 'CHAPAI NAWABGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '90700257',
                 ],
@@ -127,7 +127,7 @@ class Branch4Seeder extends Seeder
             11 => [
                 'id' => '3012',
                 'bank_id' => '16',
-                'bank_branch_name' => 'NETROKONA',
+                'name' => 'NETROKONA',
                 'bank_branch_data' => [
                     'routing_no' => '90720732',
                 ],
@@ -136,7 +136,7 @@ class Branch4Seeder extends Seeder
             12 => [
                 'id' => '3013',
                 'bank_id' => '16',
-                'bank_branch_name' => 'SAYEDPUR',
+                'name' => 'SAYEDPUR',
                 'bank_branch_data' => [
                     'routing_no' => '90730793',
                 ],
@@ -145,7 +145,7 @@ class Branch4Seeder extends Seeder
             13 => [
                 'id' => '3014',
                 'bank_id' => '16',
-                'bank_branch_name' => 'BASHURHAT',
+                'name' => 'BASHURHAT',
                 'bank_branch_data' => [
                     'routing_no' => '90750252',
                 ],
@@ -154,7 +154,7 @@ class Branch4Seeder extends Seeder
             14 => [
                 'id' => '3015',
                 'bank_id' => '16',
-                'bank_branch_name' => 'CHOUMOHANI',
+                'name' => 'CHOUMOHANI',
                 'bank_branch_data' => [
                     'routing_no' => '90750678',
                 ],
@@ -163,7 +163,7 @@ class Branch4Seeder extends Seeder
             15 => [
                 'id' => '3016',
                 'bank_id' => '16',
-                'bank_branch_name' => 'NOAKHALI',
+                'name' => 'NOAKHALI',
                 'bank_branch_data' => [
                     'routing_no' => '90751572',
                 ],
@@ -172,7 +172,7 @@ class Branch4Seeder extends Seeder
             16 => [
                 'id' => '3017',
                 'bank_id' => '16',
-                'bank_branch_name' => 'KASHINATHPUR',
+                'name' => 'KASHINATHPUR',
                 'bank_branch_data' => [
                     'routing_no' => '90761333',
                 ],
@@ -181,7 +181,7 @@ class Branch4Seeder extends Seeder
             17 => [
                 'id' => '3018',
                 'bank_id' => '16',
-                'bank_branch_name' => 'PABNA',
+                'name' => 'PABNA',
                 'bank_branch_data' => [
                     'routing_no' => '90761788',
                 ],
@@ -190,7 +190,7 @@ class Branch4Seeder extends Seeder
             18 => [
                 'id' => '3019',
                 'bank_id' => '16',
-                'bank_branch_name' => 'PANCHAGARH',
+                'name' => 'PANCHAGARH',
                 'bank_branch_data' => [
                     'routing_no' => '90770553',
                 ],
@@ -199,7 +199,7 @@ class Branch4Seeder extends Seeder
             19 => [
                 'id' => '3020',
                 'bank_id' => '16',
-                'bank_branch_name' => 'PATUAKHALI',
+                'name' => 'PATUAKHALI',
                 'bank_branch_data' => [
                     'routing_no' => '90781092',
                 ],
@@ -208,7 +208,7 @@ class Branch4Seeder extends Seeder
             20 => [
                 'id' => '3021',
                 'bank_id' => '16',
-                'bank_branch_name' => 'PIROJPUR',
+                'name' => 'PIROJPUR',
                 'bank_branch_data' => [
                     'routing_no' => '90790762',
                 ],
@@ -217,7 +217,7 @@ class Branch4Seeder extends Seeder
             21 => [
                 'id' => '3022',
                 'bank_id' => '16',
-                'bank_branch_name' => 'RAJSHAHI',
+                'name' => 'RAJSHAHI',
                 'bank_branch_data' => [
                     'routing_no' => '90811933',
                 ],
@@ -226,7 +226,7 @@ class Branch4Seeder extends Seeder
             22 => [
                 'id' => '3023',
                 'bank_id' => '16',
-                'bank_branch_name' => 'RAJBARI',
+                'name' => 'RAJBARI',
                 'bank_branch_data' => [
                     'routing_no' => '90820737',
                 ],
@@ -235,7 +235,7 @@ class Branch4Seeder extends Seeder
             23 => [
                 'id' => '3024',
                 'bank_id' => '16',
-                'bank_branch_name' => 'RANGPUR',
+                'name' => 'RANGPUR',
                 'bank_branch_data' => [
                     'routing_no' => '90851456',
                 ],
@@ -244,7 +244,7 @@ class Branch4Seeder extends Seeder
             24 => [
                 'id' => '3025',
                 'bank_id' => '16',
-                'bank_branch_name' => 'SATKHIRA',
+                'name' => 'SATKHIRA',
                 'bank_branch_data' => [
                     'routing_no' => '90871094',
                 ],
@@ -253,7 +253,7 @@ class Branch4Seeder extends Seeder
             25 => [
                 'id' => '3026',
                 'bank_id' => '16',
-                'bank_branch_name' => 'SERAJGANJ',
+                'name' => 'SERAJGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '90881871',
                 ],
@@ -262,7 +262,7 @@ class Branch4Seeder extends Seeder
             26 => [
                 'id' => '3027',
                 'bank_id' => '16',
-                'bank_branch_name' => 'SHAHJADPUR',
+                'name' => 'SHAHJADPUR',
                 'bank_branch_data' => [
                     'routing_no' => '90881905',
                 ],
@@ -271,7 +271,7 @@ class Branch4Seeder extends Seeder
             27 => [
                 'id' => '3028',
                 'bank_id' => '16',
-                'bank_branch_name' => 'CHHATAK',
+                'name' => 'CHHATAK',
                 'bank_branch_data' => [
                     'routing_no' => '90900228',
                 ],
@@ -280,7 +280,7 @@ class Branch4Seeder extends Seeder
             28 => [
                 'id' => '3029',
                 'bank_id' => '16',
-                'bank_branch_name' => 'GOBINDAGANJ SME',
+                'name' => 'GOBINDAGANJ SME',
                 'bank_branch_data' => [
                     'routing_no' => '90900444',
                 ],
@@ -289,7 +289,7 @@ class Branch4Seeder extends Seeder
             29 => [
                 'id' => '3030',
                 'bank_id' => '16',
-                'bank_branch_name' => 'SUNAMGANJ',
+                'name' => 'SUNAMGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '90901122',
                 ],
@@ -298,7 +298,7 @@ class Branch4Seeder extends Seeder
             30 => [
                 'id' => '3031',
                 'bank_id' => '16',
-                'bank_branch_name' => 'AMBARKHANA',
+                'name' => 'AMBARKHANA',
                 'bank_branch_data' => [
                     'routing_no' => '90910047',
                 ],
@@ -307,7 +307,7 @@ class Branch4Seeder extends Seeder
             31 => [
                 'id' => '3032',
                 'bank_id' => '16',
-                'bank_branch_name' => 'BEANI BAZAR',
+                'name' => 'BEANI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '90910313',
                 ],
@@ -316,7 +316,7 @@ class Branch4Seeder extends Seeder
             32 => [
                 'id' => '3033',
                 'bank_id' => '16',
-                'bank_branch_name' => 'BISHWANATH',
+                'name' => 'BISHWANATH',
                 'bank_branch_data' => [
                     'routing_no' => '90910434',
                 ],
@@ -325,7 +325,7 @@ class Branch4Seeder extends Seeder
             33 => [
                 'id' => '3034',
                 'bank_id' => '16',
-                'bank_branch_name' => 'DHAKA DAKHIN SME',
+                'name' => 'DHAKA DAKHIN SME',
                 'bank_branch_data' => [
                     'routing_no' => '90911309',
                 ],
@@ -334,7 +334,7 @@ class Branch4Seeder extends Seeder
             34 => [
                 'id' => '3035',
                 'bank_id' => '16',
-                'bank_branch_name' => 'GOALA BAZAR',
+                'name' => 'GOALA BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '90911541',
                 ],
@@ -343,7 +343,7 @@ class Branch4Seeder extends Seeder
             35 => [
                 'id' => '3036',
                 'bank_id' => '16',
-                'bank_branch_name' => 'GOLAPGANJ',
+                'name' => 'GOLAPGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '90911604',
                 ],
@@ -352,7 +352,7 @@ class Branch4Seeder extends Seeder
             36 => [
                 'id' => '3037',
                 'bank_id' => '16',
-                'bank_branch_name' => 'SHAHJALAL UPASHSHAR',
+                'name' => 'SHAHJALAL UPASHSHAR',
                 'bank_branch_data' => [
                     'routing_no' => '90913257',
                 ],
@@ -361,7 +361,7 @@ class Branch4Seeder extends Seeder
             37 => [
                 'id' => '3038',
                 'bank_id' => '16',
-                'bank_branch_name' => 'SYLHET',
+                'name' => 'SYLHET',
                 'bank_branch_data' => [
                     'routing_no' => '90913552',
                 ],
@@ -370,7 +370,7 @@ class Branch4Seeder extends Seeder
             38 => [
                 'id' => '3039',
                 'bank_id' => '16',
-                'bank_branch_name' => 'ELENGA',
+                'name' => 'ELENGA',
                 'bank_branch_data' => [
                     'routing_no' => '90930827',
                 ],
@@ -379,7 +379,7 @@ class Branch4Seeder extends Seeder
             39 => [
                 'id' => '3040',
                 'bank_id' => '16',
-                'bank_branch_name' => 'MIRZAPUR',
+                'name' => 'MIRZAPUR',
                 'bank_branch_data' => [
                     'routing_no' => '90931518',
                 ],
@@ -388,7 +388,7 @@ class Branch4Seeder extends Seeder
             40 => [
                 'id' => '3041',
                 'bank_id' => '16',
-                'bank_branch_name' => 'TANGAIL',
+                'name' => 'TANGAIL',
                 'bank_branch_data' => [
                     'routing_no' => '90932296',
                 ],
@@ -397,7 +397,7 @@ class Branch4Seeder extends Seeder
             41 => [
                 'id' => '3042',
                 'bank_id' => '16',
-                'bank_branch_name' => 'THAKURGAON',
+                'name' => 'THAKURGAON',
                 'bank_branch_data' => [
                     'routing_no' => '90940970',
                 ],
@@ -406,7 +406,7 @@ class Branch4Seeder extends Seeder
             42 => [
                 'id' => '3043',
                 'bank_id' => '17',
-                'bank_branch_name' => 'BARISAL',
+                'name' => 'BARISAL',
                 'bank_branch_data' => [
                     'routing_no' => '95060284',
                 ],
@@ -415,7 +415,7 @@ class Branch4Seeder extends Seeder
             43 => [
                 'id' => '3044',
                 'bank_id' => '17',
-                'bank_branch_name' => 'BOGRA',
+                'name' => 'BOGRA',
                 'bank_branch_data' => [
                     'routing_no' => '95100373',
                 ],
@@ -424,7 +424,7 @@ class Branch4Seeder extends Seeder
             44 => [
                 'id' => '3045',
                 'bank_id' => '17',
-                'bank_branch_name' => 'BRAHMANBARIA',
+                'name' => 'BRAHMANBARIA',
                 'bank_branch_data' => [
                     'routing_no' => '95120432',
                 ],
@@ -433,7 +433,7 @@ class Branch4Seeder extends Seeder
             45 => [
                 'id' => '3046',
                 'bank_id' => '17',
-                'bank_branch_name' => 'AGRABAD',
+                'name' => 'AGRABAD',
                 'bank_branch_data' => [
                     'routing_no' => '95150136',
                 ],
@@ -442,7 +442,7 @@ class Branch4Seeder extends Seeder
             46 => [
                 'id' => '3047',
                 'bank_id' => '17',
-                'bank_branch_name' => 'JAMAL KHAN',
+                'name' => 'JAMAL KHAN',
                 'bank_branch_data' => [
                     'routing_no' => '95150178',
                 ],
@@ -451,7 +451,7 @@ class Branch4Seeder extends Seeder
             47 => [
                 'id' => '3048',
                 'bank_id' => '17',
-                'bank_branch_name' => 'BHATIARY',
+                'name' => 'BHATIARY',
                 'bank_branch_data' => [
                     'routing_no' => '95151214',
                 ],
@@ -460,7 +460,7 @@ class Branch4Seeder extends Seeder
             48 => [
                 'id' => '3049',
                 'bank_id' => '17',
-                'bank_branch_name' => 'CHANDGAON',
+                'name' => 'CHANDGAON',
                 'bank_branch_data' => [
                     'routing_no' => '95151485',
                 ],
@@ -469,7 +469,7 @@ class Branch4Seeder extends Seeder
             49 => [
                 'id' => '3050',
                 'bank_id' => '17',
-                'bank_branch_name' => 'C.E.P.Z.',
+                'name' => 'C.E.P.Z.',
                 'bank_branch_data' => [
                     'routing_no' => '95151577',
                 ],
@@ -478,7 +478,7 @@ class Branch4Seeder extends Seeder
             50 => [
                 'id' => '3051',
                 'bank_id' => '17',
-                'bank_branch_name' => 'DOHAZARI',
+                'name' => 'DOHAZARI',
                 'bank_branch_data' => [
                     'routing_no' => '95152563',
                 ],
@@ -487,7 +487,7 @@ class Branch4Seeder extends Seeder
             51 => [
                 'id' => '3052',
                 'bank_id' => '17',
-                'bank_branch_name' => 'HALISHAHAR',
+                'name' => 'HALISHAHAR',
                 'bank_branch_data' => [
                     'routing_no' => '95153162',
                 ],
@@ -496,7 +496,7 @@ class Branch4Seeder extends Seeder
             52 => [
                 'id' => '3053',
                 'bank_id' => '17',
-                'bank_branch_name' => 'HATHAZARI',
+                'name' => 'HATHAZARI',
                 'bank_branch_data' => [
                     'routing_no' => '95153225',
                 ],
@@ -505,7 +505,7 @@ class Branch4Seeder extends Seeder
             53 => [
                 'id' => '3054',
                 'bank_id' => '17',
-                'bank_branch_name' => 'JUBILEE ROAD',
+                'name' => 'JUBILEE ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '95153641',
                 ],
@@ -514,7 +514,7 @@ class Branch4Seeder extends Seeder
             54 => [
                 'id' => '3055',
                 'bank_id' => '17',
-                'bank_branch_name' => 'KHATUNGANJ',
+                'name' => 'KHATUNGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '95154279',
                 ],
@@ -523,7 +523,7 @@ class Branch4Seeder extends Seeder
             55 => [
                 'id' => '3056',
                 'bank_id' => '17',
-                'bank_branch_name' => 'KHULSHI',
+                'name' => 'KHULSHI',
                 'bank_branch_data' => [
                     'routing_no' => '95154361',
                 ],
@@ -532,7 +532,7 @@ class Branch4Seeder extends Seeder
             56 => [
                 'id' => '3057',
                 'bank_id' => '17',
-                'bank_branch_name' => 'LOHA GARA',
+                'name' => 'LOHA GARA',
                 'bank_branch_data' => [
                     'routing_no' => '95154666',
                 ],
@@ -541,7 +541,7 @@ class Branch4Seeder extends Seeder
             57 => [
                 'id' => '3058',
                 'bank_id' => '17',
-                'bank_branch_name' => 'MEHADI BAGH',
+                'name' => 'MEHADI BAGH',
                 'bank_branch_data' => [
                     'routing_no' => '95154961',
                 ],
@@ -550,7 +550,7 @@ class Branch4Seeder extends Seeder
             58 => [
                 'id' => '3059',
                 'bank_id' => '17',
-                'bank_branch_name' => 'MURADPUR',
+                'name' => 'MURADPUR',
                 'bank_branch_data' => [
                     'routing_no' => '95155328',
                 ],
@@ -559,7 +559,7 @@ class Branch4Seeder extends Seeder
             59 => [
                 'id' => '3060',
                 'bank_id' => '17',
-                'bank_branch_name' => 'NAZIR HAT',
+                'name' => 'NAZIR HAT',
                 'bank_branch_data' => [
                     'routing_no' => '95155599',
                 ],
@@ -568,7 +568,7 @@ class Branch4Seeder extends Seeder
             60 => [
                 'id' => '3061',
                 'bank_id' => '17',
-                'bank_branch_name' => 'O.R. NIZAM ROAD',
+                'name' => 'O.R. NIZAM ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '95155807',
                 ],
@@ -577,7 +577,7 @@ class Branch4Seeder extends Seeder
             61 => [
                 'id' => '3062',
                 'bank_id' => '17',
-                'bank_branch_name' => 'PANCHLAISH',
+                'name' => 'PANCHLAISH',
                 'bank_branch_data' => [
                     'routing_no' => '95156048',
                 ],
@@ -586,7 +586,7 @@ class Branch4Seeder extends Seeder
             62 => [
                 'id' => '3063',
                 'bank_id' => '17',
-                'bank_branch_name' => 'RAOZAN',
+                'name' => 'RAOZAN',
                 'bank_branch_data' => [
                     'routing_no' => '95156493',
                 ],
@@ -595,7 +595,7 @@ class Branch4Seeder extends Seeder
             63 => [
                 'id' => '3064',
                 'bank_id' => '17',
-                'bank_branch_name' => 'SIRAJUDDOWLA ROAD',
+                'name' => 'SIRAJUDDOWLA ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '95157368',
                 ],
@@ -604,7 +604,7 @@ class Branch4Seeder extends Seeder
             64 => [
                 'id' => '3065',
                 'bank_id' => '17',
-                'bank_branch_name' => 'STATION ROAD',
+                'name' => 'STATION ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '95157513',
                 ],
@@ -613,7 +613,7 @@ class Branch4Seeder extends Seeder
             65 => [
                 'id' => '3066',
                 'bank_id' => '17',
-                'bank_branch_name' => 'COMILLA SME',
+                'name' => 'COMILLA SME',
                 'bank_branch_data' => [
                     'routing_no' => '95191166',
                 ],
@@ -622,7 +622,7 @@ class Branch4Seeder extends Seeder
             66 => [
                 'id' => '3067',
                 'bank_id' => '17',
-                'bank_branch_name' => 'COXS BAZAR',
+                'name' => 'COXS BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '95220253',
                 ],
@@ -631,7 +631,7 @@ class Branch4Seeder extends Seeder
             67 => [
                 'id' => '3068',
                 'bank_id' => '17',
-                'bank_branch_name' => 'ASHULIA',
+                'name' => 'ASHULIA',
                 'bank_branch_data' => [
                     'routing_no' => '95260226',
                 ],
@@ -640,7 +640,7 @@ class Branch4Seeder extends Seeder
             68 => [
                 'id' => '3069',
                 'bank_id' => '17',
-                'bank_branch_name' => 'JASHIM UDDIN ROAD',
+                'name' => 'JASHIM UDDIN ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '95260271',
                 ],
@@ -649,7 +649,7 @@ class Branch4Seeder extends Seeder
             69 => [
                 'id' => '3070',
                 'bank_id' => '17',
-                'bank_branch_name' => 'BANANI',
+                'name' => 'BANANI',
                 'bank_branch_data' => [
                     'routing_no' => '95260439',
                 ],
@@ -658,7 +658,7 @@ class Branch4Seeder extends Seeder
             70 => [
                 'id' => '3071',
                 'bank_id' => '17',
-                'bank_branch_name' => 'BASHUNDHARA',
+                'name' => 'BASHUNDHARA',
                 'bank_branch_data' => [
                     'routing_no' => '95260550',
                 ],
@@ -667,7 +667,7 @@ class Branch4Seeder extends Seeder
             71 => [
                 'id' => '3072',
                 'bank_id' => '17',
-                'bank_branch_name' => 'BONOSREE',
+                'name' => 'BONOSREE',
                 'bank_branch_data' => [
                     'routing_no' => '95260721',
                 ],
@@ -676,7 +676,7 @@ class Branch4Seeder extends Seeder
             72 => [
                 'id' => '3073',
                 'bank_id' => '17',
-                'bank_branch_name' => 'DAKSHIN KHAN',
+                'name' => 'DAKSHIN KHAN',
                 'bank_branch_data' => [
                     'routing_no' => '95260918',
                 ],
@@ -685,7 +685,7 @@ class Branch4Seeder extends Seeder
             73 => [
                 'id' => '3074',
                 'bank_id' => '17',
-                'bank_branch_name' => 'DEPZ',
+                'name' => 'DEPZ',
                 'bank_branch_data' => [
                     'routing_no' => '95261096',
                 ],
@@ -694,7 +694,7 @@ class Branch4Seeder extends Seeder
             74 => [
                 'id' => '3075',
                 'bank_id' => '17',
-                'bank_branch_name' => 'DHANMONDI',
+                'name' => 'DHANMONDI',
                 'bank_branch_data' => [
                     'routing_no' => '95261188',
                 ],
@@ -703,7 +703,7 @@ class Branch4Seeder extends Seeder
             75 => [
                 'id' => '3076',
                 'bank_id' => '17',
-                'bank_branch_name' => 'GULSHAN',
+                'name' => 'GULSHAN',
                 'bank_branch_data' => [
                     'routing_no' => '95261720',
                 ],
@@ -712,7 +712,7 @@ class Branch4Seeder extends Seeder
             76 => [
                 'id' => '3077',
                 'bank_id' => '17',
-                'bank_branch_name' => 'GULSHAN AVENUE',
+                'name' => 'GULSHAN AVENUE',
                 'bank_branch_data' => [
                     'routing_no' => '95261733',
                 ],
@@ -721,7 +721,7 @@ class Branch4Seeder extends Seeder
             77 => [
                 'id' => '3078',
                 'bank_id' => '17',
-                'bank_branch_name' => 'GULSHAN NORTH',
+                'name' => 'GULSHAN NORTH',
                 'bank_branch_data' => [
                     'routing_no' => '95261904',
                 ],
@@ -730,7 +730,7 @@ class Branch4Seeder extends Seeder
             78 => [
                 'id' => '3079',
                 'bank_id' => '17',
-                'bank_branch_name' => 'MIRPUR',
+                'name' => 'MIRPUR',
                 'bank_branch_data' => [
                     'routing_no' => '95262987',
                 ],
@@ -739,7 +739,7 @@ class Branch4Seeder extends Seeder
             79 => [
                 'id' => '3080',
                 'bank_id' => '17',
-                'bank_branch_name' => 'MIRPUR DAR-US-SALM ROAD',
+                'name' => 'MIRPUR DAR-US-SALM ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '95263007',
                 ],
@@ -748,7 +748,7 @@ class Branch4Seeder extends Seeder
             80 => [
                 'id' => '3081',
                 'bank_id' => '17',
-                'bank_branch_name' => 'PRAGATI SARANI',
+                'name' => 'PRAGATI SARANI',
                 'bank_branch_data' => [
                     'routing_no' => '95263702',
                 ],
@@ -757,7 +757,7 @@ class Branch4Seeder extends Seeder
             81 => [
                 'id' => '3082',
                 'bank_id' => '17',
-                'bank_branch_name' => 'SATMASJID ROAD',
+                'name' => 'SATMASJID ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '95264035',
                 ],
@@ -766,7 +766,7 @@ class Branch4Seeder extends Seeder
             82 => [
                 'id' => '3083',
                 'bank_id' => '17',
-                'bank_branch_name' => 'SAVAR',
+                'name' => 'SAVAR',
                 'bank_branch_data' => [
                     'routing_no' => '95264093',
                 ],
@@ -775,7 +775,7 @@ class Branch4Seeder extends Seeder
             83 => [
                 'id' => '3084',
                 'bank_id' => '17',
-                'bank_branch_name' => 'SHYAMALI',
+                'name' => 'SHYAMALI',
                 'bank_branch_data' => [
                     'routing_no' => '95264301',
                 ],
@@ -784,7 +784,7 @@ class Branch4Seeder extends Seeder
             84 => [
                 'id' => '3085',
                 'bank_id' => '17',
-                'bank_branch_name' => 'UTTARA',
+                'name' => 'UTTARA',
                 'bank_branch_data' => [
                     'routing_no' => '95264635',
                 ],
@@ -793,7 +793,7 @@ class Branch4Seeder extends Seeder
             85 => [
                 'id' => '3086',
                 'bank_id' => '17',
-                'bank_branch_name' => 'UTTARA MODEL TOWN',
+                'name' => 'UTTARA MODEL TOWN',
                 'bank_branch_data' => [
                     'routing_no' => '95264693',
                 ],
@@ -802,7 +802,7 @@ class Branch4Seeder extends Seeder
             86 => [
                 'id' => '3087',
                 'bank_id' => '17',
-                'bank_branch_name' => 'TRUNCATION POINT',
+                'name' => 'TRUNCATION POINT',
                 'bank_branch_data' => [
                     'routing_no' => '95270003',
                 ],
@@ -811,7 +811,7 @@ class Branch4Seeder extends Seeder
             87 => [
                 'id' => '3088',
                 'bank_id' => '17',
-                'bank_branch_name' => 'AZIMPUR',
+                'name' => 'AZIMPUR',
                 'bank_branch_data' => [
                     'routing_no' => '95270379',
                 ],
@@ -820,7 +820,7 @@ class Branch4Seeder extends Seeder
             88 => [
                 'id' => '3089',
                 'bank_id' => '17',
-                'bank_branch_name' => 'CHAWK MOGULTULY',
+                'name' => 'CHAWK MOGULTULY',
                 'bank_branch_data' => [
                     'routing_no' => '95271307',
                 ],
@@ -829,7 +829,7 @@ class Branch4Seeder extends Seeder
             89 => [
                 'id' => '3090',
                 'bank_id' => '17',
-                'bank_branch_name' => 'DOHAR',
+                'name' => 'DOHAR',
                 'bank_branch_data' => [
                     'routing_no' => '95272056',
                 ],
@@ -838,7 +838,7 @@ class Branch4Seeder extends Seeder
             90 => [
                 'id' => '3091',
                 'bank_id' => '17',
-                'bank_branch_name' => 'ENGLISH ROAD',
+                'name' => 'ENGLISH ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '95272148',
                 ],
@@ -847,7 +847,7 @@ class Branch4Seeder extends Seeder
             91 => [
                 'id' => '3092',
                 'bank_id' => '17',
-                'bank_branch_name' => 'KERANIGANJ',
+                'name' => 'KERANIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '95273642',
                 ],
@@ -856,7 +856,7 @@ class Branch4Seeder extends Seeder
             92 => [
                 'id' => '3093',
                 'bank_id' => '17',
-                'bank_branch_name' => 'KERANIGANJ SME',
+                'name' => 'KERANIGANJ SME',
                 'bank_branch_data' => [
                     'routing_no' => '95273655',
                 ],
@@ -865,7 +865,7 @@ class Branch4Seeder extends Seeder
             93 => [
                 'id' => '3094',
                 'bank_id' => '17',
-                'bank_branch_name' => 'KHILGAON',
+                'name' => 'KHILGAON',
                 'bank_branch_data' => [
                     'routing_no' => '95273671',
                 ],
@@ -874,7 +874,7 @@ class Branch4Seeder extends Seeder
             94 => [
                 'id' => '3095',
                 'bank_id' => '17',
-                'bank_branch_name' => 'MOGHBAZAR',
+                'name' => 'MOGHBAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '95274188',
                 ],
@@ -883,7 +883,7 @@ class Branch4Seeder extends Seeder
             95 => [
                 'id' => '3096',
                 'bank_id' => '17',
-                'bank_branch_name' => 'MOTIJHEEL',
+                'name' => 'MOTIJHEEL',
                 'bank_branch_data' => [
                     'routing_no' => '95274241',
                 ],
@@ -892,7 +892,7 @@ class Branch4Seeder extends Seeder
             96 => [
                 'id' => '3097',
                 'bank_id' => '17',
-                'bank_branch_name' => 'NAWABGANJ',
+                'name' => 'NAWABGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '95274696',
                 ],
@@ -901,7 +901,7 @@ class Branch4Seeder extends Seeder
             97 => [
                 'id' => '3098',
                 'bank_id' => '17',
-                'bank_branch_name' => 'PRINCIPAL',
+                'name' => 'PRINCIPAL',
                 'bank_branch_data' => [
                     'routing_no' => '95275358',
                 ],
@@ -910,7 +910,7 @@ class Branch4Seeder extends Seeder
             98 => [
                 'id' => '3099',
                 'bank_id' => '17',
-                'bank_branch_name' => 'SHANTINAGAR',
+                'name' => 'SHANTINAGAR',
                 'bank_branch_data' => [
                     'routing_no' => '95276344',
                 ],
@@ -919,7 +919,7 @@ class Branch4Seeder extends Seeder
             99 => [
                 'id' => '3100',
                 'bank_id' => '17',
-                'bank_branch_name' => 'SONARGAON ROAD',
+                'name' => 'SONARGAON ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '95276586',
                 ],
@@ -928,7 +928,7 @@ class Branch4Seeder extends Seeder
             100 => [
                 'id' => '3101',
                 'bank_id' => '17',
-                'bank_branch_name' => 'WARI',
+                'name' => 'WARI',
                 'bank_branch_data' => [
                     'routing_no' => '95277006',
                 ],
@@ -937,7 +937,7 @@ class Branch4Seeder extends Seeder
             101 => [
                 'id' => '3102',
                 'bank_id' => '17',
-                'bank_branch_name' => 'FARIDPUR',
+                'name' => 'FARIDPUR',
                 'bank_branch_data' => [
                     'routing_no' => '95290520',
                 ],
@@ -946,7 +946,7 @@ class Branch4Seeder extends Seeder
             102 => [
                 'id' => '3103',
                 'bank_id' => '17',
-                'bank_branch_name' => 'FENI SME',
+                'name' => 'FENI SME',
                 'bank_branch_data' => [
                     'routing_no' => '95300531',
                 ],
@@ -955,7 +955,7 @@ class Branch4Seeder extends Seeder
             103 => [
                 'id' => '3104',
                 'bank_id' => '17',
-                'bank_branch_name' => 'BOARD BAZAR',
+                'name' => 'BOARD BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '95330222',
                 ],
@@ -964,7 +964,7 @@ class Branch4Seeder extends Seeder
             104 => [
                 'id' => '3105',
                 'bank_id' => '17',
-                'bank_branch_name' => 'MAWNA',
+                'name' => 'MAWNA',
                 'bank_branch_data' => [
                     'routing_no' => '95331005',
                 ],
@@ -973,7 +973,7 @@ class Branch4Seeder extends Seeder
             105 => [
                 'id' => '3106',
                 'bank_id' => '17',
-                'bank_branch_name' => 'JESSORE',
+                'name' => 'JESSORE',
                 'bank_branch_data' => [
                     'routing_no' => '95410942',
                 ],
@@ -982,7 +982,7 @@ class Branch4Seeder extends Seeder
             106 => [
                 'id' => '3107',
                 'bank_id' => '17',
-                'bank_branch_name' => 'FULBARI GATE',
+                'name' => 'FULBARI GATE',
                 'bank_branch_data' => [
                     'routing_no' => '95470858',
                 ],
@@ -991,7 +991,7 @@ class Branch4Seeder extends Seeder
             107 => [
                 'id' => '3108',
                 'bank_id' => '17',
-                'bank_branch_name' => 'KHULNA',
+                'name' => 'KHULNA',
                 'bank_branch_data' => [
                     'routing_no' => '95471549',
                 ],
@@ -1000,7 +1000,7 @@ class Branch4Seeder extends Seeder
             108 => [
                 'id' => '3109',
                 'bank_id' => '17',
-                'bank_branch_name' => 'BHAIRAB SME',
+                'name' => 'BHAIRAB SME',
                 'bank_branch_data' => [
                     'routing_no' => '95480206',
                 ],
@@ -1009,7 +1009,7 @@ class Branch4Seeder extends Seeder
             109 => [
                 'id' => '3110',
                 'bank_id' => '17',
-                'bank_branch_name' => 'MOULAVI BAZAR',
+                'name' => 'MOULAVI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '95581189',
                 ],
@@ -1018,7 +1018,7 @@ class Branch4Seeder extends Seeder
             110 => [
                 'id' => '3111',
                 'bank_id' => '17',
-                'bank_branch_name' => 'MYMENSINGH SME',
+                'name' => 'MYMENSINGH SME',
                 'bank_branch_data' => [
                     'routing_no' => '95611770',
                 ],
@@ -1027,7 +1027,7 @@ class Branch4Seeder extends Seeder
             111 => [
                 'id' => '3112',
                 'bank_id' => '17',
-                'bank_branch_name' => 'BHULTA',
+                'name' => 'BHULTA',
                 'bank_branch_data' => [
                     'routing_no' => '95670229',
                 ],
@@ -1036,7 +1036,7 @@ class Branch4Seeder extends Seeder
             112 => [
                 'id' => '3113',
                 'bank_id' => '17',
-                'bank_branch_name' => 'NARAYANGANJ',
+                'name' => 'NARAYANGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '95671181',
                 ],
@@ -1045,7 +1045,7 @@ class Branch4Seeder extends Seeder
             113 => [
                 'id' => '3114',
                 'bank_id' => '17',
-                'bank_branch_name' => 'NARAYANGONJ SME',
+                'name' => 'NARAYANGONJ SME',
                 'bank_branch_data' => [
                     'routing_no' => '95671202',
                 ],
@@ -1054,7 +1054,7 @@ class Branch4Seeder extends Seeder
             114 => [
                 'id' => '3115',
                 'bank_id' => '17',
-                'bank_branch_name' => 'PANCHABATI',
+                'name' => 'PANCHABATI',
                 'bank_branch_data' => [
                     'routing_no' => '95671381',
                 ],
@@ -1063,7 +1063,7 @@ class Branch4Seeder extends Seeder
             115 => [
                 'id' => '3116',
                 'bank_id' => '17',
-                'bank_branch_name' => 'SONARGAON',
+                'name' => 'SONARGAON',
                 'bank_branch_data' => [
                     'routing_no' => '95671699',
                 ],
@@ -1072,7 +1072,7 @@ class Branch4Seeder extends Seeder
             116 => [
                 'id' => '3117',
                 'bank_id' => '17',
-                'bank_branch_name' => 'MADHABDI SME',
+                'name' => 'MADHABDI SME',
                 'bank_branch_data' => [
                     'routing_no' => '95680680',
                 ],
@@ -1081,7 +1081,7 @@ class Branch4Seeder extends Seeder
             117 => [
                 'id' => '3118',
                 'bank_id' => '17',
-                'bank_branch_name' => 'MAIJDEE',
+                'name' => 'MAIJDEE',
                 'bank_branch_data' => [
                     'routing_no' => '95750060',
                 ],
@@ -1090,7 +1090,7 @@ class Branch4Seeder extends Seeder
             118 => [
                 'id' => '3119',
                 'bank_id' => '17',
-                'bank_branch_name' => 'CHOUMOHANI',
+                'name' => 'CHOUMOHANI',
                 'bank_branch_data' => [
                     'routing_no' => '95750673',
                 ],
@@ -1099,7 +1099,7 @@ class Branch4Seeder extends Seeder
             119 => [
                 'id' => '3120',
                 'bank_id' => '17',
-                'bank_branch_name' => 'RAJSHAHI',
+                'name' => 'RAJSHAHI',
                 'bank_branch_data' => [
                     'routing_no' => '95811938',
                 ],
@@ -1108,7 +1108,7 @@ class Branch4Seeder extends Seeder
             120 => [
                 'id' => '3121',
                 'bank_id' => '17',
-                'bank_branch_name' => 'RANGPUR',
+                'name' => 'RANGPUR',
                 'bank_branch_data' => [
                     'routing_no' => '95851451',
                 ],
@@ -1117,7 +1117,7 @@ class Branch4Seeder extends Seeder
             121 => [
                 'id' => '3122',
                 'bank_id' => '17',
-                'bank_branch_name' => 'BISHWANATH',
+                'name' => 'BISHWANATH',
                 'bank_branch_data' => [
                     'routing_no' => '95910439',
                 ],
@@ -1126,7 +1126,7 @@ class Branch4Seeder extends Seeder
             122 => [
                 'id' => '3123',
                 'bank_id' => '17',
-                'bank_branch_name' => 'CHOWHATTA',
+                'name' => 'CHOWHATTA',
                 'bank_branch_data' => [
                     'routing_no' => '95910855',
                 ],
@@ -1135,7 +1135,7 @@ class Branch4Seeder extends Seeder
             123 => [
                 'id' => '3124',
                 'bank_id' => '17',
-                'bank_branch_name' => 'FENCHUGANJ',
+                'name' => 'FENCHUGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '95911362',
                 ],
@@ -1144,7 +1144,7 @@ class Branch4Seeder extends Seeder
             124 => [
                 'id' => '3125',
                 'bank_id' => '17',
-                'bank_branch_name' => 'SYLHET UPASHAHAR',
+                'name' => 'SYLHET UPASHAHAR',
                 'bank_branch_data' => [
                     'routing_no' => '95913731',
                 ],
@@ -1153,7 +1153,7 @@ class Branch4Seeder extends Seeder
             125 => [
                 'id' => '3126',
                 'bank_id' => '17',
-                'bank_branch_name' => 'TANGAIL',
+                'name' => 'TANGAIL',
                 'bank_branch_data' => [
                     'routing_no' => '95932291',
                 ],
@@ -1162,7 +1162,7 @@ class Branch4Seeder extends Seeder
             126 => [
                 'id' => '3127',
                 'bank_id' => '18',
-                'bank_branch_name' => 'BARISAL',
+                'name' => 'BARISAL',
                 'bank_branch_data' => [
                     'routing_no' => '100060287',
                 ],
@@ -1171,7 +1171,7 @@ class Branch4Seeder extends Seeder
             127 => [
                 'id' => '3128',
                 'bank_id' => '18',
-                'bank_branch_name' => 'BOGRA',
+                'name' => 'BOGRA',
                 'bank_branch_data' => [
                     'routing_no' => '100100376',
                 ],
@@ -1180,7 +1180,7 @@ class Branch4Seeder extends Seeder
             128 => [
                 'id' => '3129',
                 'bank_id' => '18',
-                'bank_branch_name' => 'SARIAKANDI',
+                'name' => 'SARIAKANDI',
                 'bank_branch_data' => [
                     'routing_no' => '100102479',
                 ],
@@ -1189,7 +1189,7 @@ class Branch4Seeder extends Seeder
             129 => [
                 'id' => '3130',
                 'bank_id' => '18',
-                'bank_branch_name' => 'ASHUGANJ',
+                'name' => 'ASHUGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '100120101',
                 ],
@@ -1198,7 +1198,7 @@ class Branch4Seeder extends Seeder
             130 => [
                 'id' => '3131',
                 'bank_id' => '18',
-                'bank_branch_name' => 'NARAYANPUR',
+                'name' => 'NARAYANPUR',
                 'bank_branch_data' => [
                     'routing_no' => '100131453',
                 ],
@@ -1207,7 +1207,7 @@ class Branch4Seeder extends Seeder
             131 => [
                 'id' => '3132',
                 'bank_id' => '18',
-                'bank_branch_name' => 'THAKUR BAZAR SME',
+                'name' => 'THAKUR BAZAR SME',
                 'bank_branch_data' => [
                     'routing_no' => '100132344',
                 ],
@@ -1216,7 +1216,7 @@ class Branch4Seeder extends Seeder
             132 => [
                 'id' => '3133',
                 'bank_id' => '18',
-                'bank_branch_name' => 'AGRABAD',
+                'name' => 'AGRABAD',
                 'bank_branch_data' => [
                     'routing_no' => '100150139',
                 ],
@@ -1225,7 +1225,7 @@ class Branch4Seeder extends Seeder
             133 => [
                 'id' => '3134',
                 'bank_id' => '18',
-                'bank_branch_name' => 'RAOZAN PAHARTALI',
+                'name' => 'RAOZAN PAHARTALI',
                 'bank_branch_data' => [
                     'routing_no' => '100150500',
                 ],
@@ -1234,7 +1234,7 @@ class Branch4Seeder extends Seeder
             134 => [
                 'id' => '3135',
                 'bank_id' => '18',
-                'bank_branch_name' => 'BAHADDAR HAT',
+                'name' => 'BAHADDAR HAT',
                 'bank_branch_data' => [
                     'routing_no' => '100150797',
                 ],
@@ -1243,7 +1243,7 @@ class Branch4Seeder extends Seeder
             135 => [
                 'id' => '3136',
                 'bank_id' => '18',
-                'bank_branch_name' => 'C.D.A. AVENUE',
+                'name' => 'C.D.A. AVENUE',
                 'bank_branch_data' => [
                     'routing_no' => '100151488',
                 ],
@@ -1252,7 +1252,7 @@ class Branch4Seeder extends Seeder
             136 => [
                 'id' => '3137',
                 'bank_id' => '18',
-                'bank_branch_name' => 'SHAIKH MUJIB ROAD',
+                'name' => 'SHAIKH MUJIB ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '100152445',
                 ],
@@ -1261,7 +1261,7 @@ class Branch4Seeder extends Seeder
             137 => [
                 'id' => '3138',
                 'bank_id' => '18',
-                'bank_branch_name' => 'DOHAZARI',
+                'name' => 'DOHAZARI',
                 'bank_branch_data' => [
                     'routing_no' => '100152566',
                 ],
@@ -1270,7 +1270,7 @@ class Branch4Seeder extends Seeder
             138 => [
                 'id' => '3139',
                 'bank_id' => '18',
-                'bank_branch_name' => 'HALISHAHAR',
+                'name' => 'HALISHAHAR',
                 'bank_branch_data' => [
                     'routing_no' => '100153165',
                 ],
@@ -1279,7 +1279,7 @@ class Branch4Seeder extends Seeder
             139 => [
                 'id' => '3140',
                 'bank_id' => '18',
-                'bank_branch_name' => 'JUBILEE ROAD',
+                'name' => 'JUBILEE ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '100153644',
                 ],
@@ -1288,7 +1288,7 @@ class Branch4Seeder extends Seeder
             140 => [
                 'id' => '3141',
                 'bank_id' => '18',
-                'bank_branch_name' => 'KHATUNGANJ',
+                'name' => 'KHATUNGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '100154272',
                 ],
@@ -1297,7 +1297,7 @@ class Branch4Seeder extends Seeder
             141 => [
                 'id' => '3142',
                 'bank_id' => '18',
-                'bank_branch_name' => 'KHULSHI',
+                'name' => 'KHULSHI',
                 'bank_branch_data' => [
                     'routing_no' => '100154364',
                 ],
@@ -1306,7 +1306,7 @@ class Branch4Seeder extends Seeder
             142 => [
                 'id' => '3143',
                 'bank_id' => '18',
-                'bank_branch_name' => 'NAZIR HAT',
+                'name' => 'NAZIR HAT',
                 'bank_branch_data' => [
                     'routing_no' => '100155592',
                 ],
@@ -1315,7 +1315,7 @@ class Branch4Seeder extends Seeder
             143 => [
                 'id' => '3144',
                 'bank_id' => '18',
-                'bank_branch_name' => 'PAHARTALI',
+                'name' => 'PAHARTALI',
                 'bank_branch_data' => [
                     'routing_no' => '100155921',
                 ],
@@ -1324,7 +1324,7 @@ class Branch4Seeder extends Seeder
             144 => [
                 'id' => '3145',
                 'bank_id' => '18',
-                'bank_branch_name' => 'PANCHLAISH',
+                'name' => 'PANCHLAISH',
                 'bank_branch_data' => [
                     'routing_no' => '100156041',
                 ],
@@ -1333,7 +1333,7 @@ class Branch4Seeder extends Seeder
             145 => [
                 'id' => '3146',
                 'bank_id' => '18',
-                'bank_branch_name' => 'SANDWIP',
+                'name' => 'SANDWIP',
                 'bank_branch_data' => [
                     'routing_no' => '100156917',
                 ],
@@ -1342,7 +1342,7 @@ class Branch4Seeder extends Seeder
             146 => [
                 'id' => '3147',
                 'bank_id' => '18',
-                'bank_branch_name' => 'SITAKUNDA',
+                'name' => 'SITAKUNDA',
                 'bank_branch_data' => [
                     'routing_no' => '100157390',
                 ],
@@ -1351,7 +1351,7 @@ class Branch4Seeder extends Seeder
             147 => [
                 'id' => '3148',
                 'bank_id' => '18',
-                'bank_branch_name' => 'BAGMARA',
+                'name' => 'BAGMARA',
                 'bank_branch_data' => [
                     'routing_no' => '100190173',
                 ],
@@ -1360,7 +1360,7 @@ class Branch4Seeder extends Seeder
             148 => [
                 'id' => '3149',
                 'bank_id' => '18',
-                'bank_branch_name' => 'DOLLAI NAWABPUR',
+                'name' => 'DOLLAI NAWABPUR',
                 'bank_branch_data' => [
                     'routing_no' => '100190331',
                 ],
@@ -1369,7 +1369,7 @@ class Branch4Seeder extends Seeder
             149 => [
                 'id' => '3150',
                 'bank_id' => '18',
-                'bank_branch_name' => 'RAJAPUR',
+                'name' => 'RAJAPUR',
                 'bank_branch_data' => [
                     'routing_no' => '100190449',
                 ],
@@ -1378,7 +1378,7 @@ class Branch4Seeder extends Seeder
             150 => [
                 'id' => '3151',
                 'bank_id' => '18',
-                'bank_branch_name' => 'COMILLA',
+                'name' => 'COMILLA',
                 'bank_branch_data' => [
                     'routing_no' => '100191156',
                 ],
@@ -1387,7 +1387,7 @@ class Branch4Seeder extends Seeder
             151 => [
                 'id' => '3152',
                 'bank_id' => '18',
-                'bank_branch_name' => 'GOURIPUR',
+                'name' => 'GOURIPUR',
                 'bank_branch_data' => [
                     'routing_no' => '100192113',
                 ],
@@ -1396,7 +1396,7 @@ class Branch4Seeder extends Seeder
             152 => [
                 'id' => '3153',
                 'bank_id' => '18',
-                'bank_branch_name' => 'LAKSAM',
+                'name' => 'LAKSAM',
                 'bank_branch_data' => [
                     'routing_no' => '100192713',
                 ],
@@ -1405,7 +1405,7 @@ class Branch4Seeder extends Seeder
             153 => [
                 'id' => '3154',
                 'bank_id' => '18',
-                'bank_branch_name' => 'MUDAFARGANJ',
+                'name' => 'MUDAFARGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '100193138',
                 ],
@@ -1414,7 +1414,7 @@ class Branch4Seeder extends Seeder
             154 => [
                 'id' => '3155',
                 'bank_id' => '18',
-                'bank_branch_name' => 'COXS BAZAR',
+                'name' => 'COXS BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '100220256',
                 ],
@@ -1423,7 +1423,7 @@ class Branch4Seeder extends Seeder
             155 => [
                 'id' => '3156',
                 'bank_id' => '18',
-                'bank_branch_name' => 'GARIB-E-NEWAZ',
+                'name' => 'GARIB-E-NEWAZ',
                 'bank_branch_data' => [
                     'routing_no' => '100260111',
                 ],
@@ -1432,7 +1432,7 @@ class Branch4Seeder extends Seeder
             156 => [
                 'id' => '3157',
                 'bank_id' => '18',
-                'bank_branch_name' => 'ASHULIA',
+                'name' => 'ASHULIA',
                 'bank_branch_data' => [
                     'routing_no' => '100260229',
                 ],
@@ -1441,7 +1441,7 @@ class Branch4Seeder extends Seeder
             157 => [
                 'id' => '3158',
                 'bank_id' => '18',
-                'bank_branch_name' => 'BANANI',
+                'name' => 'BANANI',
                 'bank_branch_data' => [
                     'routing_no' => '100260432',
                 ],
@@ -1450,7 +1450,7 @@ class Branch4Seeder extends Seeder
             158 => [
                 'id' => '3159',
                 'bank_id' => '18',
-                'bank_branch_name' => 'BASHUNDHARA ROAD',
+                'name' => 'BASHUNDHARA ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '100260616',
                 ],
@@ -1459,7 +1459,7 @@ class Branch4Seeder extends Seeder
             159 => [
                 'id' => '3160',
                 'bank_id' => '18',
-                'bank_branch_name' => 'MOHILA',
+                'name' => 'MOHILA',
                 'bank_branch_data' => [
                     'routing_no' => '100260661',
                 ],
@@ -1468,7 +1468,7 @@ class Branch4Seeder extends Seeder
             160 => [
                 'id' => '3161',
                 'bank_id' => '18',
-                'bank_branch_name' => 'DHANMONDI',
+                'name' => 'DHANMONDI',
                 'bank_branch_data' => [
                     'routing_no' => '100261181',
                 ],
@@ -1477,7 +1477,7 @@ class Branch4Seeder extends Seeder
             161 => [
                 'id' => '3162',
                 'bank_id' => '18',
-                'bank_branch_name' => 'ELEPHANT ROAD',
+                'name' => 'ELEPHANT ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '100261336',
                 ],
@@ -1486,7 +1486,7 @@ class Branch4Seeder extends Seeder
             162 => [
                 'id' => '3163',
                 'bank_id' => '18',
-                'bank_branch_name' => 'GULSHAN',
+                'name' => 'GULSHAN',
                 'bank_branch_data' => [
                     'routing_no' => '100261723',
                 ],
@@ -1495,7 +1495,7 @@ class Branch4Seeder extends Seeder
             163 => [
                 'id' => '3164',
                 'bank_id' => '18',
-                'bank_branch_name' => 'HEMAYET PUR',
+                'name' => 'HEMAYET PUR',
                 'bank_branch_data' => [
                     'routing_no' => '100262056',
                 ],
@@ -1504,7 +1504,7 @@ class Branch4Seeder extends Seeder
             164 => [
                 'id' => '3165',
                 'bank_id' => '18',
-                'bank_branch_name' => 'KARWAN BAZAR',
+                'name' => 'KARWAN BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '100262535',
                 ],
@@ -1513,7 +1513,7 @@ class Branch4Seeder extends Seeder
             165 => [
                 'id' => '3166',
                 'bank_id' => '18',
-                'bank_branch_name' => 'MIRPUR',
+                'name' => 'MIRPUR',
                 'bank_branch_data' => [
                     'routing_no' => '100262980',
                 ],
@@ -1522,7 +1522,7 @@ class Branch4Seeder extends Seeder
             166 => [
                 'id' => '3167',
                 'bank_id' => '18',
-                'bank_branch_name' => 'NAYARHAT',
+                'name' => 'NAYARHAT',
                 'bank_branch_data' => [
                     'routing_no' => '100263468',
                 ],
@@ -1531,7 +1531,7 @@ class Branch4Seeder extends Seeder
             167 => [
                 'id' => '3168',
                 'bank_id' => '18',
-                'bank_branch_name' => 'PANTHA PATH',
+                'name' => 'PANTHA PATH',
                 'bank_branch_data' => [
                     'routing_no' => '100263613',
                 ],
@@ -1540,7 +1540,7 @@ class Branch4Seeder extends Seeder
             168 => [
                 'id' => '3169',
                 'bank_id' => '18',
-                'bank_branch_name' => 'RING ROAD',
+                'name' => 'RING ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '100263976',
                 ],
@@ -1549,7 +1549,7 @@ class Branch4Seeder extends Seeder
             169 => [
                 'id' => '3170',
                 'bank_id' => '18',
-                'bank_branch_name' => 'SATARKUL',
+                'name' => 'SATARKUL',
                 'bank_branch_data' => [
                     'routing_no' => '100264025',
                 ],
@@ -1558,7 +1558,7 @@ class Branch4Seeder extends Seeder
             170 => [
                 'id' => '3171',
                 'bank_id' => '18',
-                'bank_branch_name' => 'SATMASJID ROAD',
+                'name' => 'SATMASJID ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '100264038',
                 ],
@@ -1567,7 +1567,7 @@ class Branch4Seeder extends Seeder
             171 => [
                 'id' => '3172',
                 'bank_id' => '18',
-                'bank_branch_name' => 'SAVAR',
+                'name' => 'SAVAR',
                 'bank_branch_data' => [
                     'routing_no' => '100264096',
                 ],
@@ -1576,7 +1576,7 @@ class Branch4Seeder extends Seeder
             172 => [
                 'id' => '3173',
                 'bank_id' => '18',
-                'bank_branch_name' => 'UTTARA',
+                'name' => 'UTTARA',
                 'bank_branch_data' => [
                     'routing_no' => '100264638',
                 ],
@@ -1585,7 +1585,7 @@ class Branch4Seeder extends Seeder
             173 => [
                 'id' => '3174',
                 'bank_id' => '18',
-                'bank_branch_name' => 'TRUNCATION POINT',
+                'name' => 'TRUNCATION POINT',
                 'bank_branch_data' => [
                     'routing_no' => '100270006',
                 ],
@@ -1594,7 +1594,7 @@ class Branch4Seeder extends Seeder
             174 => [
                 'id' => '3175',
                 'bank_id' => '18',
-                'bank_branch_name' => 'RAYER BAZAR',
+                'name' => 'RAYER BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '100270419',
                 ],
@@ -1603,7 +1603,7 @@ class Branch4Seeder extends Seeder
             175 => [
                 'id' => '3176',
                 'bank_id' => '18',
-                'bank_branch_name' => 'DANIA',
+                'name' => 'DANIA',
                 'bank_branch_data' => [
                     'routing_no' => '100271421',
                 ],
@@ -1612,7 +1612,7 @@ class Branch4Seeder extends Seeder
             176 => [
                 'id' => '3177',
                 'bank_id' => '18',
-                'bank_branch_name' => 'HEAD OFFICE',
+                'name' => 'HEAD OFFICE',
                 'bank_branch_data' => [
                     'routing_no' => '100272688',
                 ],
@@ -1621,7 +1621,7 @@ class Branch4Seeder extends Seeder
             177 => [
                 'id' => '3178',
                 'bank_id' => '18',
-                'bank_branch_name' => 'HEAD OFFICE CORPORATE',
+                'name' => 'HEAD OFFICE CORPORATE',
                 'bank_branch_data' => [
                     'routing_no' => '100272691',
                 ],
@@ -1630,7 +1630,7 @@ class Branch4Seeder extends Seeder
             178 => [
                 'id' => '3179',
                 'bank_id' => '18',
-                'bank_branch_name' => 'IMAMGANJ',
+                'name' => 'IMAMGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '100272804',
                 ],
@@ -1639,7 +1639,7 @@ class Branch4Seeder extends Seeder
             179 => [
                 'id' => '3180',
                 'bank_id' => '18',
-                'bank_branch_name' => 'ISLAMPUR',
+                'name' => 'ISLAMPUR',
                 'bank_branch_data' => [
                     'routing_no' => '100272983',
                 ],
@@ -1648,7 +1648,7 @@ class Branch4Seeder extends Seeder
             180 => [
                 'id' => '3181',
                 'bank_id' => '18',
-                'bank_branch_name' => 'KERANIGANJ SME',
+                'name' => 'KERANIGANJ SME',
                 'bank_branch_data' => [
                     'routing_no' => '100273658',
                 ],
@@ -1657,7 +1657,7 @@ class Branch4Seeder extends Seeder
             181 => [
                 'id' => '3182',
                 'bank_id' => '18',
-                'bank_branch_name' => 'MALIBAGH',
+                'name' => 'MALIBAGH',
                 'bank_branch_data' => [
                     'routing_no' => '100273940',
                 ],
@@ -1666,7 +1666,7 @@ class Branch4Seeder extends Seeder
             182 => [
                 'id' => '3183',
                 'bank_id' => '18',
-                'bank_branch_name' => 'MOTIJHEEL',
+                'name' => 'MOTIJHEEL',
                 'bank_branch_data' => [
                     'routing_no' => '100274244',
                 ],
@@ -1675,7 +1675,7 @@ class Branch4Seeder extends Seeder
             183 => [
                 'id' => '3184',
                 'bank_id' => '18',
-                'bank_branch_name' => 'NAWABPUR',
+                'name' => 'NAWABPUR',
                 'bank_branch_data' => [
                     'routing_no' => '100274723',
                 ],
@@ -1684,7 +1684,7 @@ class Branch4Seeder extends Seeder
             184 => [
                 'id' => '3185',
                 'bank_id' => '18',
-                'bank_branch_name' => 'NEW ESKATON',
+                'name' => 'NEW ESKATON',
                 'bank_branch_data' => [
                     'routing_no' => '100275027',
                 ],
@@ -1693,7 +1693,7 @@ class Branch4Seeder extends Seeder
             185 => [
                 'id' => '3186',
                 'bank_id' => '18',
-                'bank_branch_name' => 'PALTAN',
+                'name' => 'PALTAN',
                 'bank_branch_data' => [
                     'routing_no' => '100275201',
                 ],
@@ -1702,7 +1702,7 @@ class Branch4Seeder extends Seeder
             186 => [
                 'id' => '3187',
                 'bank_id' => '18',
-                'bank_branch_name' => 'RAJUK',
+                'name' => 'RAJUK',
                 'bank_branch_data' => [
                     'routing_no' => '100275593',
                 ],
@@ -1711,7 +1711,7 @@ class Branch4Seeder extends Seeder
             187 => [
                 'id' => '3188',
                 'bank_id' => '18',
-                'bank_branch_name' => 'SANTINAGAR',
+                'name' => 'SANTINAGAR',
                 'bank_branch_data' => [
                     'routing_no' => '100276013',
                 ],
@@ -1720,7 +1720,7 @@ class Branch4Seeder extends Seeder
             188 => [
                 'id' => '3189',
                 'bank_id' => '18',
-                'bank_branch_name' => 'DINAJPUR',
+                'name' => 'DINAJPUR',
                 'bank_branch_data' => [
                     'routing_no' => '100280670',
                 ],
@@ -1729,7 +1729,7 @@ class Branch4Seeder extends Seeder
             189 => [
                 'id' => '3190',
                 'bank_id' => '18',
-                'bank_branch_name' => 'FARIDPUR',
+                'name' => 'FARIDPUR',
                 'bank_branch_data' => [
                     'routing_no' => '100290523',
                 ],
@@ -1738,7 +1738,7 @@ class Branch4Seeder extends Seeder
             190 => [
                 'id' => '3191',
                 'bank_id' => '18',
-                'bank_branch_name' => 'CHHAGALNAIYA',
+                'name' => 'CHHAGALNAIYA',
                 'bank_branch_data' => [
                     'routing_no' => '100300318',
                 ],
@@ -1747,7 +1747,7 @@ class Branch4Seeder extends Seeder
             191 => [
                 'id' => '3192',
                 'bank_id' => '18',
-                'bank_branch_name' => 'FENI',
+                'name' => 'FENI',
                 'bank_branch_data' => [
                     'routing_no' => '100300521',
                 ],
@@ -1756,7 +1756,7 @@ class Branch4Seeder extends Seeder
             192 => [
                 'id' => '3193',
                 'bank_id' => '18',
-                'bank_branch_name' => 'MOUCHAK',
+                'name' => 'MOUCHAK',
                 'bank_branch_data' => [
                     'routing_no' => '100330120',
                 ],
@@ -1765,7 +1765,7 @@ class Branch4Seeder extends Seeder
             193 => [
                 'id' => '3194',
                 'bank_id' => '18',
-                'bank_branch_name' => 'BOARD BAZAR',
+                'name' => 'BOARD BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '100330225',
                 ],
@@ -1774,7 +1774,7 @@ class Branch4Seeder extends Seeder
             194 => [
                 'id' => '3195',
                 'bank_id' => '18',
-                'bank_branch_name' => 'GAZIPUR CHOWRASTA',
+                'name' => 'GAZIPUR CHOWRASTA',
                 'bank_branch_data' => [
                     'routing_no' => '100330559',
                 ],
@@ -1783,7 +1783,7 @@ class Branch4Seeder extends Seeder
             195 => [
                 'id' => '3196',
                 'bank_id' => '18',
-                'bank_branch_name' => 'MAONA CHAWRASTA',
+                'name' => 'MAONA CHAWRASTA',
                 'bank_branch_data' => [
                     'routing_no' => '100330975',
                 ],
@@ -1792,7 +1792,7 @@ class Branch4Seeder extends Seeder
             196 => [
                 'id' => '3197',
                 'bank_id' => '18',
-                'bank_branch_name' => 'TUNGI PARA',
+                'name' => 'TUNGI PARA',
                 'bank_branch_data' => [
                     'routing_no' => '100351091',
                 ],
@@ -1801,7 +1801,7 @@ class Branch4Seeder extends Seeder
             197 => [
                 'id' => '3198',
                 'bank_id' => '18',
-                'bank_branch_name' => 'NABIGANJ',
+                'name' => 'NABIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '100361094',
                 ],
@@ -1810,7 +1810,7 @@ class Branch4Seeder extends Seeder
             198 => [
                 'id' => '3199',
                 'bank_id' => '18',
-                'bank_branch_name' => 'JESSORE',
+                'name' => 'JESSORE',
                 'bank_branch_data' => [
                     'routing_no' => '100410945',
                 ],
@@ -1819,7 +1819,7 @@ class Branch4Seeder extends Seeder
             199 => [
                 'id' => '3200',
                 'bank_id' => '18',
-                'bank_branch_name' => 'JHALOKATI',
+                'name' => 'JHALOKATI',
                 'bank_branch_data' => [
                     'routing_no' => '100420319',
                 ],
@@ -1828,7 +1828,7 @@ class Branch4Seeder extends Seeder
             200 => [
                 'id' => '3201',
                 'bank_id' => '18',
-                'bank_branch_name' => 'KHULNA',
+                'name' => 'KHULNA',
                 'bank_branch_data' => [
                     'routing_no' => '100471542',
                 ],
@@ -1837,7 +1837,7 @@ class Branch4Seeder extends Seeder
             201 => [
                 'id' => '3202',
                 'bank_id' => '18',
-                'bank_branch_name' => 'KISHOREGANJ',
+                'name' => 'KISHOREGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '100480670',
                 ],
@@ -1846,7 +1846,7 @@ class Branch4Seeder extends Seeder
             202 => [
                 'id' => '3203',
                 'bank_id' => '18',
-                'bank_branch_name' => 'MITAMAIN',
+                'name' => 'MITAMAIN',
                 'bank_branch_data' => [
                     'routing_no' => '100480946',
                 ],
@@ -1855,7 +1855,7 @@ class Branch4Seeder extends Seeder
             203 => [
                 'id' => '3204',
                 'bank_id' => '18',
-                'bank_branch_name' => 'PAKUNDIA',
+                'name' => 'PAKUNDIA',
                 'bank_branch_data' => [
                     'routing_no' => '100481066',
                 ],
@@ -1864,7 +1864,7 @@ class Branch4Seeder extends Seeder
             204 => [
                 'id' => '3205',
                 'bank_id' => '18',
-                'bank_branch_name' => 'KUSHTIA',
+                'name' => 'KUSHTIA',
                 'bank_branch_data' => [
                     'routing_no' => '100500947',
                 ],
@@ -1873,7 +1873,7 @@ class Branch4Seeder extends Seeder
             205 => [
                 'id' => '3206',
                 'bank_id' => '18',
-                'bank_branch_name' => 'TAKERHAT',
+                'name' => 'TAKERHAT',
                 'bank_branch_data' => [
                     'routing_no' => '100540765',
                 ],
@@ -1882,7 +1882,7 @@ class Branch4Seeder extends Seeder
             206 => [
                 'id' => '3207',
                 'bank_id' => '18',
-                'bank_branch_name' => 'MAGURA',
+                'name' => 'MAGURA',
                 'bank_branch_data' => [
                     'routing_no' => '100550555',
                 ],
@@ -1891,7 +1891,7 @@ class Branch4Seeder extends Seeder
             207 => [
                 'id' => '3208',
                 'bank_id' => '18',
-                'bank_branch_name' => 'BALIRTEK BAZAR',
+                'name' => 'BALIRTEK BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '100560103',
                 ],
@@ -1900,7 +1900,7 @@ class Branch4Seeder extends Seeder
             208 => [
                 'id' => '3209',
                 'bank_id' => '18',
-                'bank_branch_name' => 'MANIKGANJ',
+                'name' => 'MANIKGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '100560611',
                 ],
@@ -1909,7 +1909,7 @@ class Branch4Seeder extends Seeder
             209 => [
                 'id' => '3210',
                 'bank_id' => '18',
-                'bank_branch_name' => 'MOULAVI BAZAR',
+                'name' => 'MOULAVI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '100581182',
                 ],
@@ -1918,7 +1918,7 @@ class Branch4Seeder extends Seeder
             210 => [
                 'id' => '3211',
                 'bank_id' => '18',
-                'bank_branch_name' => 'MUKTARPUR',
+                'name' => 'MUKTARPUR',
                 'bank_branch_data' => [
                     'routing_no' => '100591006',
                 ],
@@ -1927,7 +1927,7 @@ class Branch4Seeder extends Seeder
             211 => [
                 'id' => '3212',
                 'bank_id' => '18',
-                'bank_branch_name' => 'MYMENSINGH',
+                'name' => 'MYMENSINGH',
                 'bank_branch_data' => [
                     'routing_no' => '100611757',
                 ],
@@ -1936,7 +1936,7 @@ class Branch4Seeder extends Seeder
             212 => [
                 'id' => '3213',
                 'bank_id' => '18',
-                'bank_branch_name' => 'SEEDSTORE BAZAR',
+                'name' => 'SEEDSTORE BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '100612093',
                 ],
@@ -1945,7 +1945,7 @@ class Branch4Seeder extends Seeder
             213 => [
                 'id' => '3214',
                 'bank_id' => '18',
-                'bank_branch_name' => 'NAOGAON',
+                'name' => 'NAOGAON',
                 'bank_branch_data' => [
                     'routing_no' => '100641185',
                 ],
@@ -1954,7 +1954,7 @@ class Branch4Seeder extends Seeder
             214 => [
                 'id' => '3215',
                 'bank_id' => '18',
-                'bank_branch_name' => 'NARAYANGANJ',
+                'name' => 'NARAYANGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '100671184',
                 ],
@@ -1963,7 +1963,7 @@ class Branch4Seeder extends Seeder
             215 => [
                 'id' => '3216',
                 'bank_id' => '18',
-                'bank_branch_name' => 'PANCHABATI',
+                'name' => 'PANCHABATI',
                 'bank_branch_data' => [
                     'routing_no' => '100671384',
                 ],
@@ -1972,7 +1972,7 @@ class Branch4Seeder extends Seeder
             216 => [
                 'id' => '3217',
                 'bank_id' => '18',
-                'bank_branch_name' => 'SHIMRAIL',
+                'name' => 'SHIMRAIL',
                 'bank_branch_data' => [
                     'routing_no' => '100671571',
                 ],
@@ -1981,7 +1981,7 @@ class Branch4Seeder extends Seeder
             217 => [
                 'id' => '3218',
                 'bank_id' => '18',
-                'bank_branch_name' => 'SONARGAON SME',
+                'name' => 'SONARGAON SME',
                 'bank_branch_data' => [
                     'routing_no' => '100671700',
                 ],
@@ -1990,7 +1990,7 @@ class Branch4Seeder extends Seeder
             218 => [
                 'id' => '3219',
                 'bank_id' => '18',
-                'bank_branch_name' => 'MORJAL',
+                'name' => 'MORJAL',
                 'bank_branch_data' => [
                     'routing_no' => '100680175',
                 ],
@@ -1999,7 +1999,7 @@ class Branch4Seeder extends Seeder
             219 => [
                 'id' => '3220',
                 'bank_id' => '18',
-                'bank_branch_name' => 'MADHABDI',
+                'name' => 'MADHABDI',
                 'bank_branch_data' => [
                     'routing_no' => '100680670',
                 ],
@@ -2008,7 +2008,7 @@ class Branch4Seeder extends Seeder
             220 => [
                 'id' => '3221',
                 'bank_id' => '18',
-                'bank_branch_name' => 'DATTAPARA',
+                'name' => 'DATTAPARA',
                 'bank_branch_data' => [
                     'routing_no' => '100690152',
                 ],
@@ -2017,7 +2017,7 @@ class Branch4Seeder extends Seeder
             221 => [
                 'id' => '3222',
                 'bank_id' => '18',
-                'bank_branch_name' => 'LALPUR',
+                'name' => 'LALPUR',
                 'bank_branch_data' => [
                     'routing_no' => '100690910',
                 ],
@@ -2026,7 +2026,7 @@ class Branch4Seeder extends Seeder
             222 => [
                 'id' => '3223',
                 'bank_id' => '18',
-                'bank_branch_name' => 'CHAPAINAWABGANJ',
+                'name' => 'CHAPAINAWABGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '100700255',
                 ],
@@ -2035,7 +2035,7 @@ class Branch4Seeder extends Seeder
             223 => [
                 'id' => '3224',
                 'bank_id' => '18',
-                'bank_branch_name' => 'NETROKONA',
+                'name' => 'NETROKONA',
                 'bank_branch_data' => [
                     'routing_no' => '100720730',
                 ],
@@ -2044,7 +2044,7 @@ class Branch4Seeder extends Seeder
             224 => [
                 'id' => '3225',
                 'bank_id' => '18',
-                'bank_branch_name' => 'CHARBATA KHASHERHAT',
+                'name' => 'CHARBATA KHASHERHAT',
                 'bank_branch_data' => [
                     'routing_no' => '100750184',
                 ],
@@ -2053,7 +2053,7 @@ class Branch4Seeder extends Seeder
             225 => [
                 'id' => '3226',
                 'bank_id' => '18',
-                'bank_branch_name' => 'BASHURHAT',
+                'name' => 'BASHURHAT',
                 'bank_branch_data' => [
                     'routing_no' => '100750250',
                 ],
@@ -2062,7 +2062,7 @@ class Branch4Seeder extends Seeder
             226 => [
                 'id' => '3227',
                 'bank_id' => '18',
-                'bank_branch_name' => 'CHOUMOHANI',
+                'name' => 'CHOUMOHANI',
                 'bank_branch_data' => [
                     'routing_no' => '100750676',
                 ],
@@ -2071,7 +2071,7 @@ class Branch4Seeder extends Seeder
             227 => [
                 'id' => '3228',
                 'bank_id' => '18',
-                'bank_branch_name' => 'SONAIMURI',
+                'name' => 'SONAIMURI',
                 'bank_branch_data' => [
                     'routing_no' => '100752232',
                 ],
@@ -2080,7 +2080,7 @@ class Branch4Seeder extends Seeder
             228 => [
                 'id' => '3229',
                 'bank_id' => '18',
-                'bank_branch_name' => 'PABNA',
+                'name' => 'PABNA',
                 'bank_branch_data' => [
                     'routing_no' => '100761786',
                 ],
@@ -2089,7 +2089,7 @@ class Branch4Seeder extends Seeder
             229 => [
                 'id' => '3230',
                 'bank_id' => '18',
-                'bank_branch_name' => 'RAJSHAHI',
+                'name' => 'RAJSHAHI',
                 'bank_branch_data' => [
                     'routing_no' => '100811931',
                 ],
@@ -2098,7 +2098,7 @@ class Branch4Seeder extends Seeder
             230 => [
                 'id' => '3231',
                 'bank_id' => '18',
-                'bank_branch_name' => 'RANGPUR',
+                'name' => 'RANGPUR',
                 'bank_branch_data' => [
                     'routing_no' => '100851454',
                 ],
@@ -2107,7 +2107,7 @@ class Branch4Seeder extends Seeder
             231 => [
                 'id' => '3232',
                 'bank_id' => '18',
-                'bank_branch_name' => 'NARIA',
+                'name' => 'NARIA',
                 'bank_branch_data' => [
                     'routing_no' => '100860582',
                 ],
@@ -2116,7 +2116,7 @@ class Branch4Seeder extends Seeder
             232 => [
                 'id' => '3233',
                 'bank_id' => '18',
-                'bank_branch_name' => 'SIRAJGANJ',
+                'name' => 'SIRAJGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '100880054',
                 ],
@@ -2125,7 +2125,7 @@ class Branch4Seeder extends Seeder
             233 => [
                 'id' => '3234',
                 'bank_id' => '18',
-                'bank_branch_name' => 'DHOPADIGHIRPAR',
+                'name' => 'DHOPADIGHIRPAR',
                 'bank_branch_data' => [
                     'routing_no' => '100910058',
                 ],
@@ -2134,7 +2134,7 @@ class Branch4Seeder extends Seeder
             234 => [
                 'id' => '3235',
                 'bank_id' => '18',
-                'bank_branch_name' => 'BEANI BAZAR',
+                'name' => 'BEANI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '100910311',
                 ],
@@ -2143,7 +2143,7 @@ class Branch4Seeder extends Seeder
             235 => [
                 'id' => '3236',
                 'bank_id' => '18',
-                'bank_branch_name' => 'BISHWANATH',
+                'name' => 'BISHWANATH',
                 'bank_branch_data' => [
                     'routing_no' => '100910432',
                 ],
@@ -2152,7 +2152,7 @@ class Branch4Seeder extends Seeder
             236 => [
                 'id' => '3237',
                 'bank_id' => '18',
-                'bank_branch_name' => 'FENCHUGANJ',
+                'name' => 'FENCHUGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '100911365',
                 ],
@@ -2161,7 +2161,7 @@ class Branch4Seeder extends Seeder
             237 => [
                 'id' => '3238',
                 'bank_id' => '18',
-                'bank_branch_name' => 'GOALA BAZAR',
+                'name' => 'GOALA BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '100911549',
                 ],
@@ -2170,7 +2170,7 @@ class Branch4Seeder extends Seeder
             238 => [
                 'id' => '3239',
                 'bank_id' => '18',
-                'bank_branch_name' => 'GOLAPGANJ',
+                'name' => 'GOLAPGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '100911602',
                 ],
@@ -2179,7 +2179,7 @@ class Branch4Seeder extends Seeder
             239 => [
                 'id' => '3240',
                 'bank_id' => '18',
-                'bank_branch_name' => 'SYLHET',
+                'name' => 'SYLHET',
                 'bank_branch_data' => [
                     'routing_no' => '100913550',
                 ],
@@ -2188,7 +2188,7 @@ class Branch4Seeder extends Seeder
             240 => [
                 'id' => '3241',
                 'bank_id' => '18',
-                'bank_branch_name' => 'TANGAIL',
+                'name' => 'TANGAIL',
                 'bank_branch_data' => [
                     'routing_no' => '100932294',
                 ],
@@ -2197,7 +2197,7 @@ class Branch4Seeder extends Seeder
             241 => [
                 'id' => '3242',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BAGERHAT',
+                'name' => 'BAGERHAT',
                 'bank_branch_data' => [
                     'routing_no' => '105010074',
                 ],
@@ -2206,7 +2206,7 @@ class Branch4Seeder extends Seeder
             242 => [
                 'id' => '3243',
                 'bank_id' => '19',
-                'bank_branch_name' => 'FAKIRHAT',
+                'name' => 'FAKIRHAT',
                 'bank_branch_data' => [
                     'routing_no' => '105010461',
                 ],
@@ -2215,7 +2215,7 @@ class Branch4Seeder extends Seeder
             243 => [
                 'id' => '3244',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MORELGANJ',
+                'name' => 'MORELGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '105011031',
                 ],
@@ -2224,7 +2224,7 @@ class Branch4Seeder extends Seeder
             244 => [
                 'id' => '3245',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BARGUNA',
+                'name' => 'BARGUNA',
                 'bank_branch_data' => [
                     'routing_no' => '105040136',
                 ],
@@ -2233,7 +2233,7 @@ class Branch4Seeder extends Seeder
             245 => [
                 'id' => '3246',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BARISAL',
+                'name' => 'BARISAL',
                 'bank_branch_data' => [
                     'routing_no' => '105060282',
                 ],
@@ -2242,7 +2242,7 @@ class Branch4Seeder extends Seeder
             246 => [
                 'id' => '3247',
                 'bank_id' => '19',
-                'bank_branch_name' => 'WAZIRPUR',
+                'name' => 'WAZIRPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105062293',
                 ],
@@ -2251,7 +2251,7 @@ class Branch4Seeder extends Seeder
             247 => [
                 'id' => '3248',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BHOLA',
+                'name' => 'BHOLA',
                 'bank_branch_data' => [
                     'routing_no' => '105090102',
                 ],
@@ -2260,7 +2260,7 @@ class Branch4Seeder extends Seeder
             248 => [
                 'id' => '3249',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BOGRA',
+                'name' => 'BOGRA',
                 'bank_branch_data' => [
                     'routing_no' => '105100371',
                 ],
@@ -2269,7 +2269,7 @@ class Branch4Seeder extends Seeder
             249 => [
                 'id' => '3250',
                 'bank_id' => '19',
-                'bank_branch_name' => 'TANTAR',
+                'name' => 'TANTAR',
                 'bank_branch_data' => [
                     'routing_no' => '105120122',
                 ],
@@ -2278,7 +2278,7 @@ class Branch4Seeder extends Seeder
             250 => [
                 'id' => '3251',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BRAHMANBARIA',
+                'name' => 'BRAHMANBARIA',
                 'bank_branch_data' => [
                     'routing_no' => '105120430',
                 ],
@@ -2287,7 +2287,7 @@ class Branch4Seeder extends Seeder
             251 => [
                 'id' => '3252',
                 'bank_id' => '19',
-                'bank_branch_name' => 'CHANDPUR',
+                'name' => 'CHANDPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105130312',
                 ],
@@ -2296,7 +2296,7 @@ class Branch4Seeder extends Seeder
             252 => [
                 'id' => '3253',
                 'bank_id' => '19',
-                'bank_branch_name' => 'PAHARTALI CHOUMOHONI',
+                'name' => 'PAHARTALI CHOUMOHONI',
                 'bank_branch_data' => [
                     'routing_no' => '105150068',
                 ],
@@ -2305,7 +2305,7 @@ class Branch4Seeder extends Seeder
             253 => [
                 'id' => '3254',
                 'bank_id' => '19',
-                'bank_branch_name' => 'AGRABAD',
+                'name' => 'AGRABAD',
                 'bank_branch_data' => [
                     'routing_no' => '105150134',
                 ],
@@ -2314,7 +2314,7 @@ class Branch4Seeder extends Seeder
             254 => [
                 'id' => '3255',
                 'bank_id' => '19',
-                'bank_branch_name' => 'TOKIR HAT',
+                'name' => 'TOKIR HAT',
                 'bank_branch_data' => [
                     'routing_no' => '105150350',
                 ],
@@ -2323,7 +2323,7 @@ class Branch4Seeder extends Seeder
             255 => [
                 'id' => '3256',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KORERHAT',
+                'name' => 'KORERHAT',
                 'bank_branch_data' => [
                     'routing_no' => '105150442',
                 ],
@@ -2332,7 +2332,7 @@ class Branch4Seeder extends Seeder
             256 => [
                 'id' => '3257',
                 'bank_id' => '19',
-                'bank_branch_name' => 'ANDERKILLA',
+                'name' => 'ANDERKILLA',
                 'bank_branch_data' => [
                     'routing_no' => '105150468',
                 ],
@@ -2341,7 +2341,7 @@ class Branch4Seeder extends Seeder
             257 => [
                 'id' => '3258',
                 'bank_id' => '19',
-                'bank_branch_name' => 'FATEYABAD',
+                'name' => 'FATEYABAD',
                 'bank_branch_data' => [
                     'routing_no' => '105150484',
                 ],
@@ -2350,7 +2350,7 @@ class Branch4Seeder extends Seeder
             258 => [
                 'id' => '3259',
                 'bank_id' => '19',
-                'bank_branch_name' => 'RAHATTARPUL',
+                'name' => 'RAHATTARPUL',
                 'bank_branch_data' => [
                     'routing_no' => '105150639',
                 ],
@@ -2359,7 +2359,7 @@ class Branch4Seeder extends Seeder
             259 => [
                 'id' => '3260',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BAHADDAR HAT',
+                'name' => 'BAHADDAR HAT',
                 'bank_branch_data' => [
                     'routing_no' => '105150792',
                 ],
@@ -2368,7 +2368,7 @@ class Branch4Seeder extends Seeder
             260 => [
                 'id' => '3261',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BANDARTILA',
+                'name' => 'BANDARTILA',
                 'bank_branch_data' => [
                     'routing_no' => '105150947',
                 ],
@@ -2377,7 +2377,7 @@ class Branch4Seeder extends Seeder
             261 => [
                 'id' => '3262',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BASHKHALI',
+                'name' => 'BASHKHALI',
                 'bank_branch_data' => [
                     'routing_no' => '105150976',
                 ],
@@ -2386,7 +2386,7 @@ class Branch4Seeder extends Seeder
             262 => [
                 'id' => '3263',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MOHRA SME',
+                'name' => 'MOHRA SME',
                 'bank_branch_data' => [
                     'routing_no' => '105151238',
                 ],
@@ -2395,7 +2395,7 @@ class Branch4Seeder extends Seeder
             263 => [
                 'id' => '3264',
                 'bank_id' => '19',
-                'bank_branch_name' => 'PRABARTAK MORE',
+                'name' => 'PRABARTAK MORE',
                 'bank_branch_data' => [
                     'routing_no' => '105151391',
                 ],
@@ -2404,7 +2404,7 @@ class Branch4Seeder extends Seeder
             264 => [
                 'id' => '3265',
                 'bank_id' => '19',
-                'bank_branch_name' => 'CHANDANAISH',
+                'name' => 'CHANDANAISH',
                 'bank_branch_data' => [
                     'routing_no' => '105151812',
                 ],
@@ -2413,7 +2413,7 @@ class Branch4Seeder extends Seeder
             265 => [
                 'id' => '3266',
                 'bank_id' => '19',
-                'bank_branch_name' => 'CHAWK BAZAR SME',
+                'name' => 'CHAWK BAZAR SME',
                 'bank_branch_data' => [
                     'routing_no' => '105151959',
                 ],
@@ -2422,7 +2422,7 @@ class Branch4Seeder extends Seeder
             266 => [
                 'id' => '3267',
                 'bank_id' => '19',
-                'bank_branch_name' => 'CHOCORIA',
+                'name' => 'CHOCORIA',
                 'bank_branch_data' => [
                     'routing_no' => '105152161',
                 ],
@@ -2431,7 +2431,7 @@ class Branch4Seeder extends Seeder
             267 => [
                 'id' => '3268',
                 'bank_id' => '19',
-                'bank_branch_name' => 'DOVASHI BAZAR',
+                'name' => 'DOVASHI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '105152574',
                 ],
@@ -2440,7 +2440,7 @@ class Branch4Seeder extends Seeder
             268 => [
                 'id' => '3269',
                 'bank_id' => '19',
-                'bank_branch_name' => 'EIDGAON',
+                'name' => 'EIDGAON',
                 'bank_branch_data' => [
                     'routing_no' => '105152637',
                 ],
@@ -2449,7 +2449,7 @@ class Branch4Seeder extends Seeder
             269 => [
                 'id' => '3270',
                 'bank_id' => '19',
-                'bank_branch_name' => 'HALISHAHAR',
+                'name' => 'HALISHAHAR',
                 'bank_branch_data' => [
                     'routing_no' => '105153160',
                 ],
@@ -2458,7 +2458,7 @@ class Branch4Seeder extends Seeder
             270 => [
                 'id' => '3271',
                 'bank_id' => '19',
-                'bank_branch_name' => 'HATHAZARI',
+                'name' => 'HATHAZARI',
                 'bank_branch_data' => [
                     'routing_no' => '105153223',
                 ],
@@ -2467,7 +2467,7 @@ class Branch4Seeder extends Seeder
             271 => [
                 'id' => '3272',
                 'bank_id' => '19',
-                'bank_branch_name' => 'JUBILEE ROAD',
+                'name' => 'JUBILEE ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '105153649',
                 ],
@@ -2476,7 +2476,7 @@ class Branch4Seeder extends Seeder
             272 => [
                 'id' => '3273',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KADAMTALI',
+                'name' => 'KADAMTALI',
                 'bank_branch_data' => [
                     'routing_no' => '105153731',
                 ],
@@ -2485,7 +2485,7 @@ class Branch4Seeder extends Seeder
             273 => [
                 'id' => '3274',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KATIRHAT',
+                'name' => 'KATIRHAT',
                 'bank_branch_data' => [
                     'routing_no' => '105154127',
                 ],
@@ -2494,7 +2494,7 @@ class Branch4Seeder extends Seeder
             274 => [
                 'id' => '3275',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KERANIHAT',
+                'name' => 'KERANIHAT',
                 'bank_branch_data' => [
                     'routing_no' => '105154185',
                 ],
@@ -2503,7 +2503,7 @@ class Branch4Seeder extends Seeder
             275 => [
                 'id' => '3276',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KHATUNGANJ',
+                'name' => 'KHATUNGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '105154277',
                 ],
@@ -2512,7 +2512,7 @@ class Branch4Seeder extends Seeder
             276 => [
                 'id' => '3277',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KUMIRA',
+                'name' => 'KUMIRA',
                 'bank_branch_data' => [
                     'routing_no' => '105154451',
                 ],
@@ -2521,7 +2521,7 @@ class Branch4Seeder extends Seeder
             277 => [
                 'id' => '3278',
                 'bank_id' => '19',
-                'bank_branch_name' => 'LOHA GARA',
+                'name' => 'LOHA GARA',
                 'bank_branch_data' => [
                     'routing_no' => '105154664',
                 ],
@@ -2530,7 +2530,7 @@ class Branch4Seeder extends Seeder
             278 => [
                 'id' => '3279',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MIRZAKHIL',
+                'name' => 'MIRZAKHIL',
                 'bank_branch_data' => [
                     'routing_no' => '105155089',
                 ],
@@ -2539,7 +2539,7 @@ class Branch4Seeder extends Seeder
             279 => [
                 'id' => '3280',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MOHILA',
+                'name' => 'MOHILA',
                 'bank_branch_data' => [
                     'routing_no' => '105155247',
                 ],
@@ -2548,7 +2548,7 @@ class Branch4Seeder extends Seeder
             280 => [
                 'id' => '3281',
                 'bank_id' => '19',
-                'bank_branch_name' => 'NAZIR HAT SME',
+                'name' => 'NAZIR HAT SME',
                 'bank_branch_data' => [
                     'routing_no' => '105155605',
                 ],
@@ -2557,7 +2557,7 @@ class Branch4Seeder extends Seeder
             281 => [
                 'id' => '3282',
                 'bank_id' => '19',
-                'bank_branch_name' => 'NAZU MEA HAT',
+                'name' => 'NAZU MEA HAT',
                 'bank_branch_data' => [
                     'routing_no' => '105155621',
                 ],
@@ -2566,7 +2566,7 @@ class Branch4Seeder extends Seeder
             282 => [
                 'id' => '3283',
                 'bank_id' => '19',
-                'bank_branch_name' => 'PAHARTALI',
+                'name' => 'PAHARTALI',
                 'bank_branch_data' => [
                     'routing_no' => '105155926',
                 ],
@@ -2575,7 +2575,7 @@ class Branch4Seeder extends Seeder
             283 => [
                 'id' => '3284',
                 'bank_id' => '19',
-                'bank_branch_name' => 'PANCHLAISH',
+                'name' => 'PANCHLAISH',
                 'bank_branch_data' => [
                     'routing_no' => '105156046',
                 ],
@@ -2584,7 +2584,7 @@ class Branch4Seeder extends Seeder
             284 => [
                 'id' => '3285',
                 'bank_id' => '19',
-                'bank_branch_name' => 'PATHERHAT',
+                'name' => 'PATHERHAT',
                 'bank_branch_data' => [
                     'routing_no' => '105156138',
                 ],
@@ -2593,7 +2593,7 @@ class Branch4Seeder extends Seeder
             285 => [
                 'id' => '3286',
                 'bank_id' => '19',
-                'bank_branch_name' => 'PATIYA',
+                'name' => 'PATIYA',
                 'bank_branch_data' => [
                     'routing_no' => '105156167',
                 ],
@@ -2602,7 +2602,7 @@ class Branch4Seeder extends Seeder
             286 => [
                 'id' => '3287',
                 'bank_id' => '19',
-                'bank_branch_name' => 'PATIYA MOHILA',
+                'name' => 'PATIYA MOHILA',
                 'bank_branch_data' => [
                     'routing_no' => '105156183',
                 ],
@@ -2611,7 +2611,7 @@ class Branch4Seeder extends Seeder
             287 => [
                 'id' => '3288',
                 'bank_id' => '19',
-                'bank_branch_name' => 'RANIRHAT SME',
+                'name' => 'RANIRHAT SME',
                 'bank_branch_data' => [
                     'routing_no' => '105156475',
                 ],
@@ -2620,7 +2620,7 @@ class Branch4Seeder extends Seeder
             288 => [
                 'id' => '3289',
                 'bank_id' => '19',
-                'bank_branch_name' => 'SADARGHAT',
+                'name' => 'SADARGHAT',
                 'bank_branch_data' => [
                     'routing_no' => '105156738',
                 ],
@@ -2629,7 +2629,7 @@ class Branch4Seeder extends Seeder
             289 => [
                 'id' => '3290',
                 'bank_id' => '19',
-                'bank_branch_name' => 'STATION ROAD',
+                'name' => 'STATION ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '105157511',
                 ],
@@ -2638,7 +2638,7 @@ class Branch4Seeder extends Seeder
             290 => [
                 'id' => '3291',
                 'bank_id' => '19',
-                'bank_branch_name' => 'CHUADANGA',
+                'name' => 'CHUADANGA',
                 'bank_branch_data' => [
                     'routing_no' => '105180191',
                 ],
@@ -2647,7 +2647,7 @@ class Branch4Seeder extends Seeder
             291 => [
                 'id' => '3292',
                 'bank_id' => '19',
-                'bank_branch_name' => 'COMILLA',
+                'name' => 'COMILLA',
                 'bank_branch_data' => [
                     'routing_no' => '105191151',
                 ],
@@ -2656,7 +2656,7 @@ class Branch4Seeder extends Seeder
             292 => [
                 'id' => '3293',
                 'bank_id' => '19',
-                'bank_branch_name' => 'DHORKORA BAZAR',
+                'name' => 'DHORKORA BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '105191793',
                 ],
@@ -2665,7 +2665,7 @@ class Branch4Seeder extends Seeder
             293 => [
                 'id' => '3294',
                 'bank_id' => '19',
-                'bank_branch_name' => 'HOMNA',
+                'name' => 'HOMNA',
                 'bank_branch_data' => [
                     'routing_no' => '105192239',
                 ],
@@ -2674,7 +2674,7 @@ class Branch4Seeder extends Seeder
             294 => [
                 'id' => '3295',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MADHAYA BAZAR',
+                'name' => 'MADHAYA BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '105192800',
                 ],
@@ -2683,7 +2683,7 @@ class Branch4Seeder extends Seeder
             295 => [
                 'id' => '3296',
                 'bank_id' => '19',
-                'bank_branch_name' => 'COURT BAZAR',
+                'name' => 'COURT BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '105220222',
                 ],
@@ -2692,7 +2692,7 @@ class Branch4Seeder extends Seeder
             296 => [
                 'id' => '3297',
                 'bank_id' => '19',
-                'bank_branch_name' => 'COXS BAZAR',
+                'name' => 'COXS BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '105220251',
                 ],
@@ -2701,7 +2701,7 @@ class Branch4Seeder extends Seeder
             297 => [
                 'id' => '3298',
                 'bank_id' => '19',
-                'bank_branch_name' => 'HANILA',
+                'name' => 'HANILA',
                 'bank_branch_data' => [
                     'routing_no' => '105220493',
                 ],
@@ -2710,7 +2710,7 @@ class Branch4Seeder extends Seeder
             298 => [
                 'id' => '3299',
                 'bank_id' => '19',
-                'bank_branch_name' => 'PEKUYA',
+                'name' => 'PEKUYA',
                 'bank_branch_data' => [
                     'routing_no' => '105220822',
                 ],
@@ -2719,7 +2719,7 @@ class Branch4Seeder extends Seeder
             299 => [
                 'id' => '3300',
                 'bank_id' => '19',
-                'bank_branch_name' => 'RAMU',
+                'name' => 'RAMU',
                 'bank_branch_data' => [
                     'routing_no' => '105220851',
                 ],
@@ -2728,7 +2728,7 @@ class Branch4Seeder extends Seeder
             300 => [
                 'id' => '3301',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BANANI',
+                'name' => 'BANANI',
                 'bank_branch_data' => [
                     'routing_no' => '105260437',
                 ],
@@ -2737,7 +2737,7 @@ class Branch4Seeder extends Seeder
             301 => [
                 'id' => '3302',
                 'bank_id' => '19',
-                'bank_branch_name' => 'RANABHOLA',
+                'name' => 'RANABHOLA',
                 'bank_branch_data' => [
                     'routing_no' => '105260482',
                 ],
@@ -2746,7 +2746,7 @@ class Branch4Seeder extends Seeder
             302 => [
                 'id' => '3303',
                 'bank_id' => '19',
-                'bank_branch_name' => 'JOYNAL MARKET DOKKHIN KHAN',
+                'name' => 'JOYNAL MARKET DOKKHIN KHAN',
                 'bank_branch_data' => [
                     'routing_no' => '105260532',
                 ],
@@ -2755,7 +2755,7 @@ class Branch4Seeder extends Seeder
             303 => [
                 'id' => '3304',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BASHUNDHARA',
+                'name' => 'BASHUNDHARA',
                 'bank_branch_data' => [
                     'routing_no' => '105260558',
                 ],
@@ -2764,7 +2764,7 @@ class Branch4Seeder extends Seeder
             304 => [
                 'id' => '3305',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BONOSREE',
+                'name' => 'BONOSREE',
                 'bank_branch_data' => [
                     'routing_no' => '105260729',
                 ],
@@ -2773,7 +2773,7 @@ class Branch4Seeder extends Seeder
             305 => [
                 'id' => '3306',
                 'bank_id' => '19',
-                'bank_branch_name' => 'CITY UNIVERSITY',
+                'name' => 'CITY UNIVERSITY',
                 'bank_branch_data' => [
                     'routing_no' => '105260808',
                 ],
@@ -2782,7 +2782,7 @@ class Branch4Seeder extends Seeder
             306 => [
                 'id' => '3307',
                 'bank_id' => '19',
-                'bank_branch_name' => 'DHANMONDI',
+                'name' => 'DHANMONDI',
                 'bank_branch_data' => [
                     'routing_no' => '105261186',
                 ],
@@ -2791,7 +2791,7 @@ class Branch4Seeder extends Seeder
             307 => [
                 'id' => '3308',
                 'bank_id' => '19',
-                'bank_branch_name' => 'AZAMPUR',
+                'name' => 'AZAMPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105261252',
                 ],
@@ -2800,7 +2800,7 @@ class Branch4Seeder extends Seeder
             308 => [
                 'id' => '3309',
                 'bank_id' => '19',
-                'bank_branch_name' => 'GULSHAN',
+                'name' => 'GULSHAN',
                 'bank_branch_data' => [
                     'routing_no' => '105261728',
                 ],
@@ -2809,7 +2809,7 @@ class Branch4Seeder extends Seeder
             309 => [
                 'id' => '3310',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KARWAN BAZAR',
+                'name' => 'KARWAN BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '105262530',
                 ],
@@ -2818,7 +2818,7 @@ class Branch4Seeder extends Seeder
             310 => [
                 'id' => '3311',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KURIL BISHWA ROAD',
+                'name' => 'KURIL BISHWA ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '105262635',
                 ],
@@ -2827,7 +2827,7 @@ class Branch4Seeder extends Seeder
             311 => [
                 'id' => '3312',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MIRPUR',
+                'name' => 'MIRPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105262985',
                 ],
@@ -2836,7 +2836,7 @@ class Branch4Seeder extends Seeder
             312 => [
                 'id' => '3313',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MOHAKHALI',
+                'name' => 'MOHAKHALI',
                 'bank_branch_data' => [
                     'routing_no' => '105263197',
                 ],
@@ -2845,7 +2845,7 @@ class Branch4Seeder extends Seeder
             313 => [
                 'id' => '3314',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MOHAMMADPUR',
+                'name' => 'MOHAMMADPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105263289',
                 ],
@@ -2854,7 +2854,7 @@ class Branch4Seeder extends Seeder
             314 => [
                 'id' => '3315',
                 'bank_id' => '19',
-                'bank_branch_name' => 'RAYER BAZAR',
+                'name' => 'RAYER BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '105263942',
                 ],
@@ -2863,7 +2863,7 @@ class Branch4Seeder extends Seeder
             315 => [
                 'id' => '3316',
                 'bank_id' => '19',
-                'bank_branch_name' => 'RING ROAD',
+                'name' => 'RING ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '105263971',
                 ],
@@ -2872,7 +2872,7 @@ class Branch4Seeder extends Seeder
             316 => [
                 'id' => '3317',
                 'bank_id' => '19',
-                'bank_branch_name' => 'RUPNAGAR',
+                'name' => 'RUPNAGAR',
                 'bank_branch_data' => [
                     'routing_no' => '105264017',
                 ],
@@ -2881,7 +2881,7 @@ class Branch4Seeder extends Seeder
             317 => [
                 'id' => '3318',
                 'bank_id' => '19',
-                'bank_branch_name' => 'SAVAR',
+                'name' => 'SAVAR',
                 'bank_branch_data' => [
                     'routing_no' => '105264091',
                 ],
@@ -2890,7 +2890,7 @@ class Branch4Seeder extends Seeder
             318 => [
                 'id' => '3319',
                 'bank_id' => '19',
-                'bank_branch_name' => 'SENANIBASH',
+                'name' => 'SENANIBASH',
                 'bank_branch_data' => [
                     'routing_no' => '105264196',
                 ],
@@ -2899,7 +2899,7 @@ class Branch4Seeder extends Seeder
             319 => [
                 'id' => '3320',
                 'bank_id' => '19',
-                'bank_branch_name' => 'UTTARA',
+                'name' => 'UTTARA',
                 'bank_branch_data' => [
                     'routing_no' => '105264633',
                 ],
@@ -2908,7 +2908,7 @@ class Branch4Seeder extends Seeder
             320 => [
                 'id' => '3321',
                 'bank_id' => '19',
-                'bank_branch_name' => 'ZIRABO',
+                'name' => 'ZIRABO',
                 'bank_branch_data' => [
                     'routing_no' => '105264817',
                 ],
@@ -2917,7 +2917,7 @@ class Branch4Seeder extends Seeder
             321 => [
                 'id' => '3322',
                 'bank_id' => '19',
-                'bank_branch_name' => 'TRUNCATION POINT',
+                'name' => 'TRUNCATION POINT',
                 'bank_branch_data' => [
                     'routing_no' => '105270001',
                 ],
@@ -2926,7 +2926,7 @@ class Branch4Seeder extends Seeder
             322 => [
                 'id' => '3323',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KERANIGANJ',
+                'name' => 'KERANIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '105270098',
                 ],
@@ -2935,7 +2935,7 @@ class Branch4Seeder extends Seeder
             323 => [
                 'id' => '3324',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BANGSHAL',
+                'name' => 'BANGSHAL',
                 'bank_branch_data' => [
                     'routing_no' => '105270885',
                 ],
@@ -2944,7 +2944,7 @@ class Branch4Seeder extends Seeder
             324 => [
                 'id' => '3325',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BISWA ROAD',
+                'name' => 'BISWA ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '105271121',
                 ],
@@ -2953,7 +2953,7 @@ class Branch4Seeder extends Seeder
             325 => [
                 'id' => '3326',
                 'bank_id' => '19',
-                'bank_branch_name' => 'DANIA',
+                'name' => 'DANIA',
                 'bank_branch_data' => [
                     'routing_no' => '105271426',
                 ],
@@ -2962,7 +2962,7 @@ class Branch4Seeder extends Seeder
             326 => [
                 'id' => '3327',
                 'bank_id' => '19',
-                'bank_branch_name' => 'DILKUSHA',
+                'name' => 'DILKUSHA',
                 'bank_branch_data' => [
                     'routing_no' => '105271905',
                 ],
@@ -2971,7 +2971,7 @@ class Branch4Seeder extends Seeder
             327 => [
                 'id' => '3328',
                 'bank_id' => '19',
-                'bank_branch_name' => 'ISLAMPUR',
+                'name' => 'ISLAMPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105272988',
                 ],
@@ -2980,7 +2980,7 @@ class Branch4Seeder extends Seeder
             328 => [
                 'id' => '3329',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KAKRAIL',
+                'name' => 'KAKRAIL',
                 'bank_branch_data' => [
                     'routing_no' => '105273374',
                 ],
@@ -2989,7 +2989,7 @@ class Branch4Seeder extends Seeder
             329 => [
                 'id' => '3330',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KONAPARA',
+                'name' => 'KONAPARA',
                 'bank_branch_data' => [
                     'routing_no' => '105273745',
                 ],
@@ -2998,7 +2998,7 @@ class Branch4Seeder extends Seeder
             330 => [
                 'id' => '3331',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MALIBAGH',
+                'name' => 'MALIBAGH',
                 'bank_branch_data' => [
                     'routing_no' => '105273945',
                 ],
@@ -3007,7 +3007,7 @@ class Branch4Seeder extends Seeder
             331 => [
                 'id' => '3332',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MOTIJHEEL',
+                'name' => 'MOTIJHEEL',
                 'bank_branch_data' => [
                     'routing_no' => '105274249',
                 ],
@@ -3016,7 +3016,7 @@ class Branch4Seeder extends Seeder
             332 => [
                 'id' => '3333',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MUKSUDPUR',
+                'name' => 'MUKSUDPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105274481',
                 ],
@@ -3025,7 +3025,7 @@ class Branch4Seeder extends Seeder
             333 => [
                 'id' => '3334',
                 'bank_id' => '19',
-                'bank_branch_name' => 'NAWABGANJ',
+                'name' => 'NAWABGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '105274694',
                 ],
@@ -3034,7 +3034,7 @@ class Branch4Seeder extends Seeder
             334 => [
                 'id' => '3335',
                 'bank_id' => '19',
-                'bank_branch_name' => 'POSTAGOLA',
+                'name' => 'POSTAGOLA',
                 'bank_branch_data' => [
                     'routing_no' => '105275327',
                 ],
@@ -3043,7 +3043,7 @@ class Branch4Seeder extends Seeder
             335 => [
                 'id' => '3336',
                 'bank_id' => '19',
-                'bank_branch_name' => 'TOPKHANA ROAD',
+                'name' => 'TOPKHANA ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '105276739',
                 ],
@@ -3052,7 +3052,7 @@ class Branch4Seeder extends Seeder
             336 => [
                 'id' => '3337',
                 'bank_id' => '19',
-                'bank_branch_name' => 'DINAJPUR',
+                'name' => 'DINAJPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105280675',
                 ],
@@ -3061,7 +3061,7 @@ class Branch4Seeder extends Seeder
             337 => [
                 'id' => '3338',
                 'bank_id' => '19',
-                'bank_branch_name' => 'FARIDPUR',
+                'name' => 'FARIDPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105290528',
                 ],
@@ -3070,7 +3070,7 @@ class Branch4Seeder extends Seeder
             338 => [
                 'id' => '3339',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BAKTER MUNSHI BAZAR',
+                'name' => 'BAKTER MUNSHI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '105300092',
                 ],
@@ -3079,7 +3079,7 @@ class Branch4Seeder extends Seeder
             339 => [
                 'id' => '3340',
                 'bank_id' => '19',
-                'bank_branch_name' => 'FENI',
+                'name' => 'FENI',
                 'bank_branch_data' => [
                     'routing_no' => '105300526',
                 ],
@@ -3088,7 +3088,7 @@ class Branch4Seeder extends Seeder
             340 => [
                 'id' => '3341',
                 'bank_id' => '19',
-                'bank_branch_name' => 'FULGAZI',
+                'name' => 'FULGAZI',
                 'bank_branch_data' => [
                     'routing_no' => '105300618',
                 ],
@@ -3097,7 +3097,7 @@ class Branch4Seeder extends Seeder
             341 => [
                 'id' => '3342',
                 'bank_id' => '19',
-                'bank_branch_name' => 'LASKARHAT',
+                'name' => 'LASKARHAT',
                 'bank_branch_data' => [
                     'routing_no' => '105300971',
                 ],
@@ -3106,7 +3106,7 @@ class Branch4Seeder extends Seeder
             342 => [
                 'id' => '3343',
                 'bank_id' => '19',
-                'bank_branch_name' => 'COLLEGE GATE',
+                'name' => 'COLLEGE GATE',
                 'bank_branch_data' => [
                     'routing_no' => '105330417',
                 ],
@@ -3115,7 +3115,7 @@ class Branch4Seeder extends Seeder
             343 => [
                 'id' => '3344',
                 'bank_id' => '19',
-                'bank_branch_name' => 'GAZIPUR CHOWRASTA',
+                'name' => 'GAZIPUR CHOWRASTA',
                 'bank_branch_data' => [
                     'routing_no' => '105330554',
                 ],
@@ -3124,7 +3124,7 @@ class Branch4Seeder extends Seeder
             344 => [
                 'id' => '3345',
                 'bank_id' => '19',
-                'bank_branch_name' => 'SHAFIPUR',
+                'name' => 'SHAFIPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105331429',
                 ],
@@ -3133,7 +3133,7 @@ class Branch4Seeder extends Seeder
             345 => [
                 'id' => '3346',
                 'bank_id' => '19',
-                'bank_branch_name' => 'SREEPUR',
+                'name' => 'SREEPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105331487',
                 ],
@@ -3142,7 +3142,7 @@ class Branch4Seeder extends Seeder
             346 => [
                 'id' => '3347',
                 'bank_id' => '19',
-                'bank_branch_name' => 'GOPALGANJ',
+                'name' => 'GOPALGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '105350376',
                 ],
@@ -3151,7 +3151,7 @@ class Branch4Seeder extends Seeder
             347 => [
                 'id' => '3348',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BAGACHARA',
+                'name' => 'BAGACHARA',
                 'bank_branch_data' => [
                     'routing_no' => '105410108',
                 ],
@@ -3160,7 +3160,7 @@ class Branch4Seeder extends Seeder
             348 => [
                 'id' => '3349',
                 'bank_id' => '19',
-                'bank_branch_name' => 'JESSORE',
+                'name' => 'JESSORE',
                 'bank_branch_data' => [
                     'routing_no' => '105410940',
                 ],
@@ -3169,7 +3169,7 @@ class Branch4Seeder extends Seeder
             349 => [
                 'id' => '3350',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KESHABPUR',
+                'name' => 'KESHABPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105411215',
                 ],
@@ -3178,7 +3178,7 @@ class Branch4Seeder extends Seeder
             350 => [
                 'id' => '3351',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KHAJURA BAZAR',
+                'name' => 'KHAJURA BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '105411257',
                 ],
@@ -3187,7 +3187,7 @@ class Branch4Seeder extends Seeder
             351 => [
                 'id' => '3352',
                 'bank_id' => '19',
-                'bank_branch_name' => 'NAVARAN',
+                'name' => 'NAVARAN',
                 'bank_branch_data' => [
                     'routing_no' => '105411602',
                 ],
@@ -3196,7 +3196,7 @@ class Branch4Seeder extends Seeder
             352 => [
                 'id' => '3353',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BARO BAZAR',
+                'name' => 'BARO BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '105440073',
                 ],
@@ -3205,7 +3205,7 @@ class Branch4Seeder extends Seeder
             353 => [
                 'id' => '3354',
                 'bank_id' => '19',
-                'bank_branch_name' => 'JHENAIDAH',
+                'name' => 'JHENAIDAH',
                 'bank_branch_data' => [
                     'routing_no' => '105440644',
                 ],
@@ -3214,7 +3214,7 @@ class Branch4Seeder extends Seeder
             354 => [
                 'id' => '3355',
                 'bank_id' => '19',
-                'bank_branch_name' => 'FULTALA',
+                'name' => 'FULTALA',
                 'bank_branch_data' => [
                     'routing_no' => '105470872',
                 ],
@@ -3223,7 +3223,7 @@ class Branch4Seeder extends Seeder
             355 => [
                 'id' => '3356',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KAPILMUNI',
+                'name' => 'KAPILMUNI',
                 'bank_branch_data' => [
                     'routing_no' => '105471271',
                 ],
@@ -3232,7 +3232,7 @@ class Branch4Seeder extends Seeder
             356 => [
                 'id' => '3357',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KHULNA',
+                'name' => 'KHULNA',
                 'bank_branch_data' => [
                     'routing_no' => '105471547',
                 ],
@@ -3241,7 +3241,7 @@ class Branch4Seeder extends Seeder
             357 => [
                 'id' => '3358',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KUSHTIA',
+                'name' => 'KUSHTIA',
                 'bank_branch_data' => [
                     'routing_no' => '105500942',
                 ],
@@ -3250,7 +3250,7 @@ class Branch4Seeder extends Seeder
             358 => [
                 'id' => '3359',
                 'bank_id' => '19',
-                'bank_branch_name' => 'LAKSHMIPUR',
+                'name' => 'LAKSHMIPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105510732',
                 ],
@@ -3259,7 +3259,7 @@ class Branch4Seeder extends Seeder
             359 => [
                 'id' => '3360',
                 'bank_id' => '19',
-                'bank_branch_name' => 'RAMGANJ',
+                'name' => 'RAMGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '105511036',
                 ],
@@ -3268,7 +3268,7 @@ class Branch4Seeder extends Seeder
             360 => [
                 'id' => '3361',
                 'bank_id' => '19',
-                'bank_branch_name' => 'PANCHOR',
+                'name' => 'PANCHOR',
                 'bank_branch_data' => [
                     'routing_no' => '105540052',
                 ],
@@ -3277,7 +3277,7 @@ class Branch4Seeder extends Seeder
             361 => [
                 'id' => '3362',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MAGURA',
+                'name' => 'MAGURA',
                 'bank_branch_data' => [
                     'routing_no' => '105550550',
                 ],
@@ -3286,7 +3286,7 @@ class Branch4Seeder extends Seeder
             362 => [
                 'id' => '3363',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MANIKGANJ',
+                'name' => 'MANIKGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '105560616',
                 ],
@@ -3295,7 +3295,7 @@ class Branch4Seeder extends Seeder
             363 => [
                 'id' => '3364',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MEHERPUR',
+                'name' => 'MEHERPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105570372',
                 ],
@@ -3304,7 +3304,7 @@ class Branch4Seeder extends Seeder
             364 => [
                 'id' => '3365',
                 'bank_id' => '19',
-                'bank_branch_name' => 'JURI',
+                'name' => 'JURI',
                 'bank_branch_data' => [
                     'routing_no' => '105580670',
                 ],
@@ -3313,7 +3313,7 @@ class Branch4Seeder extends Seeder
             365 => [
                 'id' => '3366',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MOULAVI BAZAR',
+                'name' => 'MOULAVI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '105581187',
                 ],
@@ -3322,7 +3322,7 @@ class Branch4Seeder extends Seeder
             366 => [
                 'id' => '3367',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BALIGAON-TONGIBARI',
+                'name' => 'BALIGAON-TONGIBARI',
                 'bank_branch_data' => [
                     'routing_no' => '105591548',
                 ],
@@ -3331,7 +3331,7 @@ class Branch4Seeder extends Seeder
             367 => [
                 'id' => '3368',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BHALUKA',
+                'name' => 'BHALUKA',
                 'bank_branch_data' => [
                     'routing_no' => '105610311',
                 ],
@@ -3340,7 +3340,7 @@ class Branch4Seeder extends Seeder
             368 => [
                 'id' => '3369',
                 'bank_id' => '19',
-                'bank_branch_name' => 'JAMIDARIA MASTER BARI',
+                'name' => 'JAMIDARIA MASTER BARI',
                 'bank_branch_data' => [
                     'routing_no' => '105611460',
                 ],
@@ -3349,7 +3349,7 @@ class Branch4Seeder extends Seeder
             369 => [
                 'id' => '3370',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MYMENSINGH',
+                'name' => 'MYMENSINGH',
                 'bank_branch_data' => [
                     'routing_no' => '105611752',
                 ],
@@ -3358,7 +3358,7 @@ class Branch4Seeder extends Seeder
             370 => [
                 'id' => '3371',
                 'bank_id' => '19',
-                'bank_branch_name' => 'NAOGAON',
+                'name' => 'NAOGAON',
                 'bank_branch_data' => [
                     'routing_no' => '105641180',
                 ],
@@ -3367,7 +3367,7 @@ class Branch4Seeder extends Seeder
             371 => [
                 'id' => '3372',
                 'bank_id' => '19',
-                'bank_branch_name' => 'LOHAGARA SME',
+                'name' => 'LOHAGARA SME',
                 'bank_branch_data' => [
                     'routing_no' => '105650476',
                 ],
@@ -3376,7 +3376,7 @@ class Branch4Seeder extends Seeder
             372 => [
                 'id' => '3373',
                 'bank_id' => '19',
-                'bank_branch_name' => 'NARAIL',
+                'name' => 'NARAIL',
                 'bank_branch_data' => [
                     'routing_no' => '105650647',
                 ],
@@ -3385,7 +3385,7 @@ class Branch4Seeder extends Seeder
             373 => [
                 'id' => '3374',
                 'bank_id' => '19',
-                'bank_branch_name' => 'NARAYANGANJ',
+                'name' => 'NARAYANGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '105671189',
                 ],
@@ -3394,7 +3394,7 @@ class Branch4Seeder extends Seeder
             374 => [
                 'id' => '3375',
                 'bank_id' => '19',
-                'bank_branch_name' => 'MADHABDI, SME/KRISHI',
+                'name' => 'MADHABDI, SME/KRISHI',
                 'bank_branch_data' => [
                     'routing_no' => '105680688',
                 ],
@@ -3403,7 +3403,7 @@ class Branch4Seeder extends Seeder
             375 => [
                 'id' => '3376',
                 'bank_id' => '19',
-                'bank_branch_name' => 'DHUPIL BAZAR',
+                'name' => 'DHUPIL BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '105690081',
                 ],
@@ -3412,7 +3412,7 @@ class Branch4Seeder extends Seeder
             376 => [
                 'id' => '3377',
                 'bank_id' => '19',
-                'bank_branch_name' => 'NATORE',
+                'name' => 'NATORE',
                 'bank_branch_data' => [
                     'routing_no' => '105691093',
                 ],
@@ -3421,7 +3421,7 @@ class Branch4Seeder extends Seeder
             377 => [
                 'id' => '3378',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KANSAT',
+                'name' => 'KANSAT',
                 'bank_branch_data' => [
                     'routing_no' => '105700526',
                 ],
@@ -3430,7 +3430,7 @@ class Branch4Seeder extends Seeder
             378 => [
                 'id' => '3379',
                 'bank_id' => '19',
-                'bank_branch_name' => 'SAYEDPUR',
+                'name' => 'SAYEDPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105730796',
                 ],
@@ -3439,7 +3439,7 @@ class Branch4Seeder extends Seeder
             379 => [
                 'id' => '3380',
                 'bank_id' => '19',
-                'bank_branch_name' => 'CHOWDHURYHAT',
+                'name' => 'CHOWDHURYHAT',
                 'bank_branch_data' => [
                     'routing_no' => '105750705',
                 ],
@@ -3448,7 +3448,7 @@ class Branch4Seeder extends Seeder
             380 => [
                 'id' => '3381',
                 'bank_id' => '19',
-                'bank_branch_name' => 'PABNA',
+                'name' => 'PABNA',
                 'bank_branch_data' => [
                     'routing_no' => '105761781',
                 ],
@@ -3457,7 +3457,7 @@ class Branch4Seeder extends Seeder
             381 => [
                 'id' => '3382',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BAUPHAL',
+                'name' => 'BAUPHAL',
                 'bank_branch_data' => [
                     'routing_no' => '105780191',
                 ],
@@ -3466,7 +3466,7 @@ class Branch4Seeder extends Seeder
             382 => [
                 'id' => '3383',
                 'bank_id' => '19',
-                'bank_branch_name' => 'GALACHIPA',
+                'name' => 'GALACHIPA',
                 'bank_branch_data' => [
                     'routing_no' => '105780496',
                 ],
@@ -3475,7 +3475,7 @@ class Branch4Seeder extends Seeder
             383 => [
                 'id' => '3384',
                 'bank_id' => '19',
-                'bank_branch_name' => 'PATUAKHALI',
+                'name' => 'PATUAKHALI',
                 'bank_branch_data' => [
                     'routing_no' => '105781095',
                 ],
@@ -3484,7 +3484,7 @@ class Branch4Seeder extends Seeder
             384 => [
                 'id' => '3385',
                 'bank_id' => '19',
-                'bank_branch_name' => 'SWARUPKATI',
+                'name' => 'SWARUPKATI',
                 'bank_branch_data' => [
                     'routing_no' => '105790978',
                 ],
@@ -3493,7 +3493,7 @@ class Branch4Seeder extends Seeder
             385 => [
                 'id' => '3386',
                 'bank_id' => '19',
-                'bank_branch_name' => 'RAJSHAHI',
+                'name' => 'RAJSHAHI',
                 'bank_branch_data' => [
                     'routing_no' => '105811936',
                 ],
@@ -3502,7 +3502,7 @@ class Branch4Seeder extends Seeder
             386 => [
                 'id' => '3387',
                 'bank_id' => '19',
-                'bank_branch_name' => 'RANGAMATI',
+                'name' => 'RANGAMATI',
                 'bank_branch_data' => [
                     'routing_no' => '105840523',
                 ],
@@ -3511,7 +3511,7 @@ class Branch4Seeder extends Seeder
             387 => [
                 'id' => '3388',
                 'bank_id' => '19',
-                'bank_branch_name' => 'RANGPUR',
+                'name' => 'RANGPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105851459',
                 ],
@@ -3520,7 +3520,7 @@ class Branch4Seeder extends Seeder
             388 => [
                 'id' => '3389',
                 'bank_id' => '19',
-                'bank_branch_name' => 'DAMUDYA',
+                'name' => 'DAMUDYA',
                 'bank_branch_data' => [
                     'routing_no' => '105860190',
                 ],
@@ -3529,7 +3529,7 @@ class Branch4Seeder extends Seeder
             389 => [
                 'id' => '3390',
                 'bank_id' => '19',
-                'bank_branch_name' => 'NARIA',
+                'name' => 'NARIA',
                 'bank_branch_data' => [
                     'routing_no' => '105860587',
                 ],
@@ -3538,7 +3538,7 @@ class Branch4Seeder extends Seeder
             390 => [
                 'id' => '3391',
                 'bank_id' => '19',
-                'bank_branch_name' => 'KALIGANJ',
+                'name' => 'KALIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '105870614',
                 ],
@@ -3547,7 +3547,7 @@ class Branch4Seeder extends Seeder
             391 => [
                 'id' => '3392',
                 'bank_id' => '19',
-                'bank_branch_name' => 'SATKHIRA',
+                'name' => 'SATKHIRA',
                 'bank_branch_data' => [
                     'routing_no' => '105871097',
                 ],
@@ -3556,7 +3556,7 @@ class Branch4Seeder extends Seeder
             392 => [
                 'id' => '3393',
                 'bank_id' => '19',
-                'bank_branch_name' => 'SHYAM NAGAR',
+                'name' => 'SHYAM NAGAR',
                 'bank_branch_data' => [
                     'routing_no' => '105871213',
                 ],
@@ -3565,7 +3565,7 @@ class Branch4Seeder extends Seeder
             393 => [
                 'id' => '3394',
                 'bank_id' => '19',
-                'bank_branch_name' => 'SIRAJGANJ',
+                'name' => 'SIRAJGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '105880059',
                 ],
@@ -3574,7 +3574,7 @@ class Branch4Seeder extends Seeder
             394 => [
                 'id' => '3395',
                 'bank_id' => '19',
-                'bank_branch_name' => 'CHHATAK',
+                'name' => 'CHHATAK',
                 'bank_branch_data' => [
                     'routing_no' => '105900221',
                 ],
@@ -3583,7 +3583,7 @@ class Branch4Seeder extends Seeder
             395 => [
                 'id' => '3396',
                 'bank_id' => '19',
-                'bank_branch_name' => 'GOBINDAGANJ',
+                'name' => 'GOBINDAGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '105900434',
                 ],
@@ -3592,7 +3592,7 @@ class Branch4Seeder extends Seeder
             396 => [
                 'id' => '3397',
                 'bank_id' => '19',
-                'bank_branch_name' => 'AMBARKHANA',
+                'name' => 'AMBARKHANA',
                 'bank_branch_data' => [
                     'routing_no' => '105910079',
                 ],
@@ -3601,7 +3601,7 @@ class Branch4Seeder extends Seeder
             397 => [
                 'id' => '3398',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BEANI BAZAR',
+                'name' => 'BEANI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '105910316',
                 ],
@@ -3610,7 +3610,7 @@ class Branch4Seeder extends Seeder
             398 => [
                 'id' => '3399',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BISHWANATH',
+                'name' => 'BISHWANATH',
                 'bank_branch_data' => [
                     'routing_no' => '105910437',
                 ],
@@ -3619,7 +3619,7 @@ class Branch4Seeder extends Seeder
             399 => [
                 'id' => '3400',
                 'bank_id' => '19',
-                'bank_branch_name' => 'SYLHET',
+                'name' => 'SYLHET',
                 'bank_branch_data' => [
                     'routing_no' => '105913555',
                 ],
@@ -3628,7 +3628,7 @@ class Branch4Seeder extends Seeder
             400 => [
                 'id' => '3401',
                 'bank_id' => '19',
-                'bank_branch_name' => 'TALTALA',
+                'name' => 'TALTALA',
                 'bank_branch_data' => [
                     'routing_no' => '105913850',
                 ],
@@ -3637,7 +3637,7 @@ class Branch4Seeder extends Seeder
             401 => [
                 'id' => '3402',
                 'bank_id' => '19',
-                'bank_branch_name' => 'BHUANPUR',
+                'name' => 'BHUANPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105930462',
                 ],
@@ -3646,7 +3646,7 @@ class Branch4Seeder extends Seeder
             402 => [
                 'id' => '3403',
                 'bank_id' => '19',
-                'bank_branch_name' => 'HAMIDPUR',
+                'name' => 'HAMIDPUR',
                 'bank_branch_data' => [
                     'routing_no' => '105931090',
                 ],
@@ -3655,7 +3655,7 @@ class Branch4Seeder extends Seeder
             403 => [
                 'id' => '3404',
                 'bank_id' => '19',
-                'bank_branch_name' => 'TANGAIL',
+                'name' => 'TANGAIL',
                 'bank_branch_data' => [
                     'routing_no' => '105932299',
                 ],
@@ -3664,7 +3664,7 @@ class Branch4Seeder extends Seeder
             404 => [
                 'id' => '3405',
                 'bank_id' => '20',
-                'bank_branch_name' => 'LALDIGHI EAST',
+                'name' => 'LALDIGHI EAST',
                 'bank_branch_data' => [
                     'routing_no' => '110154541',
                 ],
@@ -3673,7 +3673,7 @@ class Branch4Seeder extends Seeder
             405 => [
                 'id' => '3406',
                 'bank_id' => '20',
-                'bank_branch_name' => 'GULSHAN',
+                'name' => 'GULSHAN',
                 'bank_branch_data' => [
                     'routing_no' => '110261726',
                 ],
@@ -3682,7 +3682,7 @@ class Branch4Seeder extends Seeder
             406 => [
                 'id' => '3407',
                 'bank_id' => '20',
-                'bank_branch_name' => 'KARWAN BAZAR',
+                'name' => 'KARWAN BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '110262538',
                 ],
@@ -3691,7 +3691,7 @@ class Branch4Seeder extends Seeder
             407 => [
                 'id' => '3408',
                 'bank_id' => '20',
-                'bank_branch_name' => 'UTTARA',
+                'name' => 'UTTARA',
                 'bank_branch_data' => [
                     'routing_no' => '110264631',
                 ],
@@ -3700,7 +3700,7 @@ class Branch4Seeder extends Seeder
             408 => [
                 'id' => '3409',
                 'bank_id' => '20',
-                'bank_branch_name' => 'TRUNCATION POINT',
+                'name' => 'TRUNCATION POINT',
                 'bank_branch_data' => [
                     'routing_no' => '110270009',
                 ],
@@ -3709,7 +3709,7 @@ class Branch4Seeder extends Seeder
             409 => [
                 'id' => '3410',
                 'bank_id' => '20',
-                'bank_branch_name' => 'MOTIJHEEL',
+                'name' => 'MOTIJHEEL',
                 'bank_branch_data' => [
                     'routing_no' => '110274247',
                 ],
@@ -3718,7 +3718,7 @@ class Branch4Seeder extends Seeder
             410 => [
                 'id' => '3411',
                 'bank_id' => '20',
-                'bank_branch_name' => 'NAYA BAZAR',
+                'name' => 'NAYA BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '110274818',
                 ],
@@ -3727,7 +3727,7 @@ class Branch4Seeder extends Seeder
             411 => [
                 'id' => '3412',
                 'bank_id' => '20',
-                'bank_branch_name' => 'SYLHET',
+                'name' => 'SYLHET',
                 'bank_branch_data' => [
                     'routing_no' => '110913553',
                 ],
@@ -3736,7 +3736,7 @@ class Branch4Seeder extends Seeder
             412 => [
                 'id' => '3413',
                 'bank_id' => '21',
-                'bank_branch_name' => 'AGRABAD',
+                'name' => 'AGRABAD',
                 'bank_branch_data' => [
                     'routing_no' => '115150137',
                 ],
@@ -3745,7 +3745,7 @@ class Branch4Seeder extends Seeder
             413 => [
                 'id' => '3414',
                 'bank_id' => '21',
-                'bank_branch_name' => 'CHITTAGONG',
+                'name' => 'CHITTAGONG',
                 'bank_branch_data' => [
                     'routing_no' => '115151965',
                 ],
@@ -3754,7 +3754,7 @@ class Branch4Seeder extends Seeder
             414 => [
                 'id' => '3415',
                 'bank_id' => '21',
-                'bank_branch_name' => 'GEC',
+                'name' => 'GEC',
                 'bank_branch_data' => [
                     'routing_no' => '115152951',
                 ],
@@ -3763,7 +3763,7 @@ class Branch4Seeder extends Seeder
             415 => [
                 'id' => '3416',
                 'bank_id' => '21',
-                'bank_branch_name' => 'AMANAH',
+                'name' => 'AMANAH',
                 'bank_branch_data' => [
                     'routing_no' => '115260106',
                 ],
@@ -3772,7 +3772,7 @@ class Branch4Seeder extends Seeder
             416 => [
                 'id' => '3417',
                 'bank_id' => '21',
-                'bank_branch_name' => 'BANANI',
+                'name' => 'BANANI',
                 'bank_branch_data' => [
                     'routing_no' => '115260430',
                 ],
@@ -3781,7 +3781,7 @@ class Branch4Seeder extends Seeder
             417 => [
                 'id' => '3418',
                 'bank_id' => '21',
-                'bank_branch_name' => 'BARIDHARA',
+                'name' => 'BARIDHARA',
                 'bank_branch_data' => [
                     'routing_no' => '115260522',
                 ],
@@ -3790,7 +3790,7 @@ class Branch4Seeder extends Seeder
             418 => [
                 'id' => '3419',
                 'bank_id' => '21',
-                'bank_branch_name' => 'DHAKA OFFICE',
+                'name' => 'DHAKA OFFICE',
                 'bank_branch_data' => [
                     'routing_no' => '115261121',
                 ],
@@ -3799,7 +3799,7 @@ class Branch4Seeder extends Seeder
             419 => [
                 'id' => '3420',
                 'bank_id' => '21',
-                'bank_branch_name' => 'DHANMONDI',
+                'name' => 'DHANMONDI',
                 'bank_branch_data' => [
                     'routing_no' => '115261189',
                 ],
@@ -3808,7 +3808,7 @@ class Branch4Seeder extends Seeder
             420 => [
                 'id' => '3421',
                 'bank_id' => '21',
-                'bank_branch_name' => 'GULSHAN',
+                'name' => 'GULSHAN',
                 'bank_branch_data' => [
                     'routing_no' => '115261721',
                 ],
@@ -3817,7 +3817,7 @@ class Branch4Seeder extends Seeder
             421 => [
                 'id' => '3422',
                 'bank_id' => '21',
-                'bank_branch_name' => 'MIRPUR',
+                'name' => 'MIRPUR',
                 'bank_branch_data' => [
                     'routing_no' => '115262988',
                 ],
@@ -3826,7 +3826,7 @@ class Branch4Seeder extends Seeder
             422 => [
                 'id' => '3423',
                 'bank_id' => '21',
-                'bank_branch_name' => 'UTTARA',
+                'name' => 'UTTARA',
                 'bank_branch_data' => [
                     'routing_no' => '115264636',
                 ],
@@ -3835,7 +3835,7 @@ class Branch4Seeder extends Seeder
             423 => [
                 'id' => '3424',
                 'bank_id' => '21',
-                'bank_branch_name' => 'TRUNCATION POINT',
+                'name' => 'TRUNCATION POINT',
                 'bank_branch_data' => [
                     'routing_no' => '115270004',
                 ],
@@ -3844,7 +3844,7 @@ class Branch4Seeder extends Seeder
             424 => [
                 'id' => '3425',
                 'bank_id' => '21',
-                'bank_branch_name' => 'CHAWK BAZAR',
+                'name' => 'CHAWK BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '115271274',
                 ],
@@ -3853,7 +3853,7 @@ class Branch4Seeder extends Seeder
             425 => [
                 'id' => '3426',
                 'bank_id' => '21',
-                'bank_branch_name' => 'MOTIJHEEL',
+                'name' => 'MOTIJHEEL',
                 'bank_branch_data' => [
                     'routing_no' => '115274242',
                 ],
@@ -3862,7 +3862,7 @@ class Branch4Seeder extends Seeder
             426 => [
                 'id' => '3427',
                 'bank_id' => '21',
-                'bank_branch_name' => 'MYMENSINGH',
+                'name' => 'MYMENSINGH',
                 'bank_branch_data' => [
                     'routing_no' => '115611755',
                 ],
@@ -3871,7 +3871,7 @@ class Branch4Seeder extends Seeder
             427 => [
                 'id' => '3428',
                 'bank_id' => '21',
-                'bank_branch_name' => 'NARAYANGANJ',
+                'name' => 'NARAYANGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '115671887',
                 ],
@@ -3880,7 +3880,7 @@ class Branch4Seeder extends Seeder
             428 => [
                 'id' => '3429',
                 'bank_id' => '21',
-                'bank_branch_name' => 'SYLHET',
+                'name' => 'SYLHET',
                 'bank_branch_data' => [
                     'routing_no' => '115913558',
                 ],
@@ -3889,7 +3889,7 @@ class Branch4Seeder extends Seeder
             429 => [
                 'id' => '3430',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BAGERHAT',
+                'name' => 'BAGERHAT',
                 'bank_branch_data' => [
                     'routing_no' => '120010075',
                 ],
@@ -3898,7 +3898,7 @@ class Branch4Seeder extends Seeder
             430 => [
                 'id' => '3431',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BARISAL',
+                'name' => 'BARISAL',
                 'bank_branch_data' => [
                     'routing_no' => '120060283',
                 ],
@@ -3907,7 +3907,7 @@ class Branch4Seeder extends Seeder
             431 => [
                 'id' => '3432',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BHOLA',
+                'name' => 'BHOLA',
                 'bank_branch_data' => [
                     'routing_no' => '120090103',
                 ],
@@ -3916,7 +3916,7 @@ class Branch4Seeder extends Seeder
             432 => [
                 'id' => '3433',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BOGRA',
+                'name' => 'BOGRA',
                 'bank_branch_data' => [
                     'routing_no' => '120100372',
                 ],
@@ -3925,7 +3925,7 @@ class Branch4Seeder extends Seeder
             433 => [
                 'id' => '3434',
                 'bank_id' => '22',
-                'bank_branch_name' => 'ASHUGANJ',
+                'name' => 'ASHUGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '120120107',
                 ],
@@ -3934,7 +3934,7 @@ class Branch4Seeder extends Seeder
             434 => [
                 'id' => '3435',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BRAHMANBARIA',
+                'name' => 'BRAHMANBARIA',
                 'bank_branch_data' => [
                     'routing_no' => '120120431',
                 ],
@@ -3943,7 +3943,7 @@ class Branch4Seeder extends Seeder
             435 => [
                 'id' => '3436',
                 'bank_id' => '22',
-                'bank_branch_name' => 'AGRABAD',
+                'name' => 'AGRABAD',
                 'bank_branch_data' => [
                     'routing_no' => '120150135',
                 ],
@@ -3952,7 +3952,7 @@ class Branch4Seeder extends Seeder
             436 => [
                 'id' => '3437',
                 'bank_id' => '22',
-                'bank_branch_name' => 'ALANKAR MOR',
+                'name' => 'ALANKAR MOR',
                 'bank_branch_data' => [
                     'routing_no' => '120150148',
                 ],
@@ -3961,7 +3961,7 @@ class Branch4Seeder extends Seeder
             437 => [
                 'id' => '3438',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BONDORTILA',
+                'name' => 'BONDORTILA',
                 'bank_branch_data' => [
                     'routing_no' => '120150364',
                 ],
@@ -3970,7 +3970,7 @@ class Branch4Seeder extends Seeder
             438 => [
                 'id' => '3439',
                 'bank_id' => '22',
-                'bank_branch_name' => 'ANOWARA',
+                'name' => 'ANOWARA',
                 'bank_branch_data' => [
                     'routing_no' => '120150522',
                 ],
@@ -3979,7 +3979,7 @@ class Branch4Seeder extends Seeder
             439 => [
                 'id' => '3440',
                 'bank_id' => '22',
-                'bank_branch_name' => 'C.D.A. AVENUE',
+                'name' => 'C.D.A. AVENUE',
                 'bank_branch_data' => [
                     'routing_no' => '120151484',
                 ],
@@ -3988,7 +3988,7 @@ class Branch4Seeder extends Seeder
             440 => [
                 'id' => '3441',
                 'bank_id' => '22',
-                'bank_branch_name' => 'CHAWK BAZAR',
+                'name' => 'CHAWK BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120151934',
                 ],
@@ -3997,7 +3997,7 @@ class Branch4Seeder extends Seeder
             441 => [
                 'id' => '3442',
                 'bank_id' => '22',
-                'bank_branch_name' => 'FATIKCHARI',
+                'name' => 'FATIKCHARI',
                 'bank_branch_data' => [
                     'routing_no' => '120152746',
                 ],
@@ -4006,7 +4006,7 @@ class Branch4Seeder extends Seeder
             442 => [
                 'id' => '3443',
                 'bank_id' => '22',
-                'bank_branch_name' => 'HATHAZARI',
+                'name' => 'HATHAZARI',
                 'bank_branch_data' => [
                     'routing_no' => '120153224',
                 ],
@@ -4015,7 +4015,7 @@ class Branch4Seeder extends Seeder
             443 => [
                 'id' => '3444',
                 'bank_id' => '22',
-                'bank_branch_name' => 'KHATUNGANJ',
+                'name' => 'KHATUNGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '120154278',
                 ],
@@ -4024,7 +4024,7 @@ class Branch4Seeder extends Seeder
             444 => [
                 'id' => '3445',
                 'bank_id' => '22',
-                'bank_branch_name' => 'MADAM BIBIR HAT',
+                'name' => 'MADAM BIBIR HAT',
                 'bank_branch_data' => [
                     'routing_no' => '120154694',
                 ],
@@ -4033,7 +4033,7 @@ class Branch4Seeder extends Seeder
             445 => [
                 'id' => '3446',
                 'bank_id' => '22',
-                'bank_branch_name' => 'PANCHLAISH',
+                'name' => 'PANCHLAISH',
                 'bank_branch_data' => [
                     'routing_no' => '120156047',
                 ],
@@ -4042,7 +4042,7 @@ class Branch4Seeder extends Seeder
             446 => [
                 'id' => '3447',
                 'bank_id' => '22',
-                'bank_branch_name' => 'SHAH AMANAT MARKET',
+                'name' => 'SHAH AMANAT MARKET',
                 'bank_branch_data' => [
                     'routing_no' => '120157154',
                 ],
@@ -4051,7 +4051,7 @@ class Branch4Seeder extends Seeder
             447 => [
                 'id' => '3448',
                 'bank_id' => '22',
-                'bank_branch_name' => 'SHEIKH MARKET',
+                'name' => 'SHEIKH MARKET',
                 'bank_branch_data' => [
                     'routing_no' => '120157275',
                 ],
@@ -4060,7 +4060,7 @@ class Branch4Seeder extends Seeder
             448 => [
                 'id' => '3449',
                 'bank_id' => '22',
-                'bank_branch_name' => 'SK. MUJIB ROAD',
+                'name' => 'SK. MUJIB ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '120157420',
                 ],
@@ -4069,7 +4069,7 @@ class Branch4Seeder extends Seeder
             449 => [
                 'id' => '3450',
                 'bank_id' => '22',
-                'bank_branch_name' => 'TERRI BAZAR',
+                'name' => 'TERRI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120157633',
                 ],
@@ -4078,7 +4078,7 @@ class Branch4Seeder extends Seeder
             450 => [
                 'id' => '3451',
                 'bank_id' => '22',
-                'bank_branch_name' => 'CHANDINA',
+                'name' => 'CHANDINA',
                 'bank_branch_data' => [
                     'routing_no' => '120190887',
                 ],
@@ -4087,7 +4087,7 @@ class Branch4Seeder extends Seeder
             451 => [
                 'id' => '3452',
                 'bank_id' => '22',
-                'bank_branch_name' => 'COMILLA',
+                'name' => 'COMILLA',
                 'bank_branch_data' => [
                     'routing_no' => '120191152',
                 ],
@@ -4096,7 +4096,7 @@ class Branch4Seeder extends Seeder
             452 => [
                 'id' => '3453',
                 'bank_id' => '22',
-                'bank_branch_name' => 'COMPANIGANJ',
+                'name' => 'COMPANIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '120191428',
                 ],
@@ -4105,7 +4105,7 @@ class Branch4Seeder extends Seeder
             453 => [
                 'id' => '3454',
                 'bank_id' => '22',
-                'bank_branch_name' => 'GOURIPUR BAZAR',
+                'name' => 'GOURIPUR BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120192148',
                 ],
@@ -4114,7 +4114,7 @@ class Branch4Seeder extends Seeder
             454 => [
                 'id' => '3455',
                 'bank_id' => '22',
-                'bank_branch_name' => 'MIAH BAZAR',
+                'name' => 'MIAH BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120194120',
                 ],
@@ -4123,7 +4123,7 @@ class Branch4Seeder extends Seeder
             455 => [
                 'id' => '3456',
                 'bank_id' => '22',
-                'bank_branch_name' => 'COXS BAZAR',
+                'name' => 'COXS BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120220252',
                 ],
@@ -4132,7 +4132,7 @@ class Branch4Seeder extends Seeder
             456 => [
                 'id' => '3457',
                 'bank_id' => '22',
-                'bank_branch_name' => 'GABTALI BAGBARI',
+                'name' => 'GABTALI BAGBARI',
                 'bank_branch_data' => [
                     'routing_no' => '120260120',
                 ],
@@ -4141,7 +4141,7 @@ class Branch4Seeder extends Seeder
             457 => [
                 'id' => '3458',
                 'bank_id' => '22',
-                'bank_branch_name' => 'ASHULIA',
+                'name' => 'ASHULIA',
                 'bank_branch_data' => [
                     'routing_no' => '120260225',
                 ],
@@ -4150,7 +4150,7 @@ class Branch4Seeder extends Seeder
             458 => [
                 'id' => '3459',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BANANI',
+                'name' => 'BANANI',
                 'bank_branch_data' => [
                     'routing_no' => '120260438',
                 ],
@@ -4159,7 +4159,7 @@ class Branch4Seeder extends Seeder
             459 => [
                 'id' => '3460',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BASHUNDHARA',
+                'name' => 'BASHUNDHARA',
                 'bank_branch_data' => [
                     'routing_no' => '120260559',
                 ],
@@ -4168,7 +4168,7 @@ class Branch4Seeder extends Seeder
             460 => [
                 'id' => '3461',
                 'bank_id' => '22',
-                'bank_branch_name' => 'DARUS-SALAM ROAD',
+                'name' => 'DARUS-SALAM ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '120260946',
                 ],
@@ -4177,7 +4177,7 @@ class Branch4Seeder extends Seeder
             461 => [
                 'id' => '3462',
                 'bank_id' => '22',
-                'bank_branch_name' => 'DHAMRAI SME',
+                'name' => 'DHAMRAI SME',
                 'bank_branch_data' => [
                     'routing_no' => '120261158',
                 ],
@@ -4186,7 +4186,7 @@ class Branch4Seeder extends Seeder
             462 => [
                 'id' => '3463',
                 'bank_id' => '22',
-                'bank_branch_name' => 'DHANMONDI',
+                'name' => 'DHANMONDI',
                 'bank_branch_data' => [
                     'routing_no' => '120261187',
                 ],
@@ -4195,7 +4195,7 @@ class Branch4Seeder extends Seeder
             463 => [
                 'id' => '3464',
                 'bank_id' => '22',
-                'bank_branch_name' => 'ELEPHANT ROAD',
+                'name' => 'ELEPHANT ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '120261332',
                 ],
@@ -4204,7 +4204,7 @@ class Branch4Seeder extends Seeder
             464 => [
                 'id' => '3465',
                 'bank_id' => '22',
-                'bank_branch_name' => 'GARIB-E-NEWAZ AVENUE',
+                'name' => 'GARIB-E-NEWAZ AVENUE',
                 'bank_branch_data' => [
                     'routing_no' => '120261640',
                 ],
@@ -4213,7 +4213,7 @@ class Branch4Seeder extends Seeder
             465 => [
                 'id' => '3466',
                 'bank_id' => '22',
-                'bank_branch_name' => 'GULSHAN',
+                'name' => 'GULSHAN',
                 'bank_branch_data' => [
                     'routing_no' => '120261729',
                 ],
@@ -4222,7 +4222,7 @@ class Branch4Seeder extends Seeder
             466 => [
                 'id' => '3467',
                 'bank_id' => '22',
-                'bank_branch_name' => 'GULSHAN TEJGAON LINK ROAD',
+                'name' => 'GULSHAN TEJGAON LINK ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '120261929',
                 ],
@@ -4231,7 +4231,7 @@ class Branch4Seeder extends Seeder
             467 => [
                 'id' => '3468',
                 'bank_id' => '22',
-                'bank_branch_name' => 'KARWAN BAZAR',
+                'name' => 'KARWAN BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120262531',
                 ],
@@ -4240,7 +4240,7 @@ class Branch4Seeder extends Seeder
             468 => [
                 'id' => '3469',
                 'bank_id' => '22',
-                'bank_branch_name' => 'LALMATIA',
+                'name' => 'LALMATIA',
                 'bank_branch_data' => [
                     'routing_no' => '120262836',
                 ],
@@ -4249,7 +4249,7 @@ class Branch4Seeder extends Seeder
             469 => [
                 'id' => '3470',
                 'bank_id' => '22',
-                'bank_branch_name' => 'MIRPUR',
+                'name' => 'MIRPUR',
                 'bank_branch_data' => [
                     'routing_no' => '120262986',
                 ],
@@ -4258,7 +4258,7 @@ class Branch4Seeder extends Seeder
             470 => [
                 'id' => '3471',
                 'bank_id' => '22',
-                'bank_branch_name' => 'MOHAKHALI',
+                'name' => 'MOHAKHALI',
                 'bank_branch_data' => [
                     'routing_no' => '120263198',
                 ],
@@ -4267,7 +4267,7 @@ class Branch4Seeder extends Seeder
             471 => [
                 'id' => '3472',
                 'bank_id' => '22',
-                'bank_branch_name' => 'MOHAMMADPUR',
+                'name' => 'MOHAMMADPUR',
                 'bank_branch_data' => [
                     'routing_no' => '120263280',
                 ],
@@ -4276,7 +4276,7 @@ class Branch4Seeder extends Seeder
             472 => [
                 'id' => '3473',
                 'bank_id' => '22',
-                'bank_branch_name' => 'PALLABI',
+                'name' => 'PALLABI',
                 'bank_branch_data' => [
                     'routing_no' => '120263585',
                 ],
@@ -4285,7 +4285,7 @@ class Branch4Seeder extends Seeder
             473 => [
                 'id' => '3474',
                 'bank_id' => '22',
-                'bank_branch_name' => 'PRAGATI SARANI',
+                'name' => 'PRAGATI SARANI',
                 'bank_branch_data' => [
                     'routing_no' => '120263701',
                 ],
@@ -4294,7 +4294,7 @@ class Branch4Seeder extends Seeder
             474 => [
                 'id' => '3475',
                 'bank_id' => '22',
-                'bank_branch_name' => 'SAVAR BAZAR',
+                'name' => 'SAVAR BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120264126',
                 ],
@@ -4303,7 +4303,7 @@ class Branch4Seeder extends Seeder
             475 => [
                 'id' => '3476',
                 'bank_id' => '22',
-                'bank_branch_name' => 'UTTARA',
+                'name' => 'UTTARA',
                 'bank_branch_data' => [
                     'routing_no' => '120264634',
                 ],
@@ -4312,7 +4312,7 @@ class Branch4Seeder extends Seeder
             476 => [
                 'id' => '3477',
                 'bank_id' => '22',
-                'bank_branch_name' => 'TRUNCATION POINT',
+                'name' => 'TRUNCATION POINT',
                 'bank_branch_data' => [
                     'routing_no' => '120270002',
                 ],
@@ -4321,7 +4321,7 @@ class Branch4Seeder extends Seeder
             477 => [
                 'id' => '3478',
                 'bank_id' => '22',
-                'bank_branch_name' => 'AGANAGAR',
+                'name' => 'AGANAGAR',
                 'bank_branch_data' => [
                     'routing_no' => '120270136',
                 ],
@@ -4330,7 +4330,7 @@ class Branch4Seeder extends Seeder
             478 => [
                 'id' => '3479',
                 'bank_id' => '22',
-                'bank_branch_name' => 'ARSHINAGAR',
+                'name' => 'ARSHINAGAR',
                 'bank_branch_data' => [
                     'routing_no' => '120270507',
                 ],
@@ -4339,7 +4339,7 @@ class Branch4Seeder extends Seeder
             479 => [
                 'id' => '3480',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BANGSHAL',
+                'name' => 'BANGSHAL',
                 'bank_branch_data' => [
                     'routing_no' => '120270886',
                 ],
@@ -4348,7 +4348,7 @@ class Branch4Seeder extends Seeder
             480 => [
                 'id' => '3481',
                 'bank_id' => '22',
-                'bank_branch_name' => 'DANIA',
+                'name' => 'DANIA',
                 'bank_branch_data' => [
                     'routing_no' => '120271427',
                 ],
@@ -4357,7 +4357,7 @@ class Branch4Seeder extends Seeder
             481 => [
                 'id' => '3482',
                 'bank_id' => '22',
-                'bank_branch_name' => 'DHAKA STOCK EXCHANGE',
+                'name' => 'DHAKA STOCK EXCHANGE',
                 'bank_branch_data' => [
                     'routing_no' => '120271706',
                 ],
@@ -4366,7 +4366,7 @@ class Branch4Seeder extends Seeder
             482 => [
                 'id' => '3483',
                 'bank_id' => '22',
-                'bank_branch_name' => 'DHOLAIKHAL',
+                'name' => 'DHOLAIKHAL',
                 'bank_branch_data' => [
                     'routing_no' => '120271843',
                 ],
@@ -4375,7 +4375,7 @@ class Branch4Seeder extends Seeder
             483 => [
                 'id' => '3484',
                 'bank_id' => '22',
-                'bank_branch_name' => 'FEDERATION',
+                'name' => 'FEDERATION',
                 'bank_branch_data' => [
                     'routing_no' => '120272297',
                 ],
@@ -4384,7 +4384,7 @@ class Branch4Seeder extends Seeder
             484 => [
                 'id' => '3485',
                 'bank_id' => '22',
-                'bank_branch_name' => 'ISLAMPUR',
+                'name' => 'ISLAMPUR',
                 'bank_branch_data' => [
                     'routing_no' => '120272989',
                 ],
@@ -4393,7 +4393,7 @@ class Branch4Seeder extends Seeder
             485 => [
                 'id' => '3486',
                 'bank_id' => '22',
-                'bank_branch_name' => 'KERANIGANJ',
+                'name' => 'KERANIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '120273641',
                 ],
@@ -4402,7 +4402,7 @@ class Branch4Seeder extends Seeder
             486 => [
                 'id' => '3487',
                 'bank_id' => '22',
-                'bank_branch_name' => 'KONAPARA',
+                'name' => 'KONAPARA',
                 'bank_branch_data' => [
                     'routing_no' => '120273746',
                 ],
@@ -4411,7 +4411,7 @@ class Branch4Seeder extends Seeder
             487 => [
                 'id' => '3488',
                 'bank_id' => '22',
-                'bank_branch_name' => 'LOCAL OFFICE',
+                'name' => 'LOCAL OFFICE',
                 'bank_branch_data' => [
                     'routing_no' => '120273883',
                 ],
@@ -4420,7 +4420,7 @@ class Branch4Seeder extends Seeder
             488 => [
                 'id' => '3489',
                 'bank_id' => '22',
-                'bank_branch_name' => 'MALIBAGH',
+                'name' => 'MALIBAGH',
                 'bank_branch_data' => [
                     'routing_no' => '120273946',
                 ],
@@ -4429,7 +4429,7 @@ class Branch4Seeder extends Seeder
             489 => [
                 'id' => '3490',
                 'bank_id' => '22',
-                'bank_branch_name' => 'MEGHULA',
+                'name' => 'MEGHULA',
                 'bank_branch_data' => [
                     'routing_no' => '120274040',
                 ],
@@ -4438,7 +4438,7 @@ class Branch4Seeder extends Seeder
             490 => [
                 'id' => '3491',
                 'bank_id' => '22',
-                'bank_branch_name' => 'PRINCIPAL',
+                'name' => 'PRINCIPAL',
                 'bank_branch_data' => [
                     'routing_no' => '120274240',
                 ],
@@ -4447,7 +4447,7 @@ class Branch4Seeder extends Seeder
             491 => [
                 'id' => '3492',
                 'bank_id' => '22',
-                'bank_branch_name' => 'MOULVI BAZAR',
+                'name' => 'MOULVI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120274424',
                 ],
@@ -4456,7 +4456,7 @@ class Branch4Seeder extends Seeder
             492 => [
                 'id' => '3493',
                 'bank_id' => '22',
-                'bank_branch_name' => 'NAWABGANJ SME',
+                'name' => 'NAWABGANJ SME',
                 'bank_branch_data' => [
                     'routing_no' => '120274703',
                 ],
@@ -4465,7 +4465,7 @@ class Branch4Seeder extends Seeder
             493 => [
                 'id' => '3494',
                 'bank_id' => '22',
-                'bank_branch_name' => 'NAWABPUR ROAD',
+                'name' => 'NAWABPUR ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '120274758',
                 ],
@@ -4474,7 +4474,7 @@ class Branch4Seeder extends Seeder
             494 => [
                 'id' => '3495',
                 'bank_id' => '22',
-                'bank_branch_name' => 'NAYA PALTAN',
+                'name' => 'NAYA PALTAN',
                 'bank_branch_data' => [
                     'routing_no' => '120274879',
                 ],
@@ -4483,7 +4483,7 @@ class Branch4Seeder extends Seeder
             495 => [
                 'id' => '3496',
                 'bank_id' => '22',
-                'bank_branch_name' => 'NORTH BROOK HALL ROAD',
+                'name' => 'NORTH BROOK HALL ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '120275052',
                 ],
@@ -4492,7 +4492,7 @@ class Branch4Seeder extends Seeder
             496 => [
                 'id' => '3497',
                 'bank_id' => '22',
-                'bank_branch_name' => 'SHANTINAGAR',
+                'name' => 'SHANTINAGAR',
                 'bank_branch_data' => [
                     'routing_no' => '120276343',
                 ],
@@ -4501,7 +4501,7 @@ class Branch4Seeder extends Seeder
             497 => [
                 'id' => '3498',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BIROL BAZAR',
+                'name' => 'BIROL BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120280050',
                 ],
@@ -4510,7 +4510,7 @@ class Branch4Seeder extends Seeder
             498 => [
                 'id' => '3499',
                 'bank_id' => '22',
-                'bank_branch_name' => 'DINAJPUR',
+                'name' => 'DINAJPUR',
                 'bank_branch_data' => [
                     'routing_no' => '120280676',
                 ],
@@ -4519,7 +4519,7 @@ class Branch4Seeder extends Seeder
             499 => [
                 'id' => '3500',
                 'bank_id' => '22',
-                'bank_branch_name' => 'SETABGANJ SME',
+                'name' => 'SETABGANJ SME',
                 'bank_branch_data' => [
                     'routing_no' => '120282195',
                 ],
@@ -4528,7 +4528,7 @@ class Branch4Seeder extends Seeder
             500 => [
                 'id' => '3501',
                 'bank_id' => '22',
-                'bank_branch_name' => 'FARIDPUR',
+                'name' => 'FARIDPUR',
                 'bank_branch_data' => [
                     'routing_no' => '120290529',
                 ],
@@ -4537,7 +4537,7 @@ class Branch4Seeder extends Seeder
             501 => [
                 'id' => '3502',
                 'bank_id' => '22',
-                'bank_branch_name' => 'FENI',
+                'name' => 'FENI',
                 'bank_branch_data' => [
                     'routing_no' => '120300527',
                 ],
@@ -4546,7 +4546,7 @@ class Branch4Seeder extends Seeder
             502 => [
                 'id' => '3503',
                 'bank_id' => '22',
-                'bank_branch_name' => 'CHANDRA SME',
+                'name' => 'CHANDRA SME',
                 'bank_branch_data' => [
                     'routing_no' => '120330063',
                 ],
@@ -4555,7 +4555,7 @@ class Branch4Seeder extends Seeder
             503 => [
                 'id' => '3504',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BOARD BAZAR',
+                'name' => 'BOARD BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120330221',
                 ],
@@ -4564,7 +4564,7 @@ class Branch4Seeder extends Seeder
             504 => [
                 'id' => '3505',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BHAWAL MIRZAPUR',
+                'name' => 'BHAWAL MIRZAPUR',
                 'bank_branch_data' => [
                     'routing_no' => '120330247',
                 ],
@@ -4573,7 +4573,7 @@ class Branch4Seeder extends Seeder
             505 => [
                 'id' => '3506',
                 'bank_id' => '22',
-                'bank_branch_name' => 'CHERAG ALI',
+                'name' => 'CHERAG ALI',
                 'bank_branch_data' => [
                     'routing_no' => '120330276',
                 ],
@@ -4582,7 +4582,7 @@ class Branch4Seeder extends Seeder
             506 => [
                 'id' => '3507',
                 'bank_id' => '22',
-                'bank_branch_name' => 'GAZIPUR CHOWRASTA',
+                'name' => 'GAZIPUR CHOWRASTA',
                 'bank_branch_data' => [
                     'routing_no' => '120330555',
                 ],
@@ -4591,7 +4591,7 @@ class Branch4Seeder extends Seeder
             507 => [
                 'id' => '3508',
                 'bank_id' => '22',
-                'bank_branch_name' => 'KAPASIA',
+                'name' => 'KAPASIA',
                 'bank_branch_data' => [
                     'routing_no' => '120330889',
                 ],
@@ -4600,7 +4600,7 @@ class Branch4Seeder extends Seeder
             508 => [
                 'id' => '3509',
                 'bank_id' => '22',
-                'bank_branch_name' => 'KONABARI',
+                'name' => 'KONABARI',
                 'bank_branch_data' => [
                     'routing_no' => '120330942',
                 ],
@@ -4609,7 +4609,7 @@ class Branch4Seeder extends Seeder
             509 => [
                 'id' => '3510',
                 'bank_id' => '22',
-                'bank_branch_name' => 'MAWNA',
+                'name' => 'MAWNA',
                 'bank_branch_data' => [
                     'routing_no' => '120331004',
                 ],
@@ -4618,7 +4618,7 @@ class Branch4Seeder extends Seeder
             510 => [
                 'id' => '3511',
                 'bank_id' => '22',
-                'bank_branch_name' => 'TONGI SME',
+                'name' => 'TONGI SME',
                 'bank_branch_data' => [
                     'routing_no' => '120331659',
                 ],
@@ -4627,7 +4627,7 @@ class Branch4Seeder extends Seeder
             511 => [
                 'id' => '3512',
                 'bank_id' => '22',
-                'bank_branch_name' => 'HABIGANJ',
+                'name' => 'HABIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '120360617',
                 ],
@@ -4636,7 +4636,7 @@ class Branch4Seeder extends Seeder
             512 => [
                 'id' => '3513',
                 'bank_id' => '22',
-                'bank_branch_name' => 'MADHABPUR',
+                'name' => 'MADHABPUR',
                 'bank_branch_data' => [
                     'routing_no' => '120360888',
                 ],
@@ -4645,7 +4645,7 @@ class Branch4Seeder extends Seeder
             513 => [
                 'id' => '3514',
                 'bank_id' => '22',
-                'bank_branch_name' => 'JOYPURHAT',
+                'name' => 'JOYPURHAT',
                 'bank_branch_data' => [
                     'routing_no' => '120380400',
                 ],
@@ -4654,7 +4654,7 @@ class Branch4Seeder extends Seeder
             514 => [
                 'id' => '3515',
                 'bank_id' => '22',
-                'bank_branch_name' => 'JAMALPUR',
+                'name' => 'JAMALPUR',
                 'bank_branch_data' => [
                     'routing_no' => '120390858',
                 ],
@@ -4663,7 +4663,7 @@ class Branch4Seeder extends Seeder
             515 => [
                 'id' => '3516',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BENAPOLE',
+                'name' => 'BENAPOLE',
                 'bank_branch_data' => [
                     'routing_no' => '120410288',
                 ],
@@ -4672,7 +4672,7 @@ class Branch4Seeder extends Seeder
             516 => [
                 'id' => '3517',
                 'bank_id' => '22',
-                'bank_branch_name' => 'JESSORE',
+                'name' => 'JESSORE',
                 'bank_branch_data' => [
                     'routing_no' => '120410941',
                 ],
@@ -4681,7 +4681,7 @@ class Branch4Seeder extends Seeder
             517 => [
                 'id' => '3518',
                 'bank_id' => '22',
-                'bank_branch_name' => 'NOAPARA',
+                'name' => 'NOAPARA',
                 'bank_branch_data' => [
                     'routing_no' => '120411632',
                 ],
@@ -4690,7 +4690,7 @@ class Branch4Seeder extends Seeder
             518 => [
                 'id' => '3519',
                 'bank_id' => '22',
-                'bank_branch_name' => 'KALIGANJ SME',
+                'name' => 'KALIGANJ SME',
                 'bank_branch_data' => [
                     'routing_no' => '120440803',
                 ],
@@ -4699,7 +4699,7 @@ class Branch4Seeder extends Seeder
             519 => [
                 'id' => '3520',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BORO BAZAR',
+                'name' => 'BORO BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120470378',
                 ],
@@ -4708,7 +4708,7 @@ class Branch4Seeder extends Seeder
             520 => [
                 'id' => '3521',
                 'bank_id' => '22',
-                'bank_branch_name' => 'KHULNA',
+                'name' => 'KHULNA',
                 'bank_branch_data' => [
                     'routing_no' => '120471548',
                 ],
@@ -4717,7 +4717,7 @@ class Branch4Seeder extends Seeder
             521 => [
                 'id' => '3522',
                 'bank_id' => '22',
-                'bank_branch_name' => 'SONADANGA',
+                'name' => 'SONADANGA',
                 'bank_branch_data' => [
                     'routing_no' => '120472626',
                 ],
@@ -4726,7 +4726,7 @@ class Branch4Seeder extends Seeder
             522 => [
                 'id' => '3523',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BAJITPUR',
+                'name' => 'BAJITPUR',
                 'bank_branch_data' => [
                     'routing_no' => '120480100',
                 ],
@@ -4735,7 +4735,7 @@ class Branch4Seeder extends Seeder
             523 => [
                 'id' => '3524',
                 'bank_id' => '22',
-                'bank_branch_name' => 'KUSHTIA',
+                'name' => 'KUSHTIA',
                 'bank_branch_data' => [
                     'routing_no' => '120500943',
                 ],
@@ -4744,7 +4744,7 @@ class Branch4Seeder extends Seeder
             524 => [
                 'id' => '3525',
                 'bank_id' => '22',
-                'bank_branch_name' => 'PORADAH',
+                'name' => 'PORADAH',
                 'bank_branch_data' => [
                     'routing_no' => '120501368',
                 ],
@@ -4753,7 +4753,7 @@ class Branch4Seeder extends Seeder
             525 => [
                 'id' => '3526',
                 'bank_id' => '22',
-                'bank_branch_name' => 'CHANDRAGANJ',
+                'name' => 'CHANDRAGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '120510191',
                 ],
@@ -4762,7 +4762,7 @@ class Branch4Seeder extends Seeder
             526 => [
                 'id' => '3527',
                 'bank_id' => '22',
-                'bank_branch_name' => 'TAKERHAT',
+                'name' => 'TAKERHAT',
                 'bank_branch_data' => [
                     'routing_no' => '120540761',
                 ],
@@ -4771,7 +4771,7 @@ class Branch4Seeder extends Seeder
             527 => [
                 'id' => '3528',
                 'bank_id' => '22',
-                'bank_branch_name' => 'MANIKGANJ',
+                'name' => 'MANIKGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '120560617',
                 ],
@@ -4780,7 +4780,7 @@ class Branch4Seeder extends Seeder
             528 => [
                 'id' => '3529',
                 'bank_id' => '22',
-                'bank_branch_name' => 'MOULAVI BAZAR',
+                'name' => 'MOULAVI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120581188',
                 ],
@@ -4789,7 +4789,7 @@ class Branch4Seeder extends Seeder
             529 => [
                 'id' => '3530',
                 'bank_id' => '22',
-                'bank_branch_name' => 'SREE MANGAL',
+                'name' => 'SREE MANGAL',
                 'bank_branch_data' => [
                     'routing_no' => '120581720',
                 ],
@@ -4798,7 +4798,7 @@ class Branch4Seeder extends Seeder
             530 => [
                 'id' => '3531',
                 'bank_id' => '22',
-                'bank_branch_name' => 'MUKTARPUR',
+                'name' => 'MUKTARPUR',
                 'bank_branch_data' => [
                     'routing_no' => '120591002',
                 ],
@@ -4807,7 +4807,7 @@ class Branch4Seeder extends Seeder
             531 => [
                 'id' => '3532',
                 'bank_id' => '22',
-                'bank_branch_name' => 'MYMENSINGH',
+                'name' => 'MYMENSINGH',
                 'bank_branch_data' => [
                     'routing_no' => '120611753',
                 ],
@@ -4816,7 +4816,7 @@ class Branch4Seeder extends Seeder
             532 => [
                 'id' => '3533',
                 'bank_id' => '22',
-                'bank_branch_name' => 'SEEDSTORE BAZAR',
+                'name' => 'SEEDSTORE BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120612099',
                 ],
@@ -4825,7 +4825,7 @@ class Branch4Seeder extends Seeder
             533 => [
                 'id' => '3534',
                 'bank_id' => '22',
-                'bank_branch_name' => 'NAOGAON',
+                'name' => 'NAOGAON',
                 'bank_branch_data' => [
                     'routing_no' => '120641181',
                 ],
@@ -4834,7 +4834,7 @@ class Branch4Seeder extends Seeder
             534 => [
                 'id' => '3535',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BANDAR',
+                'name' => 'BANDAR',
                 'bank_branch_data' => [
                     'routing_no' => '120670165',
                 ],
@@ -4843,7 +4843,7 @@ class Branch4Seeder extends Seeder
             535 => [
                 'id' => '3536',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BHUIGHAR',
+                'name' => 'BHUIGHAR',
                 'bank_branch_data' => [
                     'routing_no' => '120670202',
                 ],
@@ -4852,7 +4852,7 @@ class Branch4Seeder extends Seeder
             536 => [
                 'id' => '3537',
                 'bank_id' => '22',
-                'bank_branch_name' => 'ISAPURA BAZAR',
+                'name' => 'ISAPURA BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120670673',
                 ],
@@ -4861,7 +4861,7 @@ class Branch4Seeder extends Seeder
             537 => [
                 'id' => '3538',
                 'bank_id' => '22',
-                'bank_branch_name' => 'NARAYANGANJ',
+                'name' => 'NARAYANGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '120671180',
                 ],
@@ -4870,7 +4870,7 @@ class Branch4Seeder extends Seeder
             538 => [
                 'id' => '3539',
                 'bank_id' => '22',
-                'bank_branch_name' => 'NETAIGANJ',
+                'name' => 'NETAIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '120671272',
                 ],
@@ -4879,7 +4879,7 @@ class Branch4Seeder extends Seeder
             539 => [
                 'id' => '3540',
                 'bank_id' => '22',
-                'bank_branch_name' => 'PANCHABATI',
+                'name' => 'PANCHABATI',
                 'bank_branch_data' => [
                     'routing_no' => '120671380',
                 ],
@@ -4888,7 +4888,7 @@ class Branch4Seeder extends Seeder
             540 => [
                 'id' => '3541',
                 'bank_id' => '22',
-                'bank_branch_name' => 'RUPGANJ',
+                'name' => 'RUPGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '120671456',
                 ],
@@ -4897,7 +4897,7 @@ class Branch4Seeder extends Seeder
             541 => [
                 'id' => '3542',
                 'bank_id' => '22',
-                'bank_branch_name' => 'SHIBU MARKET',
+                'name' => 'SHIBU MARKET',
                 'bank_branch_data' => [
                     'routing_no' => '120671551',
                 ],
@@ -4906,7 +4906,7 @@ class Branch4Seeder extends Seeder
             542 => [
                 'id' => '3543',
                 'bank_id' => '22',
-                'bank_branch_name' => 'TANBAZAR',
+                'name' => 'TANBAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120671780',
                 ],
@@ -4915,7 +4915,7 @@ class Branch4Seeder extends Seeder
             543 => [
                 'id' => '3544',
                 'bank_id' => '22',
-                'bank_branch_name' => 'PANCHDOWNA',
+                'name' => 'PANCHDOWNA',
                 'bank_branch_data' => [
                     'routing_no' => '120680142',
                 ],
@@ -4924,7 +4924,7 @@ class Branch4Seeder extends Seeder
             544 => [
                 'id' => '3545',
                 'bank_id' => '22',
-                'bank_branch_name' => 'GHORASAL',
+                'name' => 'GHORASAL',
                 'bank_branch_data' => [
                     'routing_no' => '120680492',
                 ],
@@ -4933,7 +4933,7 @@ class Branch4Seeder extends Seeder
             545 => [
                 'id' => '3546',
                 'bank_id' => '22',
-                'bank_branch_name' => 'HASNABAD',
+                'name' => 'HASNABAD',
                 'bank_branch_data' => [
                     'routing_no' => '120680526',
                 ],
@@ -4942,7 +4942,7 @@ class Branch4Seeder extends Seeder
             546 => [
                 'id' => '3547',
                 'bank_id' => '22',
-                'bank_branch_name' => 'MADHABDI',
+                'name' => 'MADHABDI',
                 'bank_branch_data' => [
                     'routing_no' => '120680676',
                 ],
@@ -4951,7 +4951,7 @@ class Branch4Seeder extends Seeder
             547 => [
                 'id' => '3548',
                 'bank_id' => '22',
-                'bank_branch_name' => 'NARSHINGDI',
+                'name' => 'NARSHINGDI',
                 'bank_branch_data' => [
                     'routing_no' => '120680850',
                 ],
@@ -4960,7 +4960,7 @@ class Branch4Seeder extends Seeder
             548 => [
                 'id' => '3549',
                 'bank_id' => '22',
-                'bank_branch_name' => 'CHAPAI NAWABGANJ',
+                'name' => 'CHAPAI NAWABGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '120700251',
                 ],
@@ -4969,7 +4969,7 @@ class Branch4Seeder extends Seeder
             549 => [
                 'id' => '3550',
                 'bank_id' => '22',
-                'bank_branch_name' => 'CHOUMOHANI',
+                'name' => 'CHOUMOHANI',
                 'bank_branch_data' => [
                     'routing_no' => '120750672',
                 ],
@@ -4978,7 +4978,7 @@ class Branch4Seeder extends Seeder
             550 => [
                 'id' => '3551',
                 'bank_id' => '22',
-                'bank_branch_name' => 'KASHINATHPUR SME',
+                'name' => 'KASHINATHPUR SME',
                 'bank_branch_data' => [
                     'routing_no' => '120761340',
                 ],
@@ -4987,7 +4987,7 @@ class Branch4Seeder extends Seeder
             551 => [
                 'id' => '3552',
                 'bank_id' => '22',
-                'bank_branch_name' => 'PABNA',
+                'name' => 'PABNA',
                 'bank_branch_data' => [
                     'routing_no' => '120761782',
                 ],
@@ -4996,7 +4996,7 @@ class Branch4Seeder extends Seeder
             552 => [
                 'id' => '3553',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BANESHWAR',
+                'name' => 'BANESHWAR',
                 'bank_branch_data' => [
                     'routing_no' => '120810220',
                 ],
@@ -5005,7 +5005,7 @@ class Branch4Seeder extends Seeder
             553 => [
                 'id' => '3554',
                 'bank_id' => '22',
-                'bank_branch_name' => 'RAJSHAHI',
+                'name' => 'RAJSHAHI',
                 'bank_branch_data' => [
                     'routing_no' => '120811937',
                 ],
@@ -5014,7 +5014,7 @@ class Branch4Seeder extends Seeder
             554 => [
                 'id' => '3555',
                 'bank_id' => '22',
-                'bank_branch_name' => 'TAHERPUR',
+                'name' => 'TAHERPUR',
                 'bank_branch_data' => [
                     'routing_no' => '120812323',
                 ],
@@ -5023,7 +5023,7 @@ class Branch4Seeder extends Seeder
             555 => [
                 'id' => '3556',
                 'bank_id' => '22',
-                'bank_branch_name' => 'RANGAMATI',
+                'name' => 'RANGAMATI',
                 'bank_branch_data' => [
                     'routing_no' => '120840524',
                 ],
@@ -5032,7 +5032,7 @@ class Branch4Seeder extends Seeder
             556 => [
                 'id' => '3557',
                 'bank_id' => '22',
-                'bank_branch_name' => 'RANGPUR',
+                'name' => 'RANGPUR',
                 'bank_branch_data' => [
                     'routing_no' => '120851450',
                 ],
@@ -5041,7 +5041,7 @@ class Branch4Seeder extends Seeder
             557 => [
                 'id' => '3558',
                 'bank_id' => '22',
-                'bank_branch_name' => 'SHARIATPUR',
+                'name' => 'SHARIATPUR',
                 'bank_branch_data' => [
                     'routing_no' => '120860670',
                 ],
@@ -5050,7 +5050,7 @@ class Branch4Seeder extends Seeder
             558 => [
                 'id' => '3559',
                 'bank_id' => '22',
-                'bank_branch_name' => 'SATKHIRA',
+                'name' => 'SATKHIRA',
                 'bank_branch_data' => [
                     'routing_no' => '120871098',
                 ],
@@ -5059,7 +5059,7 @@ class Branch4Seeder extends Seeder
             559 => [
                 'id' => '3560',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BELKUCHI',
+                'name' => 'BELKUCHI',
                 'bank_branch_data' => [
                     'routing_no' => '120880221',
                 ],
@@ -5068,7 +5068,7 @@ class Branch4Seeder extends Seeder
             560 => [
                 'id' => '3561',
                 'bank_id' => '22',
-                'bank_branch_name' => 'SHERPUR',
+                'name' => 'SHERPUR',
                 'bank_branch_data' => [
                     'routing_no' => '120890558',
                 ],
@@ -5077,7 +5077,7 @@ class Branch4Seeder extends Seeder
             561 => [
                 'id' => '3562',
                 'bank_id' => '22',
-                'bank_branch_name' => 'BEANI BAZAR',
+                'name' => 'BEANI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120910317',
                 ],
@@ -5086,7 +5086,7 @@ class Branch4Seeder extends Seeder
             562 => [
                 'id' => '3563',
                 'bank_id' => '22',
-                'bank_branch_name' => 'GOALA BAZAR',
+                'name' => 'GOALA BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120911545',
                 ],
@@ -5095,7 +5095,7 @@ class Branch4Seeder extends Seeder
             563 => [
                 'id' => '3564',
                 'bank_id' => '22',
-                'bank_branch_name' => 'SUBID BAZAR',
+                'name' => 'SUBID BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '120913493',
                 ],
@@ -5104,7 +5104,7 @@ class Branch4Seeder extends Seeder
             564 => [
                 'id' => '3565',
                 'bank_id' => '22',
-                'bank_branch_name' => 'SYLHET',
+                'name' => 'SYLHET',
                 'bank_branch_data' => [
                     'routing_no' => '120913556',
                 ],
@@ -5113,7 +5113,7 @@ class Branch4Seeder extends Seeder
             565 => [
                 'id' => '3566',
                 'bank_id' => '22',
-                'bank_branch_name' => 'TULTIKAR',
+                'name' => 'TULTIKAR',
                 'bank_branch_data' => [
                     'routing_no' => '120913972',
                 ],
@@ -5122,7 +5122,7 @@ class Branch4Seeder extends Seeder
             566 => [
                 'id' => '3567',
                 'bank_id' => '22',
-                'bank_branch_name' => 'UPASHAHAR',
+                'name' => 'UPASHAHAR',
                 'bank_branch_data' => [
                     'routing_no' => '120914034',
                 ],
@@ -5131,7 +5131,7 @@ class Branch4Seeder extends Seeder
             567 => [
                 'id' => '3568',
                 'bank_id' => '22',
-                'bank_branch_name' => 'KARATIA',
+                'name' => 'KARATIA',
                 'bank_branch_data' => [
                     'routing_no' => '120931367',
                 ],
@@ -5140,7 +5140,7 @@ class Branch4Seeder extends Seeder
             568 => [
                 'id' => '3569',
                 'bank_id' => '22',
-                'bank_branch_name' => 'TANGAIL',
+                'name' => 'TANGAIL',
                 'bank_branch_data' => [
                     'routing_no' => '120932290',
                 ],
@@ -5149,7 +5149,7 @@ class Branch4Seeder extends Seeder
             569 => [
                 'id' => '3570',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BAGERHAT',
+                'name' => 'BAGERHAT',
                 'bank_branch_data' => [
                     'routing_no' => '125010070',
                 ],
@@ -5158,7 +5158,7 @@ class Branch4Seeder extends Seeder
             570 => [
                 'id' => '3571',
                 'bank_id' => '23',
-                'bank_branch_name' => 'FAKIRHAT',
+                'name' => 'FAKIRHAT',
                 'bank_branch_data' => [
                     'routing_no' => '125010467',
                 ],
@@ -5167,7 +5167,7 @@ class Branch4Seeder extends Seeder
             571 => [
                 'id' => '3572',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MONGLA',
+                'name' => 'MONGLA',
                 'bank_branch_data' => [
                     'routing_no' => '125010946',
                 ],
@@ -5176,7 +5176,7 @@ class Branch4Seeder extends Seeder
             572 => [
                 'id' => '3573',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MORELGANJ',
+                'name' => 'MORELGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125011037',
                 ],
@@ -5185,7 +5185,7 @@ class Branch4Seeder extends Seeder
             573 => [
                 'id' => '3574',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SARANKHOLA',
+                'name' => 'SARANKHOLA',
                 'bank_branch_data' => [
                     'routing_no' => '125011303',
                 ],
@@ -5194,7 +5194,7 @@ class Branch4Seeder extends Seeder
             574 => [
                 'id' => '3575',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BANDARBAN',
+                'name' => 'BANDARBAN',
                 'bank_branch_data' => [
                     'routing_no' => '125030139',
                 ],
@@ -5203,7 +5203,7 @@ class Branch4Seeder extends Seeder
             575 => [
                 'id' => '3576',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BARGUNA',
+                'name' => 'BARGUNA',
                 'bank_branch_data' => [
                     'routing_no' => '125040132',
                 ],
@@ -5212,7 +5212,7 @@ class Branch4Seeder extends Seeder
             576 => [
                 'id' => '3577',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BAKERGANJ',
+                'name' => 'BAKERGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125060220',
                 ],
@@ -5221,7 +5221,7 @@ class Branch4Seeder extends Seeder
             577 => [
                 'id' => '3578',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BARISAL',
+                'name' => 'BARISAL',
                 'bank_branch_data' => [
                     'routing_no' => '125060288',
                 ],
@@ -5230,7 +5230,7 @@ class Branch4Seeder extends Seeder
             578 => [
                 'id' => '3579',
                 'bank_id' => '23',
-                'bank_branch_name' => 'TORKI',
+                'name' => 'TORKI',
                 'bank_branch_data' => [
                     'routing_no' => '125062202',
                 ],
@@ -5239,7 +5239,7 @@ class Branch4Seeder extends Seeder
             579 => [
                 'id' => '3580',
                 'bank_id' => '23',
-                'bank_branch_name' => 'HATKHOLA CHAWKBAZAR',
+                'name' => 'HATKHOLA CHAWKBAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '125062602',
                 ],
@@ -5248,7 +5248,7 @@ class Branch4Seeder extends Seeder
             580 => [
                 'id' => '3581',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BHOLA',
+                'name' => 'BHOLA',
                 'bank_branch_data' => [
                     'routing_no' => '125090108',
                 ],
@@ -5257,7 +5257,7 @@ class Branch4Seeder extends Seeder
             581 => [
                 'id' => '3582',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BORHANUDDIN SME',
+                'name' => 'BORHANUDDIN SME',
                 'bank_branch_data' => [
                     'routing_no' => '125090203',
                 ],
@@ -5266,7 +5266,7 @@ class Branch4Seeder extends Seeder
             582 => [
                 'id' => '3583',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHAR FASHION',
+                'name' => 'CHAR FASHION',
                 'bank_branch_data' => [
                     'routing_no' => '125090229',
                 ],
@@ -5275,7 +5275,7 @@ class Branch4Seeder extends Seeder
             583 => [
                 'id' => '3584',
                 'bank_id' => '23',
-                'bank_branch_name' => 'LALMOHAN',
+                'name' => 'LALMOHAN',
                 'bank_branch_data' => [
                     'routing_no' => '125090708',
                 ],
@@ -5284,7 +5284,7 @@ class Branch4Seeder extends Seeder
             584 => [
                 'id' => '3585',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BOGRA',
+                'name' => 'BOGRA',
                 'bank_branch_data' => [
                     'routing_no' => '125100377',
                 ],
@@ -5293,7 +5293,7 @@ class Branch4Seeder extends Seeder
             585 => [
                 'id' => '3586',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BOROGOLA',
+                'name' => 'BOROGOLA',
                 'bank_branch_data' => [
                     'routing_no' => '125100498',
                 ],
@@ -5302,7 +5302,7 @@ class Branch4Seeder extends Seeder
             586 => [
                 'id' => '3587',
                 'bank_id' => '23',
-                'bank_branch_name' => 'DUPCHACHIA',
+                'name' => 'DUPCHACHIA',
                 'bank_branch_data' => [
                     'routing_no' => '125100919',
                 ],
@@ -5311,7 +5311,7 @@ class Branch4Seeder extends Seeder
             587 => [
                 'id' => '3588',
                 'bank_id' => '23',
-                'bank_branch_name' => 'HIGHWAY SHERPUR',
+                'name' => 'HIGHWAY SHERPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125101392',
                 ],
@@ -5320,7 +5320,7 @@ class Branch4Seeder extends Seeder
             588 => [
                 'id' => '3589',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KAHALOO SME',
+                'name' => 'KAHALOO SME',
                 'bank_branch_data' => [
                     'routing_no' => '125101550',
                 ],
@@ -5329,7 +5329,7 @@ class Branch4Seeder extends Seeder
             589 => [
                 'id' => '3590',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MAHASTANGARH SME',
+                'name' => 'MAHASTANGARH SME',
                 'bank_branch_data' => [
                     'routing_no' => '125101792',
                 ],
@@ -5338,7 +5338,7 @@ class Branch4Seeder extends Seeder
             590 => [
                 'id' => '3591',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NANDIGRAM SME',
+                'name' => 'NANDIGRAM SME',
                 'bank_branch_data' => [
                     'routing_no' => '125102038',
                 ],
@@ -5347,7 +5347,7 @@ class Branch4Seeder extends Seeder
             591 => [
                 'id' => '3592',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SANTAHAR SME',
+                'name' => 'SANTAHAR SME',
                 'bank_branch_data' => [
                     'routing_no' => '125102425',
                 ],
@@ -5356,7 +5356,7 @@ class Branch4Seeder extends Seeder
             592 => [
                 'id' => '3593',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SONATOLA',
+                'name' => 'SONATOLA',
                 'bank_branch_data' => [
                     'routing_no' => '125102988',
                 ],
@@ -5365,7 +5365,7 @@ class Branch4Seeder extends Seeder
             593 => [
                 'id' => '3594',
                 'bank_id' => '23',
-                'bank_branch_name' => 'AKHAURA SME',
+                'name' => 'AKHAURA SME',
                 'bank_branch_data' => [
                     'routing_no' => '125120052',
                 ],
@@ -5374,7 +5374,7 @@ class Branch4Seeder extends Seeder
             594 => [
                 'id' => '3595',
                 'bank_id' => '23',
-                'bank_branch_name' => 'ASHUGANJ',
+                'name' => 'ASHUGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125120102',
                 ],
@@ -5383,7 +5383,7 @@ class Branch4Seeder extends Seeder
             595 => [
                 'id' => '3596',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BANCHARAMPUR',
+                'name' => 'BANCHARAMPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125120252',
                 ],
@@ -5392,7 +5392,7 @@ class Branch4Seeder extends Seeder
             596 => [
                 'id' => '3597',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BRAHMANBARIA',
+                'name' => 'BRAHMANBARIA',
                 'bank_branch_data' => [
                     'routing_no' => '125120436',
                 ],
@@ -5401,7 +5401,7 @@ class Branch4Seeder extends Seeder
             597 => [
                 'id' => '3598',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KASBA',
+                'name' => 'KASBA',
                 'bank_branch_data' => [
                     'routing_no' => '125121035',
                 ],
@@ -5410,7 +5410,7 @@ class Branch4Seeder extends Seeder
             598 => [
                 'id' => '3599',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NABINAGAR',
+                'name' => 'NABINAGAR',
                 'bank_branch_data' => [
                     'routing_no' => '125121369',
                 ],
@@ -5419,7 +5419,7 @@ class Branch4Seeder extends Seeder
             599 => [
                 'id' => '3600',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SACHAR',
+                'name' => 'SACHAR',
                 'bank_branch_data' => [
                     'routing_no' => '125130118',
                 ],
@@ -5428,7 +5428,7 @@ class Branch4Seeder extends Seeder
             600 => [
                 'id' => '3601',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHANDPUR',
+                'name' => 'CHANDPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125130318',
                 ],
@@ -5437,7 +5437,7 @@ class Branch4Seeder extends Seeder
             601 => [
                 'id' => '3602',
                 'bank_id' => '23',
-                'bank_branch_name' => 'FARIDGANJ',
+                'name' => 'FARIDGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125130671',
                 ],
@@ -5446,7 +5446,7 @@ class Branch4Seeder extends Seeder
             602 => [
                 'id' => '3603',
                 'bank_id' => '23',
-                'bank_branch_name' => 'HAJIGANJ',
+                'name' => 'HAJIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125130884',
                 ],
@@ -5455,7 +5455,7 @@ class Branch4Seeder extends Seeder
             603 => [
                 'id' => '3604',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MATLAB',
+                'name' => 'MATLAB',
                 'bank_branch_data' => [
                     'routing_no' => '125131188',
                 ],
@@ -5464,7 +5464,7 @@ class Branch4Seeder extends Seeder
             604 => [
                 'id' => '3605',
                 'bank_id' => '23',
-                'bank_branch_name' => 'AGRABAD',
+                'name' => 'AGRABAD',
                 'bank_branch_data' => [
                     'routing_no' => '125150130',
                 ],
@@ -5473,7 +5473,7 @@ class Branch4Seeder extends Seeder
             605 => [
                 'id' => '3606',
                 'bank_id' => '23',
-                'bank_branch_name' => 'ANDERKILLA',
+                'name' => 'ANDERKILLA',
                 'bank_branch_data' => [
                     'routing_no' => '125150464',
                 ],
@@ -5482,7 +5482,7 @@ class Branch4Seeder extends Seeder
             606 => [
                 'id' => '3607',
                 'bank_id' => '23',
-                'bank_branch_name' => 'ANOWARA',
+                'name' => 'ANOWARA',
                 'bank_branch_data' => [
                     'routing_no' => '125150527',
                 ],
@@ -5491,7 +5491,7 @@ class Branch4Seeder extends Seeder
             607 => [
                 'id' => '3608',
                 'bank_id' => '23',
-                'bank_branch_name' => 'AGRABAD COMMERCIAL AREA',
+                'name' => 'AGRABAD COMMERCIAL AREA',
                 'bank_branch_data' => [
                     'routing_no' => '125150606',
                 ],
@@ -5500,7 +5500,7 @@ class Branch4Seeder extends Seeder
             608 => [
                 'id' => '3609',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BAHADDAR HAT',
+                'name' => 'BAHADDAR HAT',
                 'bank_branch_data' => [
                     'routing_no' => '125150798',
                 ],
@@ -5509,7 +5509,7 @@ class Branch4Seeder extends Seeder
             609 => [
                 'id' => '3610',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BANDARTILA',
+                'name' => 'BANDARTILA',
                 'bank_branch_data' => [
                     'routing_no' => '125150943',
                 ],
@@ -5518,7 +5518,7 @@ class Branch4Seeder extends Seeder
             610 => [
                 'id' => '3611',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BANSHKHALI',
+                'name' => 'BANSHKHALI',
                 'bank_branch_data' => [
                     'routing_no' => '125150972',
                 ],
@@ -5527,7 +5527,7 @@ class Branch4Seeder extends Seeder
             611 => [
                 'id' => '3612',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BARAIYER HAT',
+                'name' => 'BARAIYER HAT',
                 'bank_branch_data' => [
                     'routing_no' => '125151092',
                 ],
@@ -5536,7 +5536,7 @@ class Branch4Seeder extends Seeder
             612 => [
                 'id' => '3613',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BARODAROGA HAT SME',
+                'name' => 'BARODAROGA HAT SME',
                 'bank_branch_data' => [
                     'routing_no' => '125151139',
                 ],
@@ -5545,7 +5545,7 @@ class Branch4Seeder extends Seeder
             613 => [
                 'id' => '3614',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BOALKHALI',
+                'name' => 'BOALKHALI',
                 'bank_branch_data' => [
                     'routing_no' => '125151300',
                 ],
@@ -5554,7 +5554,7 @@ class Branch4Seeder extends Seeder
             614 => [
                 'id' => '3615',
                 'bank_id' => '23',
-                'bank_branch_name' => 'C.D.A. AVENUE',
+                'name' => 'C.D.A. AVENUE',
                 'bank_branch_data' => [
                     'routing_no' => '125151489',
                 ],
@@ -5563,7 +5563,7 @@ class Branch4Seeder extends Seeder
             615 => [
                 'id' => '3616',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHAKTAI',
+                'name' => 'CHAKTAI',
                 'bank_branch_data' => [
                     'routing_no' => '125151755',
                 ],
@@ -5572,7 +5572,7 @@ class Branch4Seeder extends Seeder
             616 => [
                 'id' => '3617',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHANDANAISH',
+                'name' => 'CHANDANAISH',
                 'bank_branch_data' => [
                     'routing_no' => '125151818',
                 ],
@@ -5581,7 +5581,7 @@ class Branch4Seeder extends Seeder
             617 => [
                 'id' => '3618',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHAWK BAZAR',
+                'name' => 'CHAWK BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '125151939',
                 ],
@@ -5590,7 +5590,7 @@ class Branch4Seeder extends Seeder
             618 => [
                 'id' => '3619',
                 'bank_id' => '23',
-                'bank_branch_name' => 'DEWAN HAT',
+                'name' => 'DEWAN HAT',
                 'bank_branch_data' => [
                     'routing_no' => '125152446',
                 ],
@@ -5599,7 +5599,7 @@ class Branch4Seeder extends Seeder
             619 => [
                 'id' => '3620',
                 'bank_id' => '23',
-                'bank_branch_name' => 'FATIKCHARI',
+                'name' => 'FATIKCHARI',
                 'bank_branch_data' => [
                     'routing_no' => '125152741',
                 ],
@@ -5608,7 +5608,7 @@ class Branch4Seeder extends Seeder
             620 => [
                 'id' => '3621',
                 'bank_id' => '23',
-                'bank_branch_name' => 'HALISHAHAR',
+                'name' => 'HALISHAHAR',
                 'bank_branch_data' => [
                     'routing_no' => '125153166',
                 ],
@@ -5617,7 +5617,7 @@ class Branch4Seeder extends Seeder
             621 => [
                 'id' => '3622',
                 'bank_id' => '23',
-                'bank_branch_name' => 'HATHAZARI',
+                'name' => 'HATHAZARI',
                 'bank_branch_data' => [
                     'routing_no' => '125153229',
                 ],
@@ -5626,7 +5626,7 @@ class Branch4Seeder extends Seeder
             622 => [
                 'id' => '3623',
                 'bank_id' => '23',
-                'bank_branch_name' => 'JUBILEE ROAD',
+                'name' => 'JUBILEE ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '125153645',
                 ],
@@ -5635,7 +5635,7 @@ class Branch4Seeder extends Seeder
             623 => [
                 'id' => '3624',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KADAMTALI',
+                'name' => 'KADAMTALI',
                 'bank_branch_data' => [
                     'routing_no' => '125153737',
                 ],
@@ -5644,7 +5644,7 @@ class Branch4Seeder extends Seeder
             624 => [
                 'id' => '3625',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KALURGHAT',
+                'name' => 'KALURGHAT',
                 'bank_branch_data' => [
                     'routing_no' => '125153911',
                 ],
@@ -5653,7 +5653,7 @@ class Branch4Seeder extends Seeder
             625 => [
                 'id' => '3626',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KERANIHAT',
+                'name' => 'KERANIHAT',
                 'bank_branch_data' => [
                     'routing_no' => '125154181',
                 ],
@@ -5662,7 +5662,7 @@ class Branch4Seeder extends Seeder
             626 => [
                 'id' => '3627',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KHATUNGANJ',
+                'name' => 'KHATUNGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125154273',
                 ],
@@ -5671,7 +5671,7 @@ class Branch4Seeder extends Seeder
             627 => [
                 'id' => '3628',
                 'bank_id' => '23',
-                'bank_branch_name' => 'LOHA GARA',
+                'name' => 'LOHA GARA',
                 'bank_branch_data' => [
                     'routing_no' => '125154660',
                 ],
@@ -5680,7 +5680,7 @@ class Branch4Seeder extends Seeder
             628 => [
                 'id' => '3629',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MIRSARAI SME',
+                'name' => 'MIRSARAI SME',
                 'bank_branch_data' => [
                     'routing_no' => '125155069',
                 ],
@@ -5689,7 +5689,7 @@ class Branch4Seeder extends Seeder
             629 => [
                 'id' => '3630',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NAZU MEA HAT',
+                'name' => 'NAZU MEA HAT',
                 'bank_branch_data' => [
                     'routing_no' => '125155627',
                 ],
@@ -5698,7 +5698,7 @@ class Branch4Seeder extends Seeder
             630 => [
                 'id' => '3631',
                 'bank_id' => '23',
-                'bank_branch_name' => 'O.R. NIZAM ROAD',
+                'name' => 'O.R. NIZAM ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '125155801',
                 ],
@@ -5707,7 +5707,7 @@ class Branch4Seeder extends Seeder
             631 => [
                 'id' => '3632',
                 'bank_id' => '23',
-                'bank_branch_name' => 'OXYGEN MOUR',
+                'name' => 'OXYGEN MOUR',
                 'bank_branch_data' => [
                     'routing_no' => '125155872',
                 ],
@@ -5716,7 +5716,7 @@ class Branch4Seeder extends Seeder
             632 => [
                 'id' => '3633',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PAHARTALI',
+                'name' => 'PAHARTALI',
                 'bank_branch_data' => [
                     'routing_no' => '125155922',
                 ],
@@ -5725,7 +5725,7 @@ class Branch4Seeder extends Seeder
             633 => [
                 'id' => '3634',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PATIYA',
+                'name' => 'PATIYA',
                 'bank_branch_data' => [
                     'routing_no' => '125156163',
                 ],
@@ -5734,7 +5734,7 @@ class Branch4Seeder extends Seeder
             634 => [
                 'id' => '3635',
                 'bank_id' => '23',
-                'bank_branch_name' => 'RAOZAN',
+                'name' => 'RAOZAN',
                 'bank_branch_data' => [
                     'routing_no' => '125156497',
                 ],
@@ -5743,7 +5743,7 @@ class Branch4Seeder extends Seeder
             635 => [
                 'id' => '3636',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SANDWIP',
+                'name' => 'SANDWIP',
                 'bank_branch_data' => [
                     'routing_no' => '125156918',
                 ],
@@ -5752,7 +5752,7 @@ class Branch4Seeder extends Seeder
             636 => [
                 'id' => '3637',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SATKANIA',
+                'name' => 'SATKANIA',
                 'bank_branch_data' => [
                     'routing_no' => '125157067',
                 ],
@@ -5761,7 +5761,7 @@ class Branch4Seeder extends Seeder
             637 => [
                 'id' => '3638',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SITAKUNDA',
+                'name' => 'SITAKUNDA',
                 'bank_branch_data' => [
                     'routing_no' => '125157391',
                 ],
@@ -5770,7 +5770,7 @@ class Branch4Seeder extends Seeder
             638 => [
                 'id' => '3639',
                 'bank_id' => '23',
-                'bank_branch_name' => 'STATION ROAD',
+                'name' => 'STATION ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '125157517',
                 ],
@@ -5779,7 +5779,7 @@ class Branch4Seeder extends Seeder
             639 => [
                 'id' => '3640',
                 'bank_id' => '23',
-                'bank_branch_name' => 'ALAMDANGA',
+                'name' => 'ALAMDANGA',
                 'bank_branch_data' => [
                     'routing_no' => '125180047',
                 ],
@@ -5788,7 +5788,7 @@ class Branch4Seeder extends Seeder
             640 => [
                 'id' => '3641',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHUADANGA',
+                'name' => 'CHUADANGA',
                 'bank_branch_data' => [
                     'routing_no' => '125180197',
                 ],
@@ -5797,7 +5797,7 @@ class Branch4Seeder extends Seeder
             641 => [
                 'id' => '3642',
                 'bank_id' => '23',
-                'bank_branch_name' => 'JIBON NAGAR SME',
+                'name' => 'JIBON NAGAR SME',
                 'bank_branch_data' => [
                     'routing_no' => '125180584',
                 ],
@@ -5806,7 +5806,7 @@ class Branch4Seeder extends Seeder
             642 => [
                 'id' => '3643',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BANGADDA BAZAR',
+                'name' => 'BANGADDA BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '125190408',
                 ],
@@ -5815,7 +5815,7 @@ class Branch4Seeder extends Seeder
             643 => [
                 'id' => '3644',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BURICHANG SME',
+                'name' => 'BURICHANG SME',
                 'bank_branch_data' => [
                     'routing_no' => '125190824',
                 ],
@@ -5824,7 +5824,7 @@ class Branch4Seeder extends Seeder
             644 => [
                 'id' => '3645',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHANDINA',
+                'name' => 'CHANDINA',
                 'bank_branch_data' => [
                     'routing_no' => '125190882',
                 ],
@@ -5833,7 +5833,7 @@ class Branch4Seeder extends Seeder
             645 => [
                 'id' => '3646',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHOUDDAGRAM',
+                'name' => 'CHOUDDAGRAM',
                 'bank_branch_data' => [
                     'routing_no' => '125191065',
                 ],
@@ -5842,7 +5842,7 @@ class Branch4Seeder extends Seeder
             646 => [
                 'id' => '3647',
                 'bank_id' => '23',
-                'bank_branch_name' => 'COMILLA',
+                'name' => 'COMILLA',
                 'bank_branch_data' => [
                     'routing_no' => '125191157',
                 ],
@@ -5851,7 +5851,7 @@ class Branch4Seeder extends Seeder
             647 => [
                 'id' => '3648',
                 'bank_id' => '23',
-                'bank_branch_name' => 'COMPANIGANJ',
+                'name' => 'COMPANIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125191423',
                 ],
@@ -5860,7 +5860,7 @@ class Branch4Seeder extends Seeder
             648 => [
                 'id' => '3649',
                 'bank_id' => '23',
-                'bank_branch_name' => 'DAUDKANDI SME',
+                'name' => 'DAUDKANDI SME',
                 'bank_branch_data' => [
                     'routing_no' => '125191528',
                 ],
@@ -5869,7 +5869,7 @@ class Branch4Seeder extends Seeder
             649 => [
                 'id' => '3650',
                 'bank_id' => '23',
-                'bank_branch_name' => 'GOURIPUR',
+                'name' => 'GOURIPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125192114',
                 ],
@@ -5878,7 +5878,7 @@ class Branch4Seeder extends Seeder
             650 => [
                 'id' => '3651',
                 'bank_id' => '23',
-                'bank_branch_name' => 'LAKSAM',
+                'name' => 'LAKSAM',
                 'bank_branch_data' => [
                     'routing_no' => '125192714',
                 ],
@@ -5887,7 +5887,7 @@ class Branch4Seeder extends Seeder
             651 => [
                 'id' => '3652',
                 'bank_id' => '23',
-                'bank_branch_name' => 'TERY PATTRY',
+                'name' => 'TERY PATTRY',
                 'bank_branch_data' => [
                     'routing_no' => '125197643',
                 ],
@@ -5896,7 +5896,7 @@ class Branch4Seeder extends Seeder
             652 => [
                 'id' => '3653',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PEKUA',
+                'name' => 'PEKUA',
                 'bank_branch_data' => [
                     'routing_no' => '125220057',
                 ],
@@ -5905,7 +5905,7 @@ class Branch4Seeder extends Seeder
             653 => [
                 'id' => '3654',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHIRINGA',
+                'name' => 'CHIRINGA',
                 'bank_branch_data' => [
                     'routing_no' => '125220194',
                 ],
@@ -5914,7 +5914,7 @@ class Branch4Seeder extends Seeder
             654 => [
                 'id' => '3655',
                 'bank_id' => '23',
-                'bank_branch_name' => 'COURT BAZAR SME',
+                'name' => 'COURT BAZAR SME',
                 'bank_branch_data' => [
                     'routing_no' => '125220231',
                 ],
@@ -5923,7 +5923,7 @@ class Branch4Seeder extends Seeder
             655 => [
                 'id' => '3656',
                 'bank_id' => '23',
-                'bank_branch_name' => 'COXS BAZAR',
+                'name' => 'COXS BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '125220257',
                 ],
@@ -5932,7 +5932,7 @@ class Branch4Seeder extends Seeder
             656 => [
                 'id' => '3657',
                 'bank_id' => '23',
-                'bank_branch_name' => 'EIDGAON',
+                'name' => 'EIDGAON',
                 'bank_branch_data' => [
                     'routing_no' => '125220402',
                 ],
@@ -5941,7 +5941,7 @@ class Branch4Seeder extends Seeder
             657 => [
                 'id' => '3658',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MOHESHKHALI SME',
+                'name' => 'MOHESHKHALI SME',
                 'bank_branch_data' => [
                     'routing_no' => '125220778',
                 ],
@@ -5950,7 +5950,7 @@ class Branch4Seeder extends Seeder
             658 => [
                 'id' => '3659',
                 'bank_id' => '23',
-                'bank_branch_name' => 'RAMU',
+                'name' => 'RAMU',
                 'bank_branch_data' => [
                     'routing_no' => '125220857',
                 ],
@@ -5959,7 +5959,7 @@ class Branch4Seeder extends Seeder
             659 => [
                 'id' => '3660',
                 'bank_id' => '23',
-                'bank_branch_name' => 'TEKNAF',
+                'name' => 'TEKNAF',
                 'bank_branch_data' => [
                     'routing_no' => '125220910',
                 ],
@@ -5968,7 +5968,7 @@ class Branch4Seeder extends Seeder
             660 => [
                 'id' => '3661',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SONARGAON JANAPATH ROAD',
+                'name' => 'SONARGAON JANAPATH ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '125260088',
                 ],
@@ -5977,7 +5977,7 @@ class Branch4Seeder extends Seeder
             661 => [
                 'id' => '3662',
                 'bank_id' => '23',
-                'bank_branch_name' => 'AMIN BAZAR',
+                'name' => 'AMIN BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '125260138',
                 ],
@@ -5986,7 +5986,7 @@ class Branch4Seeder extends Seeder
             662 => [
                 'id' => '3663',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NIKUNJA',
+                'name' => 'NIKUNJA',
                 'bank_branch_data' => [
                     'routing_no' => '125260183',
                 ],
@@ -5995,7 +5995,7 @@ class Branch4Seeder extends Seeder
             663 => [
                 'id' => '3664',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BADDA',
+                'name' => 'BADDA',
                 'bank_branch_data' => [
                     'routing_no' => '125260341',
                 ],
@@ -6004,7 +6004,7 @@ class Branch4Seeder extends Seeder
             664 => [
                 'id' => '3665',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BANANI',
+                'name' => 'BANANI',
                 'bank_branch_data' => [
                     'routing_no' => '125260433',
                 ],
@@ -6013,7 +6013,7 @@ class Branch4Seeder extends Seeder
             665 => [
                 'id' => '3666',
                 'bank_id' => '23',
-                'bank_branch_name' => 'HEMAYET PUR',
+                'name' => 'HEMAYET PUR',
                 'bank_branch_data' => [
                     'routing_no' => '125260509',
                 ],
@@ -6022,7 +6022,7 @@ class Branch4Seeder extends Seeder
             666 => [
                 'id' => '3667',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BARIDHARA',
+                'name' => 'BARIDHARA',
                 'bank_branch_data' => [
                     'routing_no' => '125260525',
                 ],
@@ -6031,7 +6031,7 @@ class Branch4Seeder extends Seeder
             667 => [
                 'id' => '3668',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CANTONMENT',
+                'name' => 'CANTONMENT',
                 'bank_branch_data' => [
                     'routing_no' => '125260738',
                 ],
@@ -6040,7 +6040,7 @@ class Branch4Seeder extends Seeder
             668 => [
                 'id' => '3669',
                 'bank_id' => '23',
-                'bank_branch_name' => 'DHANMONDI',
+                'name' => 'DHANMONDI',
                 'bank_branch_data' => [
                     'routing_no' => '125261182',
                 ],
@@ -6049,7 +6049,7 @@ class Branch4Seeder extends Seeder
             669 => [
                 'id' => '3670',
                 'bank_id' => '23',
-                'bank_branch_name' => 'ELEPHANT ROAD',
+                'name' => 'ELEPHANT ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '125261337',
                 ],
@@ -6058,7 +6058,7 @@ class Branch4Seeder extends Seeder
             670 => [
                 'id' => '3671',
                 'bank_id' => '23',
-                'bank_branch_name' => 'FARMGATE',
+                'name' => 'FARMGATE',
                 'bank_branch_data' => [
                     'routing_no' => '125261458',
                 ],
@@ -6067,7 +6067,7 @@ class Branch4Seeder extends Seeder
             671 => [
                 'id' => '3672',
                 'bank_id' => '23',
-                'bank_branch_name' => 'GANAKBARI',
+                'name' => 'GANAKBARI',
                 'bank_branch_data' => [
                     'routing_no' => '125261632',
                 ],
@@ -6076,7 +6076,7 @@ class Branch4Seeder extends Seeder
             672 => [
                 'id' => '3673',
                 'bank_id' => '23',
-                'bank_branch_name' => 'GULSHAN',
+                'name' => 'GULSHAN',
                 'bank_branch_data' => [
                     'routing_no' => '125261724',
                 ],
@@ -6085,7 +6085,7 @@ class Branch4Seeder extends Seeder
             673 => [
                 'id' => '3674',
                 'bank_id' => '23',
-                'bank_branch_name' => 'GULSHAN CIRCLE-1',
+                'name' => 'GULSHAN CIRCLE-1',
                 'bank_branch_data' => [
                     'routing_no' => '125261753',
                 ],
@@ -6094,7 +6094,7 @@ class Branch4Seeder extends Seeder
             674 => [
                 'id' => '3675',
                 'bank_id' => '23',
-                'bank_branch_name' => 'HAZICAMP',
+                'name' => 'HAZICAMP',
                 'bank_branch_data' => [
                     'routing_no' => '125261995',
                 ],
@@ -6103,7 +6103,7 @@ class Branch4Seeder extends Seeder
             675 => [
                 'id' => '3676',
                 'bank_id' => '23',
-                'bank_branch_name' => 'IDB BHABAN',
+                'name' => 'IDB BHABAN',
                 'bank_branch_data' => [
                     'routing_no' => '125262149',
                 ],
@@ -6112,7 +6112,7 @@ class Branch4Seeder extends Seeder
             676 => [
                 'id' => '3677',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KALAMPUR SME',
+                'name' => 'KALAMPUR SME',
                 'bank_branch_data' => [
                     'routing_no' => '125262457',
                 ],
@@ -6121,7 +6121,7 @@ class Branch4Seeder extends Seeder
             677 => [
                 'id' => '3678',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KARWAN BAZAR',
+                'name' => 'KARWAN BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '125262536',
                 ],
@@ -6130,7 +6130,7 @@ class Branch4Seeder extends Seeder
             678 => [
                 'id' => '3679',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MIRPUR',
+                'name' => 'MIRPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125262981',
                 ],
@@ -6139,7 +6139,7 @@ class Branch4Seeder extends Seeder
             679 => [
                 'id' => '3680',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MIRPUR SECTION-1',
+                'name' => 'MIRPUR SECTION-1',
                 'bank_branch_data' => [
                     'routing_no' => '125263106',
                 ],
@@ -6148,7 +6148,7 @@ class Branch4Seeder extends Seeder
             680 => [
                 'id' => '3681',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MOHAKHALI',
+                'name' => 'MOHAKHALI',
                 'bank_branch_data' => [
                     'routing_no' => '125263193',
                 ],
@@ -6157,7 +6157,7 @@ class Branch4Seeder extends Seeder
             681 => [
                 'id' => '3682',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MOHAMMADPUR KRISHI MARKET',
+                'name' => 'MOHAMMADPUR KRISHI MARKET',
                 'bank_branch_data' => [
                     'routing_no' => '125263377',
                 ],
@@ -6166,7 +6166,7 @@ class Branch4Seeder extends Seeder
             682 => [
                 'id' => '3683',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NEW MARKET',
+                'name' => 'NEW MARKET',
                 'bank_branch_data' => [
                     'routing_no' => '125263522',
                 ],
@@ -6175,7 +6175,7 @@ class Branch4Seeder extends Seeder
             683 => [
                 'id' => '3684',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PALLABI',
+                'name' => 'PALLABI',
                 'bank_branch_data' => [
                     'routing_no' => '125263580',
                 ],
@@ -6184,7 +6184,7 @@ class Branch4Seeder extends Seeder
             684 => [
                 'id' => '3685',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PANTHA PATH',
+                'name' => 'PANTHA PATH',
                 'bank_branch_data' => [
                     'routing_no' => '125263614',
                 ],
@@ -6193,7 +6193,7 @@ class Branch4Seeder extends Seeder
             685 => [
                 'id' => '3686',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SAVAR',
+                'name' => 'SAVAR',
                 'bank_branch_data' => [
                     'routing_no' => '125264097',
                 ],
@@ -6202,7 +6202,7 @@ class Branch4Seeder extends Seeder
             686 => [
                 'id' => '3687',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SHYAMALI',
+                'name' => 'SHYAMALI',
                 'bank_branch_data' => [
                     'routing_no' => '125264305',
                 ],
@@ -6211,7 +6211,7 @@ class Branch4Seeder extends Seeder
             687 => [
                 'id' => '3688',
                 'bank_id' => '23',
-                'bank_branch_name' => 'UTTARA',
+                'name' => 'UTTARA',
                 'bank_branch_data' => [
                     'routing_no' => '125264639',
                 ],
@@ -6220,7 +6220,7 @@ class Branch4Seeder extends Seeder
             688 => [
                 'id' => '3689',
                 'bank_id' => '23',
-                'bank_branch_name' => 'ZIRANI BAZAR SME',
+                'name' => 'ZIRANI BAZAR SME',
                 'bank_branch_data' => [
                     'routing_no' => '125264826',
                 ],
@@ -6229,7 +6229,7 @@ class Branch4Seeder extends Seeder
             689 => [
                 'id' => '3690',
                 'bank_id' => '23',
-                'bank_branch_name' => 'TRUNCATION POINT',
+                'name' => 'TRUNCATION POINT',
                 'bank_branch_data' => [
                     'routing_no' => '125270007',
                 ],
@@ -6238,7 +6238,7 @@ class Branch4Seeder extends Seeder
             690 => [
                 'id' => '3691',
                 'bank_id' => '23',
-                'bank_branch_name' => 'ATI BAZAR',
+                'name' => 'ATI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '125270344',
                 ],
@@ -6247,7 +6247,7 @@ class Branch4Seeder extends Seeder
             691 => [
                 'id' => '3692',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BANDURA SME',
+                'name' => 'BANDURA SME',
                 'bank_branch_data' => [
                     'routing_no' => '125270652',
                 ],
@@ -6256,7 +6256,7 @@ class Branch4Seeder extends Seeder
             692 => [
                 'id' => '3693',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BANGSHAL',
+                'name' => 'BANGSHAL',
                 'bank_branch_data' => [
                     'routing_no' => '125270881',
                 ],
@@ -6265,7 +6265,7 @@ class Branch4Seeder extends Seeder
             693 => [
                 'id' => '3694',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHAWK MOGULTULY',
+                'name' => 'CHAWK MOGULTULY',
                 'bank_branch_data' => [
                     'routing_no' => '125271301',
                 ],
@@ -6274,7 +6274,7 @@ class Branch4Seeder extends Seeder
             694 => [
                 'id' => '3695',
                 'bank_id' => '23',
-                'bank_branch_name' => 'DANIA',
+                'name' => 'DANIA',
                 'bank_branch_data' => [
                     'routing_no' => '125271422',
                 ],
@@ -6283,7 +6283,7 @@ class Branch4Seeder extends Seeder
             695 => [
                 'id' => '3696',
                 'bank_id' => '23',
-                'bank_branch_name' => 'DHOLAIKHAL',
+                'name' => 'DHOLAIKHAL',
                 'bank_branch_data' => [
                     'routing_no' => '125271848',
                 ],
@@ -6292,7 +6292,7 @@ class Branch4Seeder extends Seeder
             696 => [
                 'id' => '3697',
                 'bank_id' => '23',
-                'bank_branch_name' => 'DOHAR',
+                'name' => 'DOHAR',
                 'bank_branch_data' => [
                     'routing_no' => '125272050',
                 ],
@@ -6301,7 +6301,7 @@ class Branch4Seeder extends Seeder
             697 => [
                 'id' => '3698',
                 'bank_id' => '23',
-                'bank_branch_name' => 'FOREIGN EXCHANGE',
+                'name' => 'FOREIGN EXCHANGE',
                 'bank_branch_data' => [
                     'routing_no' => '125272326',
                 ],
@@ -6310,7 +6310,7 @@ class Branch4Seeder extends Seeder
             698 => [
                 'id' => '3699',
                 'bank_id' => '23',
-                'bank_branch_name' => 'GANDARIA',
+                'name' => 'GANDARIA',
                 'bank_branch_data' => [
                     'routing_no' => '125272447',
                 ],
@@ -6319,7 +6319,7 @@ class Branch4Seeder extends Seeder
             699 => [
                 'id' => '3700',
                 'bank_id' => '23',
-                'bank_branch_name' => 'HEAD OFFICE',
+                'name' => 'HEAD OFFICE',
                 'bank_branch_data' => [
                     'routing_no' => '125272689',
                 ],
@@ -6328,7 +6328,7 @@ class Branch4Seeder extends Seeder
             700 => [
                 'id' => '3701',
                 'bank_id' => '23',
-                'bank_branch_name' => 'ISLAMPUR',
+                'name' => 'ISLAMPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125272984',
                 ],
@@ -6337,7 +6337,7 @@ class Branch4Seeder extends Seeder
             701 => [
                 'id' => '3702',
                 'bank_id' => '23',
-                'bank_branch_name' => 'JATRABARI',
+                'name' => 'JATRABARI',
                 'bank_branch_data' => [
                     'routing_no' => '125273220',
                 ],
@@ -6346,7 +6346,7 @@ class Branch4Seeder extends Seeder
             702 => [
                 'id' => '3703',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KAMRANGIRCHAR',
+                'name' => 'KAMRANGIRCHAR',
                 'bank_branch_data' => [
                     'routing_no' => '125273583',
                 ],
@@ -6355,7 +6355,7 @@ class Branch4Seeder extends Seeder
             703 => [
                 'id' => '3704',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KHILGAON',
+                'name' => 'KHILGAON',
                 'bank_branch_data' => [
                     'routing_no' => '125273675',
                 ],
@@ -6364,7 +6364,7 @@ class Branch4Seeder extends Seeder
             704 => [
                 'id' => '3705',
                 'bank_id' => '23',
-                'bank_branch_name' => 'LALBAGH',
+                'name' => 'LALBAGH',
                 'bank_branch_data' => [
                     'routing_no' => '125273820',
                 ],
@@ -6373,7 +6373,7 @@ class Branch4Seeder extends Seeder
             705 => [
                 'id' => '3706',
                 'bank_id' => '23',
-                'bank_branch_name' => 'LOCAL OFFICE',
+                'name' => 'LOCAL OFFICE',
                 'bank_branch_data' => [
                     'routing_no' => '125273888',
                 ],
@@ -6382,7 +6382,7 @@ class Branch4Seeder extends Seeder
             706 => [
                 'id' => '3707',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MOGHBAZAR',
+                'name' => 'MOGHBAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '125274182',
                 ],
@@ -6391,7 +6391,7 @@ class Branch4Seeder extends Seeder
             707 => [
                 'id' => '3708',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MOTIJHEEL',
+                'name' => 'MOTIJHEEL',
                 'bank_branch_data' => [
                     'routing_no' => '125274245',
                 ],
@@ -6400,7 +6400,7 @@ class Branch4Seeder extends Seeder
             708 => [
                 'id' => '3709',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MOUCHAK MARKET',
+                'name' => 'MOUCHAK MARKET',
                 'bank_branch_data' => [
                     'routing_no' => '125274395',
                 ],
@@ -6409,7 +6409,7 @@ class Branch4Seeder extends Seeder
             709 => [
                 'id' => '3710',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NAWABGANJ',
+                'name' => 'NAWABGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125274690',
                 ],
@@ -6418,7 +6418,7 @@ class Branch4Seeder extends Seeder
             710 => [
                 'id' => '3711',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NAWABPUR ROAD',
+                'name' => 'NAWABPUR ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '125274753',
                 ],
@@ -6427,7 +6427,7 @@ class Branch4Seeder extends Seeder
             711 => [
                 'id' => '3712',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PALTAN',
+                'name' => 'PALTAN',
                 'bank_branch_data' => [
                     'routing_no' => '125275202',
                 ],
@@ -6436,7 +6436,7 @@ class Branch4Seeder extends Seeder
             712 => [
                 'id' => '3713',
                 'bank_id' => '23',
-                'bank_branch_name' => 'RAMNA',
+                'name' => 'RAMNA',
                 'bank_branch_data' => [
                     'routing_no' => '125275686',
                 ],
@@ -6445,7 +6445,7 @@ class Branch4Seeder extends Seeder
             713 => [
                 'id' => '3714',
                 'bank_id' => '23',
-                'bank_branch_name' => 'RAMPURA',
+                'name' => 'RAMPURA',
                 'bank_branch_data' => [
                     'routing_no' => '125275749',
                 ],
@@ -6454,7 +6454,7 @@ class Branch4Seeder extends Seeder
             714 => [
                 'id' => '3715',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SADARGHAT',
+                'name' => 'SADARGHAT',
                 'bank_branch_data' => [
                     'routing_no' => '125275923',
                 ],
@@ -6463,7 +6463,7 @@ class Branch4Seeder extends Seeder
             715 => [
                 'id' => '3716',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SHYAMPUR',
+                'name' => 'SHYAMPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125276522',
                 ],
@@ -6472,7 +6472,7 @@ class Branch4Seeder extends Seeder
             716 => [
                 'id' => '3717',
                 'bank_id' => '23',
-                'bank_branch_name' => 'VIP ROAD',
+                'name' => 'VIP ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '125276856',
                 ],
@@ -6481,7 +6481,7 @@ class Branch4Seeder extends Seeder
             717 => [
                 'id' => '3718',
                 'bank_id' => '23',
-                'bank_branch_name' => 'WISEGHAT',
+                'name' => 'WISEGHAT',
                 'bank_branch_data' => [
                     'routing_no' => '125277042',
                 ],
@@ -6490,7 +6490,7 @@ class Branch4Seeder extends Seeder
             718 => [
                 'id' => '3719',
                 'bank_id' => '23',
-                'bank_branch_name' => 'ZINZIRA',
+                'name' => 'ZINZIRA',
                 'bank_branch_data' => [
                     'routing_no' => '125277097',
                 ],
@@ -6499,7 +6499,7 @@ class Branch4Seeder extends Seeder
             719 => [
                 'id' => '3720',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BIRAMPUR',
+                'name' => 'BIRAMPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125280347',
                 ],
@@ -6508,7 +6508,7 @@ class Branch4Seeder extends Seeder
             720 => [
                 'id' => '3721',
                 'bank_id' => '23',
-                'bank_branch_name' => 'DINAJPUR',
+                'name' => 'DINAJPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125280671',
                 ],
@@ -6517,7 +6517,7 @@ class Branch4Seeder extends Seeder
             721 => [
                 'id' => '3722',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SETABGANJ',
+                'name' => 'SETABGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125282174',
                 ],
@@ -6526,7 +6526,7 @@ class Branch4Seeder extends Seeder
             722 => [
                 'id' => '3723',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BHANGA SME',
+                'name' => 'BHANGA SME',
                 'bank_branch_data' => [
                     'routing_no' => '125290290',
                 ],
@@ -6535,7 +6535,7 @@ class Branch4Seeder extends Seeder
             723 => [
                 'id' => '3724',
                 'bank_id' => '23',
-                'bank_branch_name' => 'FARIDPUR',
+                'name' => 'FARIDPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125290524',
                 ],
@@ -6544,7 +6544,7 @@ class Branch4Seeder extends Seeder
             724 => [
                 'id' => '3725',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHHAGALNAIYA',
+                'name' => 'CHHAGALNAIYA',
                 'bank_branch_data' => [
                     'routing_no' => '125300319',
                 ],
@@ -6553,7 +6553,7 @@ class Branch4Seeder extends Seeder
             725 => [
                 'id' => '3726',
                 'bank_id' => '23',
-                'bank_branch_name' => 'COLLEGE ROAD',
+                'name' => 'COLLEGE ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '125300348',
                 ],
@@ -6562,7 +6562,7 @@ class Branch4Seeder extends Seeder
             726 => [
                 'id' => '3727',
                 'bank_id' => '23',
-                'bank_branch_name' => 'DAGANBHUIYAN',
+                'name' => 'DAGANBHUIYAN',
                 'bank_branch_data' => [
                     'routing_no' => '125300377',
                 ],
@@ -6571,7 +6571,7 @@ class Branch4Seeder extends Seeder
             727 => [
                 'id' => '3728',
                 'bank_id' => '23',
-                'bank_branch_name' => 'FENI',
+                'name' => 'FENI',
                 'bank_branch_data' => [
                     'routing_no' => '125300522',
                 ],
@@ -6580,7 +6580,7 @@ class Branch4Seeder extends Seeder
             728 => [
                 'id' => '3729',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PARSHURAM SME',
+                'name' => 'PARSHURAM SME',
                 'bank_branch_data' => [
                     'routing_no' => '125301284',
                 ],
@@ -6589,7 +6589,7 @@ class Branch4Seeder extends Seeder
             729 => [
                 'id' => '3730',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SONAGAZI',
+                'name' => 'SONAGAZI',
                 'bank_branch_data' => [
                     'routing_no' => '125301484',
                 ],
@@ -6598,7 +6598,7 @@ class Branch4Seeder extends Seeder
             730 => [
                 'id' => '3731',
                 'bank_id' => '23',
-                'bank_branch_name' => 'GAIBANDHA',
+                'name' => 'GAIBANDHA',
                 'bank_branch_data' => [
                     'routing_no' => '125320528',
                 ],
@@ -6607,7 +6607,7 @@ class Branch4Seeder extends Seeder
             731 => [
                 'id' => '3732',
                 'bank_id' => '23',
-                'bank_branch_name' => 'GOBINDAGANJ',
+                'name' => 'GOBINDAGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125320586',
                 ],
@@ -6616,7 +6616,7 @@ class Branch4Seeder extends Seeder
             732 => [
                 'id' => '3733',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SUNDARGANJ',
+                'name' => 'SUNDARGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125321301',
                 ],
@@ -6625,7 +6625,7 @@ class Branch4Seeder extends Seeder
             733 => [
                 'id' => '3734',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BOARD BAZAR',
+                'name' => 'BOARD BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '125330226',
                 ],
@@ -6634,7 +6634,7 @@ class Branch4Seeder extends Seeder
             734 => [
                 'id' => '3735',
                 'bank_id' => '23',
-                'bank_branch_name' => 'GAZIPUR CHOWRASTA',
+                'name' => 'GAZIPUR CHOWRASTA',
                 'bank_branch_data' => [
                     'routing_no' => '125330550',
                 ],
@@ -6643,7 +6643,7 @@ class Branch4Seeder extends Seeder
             735 => [
                 'id' => '3736',
                 'bank_id' => '23',
-                'bank_branch_name' => 'GAZIPUR SADAR',
+                'name' => 'GAZIPUR SADAR',
                 'bank_branch_data' => [
                     'routing_no' => '125330592',
                 ],
@@ -6652,7 +6652,7 @@ class Branch4Seeder extends Seeder
             736 => [
                 'id' => '3737',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KAPASIA',
+                'name' => 'KAPASIA',
                 'bank_branch_data' => [
                     'routing_no' => '125330884',
                 ],
@@ -6661,7 +6661,7 @@ class Branch4Seeder extends Seeder
             737 => [
                 'id' => '3738',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KONABARI',
+                'name' => 'KONABARI',
                 'bank_branch_data' => [
                     'routing_no' => '125330947',
                 ],
@@ -6670,7 +6670,7 @@ class Branch4Seeder extends Seeder
             738 => [
                 'id' => '3739',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MAWNA CHOWRASTA',
+                'name' => 'MAWNA CHOWRASTA',
                 'bank_branch_data' => [
                     'routing_no' => '125331038',
                 ],
@@ -6679,7 +6679,7 @@ class Branch4Seeder extends Seeder
             739 => [
                 'id' => '3740',
                 'bank_id' => '23',
-                'bank_branch_name' => 'TONGI',
+                'name' => 'TONGI',
                 'bank_branch_data' => [
                     'routing_no' => '125331638',
                 ],
@@ -6688,7 +6688,7 @@ class Branch4Seeder extends Seeder
             740 => [
                 'id' => '3741',
                 'bank_id' => '23',
-                'bank_branch_name' => 'GOPALGANJ',
+                'name' => 'GOPALGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125350372',
                 ],
@@ -6697,7 +6697,7 @@ class Branch4Seeder extends Seeder
             741 => [
                 'id' => '3742',
                 'bank_id' => '23',
-                'bank_branch_name' => 'TUNGI PARA',
+                'name' => 'TUNGI PARA',
                 'bank_branch_data' => [
                     'routing_no' => '125351092',
                 ],
@@ -6706,7 +6706,7 @@ class Branch4Seeder extends Seeder
             742 => [
                 'id' => '3743',
                 'bank_id' => '23',
-                'bank_branch_name' => 'HABIGANJ',
+                'name' => 'HABIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125360612',
                 ],
@@ -6715,7 +6715,7 @@ class Branch4Seeder extends Seeder
             743 => [
                 'id' => '3744',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NABIGANJ SME',
+                'name' => 'NABIGANJ SME',
                 'bank_branch_data' => [
                     'routing_no' => '125361103',
                 ],
@@ -6724,7 +6724,7 @@ class Branch4Seeder extends Seeder
             744 => [
                 'id' => '3745',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SHAYESTAGANJ SME',
+                'name' => 'SHAYESTAGANJ SME',
                 'bank_branch_data' => [
                     'routing_no' => '125361408',
                 ],
@@ -6733,7 +6733,7 @@ class Branch4Seeder extends Seeder
             745 => [
                 'id' => '3746',
                 'bank_id' => '23',
-                'bank_branch_name' => 'JOYPURHAT',
+                'name' => 'JOYPURHAT',
                 'bank_branch_data' => [
                     'routing_no' => '125380405',
                 ],
@@ -6742,7 +6742,7 @@ class Branch4Seeder extends Seeder
             746 => [
                 'id' => '3747',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PANCHBIBI',
+                'name' => 'PANCHBIBI',
                 'bank_branch_data' => [
                     'routing_no' => '125380676',
                 ],
@@ -6751,7 +6751,7 @@ class Branch4Seeder extends Seeder
             747 => [
                 'id' => '3748',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BAKSHIGANJ',
+                'name' => 'BAKSHIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125390103',
                 ],
@@ -6760,7 +6760,7 @@ class Branch4Seeder extends Seeder
             748 => [
                 'id' => '3749',
                 'bank_id' => '23',
-                'bank_branch_name' => 'JAMALPUR',
+                'name' => 'JAMALPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125390853',
                 ],
@@ -6769,7 +6769,7 @@ class Branch4Seeder extends Seeder
             749 => [
                 'id' => '3750',
                 'bank_id' => '23',
-                'bank_branch_name' => 'TARAKANDI',
+                'name' => 'TARAKANDI',
                 'bank_branch_data' => [
                     'routing_no' => '125391694',
                 ],
@@ -6778,7 +6778,7 @@ class Branch4Seeder extends Seeder
             750 => [
                 'id' => '3751',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BENAPOLE',
+                'name' => 'BENAPOLE',
                 'bank_branch_data' => [
                     'routing_no' => '125410283',
                 ],
@@ -6787,7 +6787,7 @@ class Branch4Seeder extends Seeder
             751 => [
                 'id' => '3752',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHOWGACHA',
+                'name' => 'CHOWGACHA',
                 'bank_branch_data' => [
                     'routing_no' => '125410559',
                 ],
@@ -6796,7 +6796,7 @@ class Branch4Seeder extends Seeder
             752 => [
                 'id' => '3753',
                 'bank_id' => '23',
-                'bank_branch_name' => 'JESSORE',
+                'name' => 'JESSORE',
                 'bank_branch_data' => [
                     'routing_no' => '125410946',
                 ],
@@ -6805,7 +6805,7 @@ class Branch4Seeder extends Seeder
             753 => [
                 'id' => '3754',
                 'bank_id' => '23',
-                'bank_branch_name' => 'JHIKARGACHA',
+                'name' => 'JHIKARGACHA',
                 'bank_branch_data' => [
                     'routing_no' => '125411095',
                 ],
@@ -6814,7 +6814,7 @@ class Branch4Seeder extends Seeder
             754 => [
                 'id' => '3755',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KESHABPUR',
+                'name' => 'KESHABPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125411211',
                 ],
@@ -6823,7 +6823,7 @@ class Branch4Seeder extends Seeder
             755 => [
                 'id' => '3756',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NOAPARA',
+                'name' => 'NOAPARA',
                 'bank_branch_data' => [
                     'routing_no' => '125411637',
                 ],
@@ -6832,7 +6832,7 @@ class Branch4Seeder extends Seeder
             756 => [
                 'id' => '3757',
                 'bank_id' => '23',
-                'bank_branch_name' => 'JHALOKATI',
+                'name' => 'JHALOKATI',
                 'bank_branch_data' => [
                     'routing_no' => '125420310',
                 ],
@@ -6841,7 +6841,7 @@ class Branch4Seeder extends Seeder
             757 => [
                 'id' => '3758',
                 'bank_id' => '23',
-                'bank_branch_name' => 'RAJAPUR',
+                'name' => 'RAJAPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125420552',
                 ],
@@ -6850,7 +6850,7 @@ class Branch4Seeder extends Seeder
             758 => [
                 'id' => '3759',
                 'bank_id' => '23',
-                'bank_branch_name' => 'DAK BANGLA BAZAR SME',
+                'name' => 'DAK BANGLA BAZAR SME',
                 'bank_branch_data' => [
                     'routing_no' => '125440358',
                 ],
@@ -6859,7 +6859,7 @@ class Branch4Seeder extends Seeder
             759 => [
                 'id' => '3760',
                 'bank_id' => '23',
-                'bank_branch_name' => 'JHENAIDAH',
+                'name' => 'JHENAIDAH',
                 'bank_branch_data' => [
                     'routing_no' => '125440640',
                 ],
@@ -6868,7 +6868,7 @@ class Branch4Seeder extends Seeder
             760 => [
                 'id' => '3761',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KALIGANJ',
+                'name' => 'KALIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125440790',
                 ],
@@ -6877,7 +6877,7 @@ class Branch4Seeder extends Seeder
             761 => [
                 'id' => '3762',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KOTCHANDPUR',
+                'name' => 'KOTCHANDPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125441007',
                 ],
@@ -6886,7 +6886,7 @@ class Branch4Seeder extends Seeder
             762 => [
                 'id' => '3763',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KHAGRACHARI',
+                'name' => 'KHAGRACHARI',
                 'bank_branch_data' => [
                     'routing_no' => '125460075',
                 ],
@@ -6895,7 +6895,7 @@ class Branch4Seeder extends Seeder
             763 => [
                 'id' => '3764',
                 'bank_id' => '23',
-                'bank_branch_name' => 'DAULATPUR',
+                'name' => 'DAULATPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125470702',
                 ],
@@ -6904,7 +6904,7 @@ class Branch4Seeder extends Seeder
             764 => [
                 'id' => '3765',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KDA AVENUE',
+                'name' => 'KDA AVENUE',
                 'bank_branch_data' => [
                     'routing_no' => '125471406',
                 ],
@@ -6913,7 +6913,7 @@ class Branch4Seeder extends Seeder
             765 => [
                 'id' => '3766',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KHULNA',
+                'name' => 'KHULNA',
                 'bank_branch_data' => [
                     'routing_no' => '125471543',
                 ],
@@ -6922,7 +6922,7 @@ class Branch4Seeder extends Seeder
             766 => [
                 'id' => '3767',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PAIKGACHA',
+                'name' => 'PAIKGACHA',
                 'bank_branch_data' => [
                     'routing_no' => '125472089',
                 ],
@@ -6931,7 +6931,7 @@ class Branch4Seeder extends Seeder
             767 => [
                 'id' => '3768',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PHULTALA BAZAR SME',
+                'name' => 'PHULTALA BAZAR SME',
                 'bank_branch_data' => [
                     'routing_no' => '125472155',
                 ],
@@ -6940,7 +6940,7 @@ class Branch4Seeder extends Seeder
             768 => [
                 'id' => '3769',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BHAIRAB',
+                'name' => 'BHAIRAB',
                 'bank_branch_data' => [
                     'routing_no' => '125480192',
                 ],
@@ -6949,7 +6949,7 @@ class Branch4Seeder extends Seeder
             769 => [
                 'id' => '3770',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KATIADI',
+                'name' => 'KATIADI',
                 'bank_branch_data' => [
                     'routing_no' => '125480589',
                 ],
@@ -6958,7 +6958,7 @@ class Branch4Seeder extends Seeder
             770 => [
                 'id' => '3771',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KISHOREGANJ',
+                'name' => 'KISHOREGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125480671',
                 ],
@@ -6967,7 +6967,7 @@ class Branch4Seeder extends Seeder
             771 => [
                 'id' => '3772',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BHURUNGAMARI',
+                'name' => 'BHURUNGAMARI',
                 'bank_branch_data' => [
                     'routing_no' => '125490108',
                 ],
@@ -6976,7 +6976,7 @@ class Branch4Seeder extends Seeder
             772 => [
                 'id' => '3773',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KURIGRAM',
+                'name' => 'KURIGRAM',
                 'bank_branch_data' => [
                     'routing_no' => '125490403',
                 ],
@@ -6985,7 +6985,7 @@ class Branch4Seeder extends Seeder
             773 => [
                 'id' => '3774',
                 'bank_id' => '23',
-                'bank_branch_name' => 'ROWMARI',
+                'name' => 'ROWMARI',
                 'bank_branch_data' => [
                     'routing_no' => '125490645',
                 ],
@@ -6994,7 +6994,7 @@ class Branch4Seeder extends Seeder
             774 => [
                 'id' => '3775',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KUMARKHALI',
+                'name' => 'KUMARKHALI',
                 'bank_branch_data' => [
                     'routing_no' => '125500885',
                 ],
@@ -7003,7 +7003,7 @@ class Branch4Seeder extends Seeder
             775 => [
                 'id' => '3776',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KUSHTIA',
+                'name' => 'KUSHTIA',
                 'bank_branch_data' => [
                     'routing_no' => '125500948',
                 ],
@@ -7012,7 +7012,7 @@ class Branch4Seeder extends Seeder
             776 => [
                 'id' => '3777',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PORADAH',
+                'name' => 'PORADAH',
                 'bank_branch_data' => [
                     'routing_no' => '125501363',
                 ],
@@ -7021,7 +7021,7 @@ class Branch4Seeder extends Seeder
             777 => [
                 'id' => '3778',
                 'bank_id' => '23',
-                'bank_branch_name' => 'HAZIRHAT',
+                'name' => 'HAZIRHAT',
                 'bank_branch_data' => [
                     'routing_no' => '125510091',
                 ],
@@ -7030,7 +7030,7 @@ class Branch4Seeder extends Seeder
             778 => [
                 'id' => '3779',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHANDRAGANJ',
+                'name' => 'CHANDRAGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125510196',
                 ],
@@ -7039,7 +7039,7 @@ class Branch4Seeder extends Seeder
             779 => [
                 'id' => '3780',
                 'bank_id' => '23',
-                'bank_branch_name' => 'LAKSHMIPUR',
+                'name' => 'LAKSHMIPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125510738',
                 ],
@@ -7048,7 +7048,7 @@ class Branch4Seeder extends Seeder
             780 => [
                 'id' => '3781',
                 'bank_id' => '23',
-                'bank_branch_name' => 'RAIPUR',
+                'name' => 'RAIPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125510970',
                 ],
@@ -7057,7 +7057,7 @@ class Branch4Seeder extends Seeder
             781 => [
                 'id' => '3782',
                 'bank_id' => '23',
-                'bank_branch_name' => 'RAMGANJ',
+                'name' => 'RAMGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125511032',
                 ],
@@ -7066,7 +7066,7 @@ class Branch4Seeder extends Seeder
             782 => [
                 'id' => '3783',
                 'bank_id' => '23',
-                'bank_branch_name' => 'LALMONIRHAT',
+                'name' => 'LALMONIRHAT',
                 'bank_branch_data' => [
                     'routing_no' => '125520465',
                 ],
@@ -7075,7 +7075,7 @@ class Branch4Seeder extends Seeder
             783 => [
                 'id' => '3784',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PATGRAM SME',
+                'name' => 'PATGRAM SME',
                 'bank_branch_data' => [
                     'routing_no' => '125520599',
                 ],
@@ -7084,7 +7084,7 @@ class Branch4Seeder extends Seeder
             784 => [
                 'id' => '3785',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHARMUGURIA SME',
+                'name' => 'CHARMUGURIA SME',
                 'bank_branch_data' => [
                     'routing_no' => '125540140',
                 ],
@@ -7093,7 +7093,7 @@ class Branch4Seeder extends Seeder
             785 => [
                 'id' => '3786',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KALKINI',
+                'name' => 'KALKINI',
                 'bank_branch_data' => [
                     'routing_no' => '125540287',
                 ],
@@ -7102,7 +7102,7 @@ class Branch4Seeder extends Seeder
             786 => [
                 'id' => '3787',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MADARIPUR',
+                'name' => 'MADARIPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125540403',
                 ],
@@ -7111,7 +7111,7 @@ class Branch4Seeder extends Seeder
             787 => [
                 'id' => '3788',
                 'bank_id' => '23',
-                'bank_branch_name' => 'TAKERHAT',
+                'name' => 'TAKERHAT',
                 'bank_branch_data' => [
                     'routing_no' => '125540766',
                 ],
@@ -7120,7 +7120,7 @@ class Branch4Seeder extends Seeder
             788 => [
                 'id' => '3789',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MAGURA',
+                'name' => 'MAGURA',
                 'bank_branch_data' => [
                     'routing_no' => '125550556',
                 ],
@@ -7129,7 +7129,7 @@ class Branch4Seeder extends Seeder
             789 => [
                 'id' => '3790',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MANIKGANJ',
+                'name' => 'MANIKGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125560612',
                 ],
@@ -7138,7 +7138,7 @@ class Branch4Seeder extends Seeder
             790 => [
                 'id' => '3791',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SHIBALAYA',
+                'name' => 'SHIBALAYA',
                 'bank_branch_data' => [
                     'routing_no' => '125560791',
                 ],
@@ -7147,7 +7147,7 @@ class Branch4Seeder extends Seeder
             791 => [
                 'id' => '3792',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SINGAIR',
+                'name' => 'SINGAIR',
                 'bank_branch_data' => [
                     'routing_no' => '125560825',
                 ],
@@ -7156,7 +7156,7 @@ class Branch4Seeder extends Seeder
             792 => [
                 'id' => '3793',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MEHERPUR',
+                'name' => 'MEHERPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125570378',
                 ],
@@ -7165,7 +7165,7 @@ class Branch4Seeder extends Seeder
             793 => [
                 'id' => '3794',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BARALEKHA',
+                'name' => 'BARALEKHA',
                 'bank_branch_data' => [
                     'routing_no' => '125580100',
                 ],
@@ -7174,7 +7174,7 @@ class Branch4Seeder extends Seeder
             794 => [
                 'id' => '3795',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KULAURA',
+                'name' => 'KULAURA',
                 'bank_branch_data' => [
                     'routing_no' => '125580942',
                 ],
@@ -7183,7 +7183,7 @@ class Branch4Seeder extends Seeder
             795 => [
                 'id' => '3796',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MOULAVI BAZAR',
+                'name' => 'MOULAVI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '125581183',
                 ],
@@ -7192,7 +7192,7 @@ class Branch4Seeder extends Seeder
             796 => [
                 'id' => '3797',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SREE MANGAL',
+                'name' => 'SREE MANGAL',
                 'bank_branch_data' => [
                     'routing_no' => '125581725',
                 ],
@@ -7201,7 +7201,7 @@ class Branch4Seeder extends Seeder
             797 => [
                 'id' => '3798',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MUNSHIGANJ',
+                'name' => 'MUNSHIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125591036',
                 ],
@@ -7210,7 +7210,7 @@ class Branch4Seeder extends Seeder
             798 => [
                 'id' => '3799',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SREENAGAR',
+                'name' => 'SREENAGAR',
                 'bank_branch_data' => [
                     'routing_no' => '125591423',
                 ],
@@ -7219,7 +7219,7 @@ class Branch4Seeder extends Seeder
             799 => [
                 'id' => '3800',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NIMTALA',
+                'name' => 'NIMTALA',
                 'bank_branch_data' => [
                     'routing_no' => '125591665',
                 ],
@@ -7228,7 +7228,7 @@ class Branch4Seeder extends Seeder
             800 => [
                 'id' => '3801',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BHALUKA',
+                'name' => 'BHALUKA',
                 'bank_branch_data' => [
                     'routing_no' => '125610317',
                 ],
@@ -7237,7 +7237,7 @@ class Branch4Seeder extends Seeder
             801 => [
                 'id' => '3802',
                 'bank_id' => '23',
-                'bank_branch_name' => 'FULBARIA',
+                'name' => 'FULBARIA',
                 'bank_branch_data' => [
                     'routing_no' => '125610946',
                 ],
@@ -7246,7 +7246,7 @@ class Branch4Seeder extends Seeder
             802 => [
                 'id' => '3803',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MUKTAGACHA SME',
+                'name' => 'MUKTAGACHA SME',
                 'bank_branch_data' => [
                     'routing_no' => '125611703',
                 ],
@@ -7255,7 +7255,7 @@ class Branch4Seeder extends Seeder
             803 => [
                 'id' => '3804',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MYMENSINGH',
+                'name' => 'MYMENSINGH',
                 'bank_branch_data' => [
                     'routing_no' => '125611758',
                 ],
@@ -7264,7 +7264,7 @@ class Branch4Seeder extends Seeder
             804 => [
                 'id' => '3805',
                 'bank_id' => '23',
-                'bank_branch_name' => 'TRISHAL',
+                'name' => 'TRISHAL',
                 'bank_branch_data' => [
                     'routing_no' => '125612357',
                 ],
@@ -7273,7 +7273,7 @@ class Branch4Seeder extends Seeder
             805 => [
                 'id' => '3806',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MANDA',
+                'name' => 'MANDA',
                 'bank_branch_data' => [
                     'routing_no' => '125641007',
                 ],
@@ -7282,7 +7282,7 @@ class Branch4Seeder extends Seeder
             806 => [
                 'id' => '3807',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MOHADEBPUR',
+                'name' => 'MOHADEBPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125641094',
                 ],
@@ -7291,7 +7291,7 @@ class Branch4Seeder extends Seeder
             807 => [
                 'id' => '3808',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NAOGAON',
+                'name' => 'NAOGAON',
                 'bank_branch_data' => [
                     'routing_no' => '125641186',
                 ],
@@ -7300,7 +7300,7 @@ class Branch4Seeder extends Seeder
             808 => [
                 'id' => '3809',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NAZIPUR',
+                'name' => 'NAZIPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125641249',
                 ],
@@ -7309,7 +7309,7 @@ class Branch4Seeder extends Seeder
             809 => [
                 'id' => '3810',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SAPAHAR',
+                'name' => 'SAPAHAR',
                 'bank_branch_data' => [
                     'routing_no' => '125641757',
                 ],
@@ -7318,7 +7318,7 @@ class Branch4Seeder extends Seeder
             810 => [
                 'id' => '3811',
                 'bank_id' => '23',
-                'bank_branch_name' => 'LOHAGARA',
+                'name' => 'LOHAGARA',
                 'bank_branch_data' => [
                     'routing_no' => '125650469',
                 ],
@@ -7327,7 +7327,7 @@ class Branch4Seeder extends Seeder
             811 => [
                 'id' => '3812',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NARAIL',
+                'name' => 'NARAIL',
                 'bank_branch_data' => [
                     'routing_no' => '125650643',
                 ],
@@ -7336,7 +7336,7 @@ class Branch4Seeder extends Seeder
             812 => [
                 'id' => '3813',
                 'bank_id' => '23',
-                'bank_branch_name' => 'ARAIHAZAR',
+                'name' => 'ARAIHAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '125670049',
                 ],
@@ -7345,7 +7345,7 @@ class Branch4Seeder extends Seeder
             813 => [
                 'id' => '3814',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BHULTA',
+                'name' => 'BHULTA',
                 'bank_branch_data' => [
                     'routing_no' => '125670223',
                 ],
@@ -7354,7 +7354,7 @@ class Branch4Seeder extends Seeder
             814 => [
                 'id' => '3815',
                 'bank_id' => '23',
-                'bank_branch_name' => 'FATULLA',
+                'name' => 'FATULLA',
                 'bank_branch_data' => [
                     'routing_no' => '125670528',
                 ],
@@ -7363,7 +7363,7 @@ class Branch4Seeder extends Seeder
             815 => [
                 'id' => '3816',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KATCHPUR',
+                'name' => 'KATCHPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125670823',
                 ],
@@ -7372,7 +7372,7 @@ class Branch4Seeder extends Seeder
             816 => [
                 'id' => '3817',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NARAYANGANJ',
+                'name' => 'NARAYANGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125671185',
                 ],
@@ -7381,7 +7381,7 @@ class Branch4Seeder extends Seeder
             817 => [
                 'id' => '3818',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NITAIGANJ',
+                'name' => 'NITAIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125671277',
                 ],
@@ -7390,7 +7390,7 @@ class Branch4Seeder extends Seeder
             818 => [
                 'id' => '3819',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SONARGAON SME',
+                'name' => 'SONARGAON SME',
                 'bank_branch_data' => [
                     'routing_no' => '125671701',
                 ],
@@ -7399,7 +7399,7 @@ class Branch4Seeder extends Seeder
             819 => [
                 'id' => '3820',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MADHABDI',
+                'name' => 'MADHABDI',
                 'bank_branch_data' => [
                     'routing_no' => '125680671',
                 ],
@@ -7408,7 +7408,7 @@ class Branch4Seeder extends Seeder
             820 => [
                 'id' => '3821',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MONOHARDI',
+                'name' => 'MONOHARDI',
                 'bank_branch_data' => [
                     'routing_no' => '125680734',
                 ],
@@ -7417,7 +7417,7 @@ class Branch4Seeder extends Seeder
             821 => [
                 'id' => '3822',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NARSHINGDI',
+                'name' => 'NARSHINGDI',
                 'bank_branch_data' => [
                     'routing_no' => '125680855',
                 ],
@@ -7426,7 +7426,7 @@ class Branch4Seeder extends Seeder
             822 => [
                 'id' => '3823',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PALASH',
+                'name' => 'PALASH',
                 'bank_branch_data' => [
                     'routing_no' => '125680918',
                 ],
@@ -7435,7 +7435,7 @@ class Branch4Seeder extends Seeder
             823 => [
                 'id' => '3824',
                 'bank_id' => '23',
-                'bank_branch_name' => 'RAIPURA',
+                'name' => 'RAIPURA',
                 'bank_branch_data' => [
                     'routing_no' => '125681096',
                 ],
@@ -7444,7 +7444,7 @@ class Branch4Seeder extends Seeder
             824 => [
                 'id' => '3825',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHANCHAKOIR',
+                'name' => 'CHANCHAKOIR',
                 'bank_branch_data' => [
                     'routing_no' => '125690311',
                 ],
@@ -7453,7 +7453,7 @@ class Branch4Seeder extends Seeder
             825 => [
                 'id' => '3826',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NATORE',
+                'name' => 'NATORE',
                 'bank_branch_data' => [
                     'routing_no' => '125691099',
                 ],
@@ -7462,7 +7462,7 @@ class Branch4Seeder extends Seeder
             826 => [
                 'id' => '3827',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHAPAI NAWABGANJ',
+                'name' => 'CHAPAI NAWABGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125700256',
                 ],
@@ -7471,7 +7471,7 @@ class Branch4Seeder extends Seeder
             827 => [
                 'id' => '3828',
                 'bank_id' => '23',
-                'bank_branch_name' => 'ROHANPUR',
+                'name' => 'ROHANPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125700885',
                 ],
@@ -7480,7 +7480,7 @@ class Branch4Seeder extends Seeder
             828 => [
                 'id' => '3829',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SHIBGANJ',
+                'name' => 'SHIBGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125700948',
                 ],
@@ -7489,7 +7489,7 @@ class Branch4Seeder extends Seeder
             829 => [
                 'id' => '3830',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NETROKONA',
+                'name' => 'NETROKONA',
                 'bank_branch_data' => [
                     'routing_no' => '125720731',
                 ],
@@ -7498,7 +7498,7 @@ class Branch4Seeder extends Seeder
             830 => [
                 'id' => '3831',
                 'bank_id' => '23',
-                'bank_branch_name' => 'JALDHAKA',
+                'name' => 'JALDHAKA',
                 'bank_branch_data' => [
                     'routing_no' => '125730468',
                 ],
@@ -7507,7 +7507,7 @@ class Branch4Seeder extends Seeder
             831 => [
                 'id' => '3832',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NILPHAMARI',
+                'name' => 'NILPHAMARI',
                 'bank_branch_data' => [
                     'routing_no' => '125730734',
                 ],
@@ -7516,7 +7516,7 @@ class Branch4Seeder extends Seeder
             832 => [
                 'id' => '3833',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SAYEDPUR',
+                'name' => 'SAYEDPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125730792',
                 ],
@@ -7525,7 +7525,7 @@ class Branch4Seeder extends Seeder
             833 => [
                 'id' => '3834',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BANK ROAD',
+                'name' => 'BANK ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '125750222',
                 ],
@@ -7534,7 +7534,7 @@ class Branch4Seeder extends Seeder
             834 => [
                 'id' => '3835',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BASHURHAT',
+                'name' => 'BASHURHAT',
                 'bank_branch_data' => [
                     'routing_no' => '125750251',
                 ],
@@ -7543,7 +7543,7 @@ class Branch4Seeder extends Seeder
             835 => [
                 'id' => '3836',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHAPRASHIRHAT SME',
+                'name' => 'CHAPRASHIRHAT SME',
                 'bank_branch_data' => [
                     'routing_no' => '125750448',
                 ],
@@ -7552,7 +7552,7 @@ class Branch4Seeder extends Seeder
             836 => [
                 'id' => '3837',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHATKHIL',
+                'name' => 'CHATKHIL',
                 'bank_branch_data' => [
                     'routing_no' => '125750585',
                 ],
@@ -7561,7 +7561,7 @@ class Branch4Seeder extends Seeder
             837 => [
                 'id' => '3838',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHOUMOHANI',
+                'name' => 'CHOUMOHANI',
                 'bank_branch_data' => [
                     'routing_no' => '125750677',
                 ],
@@ -7570,7 +7570,7 @@ class Branch4Seeder extends Seeder
             838 => [
                 'id' => '3839',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MAIJDEE COURT',
+                'name' => 'MAIJDEE COURT',
                 'bank_branch_data' => [
                     'routing_no' => '125751571',
                 ],
@@ -7579,7 +7579,7 @@ class Branch4Seeder extends Seeder
             839 => [
                 'id' => '3840',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SENBAG',
+                'name' => 'SENBAG',
                 'bank_branch_data' => [
                     'routing_no' => '125752088',
                 ],
@@ -7588,7 +7588,7 @@ class Branch4Seeder extends Seeder
             840 => [
                 'id' => '3841',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SONAIMURI',
+                'name' => 'SONAIMURI',
                 'bank_branch_data' => [
                     'routing_no' => '125752233',
                 ],
@@ -7597,7 +7597,7 @@ class Branch4Seeder extends Seeder
             841 => [
                 'id' => '3842',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SUBARNA CHAR',
+                'name' => 'SUBARNA CHAR',
                 'bank_branch_data' => [
                     'routing_no' => '125752354',
                 ],
@@ -7606,7 +7606,7 @@ class Branch4Seeder extends Seeder
             842 => [
                 'id' => '3843',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHATMOHAR',
+                'name' => 'CHATMOHAR',
                 'bank_branch_data' => [
                     'routing_no' => '125760641',
                 ],
@@ -7615,7 +7615,7 @@ class Branch4Seeder extends Seeder
             843 => [
                 'id' => '3844',
                 'bank_id' => '23',
-                'bank_branch_name' => 'ISHWARDI',
+                'name' => 'ISHWARDI',
                 'bank_branch_data' => [
                     'routing_no' => '125761211',
                 ],
@@ -7624,7 +7624,7 @@ class Branch4Seeder extends Seeder
             844 => [
                 'id' => '3845',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KASHINATHPUR',
+                'name' => 'KASHINATHPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125761332',
                 ],
@@ -7633,7 +7633,7 @@ class Branch4Seeder extends Seeder
             845 => [
                 'id' => '3846',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PABNA',
+                'name' => 'PABNA',
                 'bank_branch_data' => [
                     'routing_no' => '125761787',
                 ],
@@ -7642,7 +7642,7 @@ class Branch4Seeder extends Seeder
             846 => [
                 'id' => '3847',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SANTHIA',
+                'name' => 'SANTHIA',
                 'bank_branch_data' => [
                     'routing_no' => '125762052',
                 ],
@@ -7651,7 +7651,7 @@ class Branch4Seeder extends Seeder
             847 => [
                 'id' => '3848',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SUJANAGAR SME',
+                'name' => 'SUJANAGAR SME',
                 'bank_branch_data' => [
                     'routing_no' => '125762265',
                 ],
@@ -7660,7 +7660,7 @@ class Branch4Seeder extends Seeder
             848 => [
                 'id' => '3849',
                 'bank_id' => '23',
-                'bank_branch_name' => 'DEBIGANJ',
+                'name' => 'DEBIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125770194',
                 ],
@@ -7669,7 +7669,7 @@ class Branch4Seeder extends Seeder
             849 => [
                 'id' => '3850',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PANCHAGARH',
+                'name' => 'PANCHAGARH',
                 'bank_branch_data' => [
                     'routing_no' => '125770552',
                 ],
@@ -7678,7 +7678,7 @@ class Branch4Seeder extends Seeder
             850 => [
                 'id' => '3851',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KALAPARA',
+                'name' => 'KALAPARA',
                 'bank_branch_data' => [
                     'routing_no' => '125780526',
                 ],
@@ -7687,7 +7687,7 @@ class Branch4Seeder extends Seeder
             851 => [
                 'id' => '3852',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PATUAKHALI',
+                'name' => 'PATUAKHALI',
                 'bank_branch_data' => [
                     'routing_no' => '125781091',
                 ],
@@ -7696,7 +7696,7 @@ class Branch4Seeder extends Seeder
             852 => [
                 'id' => '3853',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BHANDARIA',
+                'name' => 'BHANDARIA',
                 'bank_branch_data' => [
                     'routing_no' => '125790132',
                 ],
@@ -7705,7 +7705,7 @@ class Branch4Seeder extends Seeder
             853 => [
                 'id' => '3854',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MATHBARIA',
+                'name' => 'MATHBARIA',
                 'bank_branch_data' => [
                     'routing_no' => '125790529',
                 ],
@@ -7714,7 +7714,7 @@ class Branch4Seeder extends Seeder
             854 => [
                 'id' => '3855',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MIARHAT',
+                'name' => 'MIARHAT',
                 'bank_branch_data' => [
                     'routing_no' => '125790611',
                 ],
@@ -7723,7 +7723,7 @@ class Branch4Seeder extends Seeder
             855 => [
                 'id' => '3856',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PIROJPUR',
+                'name' => 'PIROJPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125790761',
                 ],
@@ -7732,7 +7732,7 @@ class Branch4Seeder extends Seeder
             856 => [
                 'id' => '3857',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BANESHWAR',
+                'name' => 'BANESHWAR',
                 'bank_branch_data' => [
                     'routing_no' => '125810225',
                 ],
@@ -7741,7 +7741,7 @@ class Branch4Seeder extends Seeder
             857 => [
                 'id' => '3858',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BHAWANIGANJ',
+                'name' => 'BHAWANIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125810346',
                 ],
@@ -7750,7 +7750,7 @@ class Branch4Seeder extends Seeder
             858 => [
                 'id' => '3859',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KESHOREHAT SME',
+                'name' => 'KESHOREHAT SME',
                 'bank_branch_data' => [
                     'routing_no' => '125811079',
                 ],
@@ -7759,7 +7759,7 @@ class Branch4Seeder extends Seeder
             859 => [
                 'id' => '3860',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NEW MARKET',
+                'name' => 'NEW MARKET',
                 'bank_branch_data' => [
                     'routing_no' => '125811637',
                 ],
@@ -7768,7 +7768,7 @@ class Branch4Seeder extends Seeder
             860 => [
                 'id' => '3861',
                 'bank_id' => '23',
-                'bank_branch_name' => 'RAJSHAHI',
+                'name' => 'RAJSHAHI',
                 'bank_branch_data' => [
                     'routing_no' => '125811932',
                 ],
@@ -7777,7 +7777,7 @@ class Branch4Seeder extends Seeder
             861 => [
                 'id' => '3862',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PANGSHA',
+                'name' => 'PANGSHA',
                 'bank_branch_data' => [
                     'routing_no' => '125820673',
                 ],
@@ -7786,7 +7786,7 @@ class Branch4Seeder extends Seeder
             862 => [
                 'id' => '3863',
                 'bank_id' => '23',
-                'bank_branch_name' => 'RAJBARI',
+                'name' => 'RAJBARI',
                 'bank_branch_data' => [
                     'routing_no' => '125820736',
                 ],
@@ -7795,7 +7795,7 @@ class Branch4Seeder extends Seeder
             863 => [
                 'id' => '3864',
                 'bank_id' => '23',
-                'bank_branch_name' => 'RANGAMATI',
+                'name' => 'RANGAMATI',
                 'bank_branch_data' => [
                     'routing_no' => '125840529',
                 ],
@@ -7804,7 +7804,7 @@ class Branch4Seeder extends Seeder
             864 => [
                 'id' => '3865',
                 'bank_id' => '23',
-                'bank_branch_name' => 'DHAP',
+                'name' => 'DHAP',
                 'bank_branch_data' => [
                     'routing_no' => '125850522',
                 ],
@@ -7813,7 +7813,7 @@ class Branch4Seeder extends Seeder
             865 => [
                 'id' => '3866',
                 'bank_id' => '23',
-                'bank_branch_name' => 'PIRGANJ',
+                'name' => 'PIRGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125851363',
                 ],
@@ -7822,7 +7822,7 @@ class Branch4Seeder extends Seeder
             866 => [
                 'id' => '3867',
                 'bank_id' => '23',
-                'bank_branch_name' => 'RANGPUR',
+                'name' => 'RANGPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125851455',
                 ],
@@ -7831,7 +7831,7 @@ class Branch4Seeder extends Seeder
             867 => [
                 'id' => '3868',
                 'bank_id' => '23',
-                'bank_branch_name' => 'DAMUDYA',
+                'name' => 'DAMUDYA',
                 'bank_branch_data' => [
                     'routing_no' => '125860196',
                 ],
@@ -7840,7 +7840,7 @@ class Branch4Seeder extends Seeder
             868 => [
                 'id' => '3869',
                 'bank_id' => '23',
-                'bank_branch_name' => 'NARIA',
+                'name' => 'NARIA',
                 'bank_branch_data' => [
                     'routing_no' => '125860583',
                 ],
@@ -7849,7 +7849,7 @@ class Branch4Seeder extends Seeder
             869 => [
                 'id' => '3870',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SHARIATPUR',
+                'name' => 'SHARIATPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125860675',
                 ],
@@ -7858,7 +7858,7 @@ class Branch4Seeder extends Seeder
             870 => [
                 'id' => '3871',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KALAROA',
+                'name' => 'KALAROA',
                 'bank_branch_data' => [
                     'routing_no' => '125870586',
                 ],
@@ -7867,7 +7867,7 @@ class Branch4Seeder extends Seeder
             871 => [
                 'id' => '3872',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KALIGANJ',
+                'name' => 'KALIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125870610',
                 ],
@@ -7876,7 +7876,7 @@ class Branch4Seeder extends Seeder
             872 => [
                 'id' => '3873',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SATKHIRA',
+                'name' => 'SATKHIRA',
                 'bank_branch_data' => [
                     'routing_no' => '125871093',
                 ],
@@ -7885,7 +7885,7 @@ class Branch4Seeder extends Seeder
             873 => [
                 'id' => '3874',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SHYAM NAGAR',
+                'name' => 'SHYAM NAGAR',
                 'bank_branch_data' => [
                     'routing_no' => '125871219',
                 ],
@@ -7894,7 +7894,7 @@ class Branch4Seeder extends Seeder
             874 => [
                 'id' => '3875',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BELKUCHI',
+                'name' => 'BELKUCHI',
                 'bank_branch_data' => [
                     'routing_no' => '125880226',
                 ],
@@ -7903,7 +7903,7 @@ class Branch4Seeder extends Seeder
             875 => [
                 'id' => '3876',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SERAJGANJ',
+                'name' => 'SERAJGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125881870',
                 ],
@@ -7912,7 +7912,7 @@ class Branch4Seeder extends Seeder
             876 => [
                 'id' => '3877',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SHAHJADPUR',
+                'name' => 'SHAHJADPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125881904',
                 ],
@@ -7921,7 +7921,7 @@ class Branch4Seeder extends Seeder
             877 => [
                 'id' => '3878',
                 'bank_id' => '23',
-                'bank_branch_name' => 'ULLAPARA',
+                'name' => 'ULLAPARA',
                 'bank_branch_data' => [
                     'routing_no' => '125882237',
                 ],
@@ -7930,7 +7930,7 @@ class Branch4Seeder extends Seeder
             878 => [
                 'id' => '3879',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SHERPUR',
+                'name' => 'SHERPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125890553',
                 ],
@@ -7939,7 +7939,7 @@ class Branch4Seeder extends Seeder
             879 => [
                 'id' => '3880',
                 'bank_id' => '23',
-                'bank_branch_name' => 'CHHATAK',
+                'name' => 'CHHATAK',
                 'bank_branch_data' => [
                     'routing_no' => '125900227',
                 ],
@@ -7948,7 +7948,7 @@ class Branch4Seeder extends Seeder
             880 => [
                 'id' => '3881',
                 'bank_id' => '23',
-                'bank_branch_name' => 'JAGANNATHPUR',
+                'name' => 'JAGANNATHPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125900498',
                 ],
@@ -7957,7 +7957,7 @@ class Branch4Seeder extends Seeder
             881 => [
                 'id' => '3882',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SUNAMGANJ',
+                'name' => 'SUNAMGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125901121',
                 ],
@@ -7966,7 +7966,7 @@ class Branch4Seeder extends Seeder
             882 => [
                 'id' => '3883',
                 'bank_id' => '23',
-                'bank_branch_name' => 'AMBARKHANA',
+                'name' => 'AMBARKHANA',
                 'bank_branch_data' => [
                     'routing_no' => '125910046',
                 ],
@@ -7975,7 +7975,7 @@ class Branch4Seeder extends Seeder
             883 => [
                 'id' => '3884',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BEANI BAZAR',
+                'name' => 'BEANI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '125910312',
                 ],
@@ -7984,7 +7984,7 @@ class Branch4Seeder extends Seeder
             884 => [
                 'id' => '3885',
                 'bank_id' => '23',
-                'bank_branch_name' => 'BISHWANATH',
+                'name' => 'BISHWANATH',
                 'bank_branch_data' => [
                     'routing_no' => '125910433',
                 ],
@@ -7993,7 +7993,7 @@ class Branch4Seeder extends Seeder
             885 => [
                 'id' => '3886',
                 'bank_id' => '23',
-                'bank_branch_name' => 'DAKSHIN SURMA',
+                'name' => 'DAKSHIN SURMA',
                 'bank_branch_data' => [
                     'routing_no' => '125910954',
                 ],
@@ -8002,7 +8002,7 @@ class Branch4Seeder extends Seeder
             886 => [
                 'id' => '3887',
                 'bank_id' => '23',
-                'bank_branch_name' => 'GOALA BAZAR',
+                'name' => 'GOALA BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '125911540',
                 ],
@@ -8011,7 +8011,7 @@ class Branch4Seeder extends Seeder
             887 => [
                 'id' => '3888',
                 'bank_id' => '23',
-                'bank_branch_name' => 'GOLAPGANJ',
+                'name' => 'GOLAPGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '125911603',
                 ],
@@ -8020,7 +8020,7 @@ class Branch4Seeder extends Seeder
             888 => [
                 'id' => '3889',
                 'bank_id' => '23',
-                'bank_branch_name' => 'KANAIGHAT',
+                'name' => 'KANAIGHAT',
                 'bank_branch_data' => [
                     'routing_no' => '125912086',
                 ],
@@ -8029,7 +8029,7 @@ class Branch4Seeder extends Seeder
             889 => [
                 'id' => '3890',
                 'bank_id' => '23',
-                'bank_branch_name' => 'LALDIGHIRPAR',
+                'name' => 'LALDIGHIRPAR',
                 'bank_branch_data' => [
                     'routing_no' => '125912507',
                 ],
@@ -8038,7 +8038,7 @@ class Branch4Seeder extends Seeder
             890 => [
                 'id' => '3891',
                 'bank_id' => '23',
-                'bank_branch_name' => 'SYLHET',
+                'name' => 'SYLHET',
                 'bank_branch_data' => [
                     'routing_no' => '125913551',
                 ],
@@ -8047,7 +8047,7 @@ class Branch4Seeder extends Seeder
             891 => [
                 'id' => '3892',
                 'bank_id' => '23',
-                'bank_branch_name' => 'ZINDA BAZAR',
+                'name' => 'ZINDA BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '125914150',
                 ],
@@ -8056,7 +8056,7 @@ class Branch4Seeder extends Seeder
             892 => [
                 'id' => '3893',
                 'bank_id' => '23',
-                'bank_branch_name' => 'ALLENGA SME',
+                'name' => 'ALLENGA SME',
                 'bank_branch_data' => [
                     'routing_no' => '125930118',
                 ],
@@ -8065,7 +8065,7 @@ class Branch4Seeder extends Seeder
             893 => [
                 'id' => '3894',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MADHUPUR',
+                'name' => 'MADHUPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125931483',
                 ],
@@ -8074,7 +8074,7 @@ class Branch4Seeder extends Seeder
             894 => [
                 'id' => '3895',
                 'bank_id' => '23',
-                'bank_branch_name' => 'MIRZAPUR',
+                'name' => 'MIRZAPUR',
                 'bank_branch_data' => [
                     'routing_no' => '125931517',
                 ],
@@ -8083,7 +8083,7 @@ class Branch4Seeder extends Seeder
             895 => [
                 'id' => '3896',
                 'bank_id' => '23',
-                'bank_branch_name' => 'TANGAIL',
+                'name' => 'TANGAIL',
                 'bank_branch_data' => [
                     'routing_no' => '125932295',
                 ],
@@ -8092,7 +8092,7 @@ class Branch4Seeder extends Seeder
             896 => [
                 'id' => '3897',
                 'bank_id' => '23',
-                'bank_branch_name' => 'THAKURGAON',
+                'name' => 'THAKURGAON',
                 'bank_branch_data' => [
                     'routing_no' => '125940979',
                 ],
@@ -8101,7 +8101,7 @@ class Branch4Seeder extends Seeder
             897 => [
                 'id' => '3898',
                 'bank_id' => '24',
-                'bank_branch_name' => 'BARISAL',
+                'name' => 'BARISAL',
                 'bank_branch_data' => [
                     'routing_no' => '130060286',
                 ],
@@ -8110,7 +8110,7 @@ class Branch4Seeder extends Seeder
             898 => [
                 'id' => '3899',
                 'bank_id' => '24',
-                'bank_branch_name' => 'BHOLA',
+                'name' => 'BHOLA',
                 'bank_branch_data' => [
                     'routing_no' => '130090106',
                 ],
@@ -8119,7 +8119,7 @@ class Branch4Seeder extends Seeder
             899 => [
                 'id' => '3900',
                 'bank_id' => '24',
-                'bank_branch_name' => 'BOGRA',
+                'name' => 'BOGRA',
                 'bank_branch_data' => [
                     'routing_no' => '130100375',
                 ],
@@ -8128,7 +8128,7 @@ class Branch4Seeder extends Seeder
             900 => [
                 'id' => '3901',
                 'bank_id' => '24',
-                'bank_branch_name' => 'SHERPUR SME',
+                'name' => 'SHERPUR SME',
                 'bank_branch_data' => [
                     'routing_no' => '130102744',
                 ],
@@ -8137,7 +8137,7 @@ class Branch4Seeder extends Seeder
             901 => [
                 'id' => '3902',
                 'bank_id' => '24',
-                'bank_branch_name' => 'ASHUGANJ SME',
+                'name' => 'ASHUGANJ SME',
                 'bank_branch_data' => [
                     'routing_no' => '130120113',
                 ],
@@ -8146,7 +8146,7 @@ class Branch4Seeder extends Seeder
             902 => [
                 'id' => '3903',
                 'bank_id' => '24',
-                'bank_branch_name' => 'CHANDPUR',
+                'name' => 'CHANDPUR',
                 'bank_branch_data' => [
                     'routing_no' => '130130316',
                 ],
@@ -8155,7 +8155,7 @@ class Branch4Seeder extends Seeder
             903 => [
                 'id' => '3904',
                 'bank_id' => '24',
-                'bank_branch_name' => 'HAJIGANJ',
+                'name' => 'HAJIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '130130882',
                 ],
@@ -8164,7 +8164,7 @@ class Branch4Seeder extends Seeder
             904 => [
                 'id' => '3905',
                 'bank_id' => '24',
-                'bank_branch_name' => 'AGRABAD',
+                'name' => 'AGRABAD',
                 'bank_branch_data' => [
                     'routing_no' => '130150138',
                 ],
@@ -8173,7 +8173,7 @@ class Branch4Seeder extends Seeder
             905 => [
                 'id' => '3906',
                 'bank_id' => '24',
-                'bank_branch_name' => 'ANDERKILLA',
+                'name' => 'ANDERKILLA',
                 'bank_branch_data' => [
                     'routing_no' => '130150462',
                 ],
@@ -8182,7 +8182,7 @@ class Branch4Seeder extends Seeder
             906 => [
                 'id' => '3907',
                 'bank_id' => '24',
-                'bank_branch_name' => 'AZADI BAZAR',
+                'name' => 'AZADI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '130150738',
                 ],
@@ -8191,7 +8191,7 @@ class Branch4Seeder extends Seeder
             907 => [
                 'id' => '3908',
                 'bank_id' => '24',
-                'bank_branch_name' => 'BAHADDAR HAT',
+                'name' => 'BAHADDAR HAT',
                 'bank_branch_data' => [
                     'routing_no' => '130150796',
                 ],
@@ -8200,7 +8200,7 @@ class Branch4Seeder extends Seeder
             908 => [
                 'id' => '3909',
                 'bank_id' => '24',
-                'bank_branch_name' => 'BHATIARY',
+                'name' => 'BHATIARY',
                 'bank_branch_data' => [
                     'routing_no' => '130151216',
                 ],
@@ -8209,7 +8209,7 @@ class Branch4Seeder extends Seeder
             909 => [
                 'id' => '3910',
                 'bank_id' => '24',
-                'bank_branch_name' => 'DEWAN HAT',
+                'name' => 'DEWAN HAT',
                 'bank_branch_data' => [
                     'routing_no' => '130152444',
                 ],
@@ -8218,7 +8218,7 @@ class Branch4Seeder extends Seeder
             910 => [
                 'id' => '3911',
                 'bank_id' => '24',
-                'bank_branch_name' => 'JUBILEE ROAD(ISLAMI BANKING)',
+                'name' => 'JUBILEE ROAD(ISLAMI BANKING)',
                 'bank_branch_data' => [
                     'routing_no' => '130153672',
                 ],
@@ -8227,7 +8227,7 @@ class Branch4Seeder extends Seeder
             911 => [
                 'id' => '3912',
                 'bank_id' => '24',
-                'bank_branch_name' => 'KADAMTALI',
+                'name' => 'KADAMTALI',
                 'bank_branch_data' => [
                     'routing_no' => '130153735',
                 ],
@@ -8236,7 +8236,7 @@ class Branch4Seeder extends Seeder
             912 => [
                 'id' => '3913',
                 'bank_id' => '24',
-                'bank_branch_name' => 'KHATUNGANJ',
+                'name' => 'KHATUNGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '130154271',
                 ],
@@ -8245,7 +8245,7 @@ class Branch4Seeder extends Seeder
             913 => [
                 'id' => '3914',
                 'bank_id' => '24',
-                'bank_branch_name' => 'LOHA GARA',
+                'name' => 'LOHA GARA',
                 'bank_branch_data' => [
                     'routing_no' => '130154668',
                 ],
@@ -8254,7 +8254,7 @@ class Branch4Seeder extends Seeder
             914 => [
                 'id' => '3915',
                 'bank_id' => '24',
-                'bank_branch_name' => 'NASIRABAD',
+                'name' => 'NASIRABAD',
                 'bank_branch_data' => [
                     'routing_no' => '130155533',
                 ],
@@ -8263,7 +8263,7 @@ class Branch4Seeder extends Seeder
             915 => [
                 'id' => '3916',
                 'bank_id' => '24',
-                'bank_branch_name' => 'BARURA',
+                'name' => 'BARURA',
                 'bank_branch_data' => [
                     'routing_no' => '130190493',
                 ],
@@ -8272,7 +8272,7 @@ class Branch4Seeder extends Seeder
             916 => [
                 'id' => '3917',
                 'bank_id' => '24',
-                'bank_branch_name' => 'BIZRA BAZAR',
+                'name' => 'BIZRA BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '130190701',
                 ],
@@ -8281,7 +8281,7 @@ class Branch4Seeder extends Seeder
             917 => [
                 'id' => '3918',
                 'bank_id' => '24',
-                'bank_branch_name' => 'COMILLA',
+                'name' => 'COMILLA',
                 'bank_branch_data' => [
                     'routing_no' => '130191155',
                 ],
@@ -8290,7 +8290,7 @@ class Branch4Seeder extends Seeder
             918 => [
                 'id' => '3919',
                 'bank_id' => '24',
-                'bank_branch_name' => 'GOURIPUR',
+                'name' => 'GOURIPUR',
                 'bank_branch_data' => [
                     'routing_no' => '130192112',
                 ],
@@ -8299,7 +8299,7 @@ class Branch4Seeder extends Seeder
             919 => [
                 'id' => '3920',
                 'bank_id' => '24',
-                'bank_branch_name' => 'LAKSAM',
+                'name' => 'LAKSAM',
                 'bank_branch_data' => [
                     'routing_no' => '130192712',
                 ],
@@ -8308,7 +8308,7 @@ class Branch4Seeder extends Seeder
             920 => [
                 'id' => '3921',
                 'bank_id' => '24',
-                'bank_branch_name' => 'NATHERPETUA',
+                'name' => 'NATHERPETUA',
                 'bank_branch_data' => [
                     'routing_no' => '130193311',
                 ],
@@ -8317,7 +8317,7 @@ class Branch4Seeder extends Seeder
             921 => [
                 'id' => '3922',
                 'bank_id' => '24',
-                'bank_branch_name' => 'SUAGAZI',
+                'name' => 'SUAGAZI',
                 'bank_branch_data' => [
                     'routing_no' => '130194031',
                 ],
@@ -8326,7 +8326,7 @@ class Branch4Seeder extends Seeder
             922 => [
                 'id' => '3923',
                 'bank_id' => '24',
-                'bank_branch_name' => 'CHAKARIA',
+                'name' => 'CHAKARIA',
                 'bank_branch_data' => [
                     'routing_no' => '130220163',
                 ],
@@ -8335,7 +8335,7 @@ class Branch4Seeder extends Seeder
             923 => [
                 'id' => '3924',
                 'bank_id' => '24',
-                'bank_branch_name' => 'ASHULIA',
+                'name' => 'ASHULIA',
                 'bank_branch_data' => [
                     'routing_no' => '130260228',
                 ],
@@ -8344,7 +8344,7 @@ class Branch4Seeder extends Seeder
             924 => [
                 'id' => '3925',
                 'bank_id' => '24',
-                'bank_branch_name' => 'GULSHAN LINK ROAD',
+                'name' => 'GULSHAN LINK ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '130260307',
                 ],
@@ -8353,7 +8353,7 @@ class Branch4Seeder extends Seeder
             925 => [
                 'id' => '3926',
                 'bank_id' => '24',
-                'bank_branch_name' => 'BANANI',
+                'name' => 'BANANI',
                 'bank_branch_data' => [
                     'routing_no' => '130260431',
                 ],
@@ -8362,7 +8362,7 @@ class Branch4Seeder extends Seeder
             926 => [
                 'id' => '3927',
                 'bank_id' => '24',
-                'bank_branch_name' => 'CHISTIA MARKET',
+                'name' => 'CHISTIA MARKET',
                 'bank_branch_data' => [
                     'routing_no' => '130260794',
                 ],
@@ -8371,7 +8371,7 @@ class Branch4Seeder extends Seeder
             927 => [
                 'id' => '3928',
                 'bank_id' => '24',
-                'bank_branch_name' => 'DAKSHIN KHAN',
+                'name' => 'DAKSHIN KHAN',
                 'bank_branch_data' => [
                     'routing_no' => '130260910',
                 ],
@@ -8380,7 +8380,7 @@ class Branch4Seeder extends Seeder
             928 => [
                 'id' => '3929',
                 'bank_id' => '24',
-                'bank_branch_name' => 'DHANMONDI',
+                'name' => 'DHANMONDI',
                 'bank_branch_data' => [
                     'routing_no' => '130261180',
                 ],
@@ -8389,7 +8389,7 @@ class Branch4Seeder extends Seeder
             929 => [
                 'id' => '3930',
                 'bank_id' => '24',
-                'bank_branch_name' => 'ELEPHANT ROAD',
+                'name' => 'ELEPHANT ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '130261335',
                 ],
@@ -8398,7 +8398,7 @@ class Branch4Seeder extends Seeder
             930 => [
                 'id' => '3931',
                 'bank_id' => '24',
-                'bank_branch_name' => 'KAMARPARA',
+                'name' => 'KAMARPARA',
                 'bank_branch_data' => [
                     'routing_no' => '130261519',
                 ],
@@ -8407,7 +8407,7 @@ class Branch4Seeder extends Seeder
             931 => [
                 'id' => '3932',
                 'bank_id' => '24',
-                'bank_branch_name' => 'GULSHAN',
+                'name' => 'GULSHAN',
                 'bank_branch_data' => [
                     'routing_no' => '130261722',
                 ],
@@ -8416,7 +8416,7 @@ class Branch4Seeder extends Seeder
             932 => [
                 'id' => '3933',
                 'bank_id' => '24',
-                'bank_branch_name' => 'KALAMPUR',
+                'name' => 'KALAMPUR',
                 'bank_branch_data' => [
                     'routing_no' => '130262442',
                 ],
@@ -8425,7 +8425,7 @@ class Branch4Seeder extends Seeder
             933 => [
                 'id' => '3934',
                 'bank_id' => '24',
-                'bank_branch_name' => 'LALMATIA',
+                'name' => 'LALMATIA',
                 'bank_branch_data' => [
                     'routing_no' => '130262839',
                 ],
@@ -8434,7 +8434,7 @@ class Branch4Seeder extends Seeder
             934 => [
                 'id' => '3935',
                 'bank_id' => '24',
-                'bank_branch_name' => 'MIRPUR',
+                'name' => 'MIRPUR',
                 'bank_branch_data' => [
                     'routing_no' => '130262989',
                 ],
@@ -8443,7 +8443,7 @@ class Branch4Seeder extends Seeder
             935 => [
                 'id' => '3936',
                 'bank_id' => '24',
-                'bank_branch_name' => 'MIRPUR-1',
+                'name' => 'MIRPUR-1',
                 'bank_branch_data' => [
                     'routing_no' => '130263104',
                 ],
@@ -8452,7 +8452,7 @@ class Branch4Seeder extends Seeder
             936 => [
                 'id' => '3937',
                 'bank_id' => '24',
-                'bank_branch_name' => 'MOHAKHALI',
+                'name' => 'MOHAKHALI',
                 'bank_branch_data' => [
                     'routing_no' => '130263191',
                 ],
@@ -8461,7 +8461,7 @@ class Branch4Seeder extends Seeder
             937 => [
                 'id' => '3938',
                 'bank_id' => '24',
-                'bank_branch_name' => 'PRAGATI SARANI',
+                'name' => 'PRAGATI SARANI',
                 'bank_branch_data' => [
                     'routing_no' => '130263704',
                 ],
@@ -8470,7 +8470,7 @@ class Branch4Seeder extends Seeder
             938 => [
                 'id' => '3939',
                 'bank_id' => '24',
-                'bank_branch_name' => 'RAYERBAGH',
+                'name' => 'RAYERBAGH',
                 'bank_branch_data' => [
                     'routing_no' => '130263959',
                 ],
@@ -8479,7 +8479,7 @@ class Branch4Seeder extends Seeder
             939 => [
                 'id' => '3940',
                 'bank_id' => '24',
-                'bank_branch_name' => 'RING ROAD',
+                'name' => 'RING ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '130263975',
                 ],
@@ -8488,7 +8488,7 @@ class Branch4Seeder extends Seeder
             940 => [
                 'id' => '3941',
                 'bank_id' => '24',
-                'bank_branch_name' => 'SAVAR',
+                'name' => 'SAVAR',
                 'bank_branch_data' => [
                     'routing_no' => '130264095',
                 ],
@@ -8497,7 +8497,7 @@ class Branch4Seeder extends Seeder
             941 => [
                 'id' => '3942',
                 'bank_id' => '24',
-                'bank_branch_name' => 'UTTARA',
+                'name' => 'UTTARA',
                 'bank_branch_data' => [
                     'routing_no' => '130264637',
                 ],
@@ -8506,7 +8506,7 @@ class Branch4Seeder extends Seeder
             942 => [
                 'id' => '3943',
                 'bank_id' => '24',
-                'bank_branch_name' => 'TRUNCATION POINT',
+                'name' => 'TRUNCATION POINT',
                 'bank_branch_data' => [
                     'routing_no' => '130270005',
                 ],
@@ -8515,7 +8515,7 @@ class Branch4Seeder extends Seeder
             943 => [
                 'id' => '3944',
                 'bank_id' => '24',
-                'bank_branch_name' => 'KERANIGANJ',
+                'name' => 'KERANIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '130270092',
                 ],
@@ -8524,7 +8524,7 @@ class Branch4Seeder extends Seeder
             944 => [
                 'id' => '3945',
                 'bank_id' => '24',
-                'bank_branch_name' => 'AGANAGAR',
+                'name' => 'AGANAGAR',
                 'bank_branch_data' => [
                     'routing_no' => '130270139',
                 ],
@@ -8533,7 +8533,7 @@ class Branch4Seeder extends Seeder
             945 => [
                 'id' => '3946',
                 'bank_id' => '24',
-                'bank_branch_name' => 'DHOLAIKHAL',
+                'name' => 'DHOLAIKHAL',
                 'bank_branch_data' => [
                     'routing_no' => '130271846',
                 ],
@@ -8542,7 +8542,7 @@ class Branch4Seeder extends Seeder
             946 => [
                 'id' => '3947',
                 'bank_id' => '24',
-                'bank_branch_name' => 'DILKUSHA',
+                'name' => 'DILKUSHA',
                 'bank_branch_data' => [
                     'routing_no' => '130271909',
                 ],
@@ -8551,7 +8551,7 @@ class Branch4Seeder extends Seeder
             947 => [
                 'id' => '3948',
                 'bank_id' => '24',
-                'bank_branch_name' => 'FOREIGN EXCHANGE',
+                'name' => 'FOREIGN EXCHANGE',
                 'bank_branch_data' => [
                     'routing_no' => '130272324',
                 ],
@@ -8560,7 +8560,7 @@ class Branch4Seeder extends Seeder
             948 => [
                 'id' => '3949',
                 'bank_id' => '24',
-                'bank_branch_name' => 'HEAD OFFICE',
+                'name' => 'HEAD OFFICE',
                 'bank_branch_data' => [
                     'routing_no' => '130272687',
                 ],
@@ -8569,7 +8569,7 @@ class Branch4Seeder extends Seeder
             949 => [
                 'id' => '3950',
                 'bank_id' => '24',
-                'bank_branch_name' => 'ISLAMPUR',
+                'name' => 'ISLAMPUR',
                 'bank_branch_data' => [
                     'routing_no' => '130272982',
                 ],
@@ -8578,7 +8578,7 @@ class Branch4Seeder extends Seeder
             950 => [
                 'id' => '3951',
                 'bank_id' => '24',
-                'bank_branch_name' => 'JURAIN SME',
+                'name' => 'JURAIN SME',
                 'bank_branch_data' => [
                     'routing_no' => '130273323',
                 ],
@@ -8587,7 +8587,7 @@ class Branch4Seeder extends Seeder
             951 => [
                 'id' => '3952',
                 'bank_id' => '24',
-                'bank_branch_name' => 'MALIBAGH',
+                'name' => 'MALIBAGH',
                 'bank_branch_data' => [
                     'routing_no' => '130273949',
                 ],
@@ -8596,7 +8596,7 @@ class Branch4Seeder extends Seeder
             952 => [
                 'id' => '3953',
                 'bank_id' => '24',
-                'bank_branch_name' => 'MOTIJHEEL',
+                'name' => 'MOTIJHEEL',
                 'bank_branch_data' => [
                     'routing_no' => '130274243',
                 ],
@@ -8605,7 +8605,7 @@ class Branch4Seeder extends Seeder
             953 => [
                 'id' => '3954',
                 'bank_id' => '24',
-                'bank_branch_name' => 'MOULVI BAZAR',
+                'name' => 'MOULVI BAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '130274427',
                 ],
@@ -8614,7 +8614,7 @@ class Branch4Seeder extends Seeder
             954 => [
                 'id' => '3955',
                 'bank_id' => '24',
-                'bank_branch_name' => 'NAYA BAZAR ISLAMI BANKING',
+                'name' => 'NAYA BAZAR ISLAMI BANKING',
                 'bank_branch_data' => [
                     'routing_no' => '130274843',
                 ],
@@ -8623,7 +8623,7 @@ class Branch4Seeder extends Seeder
             955 => [
                 'id' => '3956',
                 'bank_id' => '24',
-                'bank_branch_name' => 'SHANTINAGAR',
+                'name' => 'SHANTINAGAR',
                 'bank_branch_data' => [
                     'routing_no' => '130276346',
                 ],
@@ -8632,7 +8632,7 @@ class Branch4Seeder extends Seeder
             956 => [
                 'id' => '3957',
                 'bank_id' => '24',
-                'bank_branch_name' => 'SONARGAON ROAD',
+                'name' => 'SONARGAON ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '130276588',
                 ],
@@ -8641,7 +8641,7 @@ class Branch4Seeder extends Seeder
             957 => [
                 'id' => '3958',
                 'bank_id' => '24',
-                'bank_branch_name' => 'DINAJPUR',
+                'name' => 'DINAJPUR',
                 'bank_branch_data' => [
                     'routing_no' => '130280679',
                 ],
@@ -8650,7 +8650,7 @@ class Branch4Seeder extends Seeder
             958 => [
                 'id' => '3959',
                 'bank_id' => '24',
-                'bank_branch_name' => 'SETABGANJ',
+                'name' => 'SETABGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '130282172',
                 ],
@@ -8659,7 +8659,7 @@ class Branch4Seeder extends Seeder
             959 => [
                 'id' => '3960',
                 'bank_id' => '24',
-                'bank_branch_name' => 'FARIDPUR',
+                'name' => 'FARIDPUR',
                 'bank_branch_data' => [
                     'routing_no' => '130290522',
                 ],
@@ -8668,7 +8668,7 @@ class Branch4Seeder extends Seeder
             960 => [
                 'id' => '3961',
                 'bank_id' => '24',
-                'bank_branch_name' => 'FENI',
+                'name' => 'FENI',
                 'bank_branch_data' => [
                     'routing_no' => '130300520',
                 ],
@@ -8677,7 +8677,7 @@ class Branch4Seeder extends Seeder
             961 => [
                 'id' => '3962',
                 'bank_id' => '24',
-                'bank_branch_name' => 'CHANDRA',
+                'name' => 'CHANDRA',
                 'bank_branch_data' => [
                     'routing_no' => '130330408',
                 ],
@@ -8686,7 +8686,7 @@ class Branch4Seeder extends Seeder
             962 => [
                 'id' => '3963',
                 'bank_id' => '24',
-                'bank_branch_name' => 'GAZIPUR CHOWRASTA',
+                'name' => 'GAZIPUR CHOWRASTA',
                 'bank_branch_data' => [
                     'routing_no' => '130330558',
                 ],
@@ -8695,7 +8695,7 @@ class Branch4Seeder extends Seeder
             963 => [
                 'id' => '3964',
                 'bank_id' => '24',
-                'bank_branch_name' => 'KONABARI',
+                'name' => 'KONABARI',
                 'bank_branch_data' => [
                     'routing_no' => '130330945',
                 ],
@@ -8704,7 +8704,7 @@ class Branch4Seeder extends Seeder
             964 => [
                 'id' => '3965',
                 'bank_id' => '24',
-                'bank_branch_name' => 'MAWNA',
+                'name' => 'MAWNA',
                 'bank_branch_data' => [
                     'routing_no' => '130331007',
                 ],
@@ -8713,7 +8713,7 @@ class Branch4Seeder extends Seeder
             965 => [
                 'id' => '3966',
                 'bank_id' => '24',
-                'bank_branch_name' => 'TONGI',
+                'name' => 'TONGI',
                 'bank_branch_data' => [
                     'routing_no' => '130331636',
                 ],
@@ -8722,7 +8722,7 @@ class Branch4Seeder extends Seeder
             966 => [
                 'id' => '3967',
                 'bank_id' => '24',
-                'bank_branch_name' => 'GOPALGANJ',
+                'name' => 'GOPALGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '130350370',
                 ],
@@ -8731,7 +8731,7 @@ class Branch4Seeder extends Seeder
             967 => [
                 'id' => '3968',
                 'bank_id' => '24',
-                'bank_branch_name' => 'JESSORE',
+                'name' => 'JESSORE',
                 'bank_branch_data' => [
                     'routing_no' => '130410944',
                 ],
@@ -8740,7 +8740,7 @@ class Branch4Seeder extends Seeder
             968 => [
                 'id' => '3969',
                 'bank_id' => '24',
-                'bank_branch_name' => 'KHULNA',
+                'name' => 'KHULNA',
                 'bank_branch_data' => [
                     'routing_no' => '130471541',
                 ],
@@ -8749,7 +8749,7 @@ class Branch4Seeder extends Seeder
             969 => [
                 'id' => '3970',
                 'bank_id' => '24',
-                'bank_branch_name' => 'KUSHTIA',
+                'name' => 'KUSHTIA',
                 'bank_branch_data' => [
                     'routing_no' => '130500946',
                 ],
@@ -8758,7 +8758,7 @@ class Branch4Seeder extends Seeder
             970 => [
                 'id' => '3971',
                 'bank_id' => '24',
-                'bank_branch_name' => 'RAIPUR',
+                'name' => 'RAIPUR',
                 'bank_branch_data' => [
                     'routing_no' => '130510978',
                 ],
@@ -8767,7 +8767,7 @@ class Branch4Seeder extends Seeder
             971 => [
                 'id' => '3972',
                 'bank_id' => '24',
-                'bank_branch_name' => 'MADARIPUR SME',
+                'name' => 'MADARIPUR SME',
                 'bank_branch_data' => [
                     'routing_no' => '130540414',
                 ],
@@ -8776,7 +8776,7 @@ class Branch4Seeder extends Seeder
             972 => [
                 'id' => '3973',
                 'bank_id' => '24',
-                'bank_branch_name' => 'MOULVI BAZAR SME',
+                'name' => 'MOULVI BAZAR SME',
                 'bank_branch_data' => [
                     'routing_no' => '130581194',
                 ],
@@ -8785,7 +8785,7 @@ class Branch4Seeder extends Seeder
             973 => [
                 'id' => '3974',
                 'bank_id' => '24',
-                'bank_branch_name' => 'BALIGAON',
+                'name' => 'BALIGAON',
                 'bank_branch_data' => [
                     'routing_no' => '130590101',
                 ],
@@ -8794,7 +8794,7 @@ class Branch4Seeder extends Seeder
             974 => [
                 'id' => '3975',
                 'bank_id' => '24',
-                'bank_branch_name' => 'BHABER CHAR',
+                'name' => 'BHABER CHAR',
                 'bank_branch_data' => [
                     'routing_no' => '130590280',
                 ],
@@ -8803,7 +8803,7 @@ class Branch4Seeder extends Seeder
             975 => [
                 'id' => '3976',
                 'bank_id' => '24',
-                'bank_branch_name' => 'MUNSHIGANJ SME',
+                'name' => 'MUNSHIGANJ SME',
                 'bank_branch_data' => [
                     'routing_no' => '130591047',
                 ],
@@ -8812,7 +8812,7 @@ class Branch4Seeder extends Seeder
             976 => [
                 'id' => '3977',
                 'bank_id' => '24',
-                'bank_branch_name' => 'SREENAGAR',
+                'name' => 'SREENAGAR',
                 'bank_branch_data' => [
                     'routing_no' => '130591421',
                 ],
@@ -8821,7 +8821,7 @@ class Branch4Seeder extends Seeder
             977 => [
                 'id' => '3978',
                 'bank_id' => '24',
-                'bank_branch_name' => 'TONGI BARI',
+                'name' => 'TONGI BARI',
                 'bank_branch_data' => [
                     'routing_no' => '130591542',
                 ],
@@ -8830,7 +8830,7 @@ class Branch4Seeder extends Seeder
             978 => [
                 'id' => '3979',
                 'bank_id' => '24',
-                'bank_branch_name' => 'MYMENSINGH',
+                'name' => 'MYMENSINGH',
                 'bank_branch_data' => [
                     'routing_no' => '130611756',
                 ],
@@ -8839,7 +8839,7 @@ class Branch4Seeder extends Seeder
             979 => [
                 'id' => '3980',
                 'bank_id' => '24',
-                'bank_branch_name' => 'MANDA',
+                'name' => 'MANDA',
                 'bank_branch_data' => [
                     'routing_no' => '130641005',
                 ],
@@ -8848,7 +8848,7 @@ class Branch4Seeder extends Seeder
             980 => [
                 'id' => '3981',
                 'bank_id' => '24',
-                'bank_branch_name' => 'MOHADEBPUR',
+                'name' => 'MOHADEBPUR',
                 'bank_branch_data' => [
                     'routing_no' => '130641092',
                 ],
@@ -8857,7 +8857,7 @@ class Branch4Seeder extends Seeder
             981 => [
                 'id' => '3982',
                 'bank_id' => '24',
-                'bank_branch_name' => 'NAOGAON',
+                'name' => 'NAOGAON',
                 'bank_branch_data' => [
                     'routing_no' => '130641184',
                 ],
@@ -8866,7 +8866,7 @@ class Branch4Seeder extends Seeder
             982 => [
                 'id' => '3983',
                 'bank_id' => '24',
-                'bank_branch_name' => 'NARAYANGANJ LINK ROAD',
+                'name' => 'NARAYANGANJ LINK ROAD',
                 'bank_branch_data' => [
                     'routing_no' => '130670184',
                 ],
@@ -8875,7 +8875,7 @@ class Branch4Seeder extends Seeder
             983 => [
                 'id' => '3984',
                 'bank_id' => '24',
-                'bank_branch_name' => 'BHULTA',
+                'name' => 'BHULTA',
                 'bank_branch_data' => [
                     'routing_no' => '130670221',
                 ],
@@ -8884,7 +8884,7 @@ class Branch4Seeder extends Seeder
             984 => [
                 'id' => '3985',
                 'bank_id' => '24',
-                'bank_branch_name' => 'KANCHAN',
+                'name' => 'KANCHAN',
                 'bank_branch_data' => [
                     'routing_no' => '130670797',
                 ],
@@ -8893,7 +8893,7 @@ class Branch4Seeder extends Seeder
             985 => [
                 'id' => '3986',
                 'bank_id' => '24',
-                'bank_branch_name' => 'KATCHPUR',
+                'name' => 'KATCHPUR',
                 'bank_branch_data' => [
                     'routing_no' => '130670821',
                 ],
@@ -8902,7 +8902,7 @@ class Branch4Seeder extends Seeder
             986 => [
                 'id' => '3987',
                 'bank_id' => '24',
-                'bank_branch_name' => 'MURAPARA',
+                'name' => 'MURAPARA',
                 'bank_branch_data' => [
                     'routing_no' => '130671125',
                 ],
@@ -8911,7 +8911,7 @@ class Branch4Seeder extends Seeder
             987 => [
                 'id' => '3988',
                 'bank_id' => '24',
-                'bank_branch_name' => 'NARAYANGANJ',
+                'name' => 'NARAYANGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '130671183',
                 ],
@@ -8920,7 +8920,7 @@ class Branch4Seeder extends Seeder
             988 => [
                 'id' => '3989',
                 'bank_id' => '24',
-                'bank_branch_name' => 'RUPGANJ',
+                'name' => 'RUPGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '130671459',
                 ],
@@ -8929,7 +8929,7 @@ class Branch4Seeder extends Seeder
             989 => [
                 'id' => '3990',
                 'bank_id' => '24',
-                'bank_branch_name' => 'TANBAZAR',
+                'name' => 'TANBAZAR',
                 'bank_branch_data' => [
                     'routing_no' => '130671783',
                 ],
@@ -8938,7 +8938,7 @@ class Branch4Seeder extends Seeder
             990 => [
                 'id' => '3991',
                 'bank_id' => '24',
-                'bank_branch_name' => 'RUPSHI',
+                'name' => 'RUPSHI',
                 'bank_branch_data' => [
                     'routing_no' => '130674485',
                 ],
@@ -8947,7 +8947,7 @@ class Branch4Seeder extends Seeder
             991 => [
                 'id' => '3992',
                 'bank_id' => '24',
-                'bank_branch_name' => 'MADHABDI',
+                'name' => 'MADHABDI',
                 'bank_branch_data' => [
                     'routing_no' => '130680679',
                 ],
@@ -8956,7 +8956,7 @@ class Branch4Seeder extends Seeder
             992 => [
                 'id' => '3993',
                 'bank_id' => '24',
-                'bank_branch_name' => 'NATORE',
+                'name' => 'NATORE',
                 'bank_branch_data' => [
                     'routing_no' => '130691097',
                 ],
@@ -8965,7 +8965,7 @@ class Branch4Seeder extends Seeder
             993 => [
                 'id' => '3994',
                 'bank_id' => '24',
-                'bank_branch_name' => 'CHAPAI NAWABGANJ SME',
+                'name' => 'CHAPAI NAWABGANJ SME',
                 'bank_branch_data' => [
                     'routing_no' => '130700267',
                 ],
@@ -8974,7 +8974,7 @@ class Branch4Seeder extends Seeder
             994 => [
                 'id' => '3995',
                 'bank_id' => '24',
-                'bank_branch_name' => 'NETROKONA',
+                'name' => 'NETROKONA',
                 'bank_branch_data' => [
                     'routing_no' => '130720739',
                 ],
@@ -8983,7 +8983,7 @@ class Branch4Seeder extends Seeder
             995 => [
                 'id' => '3996',
                 'bank_id' => '24',
-                'bank_branch_name' => 'BASHURHAT',
+                'name' => 'BASHURHAT',
                 'bank_branch_data' => [
                     'routing_no' => '130750259',
                 ],
@@ -8992,7 +8992,7 @@ class Branch4Seeder extends Seeder
             996 => [
                 'id' => '3997',
                 'bank_id' => '24',
-                'bank_branch_name' => 'CHOWMUHANI',
+                'name' => 'CHOWMUHANI',
                 'bank_branch_data' => [
                     'routing_no' => '130750341',
                 ],
@@ -9001,7 +9001,7 @@ class Branch4Seeder extends Seeder
             997 => [
                 'id' => '3998',
                 'bank_id' => '24',
-                'bank_branch_name' => 'PABNA',
+                'name' => 'PABNA',
                 'bank_branch_data' => [
                     'routing_no' => '130761785',
                 ],
@@ -9010,7 +9010,7 @@ class Branch4Seeder extends Seeder
             998 => [
                 'id' => '3999',
                 'bank_id' => '24',
-                'bank_branch_name' => 'BHAWANIGANJ',
+                'name' => 'BHAWANIGANJ',
                 'bank_branch_data' => [
                     'routing_no' => '130810344',
                 ],
@@ -9019,7 +9019,7 @@ class Branch4Seeder extends Seeder
             999 => [
                 'id' => '4000',
                 'bank_id' => '24',
-                'bank_branch_name' => 'RAJSHAHI',
+                'name' => 'RAJSHAHI',
                 'bank_branch_data' => [
                     'routing_no' => '130811930',
                 ],

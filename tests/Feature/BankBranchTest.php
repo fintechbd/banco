@@ -13,7 +13,7 @@ function createBankBranch(): MYSQLDBLEBUPAY|MONGODB|null
 {
     return \Fintech\Banco\Facades\Banco::bankBranch()->create([
         'bank_id' => 1,
-        'bank_branch_name' => Str::random(20),
+        'name' => Str::random(20),
         'bank_branch_data' => [
             'routing_number' => Str::random(8), ////10010048
             'trans_fast_bank_branch_code' => Str::random(4),
@@ -31,7 +31,7 @@ test('Bank Branch list', function () {
 test('Bank Branch create for blank all field validation expect status code 422', function () {
     postJson('/api/banco/bank-branches', [
         'bank_id' => null,
-        'bank_branch_name' => null,
+        'name' => null,
         'bank_branch_data' => [
             'routing_number' => null,
             'trans_fast_bank_branch_code' => null,
@@ -46,7 +46,7 @@ test('Bank Branch create for blank all field validation expect status code 422',
 test('Bank Branch create for blank all field validation expect The bank id field must be an integer. (and 11 more errors)', function () {
     $bankBranch = postJson('/api/banco/bank-branches', [
         'bank_id' => null,
-        'bank_branch_name' => null,
+        'name' => null,
         'bank_branch_data' => [
             'routing_number' => null,
             'trans_fast_bank_branch_code' => null,
@@ -61,7 +61,7 @@ test('Bank Branch create for blank all field validation expect The bank id field
 test('Bank Branch create for blank all field expect bank_id validation expect The bank branch name field must be a string. (and 9 more errors)', function () {
     $bankBranch = postJson('/api/banco/bank-branches', [
         'bank_id' => 1,
-        'bank_branch_name' => null,
+        'name' => null,
         'bank_branch_data' => [
             'routing_number' => null,
             'trans_fast_bank_branch_code' => null,
@@ -73,20 +73,20 @@ test('Bank Branch create for blank all field expect bank_id validation expect Th
     expect($bankBranch['message'])->toBe('The bank branch name field must be a string. (and 9 more errors)');
 });
 
-test('Bank Branch create for blank all field expect bank_id, bank_branch_name validation expect The Bank Branch data field must be an array. (and 1 more error)', function () {
+test('Bank Branch create for blank all field expect bank_id, name validation expect The Bank Branch data field must be an array. (and 1 more error)', function () {
     $bankBranch = postJson('/api/banco/bank-branches', [
         'bank_id' => 1,
-        'bank_branch_name' => Str::random(20),
+        'name' => Str::random(20),
         'bank_branch_data' => null,
         'enabled' => '1',
     ]);
     expect($bankBranch['message'])->toBe('The bank branch data field must be an array. (and 1 more error)');
 });
 
-test('Bank Branch create for blank all field expect bank_id, bank_branch_name validation expect The Bank Branch Data Routing Number field is required. (and 7 more errors)', function () {
+test('Bank Branch create for blank all field expect bank_id, name validation expect The Bank Branch Data Routing Number field is required. (and 7 more errors)', function () {
     $bankBranch = postJson('/api/banco/bank-branches', [
         'bank_id' => 1,
-        'bank_branch_name' => Str::random(20),
+        'name' => Str::random(20),
         'bank_branch_data' => [
             'routing_number' => null,
             'trans_fast_bank_branch_code' => null,
@@ -98,10 +98,10 @@ test('Bank Branch create for blank all field expect bank_id, bank_branch_name va
     expect($bankBranch['message'])->toBe('The bank_branch_data.routing_number field must be a string. (and 7 more errors)');
 });
 
-test('Bank Branch create for blank all field expect bank_id, bank_branch_name validation expect The Bank Branch Data Trans Fast Bank Branch Code field is required. (and 5 more errors)', function () {
+test('Bank Branch create for blank all field expect bank_id, name validation expect The Bank Branch Data Trans Fast Bank Branch Code field is required. (and 5 more errors)', function () {
     $bankBranch = postJson('/api/banco/bank-branches', [
         'bank_id' => 1,
-        'bank_branch_name' => Str::random(20),
+        'name' => Str::random(20),
         'bank_branch_data' => [
             'routing_number' => Str::random(8), ////10010048
             'trans_fast_bank_branch_code' => null,
@@ -113,10 +113,10 @@ test('Bank Branch create for blank all field expect bank_id, bank_branch_name va
     expect($bankBranch['message'])->toBe('The bank_branch_data.trans_fast_bank_branch_code field must be a string. (and 5 more errors)');
 });
 
-test('Bank Branch create for blank all field expect bank_id, bank_branch_name validation expect The Bank Branch Data EMQ Bank Branch Code field is required. (and 3 more errors)', function () {
+test('Bank Branch create for blank all field expect bank_id, name validation expect The Bank Branch Data EMQ Bank Branch Code field is required. (and 3 more errors)', function () {
     $bankBranch = postJson('/api/banco/bank-branches', [
         'bank_id' => 1,
-        'bank_branch_name' => Str::random(20),
+        'name' => Str::random(20),
         'bank_branch_data' => [
             'routing_number' => Str::random(8), ////10010048
             'trans_fast_bank_branch_code' => Str::random(4),
@@ -128,10 +128,10 @@ test('Bank Branch create for blank all field expect bank_id, bank_branch_name va
     expect($bankBranch['message'])->toBe('The bank_branch_data.emq_bank_branch_code field must be a string. (and 3 more errors)');
 });
 
-test('Bank Branch create for blank all field expect bank_id, bank_branch_name validation expect The Bank Branch Data IFCS Code field is required. (and 1 more errors)', function () {
+test('Bank Branch create for blank all field expect bank_id, name validation expect The Bank Branch Data IFCS Code field is required. (and 1 more errors)', function () {
     $bankBranch = postJson('/api/banco/bank-branches', [
         'bank_id' => 1,
-        'bank_branch_name' => Str::random(20),
+        'name' => Str::random(20),
         'bank_branch_data' => [
             'routing_number' => Str::random(8), ////10010048
             'trans_fast_bank_branch_code' => Str::random(4),
@@ -146,7 +146,7 @@ test('Bank Branch create for blank all field expect bank_id, bank_branch_name va
 test('Bank Branch create expected message The Bank Branch created successfully', function () {
     $bankBranch = postJson('/api/banco/bank-branches', [
         'bank_id' => 1,
-        'bank_branch_name' => Str::random(20),
+        'name' => Str::random(20),
         'bank_branch_data' => [
             'routing_number' => Str::random(8), ////10010048
             'trans_fast_bank_branch_code' => Str::random(4),
@@ -177,14 +177,14 @@ test('Bank Branch detail expected status code 200', function () {
 test('Bank Branch detail expected message bank branch name are same', function () {
     $preStoreBankBranch = createBankBranch();
     $bankBranch = getJson('/api/banco/bank-branches/'.$preStoreBankBranch['id']);
-    expect($bankBranch->json()['data']['bank_branch_name'])->toBe($preStoreBankBranch['bank_branch_name']);
+    expect($bankBranch->json()['data']['name'])->toBe($preStoreBankBranch['name']);
 });
 
 test('Bank Branch update expect status code 200', function () {
     $preStoreBankBranch = createBankBranch();
     putJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'], [
         'bank_id' => 1,
-        'bank_branch_name' => Str::random(20),
+        'name' => Str::random(20),
         'bank_branch_data' => [
             'routing_number' => '1',
             'trans_fast_bank_branch_code' => '1',
@@ -198,7 +198,7 @@ test('Bank Branch update expect message Bank Branch updated successfully.', func
     $preStoreBankBranch = createBankBranch();
     $bankBranch = putJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'], [
         'bank_id' => 1,
-        'bank_branch_name' => Str::random(20),
+        'name' => Str::random(20),
         'bank_branch_data' => [
             'routing_number' => '1',
             'trans_fast_bank_branch_code' => '1',
