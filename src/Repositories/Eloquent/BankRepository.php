@@ -48,18 +48,18 @@ class BankRepository extends EloquentRepository implements InterfacesBankReposit
             }
         }
 
-        if (isset($filters['country_id']) && !empty($filters['country_id'])) {
+        if (isset($filters['country_id']) && ! empty($filters['country_id'])) {
             $query->where('country_id', '=', $filters['country_id']);
         }
 
-        if (isset($filters['currency']) && !empty($filters['currency'])) {
+        if (isset($filters['currency']) && ! empty($filters['currency'])) {
             $query->where('currency', '=', $filters['currency']);
         }
 
-        if (isset($filters['transaction_type']) && !empty($filters['transaction_type'])) {
+        if (isset($filters['transaction_type']) && ! empty($filters['transaction_type'])) {
             $query->where('transaction_type', '=', $filters['transaction_type']);
         }
-        if (isset($filters['category']) && !empty($filters['category'])) {
+        if (isset($filters['category']) && ! empty($filters['category'])) {
             $query->where('category', '=', $filters['category']);
         }
 

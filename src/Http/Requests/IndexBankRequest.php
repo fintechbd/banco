@@ -34,7 +34,7 @@ class IndexBankRequest extends FormRequest
             'country_id' => ['nullable', 'integer'],
             'beneficiary_type_id' => ['nullable', 'integer'],
             'category' => ['nullable', 'string'],
-            'currency' => ['nullable', 'string']
+            'currency' => ['nullable', 'string'],
         ];
     }
 
