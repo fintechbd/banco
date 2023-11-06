@@ -41,7 +41,26 @@ class BankRepository extends EloquentRepository implements InterfacesBankReposit
                 $query->where($this->model->getKeyName(), 'like', "%{$filters['search']}%");
             } else {
                 $query->where('name', 'like', "%{$filters['search']}%");
+                $query->orWhere('bank_data', 'like', "%{$filters['search']}%");
+                $query->orWhere('category', 'like', "%{$filters['search']}%");
+                $query->orWhere('transaction_type', 'like', "%{$filters['search']}%");
+                $query->orWhere('currency', 'like', "%{$filters['search']}%");
             }
+        }
+
+        if (isset($filters['country_id']) && !empty($filters['country_id'])) {
+            $query->where('country_id', '=', $filters['country_id']);
+        }
+
+        if (isset($filters['currency']) && !empty($filters['currency'])) {
+            $query->where('currency', '=', $filters['currency']);
+        }
+
+        if (isset($filters['transaction_type']) && !empty($filters['transaction_type'])) {
+            $query->where('transaction_type', '=', $filters['transaction_type']);
+        }
+        if (isset($filters['category']) && !empty($filters['category'])) {
+            $query->where('category', '=', $filters['category']);
         }
 
         //Display Trashed
