@@ -3,6 +3,7 @@
 namespace Fintech\Banco\Seeders;
 
 use Fintech\Banco\Facades\Banco;
+use Illuminate\Database\Seeder;
 
 class BankSeeder extends Seeder
 {
