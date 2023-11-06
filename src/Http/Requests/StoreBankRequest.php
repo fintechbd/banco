@@ -4,6 +4,7 @@ namespace Fintech\Banco\Http\Requests;
 
 use Fintech\Banco\Models\Bank;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class StoreBankRequest extends FormRequest
 {
@@ -22,7 +23,7 @@ class StoreBankRequest extends FormRequest
      */
     public function rules(): array
     {
-        $uniqueRule = 'unique:'.config('fintech.banco.bank_model', Bank::class).',name,null,country_id,=,'.$this->input('country_id');
+        $uniqueRule = 'unique:' . config('fintech.banco.bank_model', Bank::class) . ',name,null,id,country_id,' . $this->input('country_id') . ',deleted_at,null';
 
         return [
             'country_id' => ['required', 'integer'],
