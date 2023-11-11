@@ -24,7 +24,7 @@ class ImportBankBranchRequest extends FormRequest
     {
         return [
             'bank_id' => ['integer', 'required'],
-            'bank_branch_name' => ['string', 'required'],
+            'name' => ['string', 'required'],
             'bank_branch_data' => ['array', 'nullable'],
         ];
     }
