@@ -77,6 +77,14 @@ class Beneficiary extends Model implements HasMedia
         return $this->belongsTo(config('fintech.metadata.country_model', Country::class));
     }
 
+    /**
+     * @return BelongsTo
+     */
+    public function state(): BelongsTo
+    {
+        return $this->belongsTo(config('fintech.metadata.state_model', State::class));
+    }
+
 
     /*
     |--------------------------------------------------------------------------
