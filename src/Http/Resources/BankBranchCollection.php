@@ -6,17 +6,41 @@ use Fintech\Core\Supports\Constant;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
+/**
+ * @method getKey()
+ * @property integer $bank_id
+ * @property mixed $bank
+ * @property string $name
+ * @property array $bank_branch_data
+ * @property mixed $links
+ * @property mixed $created_at
+ * @property mixed $updated_at
+ */
 class BankBranchCollection extends ResourceCollection
 {
     /**
      * Transform the resource collection into an array.
      *
-     * @param  Request  $request
+     * @param Request $request
      * @return array
      */
-    public function toArray($request)
+    public function toArray(Request $request): array
     {
-        return parent::toArray($request);
+        return $this->collection->map(function ($bankBranch) {
+            $data = [
+                'id' => $bankBranch->getKey() ?? null,
+                'bank_id' => $bankBranch->bank_id ?? null,
+                'bank' => $bankBranch->bank->name ?? null,
+                'name' => $bankBranch->name ?? null,
+                'bank_branch_data' => $bankBranch->bank_branch_data ?? null,
+                'enabled' => $bankBranch->enabled ?? null,
+                'links' => $bankBranch->links,
+                'created_at' => $bankBranch->created_at,
+                'updated_at' => $bankBranch->updated_at,
+            ];
+
+            return $data;
+        })->toArray();
     }
 
     /**
