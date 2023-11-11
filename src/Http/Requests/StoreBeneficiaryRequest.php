@@ -45,7 +45,6 @@ class StoreBeneficiaryRequest extends FormRequest
             'beneficiary_data' => ['required', 'array'],
             'beneficiary_data.*.first_name' => ['nullable', 'string'],
             'beneficiary_data.*.last_name' => ['nullable', 'string'],
-            'beneficiary_data.*.user_beneficiary_image' => ['nullable', 'string'],
             'beneficiary_data.*.cash_id' => ['nullable', 'string'],
             'beneficiary_data.*.cash_account_number' => ['nullable', 'string'],
             'beneficiary_data.*.instant_bank_id' => ['nullable', 'string'],
