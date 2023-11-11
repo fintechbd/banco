@@ -2,7 +2,12 @@
 
 namespace Fintech\Banco\Models;
 
+use Fintech\Auth\Models\User;
 use Fintech\Core\Traits\AuditableTrait;
+use Fintech\MetaData\Models\City;
+use Fintech\MetaData\Models\Country;
+use Fintech\MetaData\Models\Relation;
+use Fintech\MetaData\Models\State;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -53,8 +58,17 @@ class Beneficiary extends Model implements HasMedia
      */
     public function beneficiaryType(): BelongsTo
     {
-        return $this->belongsTo(config('fintech.banco.beneficiary_type_model', \Fintech\Banco\Models\BeneficiaryType::class));
+        return $this->belongsTo(config('fintech.banco.beneficiary_type_model', BeneficiaryType::class));
     }
+
+    /**
+     * @return BelongsTo
+     */
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(config('fintech.auth.user_model', User::class));
+    }
+
 
     /*
     |--------------------------------------------------------------------------
