@@ -9,26 +9,24 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
 /**
  * @method getKey()
  * @method getFirstMediaUrl(string $string)
- * @property integer $country_id
+ *
+ * @property int $country_id
  * @property string $country
- * @property integer $beneficiary_type_id
+ * @property int $beneficiary_type_id
  * @property string $beneficiary_type
  * @property string $name
  * @property string $category
  * @property string $transaction_type
  * @property string $currency
  * @property array $bank_data
- * @property boolean $enabled
+ * @property bool $enabled
  * @property mixed $links
  * @property mixed $created_at
  * @property mixed $updated_at
- */class BankCollection extends ResourceCollection
+ */ class BankCollection extends ResourceCollection
 {
     /**
      * Transform the resource collection into an array.
-     *
-     * @param Request $request
-     * @return array
      */
     public function toArray(Request $request): array
     {
