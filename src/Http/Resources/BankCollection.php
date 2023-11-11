@@ -6,17 +6,52 @@ use Fintech\Core\Supports\Constant;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
-class BankCollection extends ResourceCollection
+/**
+ * @method getKey()
+ * @method getFirstMediaUrl(string $string)
+ *
+ * @property int $country_id
+ * @property string $country
+ * @property int $beneficiary_type_id
+ * @property string $beneficiary_type
+ * @property string $name
+ * @property string $category
+ * @property string $transaction_type
+ * @property string $currency
+ * @property array $bank_data
+ * @property bool $enabled
+ * @property mixed $links
+ * @property mixed $created_at
+ * @property mixed $updated_at
+ */ class BankCollection extends ResourceCollection
 {
     /**
      * Transform the resource collection into an array.
-     *
-     * @param  Request  $request
-     * @return array
      */
-    public function toArray($request)
+    public function toArray(Request $request): array
     {
-        return parent::toArray($request);
+        return $this->collection->map(function ($bank) {
+            $data = [
+                'id' => $bank->getKey() ?? null,
+                'country_id' => $bank->country_id ?? null,
+                'country' => $bank->country->name ?? null,
+                'beneficiary_type_id' => $bank->beneficiary_type_id ?? null,
+                'beneficiary_type' => $bank->beneficiary_type->name ?? null,
+                'name' => $bank->name ?? null,
+                'category' => $bank->category ?? null,
+                'transaction_type' => $bank->transaction_type ?? null,
+                'currency' => $bank->currency ?? null,
+                'bank_data' => $bank->bank_data ?? null,
+                'logo_png' => $bank->getFirstMediaUrl('logo_svg') ?? null,
+                'logo_svg' => $bank->getFirstMediaUrl('logo_svg') ?? null,
+                'enabled' => $bank->enabled ?? null,
+                'links' => $bank->links,
+                'created_at' => $bank->created_at,
+                'updated_at' => $bank->updated_at,
+            ];
+
+            return $data;
+        })->toArray();
     }
 
     /**
