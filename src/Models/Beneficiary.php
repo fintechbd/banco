@@ -48,54 +48,38 @@ class Beneficiary extends Model implements HasMedia
             ->singleFile()
             ->useDisk(config('filesystems.default', 'public'));
     }
+
     /*
     |--------------------------------------------------------------------------
     | RELATIONS
     |--------------------------------------------------------------------------
     */
-    /**
-     * @return BelongsTo
-     */
+
     public function beneficiaryType(): BelongsTo
     {
         return $this->belongsTo(config('fintech.banco.beneficiary_type_model', BeneficiaryType::class));
     }
 
-    /**
-     * @return BelongsTo
-     */
     public function user(): BelongsTo
     {
         return $this->belongsTo(config('fintech.auth.user_model', User::class));
     }
 
-    /**
-     * @return BelongsTo
-     */
     public function country(): BelongsTo
     {
         return $this->belongsTo(config('fintech.metadata.country_model', Country::class));
     }
 
-    /**
-     * @return BelongsTo
-     */
     public function state(): BelongsTo
     {
         return $this->belongsTo(config('fintech.metadata.state_model', State::class));
     }
 
-    /**
-     * @return BelongsTo
-     */
     public function city(): BelongsTo
     {
         return $this->belongsTo(config('fintech.metadata.city_model', City::class));
     }
 
-    /**
-     * @return BelongsTo
-     */
     public function relation(): BelongsTo
     {
         return $this->belongsTo(config('fintech.metadata.relation_model', Relation::class));

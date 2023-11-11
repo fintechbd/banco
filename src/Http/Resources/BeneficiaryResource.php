@@ -6,25 +6,26 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
- * @property integer $user_id
- * @property integer $city_id
+ * @property int $user_id
+ * @property int $city_id
  * @property string $city
- * @property integer $state_id
+ * @property int $state_id
  * @property string $state
- * @property integer $country_id
+ * @property int $country_id
  * @property string $country
- * @property integer $beneficiary_type_id
+ * @property int $beneficiary_type_id
  * @property string $beneficiary_type
- * @property integer $relation_id
+ * @property int $relation_id
  * @property string $relation
  * @property string $beneficiary_name
  * @property string $beneficiary_mobile
  * @property string $beneficiary_address
  * @property string $beneficiary_data
- * @property boolean $enabled
+ * @property bool $enabled
  * @property mixed $links
  * @property mixed $created_at
  * @property mixed $updated_at
+ *
  * @method getKey()
  * @method getFirstMediaUrl(string $string)
  */
@@ -32,9 +33,6 @@ class BeneficiaryResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
-     *
-     * @param Request $request
-     * @return array
      */
     public function toArray(Request $request): array
     {
