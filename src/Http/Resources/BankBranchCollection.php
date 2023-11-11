@@ -8,7 +8,8 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
 
 /**
  * @method getKey()
- * @property integer $bank_id
+ *
+ * @property int $bank_id
  * @property mixed $bank
  * @property string $name
  * @property array $bank_branch_data
@@ -20,9 +21,6 @@ class BankBranchCollection extends ResourceCollection
 {
     /**
      * Transform the resource collection into an array.
-     *
-     * @param Request $request
-     * @return array
      */
     public function toArray(Request $request): array
     {
