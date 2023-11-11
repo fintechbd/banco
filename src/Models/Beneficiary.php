@@ -93,6 +93,13 @@ class Beneficiary extends Model implements HasMedia
         return $this->belongsTo(config('fintech.metadata.city_model', City::class));
     }
 
+    /**
+     * @return BelongsTo
+     */
+    public function relation(): BelongsTo
+    {
+        return $this->belongsTo(config('fintech.metadata.relation_model', Relation::class));
+    }
 
     /*
     |--------------------------------------------------------------------------
