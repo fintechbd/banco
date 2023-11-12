@@ -12,7 +12,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
  * @method getFirstMediaUrl(string $string)
  *
  * @property int $country_id
- * @property string $country
+ * @property \Fintech\MetaData\Models\Country $country
  * @property int $beneficiary_type_id
  * @property BeneficiaryType $beneficiaryType
  * @property string $name
@@ -37,7 +37,7 @@ class BankResource extends JsonResource
             'country_id' => $this->country_id ?? null,
             'country_name' => null,
             'beneficiary_type_id' => $this->beneficiary_type_id ?? null,
-            'beneficiary_type_name' => $this->beneficiaryType->name ?? null,
+            'beneficiary_type_name' => $this->beneficiaryType->beneficiary_type_name ?? null,
             'name' => $this->name ?? null,
             'category' => $this->category ?? null,
             'transaction_type' => $this->transaction_type ?? null,
@@ -51,8 +51,8 @@ class BankResource extends JsonResource
             'updated_at' => $this->updated_at,
         ];
 
-        if(Core::packageExists('MetaData')) {
-            $data['country_name'] = ($bank->country) ? $bank->country->name : null;
+        if (Core::packageExists('MetaData')) {
+            $data['country_name'] = ($this->country) ? $this->country->name : null;
         }
 
         return $data;
