@@ -22,18 +22,19 @@ class UpdateBankRequest extends FormRequest
      */
     public function rules(): array
     {
-        $uniqueRule = 'unique:'.config('fintech.banco.bank_model', Bank::class).',name,'.$this->route('bank').',country_id,=,'.$this->input('country_id');
+        $uniqueRule = 'unique:' . config('fintech.banco.bank_model', Bank::class) . ',name,' . $this->route('bank') . ',id,country_id,' . $this->input('country_id') . ',deleted_at,null';
 
         return [
             'country_id' => ['required', 'integer'],
             'beneficiary_type_id' => ['required', 'integer'],
-            'bank_name' => ['required', 'string', 'max:255', $uniqueRule],
-            'bank_category' => ['required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:255', $uniqueRule],
+            'category' => ['required', 'string', 'max:255'],
             'transaction_type' => ['nullable', 'string', 'max:255'],
-            'bank_currency' => ['required', 'string', 'min:3', 'max:3'],
+            'currency' => ['required', 'string', 'min:3', 'max:3'],
             'logo_png' => ['nullable', 'string'],
             'logo_svg' => ['nullable', 'string'],
             'bank_data' => ['nullable', 'array'],
+            'enabled' => ['nullable', 'boolean'],
         ];
     }
 
