@@ -2,6 +2,7 @@
 
 namespace Fintech\Banco\Http\Resources;
 
+use Fintech\Core\Facades\Core;
 use Fintech\Core\Supports\Constant;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
@@ -34,7 +35,7 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
             $data = [
                 'id' => $bank->getKey() ?? null,
                 'country_id' => $bank->country_id ?? null,
-                'country' => $bank->country->name ?? null,
+                'country_name' => null,
                 'beneficiary_type_id' => $bank->beneficiary_type_id ?? null,
                 'beneficiary_type' => $bank->beneficiary_type->name ?? null,
                 'name' => $bank->name ?? null,
@@ -49,6 +50,10 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
                 'created_at' => $bank->created_at,
                 'updated_at' => $bank->updated_at,
             ];
+
+            if(Core::packageExists('MetaData')) {
+                $data['country_name'] = ($bank->country) ? $bank->country->name : null;
+            }
 
             return $data;
         })->toArray();

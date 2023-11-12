@@ -61,9 +61,9 @@ class Bank extends Model implements HasMedia
         return $this->hasMany(config('fintech.banco.bank_branch_model', \Fintech\Banco\Models\BankBranch::class));
     }
 
-    public function country(): HasMany
+    public function country(): BelongsTo
     {
-        return $this->hasMany(config('fintech.metadata.country_model', \Fintech\MetaData\Models\Country::class));
+        return $this->belongsTo(config('fintech.metadata.country_model', \Fintech\MetaData\Models\Country::class));
     }
 
     public function beneficiaryType(): BelongsTo
