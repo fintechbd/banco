@@ -51,7 +51,7 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
                 'updated_at' => $bank->updated_at,
             ];
 
-            if(Core::packageExists('MetaData')) {
+            if (Core::packageExists('MetaData')) {
                 $data['country_name'] = ($bank->country) ? $bank->country->name : null;
             }
 

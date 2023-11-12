@@ -14,12 +14,12 @@ class BankSeeder extends Seeder
     {
         foreach ($this->data() as $bank) {
             if ($bank['logo_png'] != null) {
-                $image_png = __DIR__ . '/../../resources/img/bank_logo_png/' . $bank['logo_png'];
-                $bank['logo_png'] = 'data:image/png;base64,' . base64_encode(file_get_contents($image_png));
+                $image_png = __DIR__.'/../../resources/img/bank_logo_png/'.$bank['logo_png'];
+                $bank['logo_png'] = 'data:image/png;base64,'.base64_encode(file_get_contents($image_png));
             }
             if ($bank['logo_svg'] != null) {
-                $image_svg = __DIR__ . '/../../resources/img/bank_logo_svg/' . $bank['logo_svg'];
-                $bank['logo_svg'] = 'data:image/svg+xml;base64,' . base64_encode(file_get_contents($image_svg));
+                $image_svg = __DIR__.'/../../resources/img/bank_logo_svg/'.$bank['logo_svg'];
+                $bank['logo_svg'] = 'data:image/svg+xml;base64,'.base64_encode(file_get_contents($image_svg));
             }
             Banco::bank()->create($bank);
         }
@@ -27,8 +27,8 @@ class BankSeeder extends Seeder
 
     private function data()
     {
-        return array(
-            array(
+        return [
+            [
                 'id' => '1',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -36,13 +36,12 @@ class BankSeeder extends Seeder
                 'category' => 'State-owned Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_3.png',
                 'logo_svg' => 'bank_logo_3.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '2',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -50,13 +49,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_24.png',
                 'logo_svg' => 'bank_logo_24.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '3',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -64,13 +62,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_35.png',
                 'logo_svg' => 'bank_logo_35.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '4',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -78,13 +75,12 @@ class BankSeeder extends Seeder
                 'category' => 'Central Bank',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_1.png',
                 'logo_svg' => 'bank_logo_1.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '5',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -92,13 +88,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_30.png',
                 'logo_svg' => 'bank_logo_30.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '6',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -106,13 +101,12 @@ class BankSeeder extends Seeder
                 'category' => 'Specialized Development',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_38.png',
                 'logo_svg' => 'bank_logo_38.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '7',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -120,13 +114,12 @@ class BankSeeder extends Seeder
                 'category' => 'Specialized Development',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_42.png',
                 'logo_svg' => 'bank_logo_42.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '8',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -134,13 +127,12 @@ class BankSeeder extends Seeder
                 'category' => 'Specialized Development',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_41.png',
                 'logo_svg' => 'bank_logo_41.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '9',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -148,13 +140,12 @@ class BankSeeder extends Seeder
                 'category' => 'Specialized Development',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_44.png',
                 'logo_svg' => 'bank_logo_44.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '10',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -162,13 +153,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_6.png',
                 'logo_svg' => 'bank_logo_6.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '11',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -176,13 +166,12 @@ class BankSeeder extends Seeder
                 'category' => 'Foreign Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_53.png',
                 'logo_svg' => 'bank_logo_53.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '12',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -190,13 +179,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_28.png',
                 'logo_svg' => 'bank_logo_28.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '13',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -204,27 +192,25 @@ class BankSeeder extends Seeder
                 'category' => 'Foreign Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_47.png',
                 'logo_svg' => 'bank_logo_47.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '14',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
                 'name' => 'COMMERCIAL BANK OF CYLON',
-                'category' => NULL,
-                'transaction_type' => NULL,
+                'category' => null,
+                'transaction_type' => null,
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_50.png',
                 'logo_svg' => 'bank_logo_50.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '15',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -232,13 +218,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_11.png',
                 'logo_svg' => 'bank_logo_11.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '16',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -246,13 +231,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_7.png',
                 'logo_svg' => 'bank_logo_7.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '17',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -260,13 +244,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_8.png',
                 'logo_svg' => 'bank_logo_8.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '18',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -274,13 +257,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_26.png',
                 'logo_svg' => 'bank_logo_26.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '19',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -288,13 +270,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_27.png',
                 'logo_svg' => 'bank_logo_27.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '20',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -302,27 +283,25 @@ class BankSeeder extends Seeder
                 'category' => 'Foreign Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_56.png',
                 'logo_svg' => 'bank_logo_56.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '21',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
                 'name' => 'HONGKONG & SHANGHAI BANKING CORP.',
-                'category' => NULL,
-                'transaction_type' => NULL,
+                'category' => null,
+                'transaction_type' => null,
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_48.png',
                 'logo_svg' => 'bank_logo_48.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '22',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -330,27 +309,25 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_15.png',
                 'logo_svg' => 'bank_logo_15.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '23',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
                 'name' => 'ISLAMI BANK BANGLDESH LIMITED',
-                'category' => NULL,
-                'transaction_type' => NULL,
+                'category' => null,
+                'transaction_type' => null,
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_12.png',
                 'logo_svg' => 'bank_logo_12.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '24',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -358,13 +335,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_32.png',
                 'logo_svg' => 'bank_logo_32.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '25',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -372,13 +348,12 @@ class BankSeeder extends Seeder
                 'category' => 'State-owned Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_5.png',
                 'logo_svg' => 'bank_logo_5.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '26',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -386,13 +361,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_19.png',
                 'logo_svg' => 'bank_logo_19.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '27',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -400,13 +374,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_10.png',
                 'logo_svg' => 'bank_logo_10.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '28',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -414,13 +387,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_16.png',
                 'logo_svg' => 'bank_logo_16.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '29',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -428,27 +400,25 @@ class BankSeeder extends Seeder
                 'category' => 'Foreign Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_54.png',
                 'logo_svg' => 'bank_logo_54.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '30',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
                 'name' => 'NATIONAL CREDIT & COMMERCE BANK LIMITED',
-                'category' => NULL,
-                'transaction_type' => NULL,
+                'category' => null,
+                'transaction_type' => null,
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_18.png',
                 'logo_svg' => 'bank_logo_18.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '31',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -456,13 +426,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_25.png',
                 'logo_svg' => 'bank_logo_25.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '32',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -470,13 +439,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_21.png',
                 'logo_svg' => 'bank_logo_21.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '33',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -484,13 +452,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_14.png',
                 'logo_svg' => 'bank_logo_14.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '34',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -498,13 +465,12 @@ class BankSeeder extends Seeder
                 'category' => 'Specialized Development',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_40.png',
                 'logo_svg' => 'bank_logo_40.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '35',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -512,13 +478,12 @@ class BankSeeder extends Seeder
                 'category' => 'State-owned Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_4.png',
                 'logo_svg' => 'bank_logo_4.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '36',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -526,13 +491,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_33.png',
                 'logo_svg' => 'bank_logo_33.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '37',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -540,13 +504,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_22.png',
                 'logo_svg' => 'bank_logo_22.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '38',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -554,13 +517,12 @@ class BankSeeder extends Seeder
                 'category' => 'State-owned Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_2.png',
                 'logo_svg' => 'bank_logo_2.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '39',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -568,13 +530,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_20.png',
                 'logo_svg' => 'bank_logo_20.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '40',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -582,13 +543,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_23.png',
                 'logo_svg' => 'bank_logo_23.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '41',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -596,13 +556,12 @@ class BankSeeder extends Seeder
                 'category' => 'Foreign Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_49.png',
                 'logo_svg' => 'bank_logo_49.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '42',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -610,13 +569,12 @@ class BankSeeder extends Seeder
                 'category' => 'Foreign Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_51.png',
                 'logo_svg' => 'bank_logo_51.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '43',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -624,13 +582,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_17.png',
                 'logo_svg' => 'bank_logo_17.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '44',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -638,13 +595,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_34.png',
                 'logo_svg' => 'bank_logo_34.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '45',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -652,13 +608,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_29.png',
                 'logo_svg' => 'bank_logo_29.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '46',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -666,13 +621,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_31.png',
                 'logo_svg' => 'bank_logo_31.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '47',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -680,13 +634,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_9.png',
                 'logo_svg' => 'bank_logo_9.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '48',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -694,13 +647,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_13.png',
                 'logo_svg' => 'bank_logo_13.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '49',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -708,13 +660,12 @@ class BankSeeder extends Seeder
                 'category' => 'Foreign Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_52.png',
                 'logo_svg' => 'bank_logo_52.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '50',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -722,13 +673,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_63.png',
                 'logo_svg' => 'bank_logo_63.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '51',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -736,13 +686,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_67.png',
                 'logo_svg' => 'bank_logo_67.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '52',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -750,13 +699,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_64.png',
                 'logo_svg' => 'bank_logo_64.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '53',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -764,13 +712,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_59.png',
                 'logo_svg' => 'bank_logo_59.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '54',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -778,13 +725,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_66.png',
                 'logo_svg' => 'bank_logo_66.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '55',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -792,13 +738,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_60.png',
                 'logo_svg' => 'bank_logo_60.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '56',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -806,13 +751,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_62.png',
                 'logo_svg' => 'bank_logo_62.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '57',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -820,13 +764,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_61.png',
                 'logo_svg' => 'bank_logo_61.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '58',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -834,13 +777,12 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_64.png',
                 'logo_svg' => 'bank_logo_64.svg',
-            ),
-            array(
+            ],
+            [
                 'id' => '59',
                 'country_id' => '19',
                 'beneficiary_type_id' => 1,
@@ -848,12 +790,11 @@ class BankSeeder extends Seeder
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
                 'currency' => 'BDT',
-                'bank_data' =>
-                    array(),
+                'bank_data' => [],
                 'enabled' => true,
                 'logo_png' => 'bank_logo_65.png',
                 'logo_svg' => 'bank_logo_65.svg',
-            ),
-        );
+            ],
+        ];
     }
 }
