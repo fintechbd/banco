@@ -37,7 +37,7 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
                 'country_id' => $bank->country_id ?? null,
                 'country_name' => null,
                 'beneficiary_type_id' => $bank->beneficiary_type_id ?? null,
-                'beneficiary_type' => $bank->beneficiary_type->name ?? null,
+                'beneficiary_type_name' => $bank->beneficiaryType->beneficiary_type_name ?? null,
                 'name' => $bank->name ?? null,
                 'category' => $bank->category ?? null,
                 'transaction_type' => $bank->transaction_type ?? null,

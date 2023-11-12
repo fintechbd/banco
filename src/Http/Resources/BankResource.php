@@ -2,6 +2,8 @@
 
 namespace Fintech\Banco\Http\Resources;
 
+use Fintech\Banco\Models\BeneficiaryType;
+use Fintech\Core\Facades\Core;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -12,7 +14,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
  * @property int $country_id
  * @property string $country
  * @property int $beneficiary_type_id
- * @property string $beneficiary_type
+ * @property BeneficiaryType $beneficiaryType
  * @property string $name
  * @property string $category
  * @property string $transaction_type
@@ -33,9 +35,9 @@ class BankResource extends JsonResource
         $data = [
             'id' => $this->getKey() ?? null,
             'country_id' => $this->country_id ?? null,
-            'country' => $this->country->name ?? null,
+            'country_name' => null,
             'beneficiary_type_id' => $this->beneficiary_type_id ?? null,
-            'beneficiary_type' => $this->beneficiary_type->name ?? null,
+            'beneficiary_type_name' => $this->beneficiaryType->name ?? null,
             'name' => $this->name ?? null,
             'category' => $this->category ?? null,
             'transaction_type' => $this->transaction_type ?? null,
@@ -48,6 +50,10 @@ class BankResource extends JsonResource
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];
+
+        if(Core::packageExists('MetaData')) {
+            $data['country_name'] = ($bank->country) ? $bank->country->name : null;
+        }
 
         return $data;
     }
