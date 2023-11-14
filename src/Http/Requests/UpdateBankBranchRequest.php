@@ -26,6 +26,7 @@ class UpdateBankBranchRequest extends FormRequest
             'bank_id' => ['integer', 'required'],
             'name' => ['string', 'required'],
             'bank_branch_data' => ['array', 'required'],
+            'enabled' => ['nullable', 'boolean'],
         ];
     }
 
