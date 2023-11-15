@@ -27,6 +27,8 @@ class BankBranchResource extends JsonResource
     {
         $data = [
             'id' => $this->getKey() ?? null,
+            'country_id' => $this->bank->country_id ?? null,
+            'country' => $this->bank->country->name ?? null,
             'bank_id' => $this->bank_id ?? null,
             'bank' => $this->bank->name ?? null,
             'name' => $this->name ?? null,
