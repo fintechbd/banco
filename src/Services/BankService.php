@@ -12,9 +12,8 @@ class BankService
     /**
      * BankService constructor.
      */
-    public function __construct(BankRepository $bankRepository)
+    public function __construct(private BankRepository $bankRepository)
     {
-        $this->bankRepository = $bankRepository;
     }
 
     /**
