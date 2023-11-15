@@ -27,6 +27,8 @@ class BankBranchCollection extends ResourceCollection
         return $this->collection->map(function ($bankBranch) {
             $data = [
                 'id' => $bankBranch->getKey() ?? null,
+                'country_id' => $this->bank->country_id ?? null,
+                'country' => $this->bank->country->name ?? null,
                 'bank_id' => $bankBranch->bank_id ?? null,
                 'bank' => $bankBranch->bank->name ?? null,
                 'name' => $bankBranch->name ?? null,
