@@ -42,6 +42,7 @@ class StoreBeneficiaryRequest extends FormRequest
             'beneficiary_mobile' => ['required', 'string', 'min:8', 'max:16', 'regex:/[0-9]{9}/', $uniqueRule],
             'beneficiary_address' => ['nullable', 'string'],
             'photo' => ['nullable', 'string'],
+            'enabled' => ['boolean', 'nullable'],
             'beneficiary_data' => ['required', 'array'],
             'beneficiary_data.*.first_name' => ['nullable', 'string'],
             'beneficiary_data.*.last_name' => ['nullable', 'string'],

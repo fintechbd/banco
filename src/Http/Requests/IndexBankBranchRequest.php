@@ -28,11 +28,11 @@ class IndexBankBranchRequest extends FormRequest
             'per_page' => ['integer', 'nullable', 'min:10', 'max:500'],
             'page' => ['integer', 'nullable', 'min:1'],
             'paginate' => ['boolean'],
+            'enabled' => ['boolean', 'nullable'],
             'sort' => ['string', 'nullable', 'min:2', 'max:255'],
             'dir' => ['string', 'min:3', 'max:4'],
             'bank_id' => ['integer', 'nullable'],
             'name' => ['string', 'nullable'],
-            'bank_branch_data' => ['string', 'nullable'],
         ];
     }
 

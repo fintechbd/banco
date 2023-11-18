@@ -62,6 +62,7 @@ class UpdateBeneficiaryRequest extends FormRequest
             'beneficiary_data.*.wallet_account_number' => ['nullable', 'string'],
             'beneficiary_data.*.beneficiary_type' => ['nullable', 'string'],
             'beneficiary_data.*.beneficiary_type_condition_name' => ['nullable', 'string'],
+            'enabled' => ['boolean', 'nullable'],
         ];
     }
 
