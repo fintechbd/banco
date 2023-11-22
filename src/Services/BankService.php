@@ -12,7 +12,7 @@ class BankService
     /**
      * BankService constructor.
      */
-    public function __construct(private BankRepository $bankRepository)
+    public function __construct(private readonly  BankRepository $bankRepository)
     {
     }
 

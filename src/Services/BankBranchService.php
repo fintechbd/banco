@@ -12,9 +12,8 @@ class BankBranchService
     /**
      * BankBranchService constructor.
      */
-    public function __construct(BankBranchRepository $bankBranchRepository)
+    public function __construct(private readonly BankBranchRepository $bankBranchRepository)
     {
-        $this->bankBranchRepository = $bankBranchRepository;
     }
 
     /**

@@ -12,9 +12,8 @@ class BeneficiaryService
     /**
      * BeneficiaryService constructor.
      */
-    public function __construct(BeneficiaryRepository $beneficiaryRepository)
+    public function __construct(private readonly BeneficiaryRepository $beneficiaryRepository)
     {
-        $this->beneficiaryRepository = $beneficiaryRepository;
     }
 
     /**
