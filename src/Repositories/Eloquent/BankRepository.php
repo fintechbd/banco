@@ -36,7 +36,7 @@ class BankRepository extends EloquentRepository implements InterfacesBankReposit
         $query = $this->model->newQuery();
 
         //Searching
-        if (isset($filters['search']) && ! empty($filters['search'])) {
+        if (! empty($filters['search'])) {
             if (is_numeric($filters['search'])) {
                 $query->where($this->model->getKeyName(), 'like', "%{$filters['search']}%");
             } else {
@@ -48,23 +48,23 @@ class BankRepository extends EloquentRepository implements InterfacesBankReposit
             }
         }
 
-        if (isset($filters['country_id']) && ! empty($filters['country_id'])) {
+        if (! empty($filters['country_id'])) {
             $query->where('country_id', '=', $filters['country_id']);
         }
 
-        if (isset($filters['currency']) && ! empty($filters['currency'])) {
+        if (! empty($filters['currency'])) {
             $query->where('currency', '=', $filters['currency']);
         }
 
-        if (isset($filters['transaction_type']) && ! empty($filters['transaction_type'])) {
+        if (! empty($filters['transaction_type'])) {
             $query->where('transaction_type', '=', $filters['transaction_type']);
         }
-        if (isset($filters['category']) && ! empty($filters['category'])) {
+        if (! empty($filters['category'])) {
             $query->where('category', '=', $filters['category']);
         }
 
         //Display Trashed
-        if (isset($filters['trashed']) && ! empty($filters['trashed'])) {
+        if (isset($filters['trashed']) && $filters['trashed'] === true) {
             $query->onlyTrashed();
         }
 

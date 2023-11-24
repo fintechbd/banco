@@ -18,7 +18,7 @@ class BankBranchRepository extends EloquentRepository implements InterfacesBankB
     {
         $model = app(config('fintech.banco.bank_branch_model', \Fintech\Banco\Models\BankBranch::class));
 
-        if (! $model instanceof Model) {
+        if (!$model instanceof Model) {
             throw new InvalidArgumentException("Eloquent repository require model class to be `Illuminate\Database\Eloquent\Model` instance.");
         }
 
@@ -36,7 +36,7 @@ class BankBranchRepository extends EloquentRepository implements InterfacesBankB
         $query = $this->model->newQuery();
 
         //Searching
-        if (isset($filters['search']) && ! empty($filters['search'])) {
+        if (!empty($filters['search'])) {
             if (is_numeric($filters['search'])) {
                 $query->where($this->model->getKeyName(), 'like', "%{$filters['search']}%");
             } else {
@@ -45,12 +45,12 @@ class BankBranchRepository extends EloquentRepository implements InterfacesBankB
             }
         }
 
-        if (isset($filters['bank_id']) && ! empty($filters['bank_id'])) {
+        if (!empty($filters['bank_id'])) {
             $query->where('bank_id', '=', $filters['bank_id']);
         }
 
         //Display Trashed
-        if (isset($filters['trashed']) && ! empty($filters['trashed'])) {
+        if (isset($filters['trashed']) && $filters['trashed'] === true) {
             $query->onlyTrashed();
         }
 
