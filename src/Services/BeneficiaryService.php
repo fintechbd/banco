@@ -56,10 +56,6 @@ class BeneficiaryService
         return $this->beneficiaryRepository->restore($id);
     }
 
-    /**
-     * @param array $filters
-     * @return Paginator|Collection
-     */
     public function export(array $filters): Paginator|Collection
     {
         return $this->beneficiaryRepository->list($filters);
@@ -96,7 +92,7 @@ class BeneficiaryService
                     'id_no_duplicate' => $profile->id_no_duplicate ?? null,
                 ],
                 'date_of_birth' => $profile->date_of_birth ?? null,
-                "present_address" => [
+                'present_address' => [
                     'address' => $profile->present_address ?? null,
                     'city_id' => $profile->present_city_id ?? null,
                     'city_name' => null,
@@ -107,7 +103,7 @@ class BeneficiaryService
                     'post_code' => $profile->present_post_code ?? null,
                 ],
                 'blacklisted' => $profile->blacklisted ?? null,
-            ]
+            ],
         ];
 
         $dataArray['bank_information'] = null;
@@ -121,6 +117,7 @@ class BeneficiaryService
             $dataArray['sender_information']['profile']['present_address']['country_name'] = $profile->presentCountry?->name ?? null;
             $dataArray['sender_information']['profile']['present_address']['country_data'] = $profile->presentCountry?->country_data ?? null;
         }
-        print_r($dataArray);exit();
+        print_r($dataArray);
+        exit();
     }
 }
