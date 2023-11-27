@@ -44,6 +44,14 @@ class BeneficiaryRepository extends EloquentRepository implements InterfacesBene
             }
         }
 
+        if (! empty($filters['beneficiary_id'])) {
+                $query->where('id', $filters['beneficiary_id']);
+        }
+
+        if (! empty($filters['user_id'])) {
+                $query->where('user_id', $filters['user_id']);
+        }
+
         //Display Trashed
         if (isset($filters['trashed']) && $filters['trashed'] === true) {
             $query->onlyTrashed();
