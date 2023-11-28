@@ -82,13 +82,23 @@ class BeneficiaryService
         }
         $sender = $get_beneficiary->user;
         $profile = $sender->profile;
-        $get_bank = Banco::bank()->find($data['bank_id']);
-        if (! $get_bank) {
-            throw new Exception('Bank Data not found');
+        if(isset($data['bank_id'])){
+            $get_bank = Banco::bank()->find($data['bank_id']);
+            if (! $get_bank) {
+                throw new Exception('Bank Data not found');
+            }
+            if(isset($data['bank_id'])) {
+                $get_branch = Banco::bankBranch()->find($data['bank_branch_id']);
+                if (!$get_branch) {
+                    throw new Exception('Bank Data not found');
+                }
+            }
         }
-        $get_branch = Banco::bankBranch()->find($data['bank_branch_id']);
-        if (! $get_branch) {
-            throw new Exception('Bank Data not found');
+        if(isset($data['cash_id'])){
+            $get_bank = Banco::bank()->find($data['cash_id']);
+            if (! $get_bank) {
+                throw new Exception('Bank Data not found');
+            }
         }
         //TODO MCM change
         $dataArray['reference_no'] = entry_number(filter_var($data['purchase_number'], FILTER_SANITIZE_NUMBER_INT), 'MCM', OrderStatus::Success->value);
@@ -127,15 +137,24 @@ class BeneficiaryService
                 'blacklisted' => $profile->blacklisted ?? null,
             ],
         ];
-
-        $dataArray['bank_information'] = [
-            'bank_name' => $get_bank->name,
-            'bank_data' => $get_bank->bank_data,
-        ];
-        $dataArray['branch_information'] = [
-            'branch_name' => $get_branch->name,
-            'branch_data' => $get_branch->bank_branch_data,
-        ];
+        if(isset($data['cash_id'])) {
+            $dataArray['cash_information'] = [
+                'bank_name' => $get_bank->name,
+                'bank_data' => $get_bank->bank_data,
+            ];
+        }
+        if(isset($data['bank_id'])) {
+            $dataArray['bank_information'] = [
+                'bank_name' => $get_bank->name,
+                'bank_data' => $get_bank->bank_data,
+            ];
+            if(isset($data['bank_id'])) {
+                $dataArray['branch_information'] = [
+                    'branch_name' => $get_branch->name,
+                    'branch_data' => $get_branch->bank_branch_data,
+                ];
+            }
+        }
         $dataArray['receiver_information'] = [
             'beneficiary_name' => $get_beneficiary->beneficiary_name,
             'beneficiary_mobile' => $get_beneficiary->beneficiary_mobile,
