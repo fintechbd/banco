@@ -31,6 +31,7 @@ class BeneficiaryRepository extends EloquentRepository implements InterfacesBene
      * filtered options
      *
      * @return Paginator|Collection
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
      */
     public function list(array $filters = [])
     {
