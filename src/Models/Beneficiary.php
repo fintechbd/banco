@@ -2,8 +2,10 @@
 
 namespace Fintech\Banco\Models;
 
+use Fintech\Banco\Traits\MetaDataRelations;
 use Fintech\Core\Traits\AuditableTrait;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -13,6 +15,7 @@ class Beneficiary extends Model implements HasMedia
     use AuditableTrait;
     use InteractsWithMedia;
     use SoftDeletes;
+    use MetaDataRelations;
 
     /*
     |--------------------------------------------------------------------------
@@ -47,7 +50,13 @@ class Beneficiary extends Model implements HasMedia
     | RELATIONS
     |--------------------------------------------------------------------------
     */
-
+    /**
+     * @return BelongsTo
+     */
+    public function beneficiaryType(): BelongsTo
+    {
+        return $this->belongsTo(config('fintech.banco.beneficiary_type_model', \Fintech\Banco\Models\BeneficiaryType::class));
+    }
     /*
     |--------------------------------------------------------------------------
     | SCOPES

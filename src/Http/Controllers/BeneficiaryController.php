@@ -45,6 +45,7 @@ class BeneficiaryController extends Controller
         try {
             $inputs = $request->validated();
 
+            $inputs['sort'] = "beneficiaries.id";
             $beneficiaryPaginate = Banco::beneficiary()->list($inputs);
 
             return new BeneficiaryCollection($beneficiaryPaginate);
