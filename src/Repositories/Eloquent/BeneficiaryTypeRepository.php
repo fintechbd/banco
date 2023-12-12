@@ -41,16 +41,16 @@ class BeneficiaryTypeRepository extends EloquentRepository implements Interfaces
             if (is_numeric($filters['search'])) {
                 $query->where($this->model->getKeyName(), 'like', "%{$filters['search']}%");
             } else {
-                $query->where($modelTable . '.beneficiary_type_name', 'like', "%{$filters['search']}%");
+                $query->where($modelTable.'.beneficiary_type_name', 'like', "%{$filters['search']}%");
             }
         }
 
         if (isset($filters['beneficiary_type_name']) && ! empty($filters['beneficiary_type_name'])) {
-            $query->where($modelTable . '.beneficiary_type_name', $filters['beneficiary_type_name']);
+            $query->where($modelTable.'.beneficiary_type_name', $filters['beneficiary_type_name']);
         }
 
         if (isset($filters['id']) && ! empty($filters['id'])) {
-            $query->where($modelTable . '.id', $filters['id']);
+            $query->where($modelTable.'.id', $filters['id']);
         }
 
         //Display Trashed

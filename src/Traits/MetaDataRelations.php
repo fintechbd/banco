@@ -21,12 +21,14 @@ if (Core::packageExists('MetaData')) {
                 config('fintech.metadata.city_model', \Fintech\MetaData\Models\City::class),
                 'city_id');
         }
+
         public function state(): BelongsTo
         {
             return $this->belongsTo(
                 config('fintech.metadata.state_model', \Fintech\MetaData\Models\State::class),
                 'state_id');
         }
+
         public function relation(): BelongsTo
         {
             return $this->belongsTo(
