@@ -48,6 +48,10 @@ class BeneficiaryRepository extends EloquentRepository implements InterfacesBene
             $query->where('id', $filters['beneficiary_id']);
         }
 
+        if (! empty($filters['beneficiary_type_id'])) {
+            $query->where('beneficiary_type_id', $filters['beneficiary_type_id']);
+        }
+
         if (! empty($filters['user_id'])) {
             $query->where('user_id', $filters['user_id']);
         }
