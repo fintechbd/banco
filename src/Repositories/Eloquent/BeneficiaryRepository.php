@@ -59,7 +59,7 @@ class BeneficiaryRepository extends EloquentRepository implements InterfacesBene
             $modelTable.'.relation_id', '=',
             get_table('metadata.relation').'.id');
         //Searching
-        if (isset($filters['search']) && ! empty($filters['search'])) {
+        if (! empty($filters['search'])) {
             if (is_numeric($filters['search'])) {
                 $query->where($this->model->getKeyName(), 'like', "%{$filters['search']}%");
             } else {
@@ -106,8 +106,16 @@ class BeneficiaryRepository extends EloquentRepository implements InterfacesBene
             $query->where($modelTable . '.enabled', $filters['beneficiary_enabled']);
         }
 
+        if (! empty($filters['beneficiary_id'])) {
+            $query->where('id', $filters['beneficiary_id']);
+        }
+
+        if (! empty($filters['user_id'])) {
+            $query->where('user_id', $filters['user_id']);
+        }
+
         //Display Trashed
-        if (isset($filters['trashed']) && ! empty($filters['trashed'])) {
+        if (isset($filters['trashed']) && $filters['trashed'] === true) {
             $query->onlyTrashed();
         }
 

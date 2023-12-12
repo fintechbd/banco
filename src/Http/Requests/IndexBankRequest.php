@@ -33,11 +33,8 @@ class IndexBankRequest extends FormRequest
             'trashed' => ['boolean', 'nullable'],
             'country_id' => ['nullable', 'integer'],
             'beneficiary_type_id' => ['nullable', 'integer'],
-            'bank_name' => ['nullable', 'string'],
-            'bank_category' => ['nullable', 'string'],
-            'transaction_type' => ['nullable', 'string'],
-            'bank_currency' => ['nullable', 'string'],
-            'bank_data' => ['nullable', 'array'],
+            'category' => ['nullable', 'string'],
+            'currency' => ['nullable', 'string'],
             'enabled' => ['boolean', 'nullable'],
         ];
     }

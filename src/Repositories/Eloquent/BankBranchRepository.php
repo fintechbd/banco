@@ -36,16 +36,21 @@ class BankBranchRepository extends EloquentRepository implements InterfacesBankB
         $query = $this->model->newQuery();
 
         //Searching
-        if (isset($filters['search']) && ! empty($filters['search'])) {
+        if (! empty($filters['search'])) {
             if (is_numeric($filters['search'])) {
                 $query->where($this->model->getKeyName(), 'like', "%{$filters['search']}%");
             } else {
                 $query->where('name', 'like', "%{$filters['search']}%");
+                $query->where('bank_branch_data', 'like', "%{$filters['search']}%");
             }
         }
 
+        if (! empty($filters['bank_id'])) {
+            $query->where('bank_id', '=', $filters['bank_id']);
+        }
+
         //Display Trashed
-        if (isset($filters['trashed']) && ! empty($filters['trashed'])) {
+        if (isset($filters['trashed']) && $filters['trashed'] === true) {
             $query->onlyTrashed();
         }
 

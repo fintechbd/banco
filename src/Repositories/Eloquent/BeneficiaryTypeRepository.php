@@ -37,7 +37,7 @@ class BeneficiaryTypeRepository extends EloquentRepository implements Interfaces
         $modelTable = $this->model->getTable();
 
         //Searching
-        if (isset($filters['search']) && ! empty($filters['search'])) {
+        if (! empty($filters['search'])) {
             if (is_numeric($filters['search'])) {
                 $query->where($this->model->getKeyName(), 'like', "%{$filters['search']}%");
             } else {
@@ -54,7 +54,7 @@ class BeneficiaryTypeRepository extends EloquentRepository implements Interfaces
         }
 
         //Display Trashed
-        if (isset($filters['trashed']) && ! empty($filters['trashed'])) {
+        if (isset($filters['trashed']) && $filters['trashed'] === true) {
             $query->onlyTrashed();
         }
 

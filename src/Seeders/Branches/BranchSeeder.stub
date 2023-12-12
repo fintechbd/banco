@@ -5,13 +5,7 @@ namespace Fintech\Banco\Seeders\Branches;
 use Fintech\Banco\Facades\Banco;
 use Illuminate\Database\Seeder;
 
-class
-{
-{
-$name
-}
-} extends
-Seeder
+class {{name}} extends Seeder
 {
     /**
      * Run the database seeds.
@@ -29,12 +23,8 @@ Seeder
         }
     }
 
-    private
-    function data()
+    private function data()
     {
-        return {
-        {
-            $branch}
-    }
+        return {{branch}};
     }
 }

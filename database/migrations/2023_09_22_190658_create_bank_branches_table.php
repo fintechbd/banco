@@ -14,7 +14,7 @@ return new class() extends Migration
         Schema::create('bank_branches', function (Blueprint $table) {
             $table->id();
             $table->foreignId('bank_id');
-            $table->string('bank_branch_name');
+            $table->string('name');
             $table->json('bank_branch_data')->nullable();
             $table->boolean('enabled')->nullable();
             $table->foreignId('creator_id')->nullable();

@@ -30,6 +30,7 @@ class StoreBeneficiaryTypeRequest extends FormRequest
             'beneficiary_type_data.*.beneficiary_type_condition_name' => ['nullable', 'string'],
             'beneficiary_type_data.*.beneficiary_type_condition_field_name' => ['nullable', 'string'],
             'beneficiary_type_data.*.beneficiary_type_condition_field_type' => ['nullable', 'string'],
+            'enabled' => ['boolean', 'nullable'],
         ];
     }
 
