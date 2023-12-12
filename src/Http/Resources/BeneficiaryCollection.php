@@ -15,7 +15,7 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
  * @property int $country_id
  * @property string $country
  * @property int $beneficiary_type_id
- * @property string $beneficiary_type
+ * @property string $beneficiaryType
  * @property int $relation_id
  * @property string $relation
  * @property string $beneficiary_name
@@ -49,7 +49,7 @@ class BeneficiaryCollection extends ResourceCollection
                 'country_id' => $beneficiary->country_id ?? null,
                 'country' => $beneficiary->country->name ?? null,
                 'beneficiary_type_id' => $beneficiary->beneficiary_type_id ?? null,
-                'beneficiary_type' => $beneficiary->beneficiary_type->name ?? null,
+                'beneficiary_type' => $beneficiary->beneficiaryType->beneficiary_type_name ?? null,
                 'relation_id' => $beneficiary->relation_id ?? null,
                 'relation' => $beneficiary->relation->name ?? null,
                 'beneficiary_name' => $beneficiary->beneficiary_name ?? null,

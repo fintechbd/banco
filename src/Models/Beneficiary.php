@@ -48,7 +48,6 @@ class Beneficiary extends Model implements HasMedia
             ->singleFile()
             ->useDisk(config('filesystems.default', 'public'));
     }
-
     /*
     |--------------------------------------------------------------------------
     | RELATIONS
