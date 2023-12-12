@@ -14,8 +14,8 @@ class Beneficiary extends Model implements HasMedia
 {
     use AuditableTrait;
     use InteractsWithMedia;
-    use SoftDeletes;
     use MetaDataRelations;
+    use SoftDeletes;
 
     /*
     |--------------------------------------------------------------------------
@@ -45,14 +45,13 @@ class Beneficiary extends Model implements HasMedia
             ->singleFile()
             ->useDisk(config('filesystems.default', 'public'));
     }
+
     /*
     |--------------------------------------------------------------------------
     | RELATIONS
     |--------------------------------------------------------------------------
     */
-    /**
-     * @return BelongsTo
-     */
+
     public function beneficiaryType(): BelongsTo
     {
         return $this->belongsTo(config('fintech.banco.beneficiary_type_model', \Fintech\Banco\Models\BeneficiaryType::class));
