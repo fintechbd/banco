@@ -43,7 +43,7 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
                 'transaction_type' => $bank->transaction_type ?? null,
                 'currency' => $bank->currency ?? null,
                 'bank_data' => $bank->bank_data ?? null,
-                'logo_png' => $bank->getFirstMediaUrl('logo_svg') ?? null,
+                'logo_png' => $bank->getFirstMediaUrl('logo_png') ?? null,
                 'logo_svg' => $bank->getFirstMediaUrl('logo_svg') ?? null,
                 'enabled' => $bank->enabled ?? null,
                 'links' => $bank->links,
