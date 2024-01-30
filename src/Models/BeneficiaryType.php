@@ -4,6 +4,7 @@ namespace Fintech\Banco\Models;
 
 use Fintech\Core\Traits\AuditableTrait;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class BeneficiaryType extends Model
@@ -38,7 +39,10 @@ class BeneficiaryType extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
-
+    public function banks(): BelongsToMany
+    {
+        return $this->belongsToMany(config('fintech.banco.bank_model', Bank::class));
+    }
     /*
     |--------------------------------------------------------------------------
     | SCOPES
