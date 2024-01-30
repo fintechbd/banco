@@ -38,19 +38,19 @@ class BeneficiaryService
         $inputs['beneficiary_data']['cash_name'] = 'N/A';
         $inputs['beneficiary_data']['wallet_name'] = 'N/A';
 
-        if (!empty($inputs['beneficiary_data']['bank_id'])) {
+        if (! empty($inputs['beneficiary_data']['bank_id'])) {
             if ($bank = Banco::bank()->find($inputs['beneficiary_data']['bank_id'])) {
                 $inputs['beneficiary_data']['bank_name'] = $bank->name ?? 'N/A';
             }
         }
 
-        if (!empty($inputs['beneficiary_data']['cash_id'])) {
+        if (! empty($inputs['beneficiary_data']['cash_id'])) {
             if ($bank = Banco::bank()->find($inputs['beneficiary_data']['cash_id'])) {
                 $inputs['beneficiary_data']['cash_name'] = $bank->name ?? 'N/A';
             }
         }
 
-        if (!empty($inputs['beneficiary_data']['wallet_id'])) {
+        if (! empty($inputs['beneficiary_data']['wallet_id'])) {
             if ($bank = Banco::bank()->find($inputs['beneficiary_data']['wallet_id'])) {
                 $inputs['beneficiary_data']['wallet_name'] = $bank->name ?? 'N/A';
             }
