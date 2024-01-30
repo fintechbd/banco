@@ -32,6 +32,7 @@ class IndexBankRequest extends FormRequest
             'dir' => ['string', 'min:3', 'max:4'],
             'trashed' => ['boolean', 'nullable'],
             'country_id' => ['nullable', 'integer'],
+            'beneficiary_type_slug' => ['nullable', 'string'],
             'beneficiary_type_id' => ['nullable', 'integer'],
             'category' => ['nullable', 'string'],
             'currency' => ['nullable', 'string'],
