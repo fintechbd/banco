@@ -59,6 +59,11 @@ class BankRepository extends EloquentRepository implements InterfacesBankReposit
         if (! empty($filters['transaction_type'])) {
             $query->where('transaction_type', '=', $filters['transaction_type']);
         }
+
+        if (! empty($filters['beneficiary_type_id'])) {
+            $query->where('beneficiary_type_id', '=', $filters['beneficiary_type_id']);
+        }
+
         if (! empty($filters['category'])) {
             $query->where('category', '=', $filters['category']);
         }
