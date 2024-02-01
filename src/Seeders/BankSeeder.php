@@ -31,7 +31,7 @@ class BankSeeder extends Seeder
             [
                 'id' => '1',
                 'country_id' => '19',
-                'beneficiary_types' => [1],
+                'beneficiary_types' => [1,3],
                 'name' => 'AGRANI BANK LIMITED',
                 'category' => 'State-owned Commercial',
                 'transaction_type' => 'Account Deposit',
@@ -44,7 +44,7 @@ class BankSeeder extends Seeder
             [
                 'id' => '2',
                 'country_id' => '19',
-                'beneficiary_types' => [1],
+                'beneficiary_types' => [1,5],
                 'name' => 'AL-ARAFAH ISLAMI BANK LIMITED',
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
@@ -70,7 +70,7 @@ class BankSeeder extends Seeder
             [
                 'id' => '4',
                 'country_id' => '19',
-                'beneficiary_types' => [1],
+                'beneficiary_types' => [1,3,5],
                 'name' => 'BANGLADESH BANK',
                 'category' => 'Central Bank',
                 'transaction_type' => 'Account Deposit',
@@ -148,7 +148,7 @@ class BankSeeder extends Seeder
             [
                 'id' => '10',
                 'country_id' => '19',
-                'beneficiary_types' => [1],
+                'beneficiary_types' => [1,5],
                 'name' => 'BRAC BANK LIMITED',
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
@@ -174,7 +174,7 @@ class BankSeeder extends Seeder
             [
                 'id' => '12',
                 'country_id' => '19',
-                'beneficiary_types' => [1],
+                'beneficiary_types' => [1,3],
                 'name' => 'BANK ASIA LIMITED',
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
@@ -187,7 +187,7 @@ class BankSeeder extends Seeder
             [
                 'id' => '13',
                 'country_id' => '19',
-                'beneficiary_types' => [1],
+                'beneficiary_types' => [1,3],
                 'name' => 'CITI BANK N A',
                 'category' => 'Foreign Commercial',
                 'transaction_type' => 'Account Deposit',
@@ -226,7 +226,7 @@ class BankSeeder extends Seeder
             [
                 'id' => '16',
                 'country_id' => '19',
-                'beneficiary_types' => [1],
+                'beneficiary_types' => [1,5],
                 'name' => 'DUTCH-BANGLA BANK LIMITED',
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
@@ -356,7 +356,7 @@ class BankSeeder extends Seeder
             [
                 'id' => '26',
                 'country_id' => '19',
-                'beneficiary_types' => [1],
+                'beneficiary_types' => [1,3,5],
                 'name' => 'MERCANTILE BANK LIMITED',
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
@@ -369,7 +369,7 @@ class BankSeeder extends Seeder
             [
                 'id' => '27',
                 'country_id' => '19',
-                'beneficiary_types' => [1],
+                'beneficiary_types' => [1,3],
                 'name' => 'MUTUAL TRUST BANK LIMITED',
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
@@ -421,7 +421,7 @@ class BankSeeder extends Seeder
             [
                 'id' => '31',
                 'country_id' => '19',
-                'beneficiary_types' => [1],
+                'beneficiary_types' => [1,5],
                 'name' => 'ONE BANK LIMITED',
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
@@ -447,7 +447,7 @@ class BankSeeder extends Seeder
             [
                 'id' => '33',
                 'country_id' => '19',
-                'beneficiary_types' => [1],
+                'beneficiary_types' => [1,2],
                 'name' => 'PUBALI BANK LIMITED',
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
@@ -473,7 +473,7 @@ class BankSeeder extends Seeder
             [
                 'id' => '35',
                 'country_id' => '19',
-                'beneficiary_types' => [1],
+                'beneficiary_types' => [1,5],
                 'name' => 'RUPALI BANK LIMITED',
                 'category' => 'State-owned Commercial',
                 'transaction_type' => 'Account Deposit',
@@ -512,7 +512,7 @@ class BankSeeder extends Seeder
             [
                 'id' => '38',
                 'country_id' => '19',
-                'beneficiary_types' => [1],
+                'beneficiary_types' => [1,5],
                 'name' => 'SONALI BANK LIMITED',
                 'category' => 'State-owned Commercial',
                 'transaction_type' => 'Account Deposit',
@@ -525,7 +525,7 @@ class BankSeeder extends Seeder
             [
                 'id' => '39',
                 'country_id' => '19',
-                'beneficiary_types' => [1],
+                'beneficiary_types' => [1,5],
                 'name' => 'SOUTHEAST BANK LIMITED',
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
@@ -577,7 +577,7 @@ class BankSeeder extends Seeder
             [
                 'id' => '43',
                 'country_id' => '19',
-                'beneficiary_types' => [1],
+                'beneficiary_types' => [1,3],
                 'name' => 'THE CITY BANK LIMITED',
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
@@ -629,7 +629,7 @@ class BankSeeder extends Seeder
             [
                 'id' => '47',
                 'country_id' => '19',
-                'beneficiary_types' => [1],
+                'beneficiary_types' => [1,5],
                 'name' => 'UNITED COMMERCIAL BANK LIMITED',
                 'category' => 'Private Commercial',
                 'transaction_type' => 'Account Deposit',
