@@ -2,6 +2,7 @@
 
 namespace Fintech\Banco\Http\Resources;
 
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -13,8 +14,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
  * @property string $state
  * @property int $country_id
  * @property string $country
- * @property int $beneficiary_type_id
- * @property string $beneficiaryType
+ * @property Collection|array $beneficiaryTypes
  * @property int $relation_id
  * @property string $relation
  * @property string $beneficiary_name
@@ -46,8 +46,7 @@ class BeneficiaryResource extends JsonResource
             'state' => $this->state->name ?? null,
             'country_id' => $this->country_id ?? null,
             'country' => $this->country->name ?? null,
-            'beneficiary_type_id' => $this->beneficiary_type_id ?? null,
-            'beneficiary_type' => $this->beneficiaryType->beneficiary_type_name ?? null,
+            'beneficiary_types' => ($this->beneficiaryTypes) ? $this->beneficiaryTypes->toArray() : [],
             'relation_id' => $this->relation_id ?? null,
             'relation' => $this->relation->name ?? null,
             'beneficiary_name' => $this->beneficiary_name ?? null,

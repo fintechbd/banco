@@ -36,8 +36,6 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
                 'id' => $bank->getKey() ?? null,
                 'country_id' => $bank->country_id ?? null,
                 'country_name' => null,
-                /*'beneficiary_type_id' => $bank->beneficiary_types->id ?? null,
-                'beneficiary_type_name' => $bank->beneficiaryTypes->beneficiary_type_name ?? null,*/
                 'beneficiary_types' => ($bank->beneficiaryTypes) ? $bank->beneficiaryTypes->toArray() : [],
                 'name' => $bank->name ?? null,
                 'category' => $bank->category ?? null,

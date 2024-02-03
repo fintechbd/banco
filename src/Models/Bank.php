@@ -72,15 +72,6 @@ class Bank extends Model implements HasMedia
         return $this->belongsToMany(config('fintech.banco.beneficiary_type_model', BeneficiaryType::class));
     }
 
-    /*public function beneficiaryTypes(): BelongsToMany
-    {
-        return $this->belongsToMany(
-            config('fintech.banco.beneficiary_type_model', BeneficiaryType::class),
-            'bank_beneficiary_type',
-            'bank_id',
-            'beneficiary_type_id'
-        );
-    }*/
     /*
     |--------------------------------------------------------------------------
     | SCOPES
