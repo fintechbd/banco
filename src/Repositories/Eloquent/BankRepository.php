@@ -63,9 +63,9 @@ class BankRepository extends EloquentRepository implements InterfacesBankReposit
 
         if (! empty($filters['beneficiary_type_id'])) {
             $query->select('banks.*')
-                ->rightJoin('bank_beneficiary_type', function (JoinClause $join) use ($filters) {
+                ->leftJoin('bank_beneficiary_type', function (JoinClause $join) use ($filters) {
                     return $join->on('banks.id', '=', 'bank_beneficiary_type.bank_id')
-                        ->on('bank_beneficiary_type.beneficiary_type_id', $filters['beneficiary_type_id']);
+                        ->where('bank_beneficiary_type.beneficiary_type_id', $filters['beneficiary_type_id']);
                 });
         }
 
