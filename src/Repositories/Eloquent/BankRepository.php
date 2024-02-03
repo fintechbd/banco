@@ -8,7 +8,6 @@ use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\JoinClause;
-use Illuminate\Support\Facades\DB;
 use InvalidArgumentException;
 
 /**
@@ -66,7 +65,7 @@ class BankRepository extends EloquentRepository implements InterfacesBankReposit
             $query->select('banks.*')
                 ->rightJoin('bank_beneficiary_type', function (JoinClause $join) use ($filters) {
                     return $join->on('banks.id', '=', 'bank_beneficiary_type.bank_id')
-                        ->on('bank_beneficiary_type.beneficiary_type_id', DB::raw($filters['beneficiary_type_id']));
+                        ->on('bank_beneficiary_type.beneficiary_type_id', $filters['beneficiary_type_id']);
                 });
         }
 
