@@ -12,13 +12,14 @@ class BeneficiaryAdded
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     public $user;
+
     public $beneficiary;
 
     /**
      * Create a new event instance.
      *
-     * @param \Fintech\Auth\Models\User $user
-     * @param \Fintech\Banco\Models\Beneficiary $beneficiary
+     * @param  \Fintech\Auth\Models\User  $user
+     * @param  \Fintech\Banco\Models\Beneficiary  $beneficiary
      */
     public function __construct($user, $beneficiary)
     {
