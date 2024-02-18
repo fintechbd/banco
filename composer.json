@@ -60,7 +60,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Fintech\\Banco\\BancoServiceProvider"
+                "Fintech\\Banco\\BancoServiceProvider",
+                "Fintech\\Banco\\RouteServiceProvider",
+                "Fintech\\Banco\\RepositoryServiceProvider",
+                "Fintech\\Banco\\EventServiceProvider"
             ],
             "aliases": {
                 "Banco": "Fintech\\Banco\\Facades\\Banco"
