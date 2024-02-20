@@ -90,6 +90,11 @@ class BeneficiaryTypeService
         return $this->beneficiaryTypeRepository->list($filters);
     }
 
+    /**
+     * @throws ReflectionException
+     * @throws BindingResolutionException
+     * @throws RelationReturnMissingException
+     */
     public function import(array $filters)
     {
         return $this->beneficiaryTypeRepository->create($filters);
