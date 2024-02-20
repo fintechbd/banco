@@ -38,6 +38,7 @@ interface BeneficiaryTypeRepository
     /**
      * find and delete a entry from records
      *
+     * @param int|string $id
      * @param bool $onlyTrashed
      * @return EloquentModel|MongodbModel|null
      */
