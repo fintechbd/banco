@@ -24,6 +24,7 @@ interface BeneficiaryTypeRepository
     /**
      * Create a new entry resource
      *
+     * @param array $attributes
      * @return EloquentModel|MongodbModel|null
      */
     public function create(array $attributes = []): EloquentModel|MongodbModel|null;
