@@ -159,10 +159,9 @@ class BeneficiaryTypeController extends Controller
      *
      * @lrd:end
      *
+     * @param string|int $id
      * @return JsonResponse
      *
-     * @throws ModelNotFoundException
-     * @throws DeleteOperationException
      */
     public function destroy(string|int $id): JsonResponse
     {
