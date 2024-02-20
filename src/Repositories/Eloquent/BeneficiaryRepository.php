@@ -31,6 +31,8 @@ class BeneficiaryRepository extends EloquentRepository implements InterfacesBene
      * filtered options
      *
      * @return Paginator|Collection
+     *
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
      */
     public function list(array $filters = [])
     {
@@ -108,6 +110,10 @@ class BeneficiaryRepository extends EloquentRepository implements InterfacesBene
 
         if (! empty($filters['beneficiary_id'])) {
             $query->where('id', $filters['beneficiary_id']);
+        }
+
+        if (! empty($filters['beneficiary_type_id'])) {
+            $query->where('beneficiary_type_id', $filters['beneficiary_type_id']);
         }
 
         if (! empty($filters['user_id'])) {

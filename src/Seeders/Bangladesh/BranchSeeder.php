@@ -1,6 +1,6 @@
 <?php
 
-namespace Fintech\Banco\Seeders;
+namespace Fintech\Banco\Seeders\Bangladesh;
 
 use Illuminate\Database\Seeder;
 

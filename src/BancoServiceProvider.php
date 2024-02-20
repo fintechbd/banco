@@ -18,9 +18,6 @@ class BancoServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__.'/../config/banco.php', 'fintech.banco'
         );
-
-        $this->app->register(RouteServiceProvider::class);
-        $this->app->register(RepositoryServiceProvider::class);
     }
 
     /**

@@ -3,6 +3,7 @@
 namespace Fintech\Banco\Http\Controllers;
 
 use Exception;
+use Fintech\Banco\Events\BeneficiaryAdded;
 use Fintech\Banco\Facades\Banco;
 use Fintech\Banco\Http\Requests\ImportBeneficiaryRequest;
 use Fintech\Banco\Http\Requests\IndexBeneficiaryRequest;
@@ -74,6 +75,7 @@ class BeneficiaryController extends Controller
             if (! $beneficiary) {
                 throw (new StoreOperationException)->setModel(config('fintech.banco.beneficiary_model'));
             }
+            event(new BeneficiaryAdded($request->user(), $beneficiary));
 
             return $this->created([
                 'message' => __('core::messages.resource.created', ['model' => 'Beneficiary']),

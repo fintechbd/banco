@@ -5,6 +5,7 @@ namespace Fintech\Banco\Models;
 use Fintech\Core\Traits\AuditableTrait;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\MediaLibrary\HasMedia;
@@ -66,9 +67,9 @@ class Bank extends Model implements HasMedia
         return $this->belongsTo(config('fintech.metadata.country_model', \Fintech\MetaData\Models\Country::class));
     }
 
-    public function beneficiaryType(): BelongsTo
+    public function beneficiaryTypes(): BelongsToMany
     {
-        return $this->belongsTo(config('fintech.banco.beneficiary_type_model', BeneficiaryType::class));
+        return $this->belongsToMany(config('fintech.banco.beneficiary_type_model', BeneficiaryType::class));
     }
 
     /*

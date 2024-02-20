@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static \Fintech\Banco\Services\BankBranchService bankBranch()
  * @method static \Fintech\Banco\Services\BeneficiaryService beneficiary()
  * @method static \Fintech\Banco\Services\BeneficiaryTypeService beneficiaryType()
- * // Crud Service Method Point Do not Remove //
+ *                                                                                 // Crud Service Method Point Do not Remove //
  *
  * @see \Fintech\Banco\Banco
  */

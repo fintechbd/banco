@@ -26,7 +26,8 @@ class UpdateBankRequest extends FormRequest
 
         return [
             'country_id' => ['required', 'integer'],
-            'beneficiary_type_id' => ['required', 'integer'],
+            'beneficiary_types' => ['nullable', 'array'],
+            'beneficiary_types.*' => ['required', 'integer'],
             'name' => ['required', 'string', 'max:255', $uniqueRule],
             'category' => ['required', 'string', 'max:255'],
             'transaction_type' => ['nullable', 'string', 'max:255'],

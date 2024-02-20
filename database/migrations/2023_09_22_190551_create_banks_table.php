@@ -14,7 +14,6 @@ return new class() extends Migration
         Schema::create('banks', function (Blueprint $table) {
             $table->id();
             $table->foreignId('country_id')->nullable();
-            $table->foreignId('beneficiary_type_id')->nullable();
             $table->string('name');
             $table->string('category')->nullable();
             $table->string('transaction_type')->nullable()->default('Account Deposit');

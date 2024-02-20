@@ -34,6 +34,45 @@ class BeneficiaryService
 
     public function create(array $inputs = [])
     {
+        $inputs['beneficiary_data']['cash_name'] = 'N/A';
+        $inputs['beneficiary_data']['wallet_name'] = 'N/A';
+
+        $inputs['beneficiary_data']['instant_bank_name'] = 'N/A';
+        $inputs['beneficiary_data']['instant_bank_branch_name'] = 'N/A';
+
+        $inputs['beneficiary_data']['bank_name'] = 'N/A';
+        $inputs['beneficiary_data']['bank_branch_name'] = 'N/A';
+
+        if (! empty($inputs['beneficiary_data']['bank_id'])) {
+            if ($bank = Banco::bank()->find($inputs['beneficiary_data']['bank_id'])) {
+                $inputs['beneficiary_data']['bank_name'] = $bank->name ?? 'N/A';
+                if ($bankBranch = Banco::bankBranch()->find($inputs['beneficiary_data']['bank_branch_id'])) {
+                    $inputs['beneficiary_data']['bank_branch_name'] = $bankBranch->name ?? 'N/A';
+                }
+            }
+        }
+
+        if (! empty($inputs['beneficiary_data']['instant_bank_id'])) {
+            if ($bank = Banco::bank()->find($inputs['beneficiary_data']['instant_bank_id'])) {
+                $inputs['beneficiary_data']['instant_bank_name'] = $bank->name ?? 'N/A';
+                if ($bankBranch = Banco::bankBranch()->find($inputs['beneficiary_data']['instant_bank_branch_id'])) {
+                    $inputs['beneficiary_data']['instant_bank_branch_name'] = $bankBranch->name ?? 'N/A';
+                }
+            }
+        }
+
+        if (! empty($inputs['beneficiary_data']['cash_id'])) {
+            if ($bank = Banco::bank()->find($inputs['beneficiary_data']['cash_id'])) {
+                $inputs['beneficiary_data']['cash_name'] = $bank->name ?? 'N/A';
+            }
+        }
+
+        if (! empty($inputs['beneficiary_data']['wallet_id'])) {
+            if ($bank = Banco::bank()->find($inputs['beneficiary_data']['wallet_id'])) {
+                $inputs['beneficiary_data']['wallet_name'] = $bank->name ?? 'N/A';
+            }
+        }
+
         return $this->beneficiaryRepository->create($inputs);
     }
 

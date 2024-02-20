@@ -60,8 +60,6 @@ class BankController extends Controller
      * Create a new *Bank* resource in storage.
      *
      * @lrd:end
-     *
-     * @throws StoreOperationException
      */
     public function store(StoreBankRequest $request): JsonResponse
     {

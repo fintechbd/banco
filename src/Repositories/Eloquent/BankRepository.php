@@ -7,6 +7,7 @@ use Fintech\Core\Repositories\EloquentRepository;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Query\JoinClause;
 use InvalidArgumentException;
 
 /**
@@ -59,6 +60,15 @@ class BankRepository extends EloquentRepository implements InterfacesBankReposit
         if (! empty($filters['transaction_type'])) {
             $query->where('transaction_type', '=', $filters['transaction_type']);
         }
+
+        if (! empty($filters['beneficiary_type_id'])) {
+            $query->select('banks.*')
+                ->join('bank_beneficiary_type', function (JoinClause $join) use ($filters) {
+                    return $join->on('banks.id', '=', 'bank_beneficiary_type.bank_id')
+                        ->where('bank_beneficiary_type.beneficiary_type_id', $filters['beneficiary_type_id']);
+                });
+        }
+
         if (! empty($filters['category'])) {
             $query->where('category', '=', $filters['category']);
         }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Fintech\Banco\Seeders\Branches;
+namespace Fintech\Banco\Seeders\Bangladesh\Branches;
 
 use Fintech\Banco\Facades\Banco;
 use Illuminate\Database\Seeder;
