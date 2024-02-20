@@ -4,9 +4,11 @@ namespace Fintech\Banco\Services;
 
 //TODO if use interface its provide error then use direct repository
 //use Fintech\Banco\Interfaces\BeneficiaryTypeRepository;
+use Exception;
 use Fintech\Banco\Repositories\Eloquent\BeneficiaryTypeRepository;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Model;
 use Throwable;
 
 /**
@@ -40,7 +42,10 @@ class BeneficiaryTypeService
         return $this->beneficiaryTypeRepository->find($id, $onlyTrashed);
     }
 
-    public function update($id, array $inputs = [])
+    /**
+     * @throws Exception
+     */
+    public function update($id, array $inputs = []): ?Model
     {
         return $this->beneficiaryTypeRepository->update($id, $inputs);
     }
