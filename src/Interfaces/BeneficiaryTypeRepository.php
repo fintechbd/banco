@@ -5,7 +5,6 @@ namespace Fintech\Banco\Interfaces;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Support\Collection;
-use InvalidArgumentException;
 use MongoDB\Laravel\Eloquent\Model as MongodbModel;
 
 /**
