@@ -7,6 +7,7 @@ namespace Fintech\Banco\Services;
 use Fintech\Banco\Repositories\Eloquent\BeneficiaryTypeRepository;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Collection;
+use Throwable;
 
 /**
  * Class BeneficiaryTypeService
@@ -44,7 +45,10 @@ class BeneficiaryTypeService
         return $this->beneficiaryTypeRepository->update($id, $inputs);
     }
 
-    public function destroy($id)
+    /**
+     * @throws Throwable
+     */
+    public function destroy($id): ?bool
     {
         return $this->beneficiaryTypeRepository->delete($id);
     }
