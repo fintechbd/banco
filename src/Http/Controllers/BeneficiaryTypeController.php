@@ -260,9 +260,9 @@ class BeneficiaryTypeController extends Controller
      * @lrd:end
      *
      * @param ImportBeneficiaryTypeRequest $request
-     * @return JsonResponse
+     * @return BeneficiaryTypeCollection|JsonResponse
      */
-    public function import(ImportBeneficiaryTypeRequest $request): JsonResponse
+    public function import(ImportBeneficiaryTypeRequest $request)
     {
         try {
             $inputs = $request->validated();
