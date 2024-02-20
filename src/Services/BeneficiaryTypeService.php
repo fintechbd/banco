@@ -2,7 +2,11 @@
 
 namespace Fintech\Banco\Services;
 
-use Fintech\Banco\Interfaces\BeneficiaryTypeRepository;
+//TODO if use interface its provide error then use direct repository
+//use Fintech\Banco\Interfaces\BeneficiaryTypeRepository;
+use Fintech\Banco\Repositories\Eloquent\BeneficiaryTypeRepository;
+use Illuminate\Contracts\Pagination\Paginator;
+use Illuminate\Database\Eloquent\Collection;
 
 /**
  * Class BeneficiaryTypeService
@@ -50,9 +54,13 @@ class BeneficiaryTypeService
         return $this->beneficiaryTypeRepository->restore($id);
     }
 
-    public function export(array $filters)
+    /**
+     * @param array $filters
+     * @return Paginator|Collection
+     */
+    public function export(array $filters): Paginator|Collection
     {
-        return $this->permissionRepository->list($filters);
+        return $this->beneficiaryTypeRepository->list($filters);
     }
 
     public function import(array $filters)
