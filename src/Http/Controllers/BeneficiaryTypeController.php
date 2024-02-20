@@ -200,7 +200,7 @@ class BeneficiaryTypeController extends Controller
      *
      * @return JsonResponse
      */
-    public function restore(string|int $id)
+    public function restore(string|int $id): JsonResponse
     {
         try {
 
