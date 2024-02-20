@@ -48,7 +48,7 @@ interface BeneficiaryTypeRepository
     public function delete(int|string $id);
 
     /**
-     * find and restore a entry from records
+     * find and restore an entry from records
      *
      * @throws \InvalidArgumentException
      */
