@@ -39,10 +39,10 @@ class BeneficiaryTypeService
 
     /**
      * @param $id
-     * @param $onlyTrashed
+     * @param bool $onlyTrashed
      * @return Model|null
      */
-    public function find($id, $onlyTrashed = false): ?Model
+    public function find($id, bool $onlyTrashed = false): ?Model
     {
         return $this->beneficiaryTypeRepository->find($id, $onlyTrashed);
     }
