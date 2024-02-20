@@ -27,9 +27,10 @@ class BeneficiaryTypeService
     }
 
     /**
-     * @return mixed
+     * @param array $filters
+     * @return Paginator|Collection
      */
-    public function list(array $filters = [])
+    public function list(array $filters = []): Paginator|Collection
     {
         return $this->beneficiaryTypeRepository->list($filters);
 
