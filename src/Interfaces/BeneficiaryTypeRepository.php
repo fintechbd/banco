@@ -44,7 +44,7 @@ interface BeneficiaryTypeRepository
     public function find(int|string $id, $onlyTrashed = false);
 
     /**
-     * find and delete a entry from records
+     * find and delete an entry from records
      */
     public function delete(int|string $id);
 
