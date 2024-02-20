@@ -31,6 +31,8 @@ interface BeneficiaryTypeRepository
     /**
      * find and update a resource attributes
      *
+     * @param int|string $id
+     * @param array $attributes
      * @return EloquentModel|MongodbModel|null
      */
     public function update(int|string $id, array $attributes = []): EloquentModel|MongodbModel|null;
