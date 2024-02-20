@@ -41,7 +41,7 @@ interface BeneficiaryTypeRepository
      * @param  bool  $onlyTrashed
      * @return EloquentModel|MongodbModel|null
      */
-    public function find(int|string $id, $onlyTrashed = false);
+    public function find(int|string $id, $onlyTrashed = false): EloquentModel|MongodbModel|null;
 
     /**
      * find and delete an entry from records
