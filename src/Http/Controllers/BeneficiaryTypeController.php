@@ -61,7 +61,8 @@ class BeneficiaryTypeController extends Controller
      *
      * @lrd:end
      *
-     * @throws StoreOperationException
+     * @param StoreBeneficiaryTypeRequest $request
+     * @return JsonResponse
      */
     public function store(StoreBeneficiaryTypeRequest $request): JsonResponse
     {
