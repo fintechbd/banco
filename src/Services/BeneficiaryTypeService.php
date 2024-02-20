@@ -49,7 +49,11 @@ class BeneficiaryTypeService
         return $this->beneficiaryTypeRepository->delete($id);
     }
 
-    public function restore($id)
+    /**
+     * @param $id
+     * @return bool
+     */
+    public function restore($id): bool
     {
         return $this->beneficiaryTypeRepository->restore($id);
     }
