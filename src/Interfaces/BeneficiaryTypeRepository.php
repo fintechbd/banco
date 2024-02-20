@@ -26,7 +26,7 @@ interface BeneficiaryTypeRepository
      *
      * @return EloquentModel|MongodbModel|null
      */
-    public function create(array $attributes = []);
+    public function create(array $attributes = []): EloquentModel|MongodbModel|null;
 
     /**
      * find and update a resource attributes
