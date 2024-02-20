@@ -2,17 +2,7 @@
 
 namespace Fintech\Banco\Services;
 
-//TODO if use interface its provide error then use direct repository
-//use Fintech\Banco\Interfaces\BeneficiaryTypeRepository;
-use Exception;
-use Fintech\Banco\Repositories\Eloquent\BeneficiaryTypeRepository;
-use Fintech\Core\Exceptions\RelationReturnMissingException;
-use Illuminate\Contracts\Container\BindingResolutionException;
-use Illuminate\Contracts\Pagination\Paginator;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Model;
-use ReflectionException;
-use Throwable;
+use Fintech\Banco\Interfaces\BeneficiaryTypeRepository;
 
 /**
  * Class BeneficiaryTypeService
@@ -27,76 +17,46 @@ class BeneficiaryTypeService
     }
 
     /**
-     * @param array $filters
-     * @return Paginator|Collection
+     * @return mixed
      */
-    public function list(array $filters = []): Paginator|Collection
+    public function list(array $filters = [])
     {
         return $this->beneficiaryTypeRepository->list($filters);
 
     }
 
-    /**
-     * @throws ReflectionException
-     * @throws BindingResolutionException
-     * @throws RelationReturnMissingException
-     */
     public function create(array $inputs = [])
     {
         return $this->beneficiaryTypeRepository->create($inputs);
     }
 
-    /**
-     * @param $id
-     * @param bool $onlyTrashed
-     * @return Model|null
-     */
-    public function find($id, bool $onlyTrashed = false): ?Model
+    public function find($id, $onlyTrashed = false)
     {
         return $this->beneficiaryTypeRepository->find($id, $onlyTrashed);
     }
 
-    /**
-     * @throws Exception
-     */
-    public function update($id, array $inputs = []): ?Model
+    public function update($id, array $inputs = [])
     {
         return $this->beneficiaryTypeRepository->update($id, $inputs);
     }
 
-    /**
-     * @throws Throwable
-     */
-    public function destroy($id): ?bool
+    public function destroy($id)
     {
         return $this->beneficiaryTypeRepository->delete($id);
     }
 
-    /**
-     * @param $id
-     * @return bool
-     */
-    public function restore($id): bool
+    public function restore($id)
     {
         return $this->beneficiaryTypeRepository->restore($id);
     }
 
-    /**
-     * @param array $filters
-     * @return Paginator|Collection
-     */
-    public function export(array $filters): Paginator|Collection
+    public function export(array $filters)
     {
-        return $this->beneficiaryTypeRepository->list($filters);
+        return $this->permissionRepository->list($filters);
     }
 
-    /**
-     * @throws ReflectionException
-     * @throws BindingResolutionException
-     * @throws RelationReturnMissingException
-     */
     public function import(array $filters)
     {
-        return $this->beneficiaryTypeRepository->create($filters);
+        return $this->permissionRepository->create($filters);
     }
 }
