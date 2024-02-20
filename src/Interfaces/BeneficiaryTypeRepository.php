@@ -33,7 +33,7 @@ interface BeneficiaryTypeRepository
      *
      * @return EloquentModel|MongodbModel|null
      */
-    public function update(int|string $id, array $attributes = []);
+    public function update(int|string $id, array $attributes = []): EloquentModel|MongodbModel|null;
 
     /**
      * find and delete an entry from records
