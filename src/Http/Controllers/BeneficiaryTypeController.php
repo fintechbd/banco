@@ -257,7 +257,8 @@ class BeneficiaryTypeController extends Controller
      *
      * @lrd:end
      *
-     * @return BeneficiaryTypeCollection|JsonResponse
+     * @param ImportBeneficiaryTypeRequest $request
+     * @return JsonResponse
      */
     public function import(ImportBeneficiaryTypeRequest $request): JsonResponse
     {
