@@ -239,7 +239,8 @@ class BeneficiaryTypeController extends Controller
         try {
             $inputs = $request->validated();
 
-            $beneficiaryTypePaginate = Banco::beneficiaryType()->export($inputs);
+            //$beneficiaryTypePaginate = Banco::beneficiaryType()->export($inputs);
+            Banco::beneficiaryType()->export($inputs);
 
             return $this->exported(__('core::messages.resource.exported', ['model' => 'Beneficiary Type']));
 
