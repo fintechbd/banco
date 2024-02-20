@@ -5,7 +5,6 @@ namespace Fintech\Banco\Interfaces;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Support\Collection;
-use InvalidArgumentException;
 use MongoDB\Laravel\Eloquent\Model as MongodbModel;
 
 /**
@@ -38,7 +37,7 @@ interface BeneficiaryTypeRepository
     /**
      * find and delete a entry from records
      *
-     * @param bool $onlyTrashed
+     * @param  bool  $onlyTrashed
      * @return EloquentModel|MongodbModel|null
      */
     public function find(int|string $id, $onlyTrashed = false);
