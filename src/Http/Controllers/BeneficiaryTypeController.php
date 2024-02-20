@@ -61,7 +61,8 @@ class BeneficiaryTypeController extends Controller
      *
      * @lrd:end
      *
-     * @throws StoreOperationException
+     * @param StoreBeneficiaryTypeRequest $request
+     * @return JsonResponse
      */
     public function store(StoreBeneficiaryTypeRequest $request): JsonResponse
     {
@@ -121,8 +122,9 @@ class BeneficiaryTypeController extends Controller
      *
      * @lrd:end
      *
-     * @throws ModelNotFoundException
-     * @throws UpdateOperationException
+     * @param UpdateBeneficiaryTypeRequest $request
+     * @param string|int $id
+     * @return JsonResponse
      */
     public function update(UpdateBeneficiaryTypeRequest $request, string|int $id): JsonResponse
     {
@@ -159,12 +161,11 @@ class BeneficiaryTypeController extends Controller
      *
      * @lrd:end
      *
+     * @param string|int $id
      * @return JsonResponse
      *
-     * @throws ModelNotFoundException
-     * @throws DeleteOperationException
      */
-    public function destroy(string|int $id)
+    public function destroy(string|int $id): JsonResponse
     {
         try {
 
@@ -198,9 +199,10 @@ class BeneficiaryTypeController extends Controller
      *
      * @lrd:end
      *
+     * @param string|int $id
      * @return JsonResponse
      */
-    public function restore(string|int $id)
+    public function restore(string|int $id): JsonResponse
     {
         try {
 
@@ -229,7 +231,7 @@ class BeneficiaryTypeController extends Controller
 
     /**
      * @lrd:start
-     * Create a exportable list of the *BeneficiaryType* resource as document.
+     * Create an exportable list of the *BeneficiaryType* resource as document.
      * After export job is done system will fire  export completed event
      *
      * @lrd:end
@@ -239,7 +241,8 @@ class BeneficiaryTypeController extends Controller
         try {
             $inputs = $request->validated();
 
-            $beneficiaryTypePaginate = Banco::beneficiaryType()->export($inputs);
+            //$beneficiaryTypePaginate = Banco::beneficiaryType()->export($inputs);
+            Banco::beneficiaryType()->export($inputs);
 
             return $this->exported(__('core::messages.resource.exported', ['model' => 'Beneficiary Type']));
 
@@ -251,14 +254,15 @@ class BeneficiaryTypeController extends Controller
 
     /**
      * @lrd:start
-     * Create a exportable list of the *BeneficiaryType* resource as document.
+     * Create an exportable list of the *BeneficiaryType* resource as document.
      * After export job is done system will fire  export completed event
      *
      * @lrd:end
      *
+     * @param ImportBeneficiaryTypeRequest $request
      * @return BeneficiaryTypeCollection|JsonResponse
      */
-    public function import(ImportBeneficiaryTypeRequest $request): JsonResponse
+    public function import(ImportBeneficiaryTypeRequest $request): JsonResponse|BeneficiaryTypeCollection
     {
         try {
             $inputs = $request->validated();
