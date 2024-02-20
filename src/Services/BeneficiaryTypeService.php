@@ -6,9 +6,12 @@ namespace Fintech\Banco\Services;
 //use Fintech\Banco\Interfaces\BeneficiaryTypeRepository;
 use Exception;
 use Fintech\Banco\Repositories\Eloquent\BeneficiaryTypeRepository;
+use Fintech\Core\Exceptions\RelationReturnMissingException;
+use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
+use ReflectionException;
 use Throwable;
 
 /**
@@ -32,6 +35,11 @@ class BeneficiaryTypeService
 
     }
 
+    /**
+     * @throws ReflectionException
+     * @throws BindingResolutionException
+     * @throws RelationReturnMissingException
+     */
     public function create(array $inputs = [])
     {
         return $this->beneficiaryTypeRepository->create($inputs);
