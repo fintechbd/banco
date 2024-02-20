@@ -36,7 +36,7 @@ interface BeneficiaryTypeRepository
     public function update(int|string $id, array $attributes = []);
 
     /**
-     * find and delete a entry from records
+     * find and delete an entry from records
      *
      * @param int|string $id
      * @param bool $onlyTrashed
