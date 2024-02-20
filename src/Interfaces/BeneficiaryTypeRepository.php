@@ -19,7 +19,7 @@ interface BeneficiaryTypeRepository
      *
      * @return Paginator|Collection
      */
-    public function list(array $filters = []);
+    public function list(array $filters = []): Paginator|Collection;
 
     /**
      * Create a new entry resource
