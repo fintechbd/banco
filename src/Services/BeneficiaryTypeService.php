@@ -92,6 +92,6 @@ class BeneficiaryTypeService
 
     public function import(array $filters)
     {
-        return $this->permissionRepository->create($filters);
+        return $this->beneficiaryTypeRepository->create($filters);
     }
 }
