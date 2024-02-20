@@ -60,9 +60,6 @@ class BeneficiaryTypeController extends Controller
      * Create a new *BeneficiaryType* resource in storage.
      *
      * @lrd:end
-     *
-     * @param StoreBeneficiaryTypeRequest $request
-     * @return JsonResponse
      */
     public function store(StoreBeneficiaryTypeRequest $request): JsonResponse
     {
@@ -121,10 +118,6 @@ class BeneficiaryTypeController extends Controller
      * Update a specified *BeneficiaryType* resource using id.
      *
      * @lrd:end
-     *
-     * @param UpdateBeneficiaryTypeRequest $request
-     * @param string|int $id
-     * @return JsonResponse
      */
     public function update(UpdateBeneficiaryTypeRequest $request, string|int $id): JsonResponse
     {
@@ -160,10 +153,6 @@ class BeneficiaryTypeController extends Controller
      * Soft delete a specified *BeneficiaryType* resource using id.
      *
      * @lrd:end
-     *
-     * @param string|int $id
-     * @return JsonResponse
-     *
      */
     public function destroy(string|int $id): JsonResponse
     {
@@ -198,9 +187,6 @@ class BeneficiaryTypeController extends Controller
      * ** ```Soft Delete``` needs to enabled to use this feature**
      *
      * @lrd:end
-     *
-     * @param string|int $id
-     * @return JsonResponse
      */
     public function restore(string|int $id): JsonResponse
     {
@@ -258,9 +244,6 @@ class BeneficiaryTypeController extends Controller
      * After export job is done system will fire  export completed event
      *
      * @lrd:end
-     *
-     * @param ImportBeneficiaryTypeRequest $request
-     * @return BeneficiaryTypeCollection|JsonResponse
      */
     public function import(ImportBeneficiaryTypeRequest $request): JsonResponse|BeneficiaryTypeCollection
     {
