@@ -121,8 +121,9 @@ class BeneficiaryTypeController extends Controller
      *
      * @lrd:end
      *
-     * @throws ModelNotFoundException
-     * @throws UpdateOperationException
+     * @param UpdateBeneficiaryTypeRequest $request
+     * @param string|int $id
+     * @return JsonResponse
      */
     public function update(UpdateBeneficiaryTypeRequest $request, string|int $id): JsonResponse
     {
