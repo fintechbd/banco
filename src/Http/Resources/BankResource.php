@@ -24,6 +24,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
  * @property mixed $links
  * @property mixed $created_at
  * @property mixed $updated_at
+ * @property mixed $beneficiaryTypes
  */
 class BankResource extends JsonResource
 {
@@ -36,8 +37,7 @@ class BankResource extends JsonResource
             'id' => $this->getKey() ?? null,
             'country_id' => $this->country_id ?? null,
             'country_name' => null,
-            'beneficiary_type_id' => $this->beneficiary_type_id ?? null,
-            'beneficiary_type_name' => $this->beneficiaryType->beneficiary_type_name ?? null,
+            'beneficiary_types' => ($this->beneficiaryTypes) ? $this->beneficiaryTypes->toArray() : [],
             'name' => $this->name ?? null,
             'category' => $this->category ?? null,
             'transaction_type' => $this->transaction_type ?? null,
