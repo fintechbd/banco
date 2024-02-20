@@ -8,6 +8,7 @@ use Fintech\Banco\Http\Requests\ImportBankRequest;
 use Fintech\Banco\Http\Requests\IndexBankRequest;
 use Fintech\Banco\Http\Requests\StoreBankRequest;
 use Fintech\Banco\Http\Requests\UpdateBankRequest;
+use Fintech\Banco\Http\Resources\BankCategoryResource;
 use Fintech\Banco\Http\Resources\BankCollection;
 use Fintech\Banco\Http\Resources\BankResource;
 use Fintech\Core\Exceptions\DeleteOperationException;
@@ -264,6 +265,19 @@ class BankController extends Controller
             $bankPaginate = Banco::bank()->list($inputs);
 
             return new BankCollection($bankPaginate);
+
+        } catch (Exception $exception) {
+
+            return $this->failed($exception->getMessage());
+        }
+    }
+
+    public function bankCategory(): BankCategoryResource|JsonResponse
+    {
+        try {
+            $bankCategories = config('fintech.banco.bank_categories');
+
+            return new BankCategoryResource($bankCategories);
 
         } catch (Exception $exception) {
 

@@ -17,6 +17,7 @@ if (Config::get('fintech.banco.enabled')) {
     Route::prefix('banco')->name('banco.')
         ->middleware(config('fintech.auth.middleware'))
         ->group(function () {
+            Route::get('banks/bank-categories', [\Fintech\Banco\Http\Controllers\BankController::class, 'bankCategory'])->name('banks.bank-categories');
             Route::apiResource('banks', \Fintech\Banco\Http\Controllers\BankController::class);
             Route::post('banks/{bank}/restore', [\Fintech\Banco\Http\Controllers\BankController::class, 'restore'])->name('banks.restore');
 

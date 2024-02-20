@@ -64,6 +64,23 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Constant
+    |--------------------------------------------------------------------------
+    |
+    | This value will be used across systems where a constant instance is needed
+    */
+
+    'bank_categories' => [
+        'Central Bank' => 'Central Bank',
+        'Foreign Commercial' => 'Foreign Commercial',
+        'Private Commercial' => 'Private Commercial',
+        'Specialized Development' => 'Specialized Development',
+        'State-owned Commercial' => 'State-owned Commercial',
+        'Non-bank financial institutions' => 'Non-bank financial institutions',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Repositories
     |--------------------------------------------------------------------------
     |
