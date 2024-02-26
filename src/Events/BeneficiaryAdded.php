@@ -2,6 +2,9 @@
 
 namespace Fintech\Banco\Events;
 
+use Fintech\Auth\Models\User;
+use Fintech\Banco\Models\Beneficiary;
+use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Foundation\Events\Dispatchable;
@@ -18,8 +21,8 @@ class BeneficiaryAdded
     /**
      * Create a new event instance.
      *
-     * @param  \Fintech\Auth\Models\User  $user
-     * @param  \Fintech\Banco\Models\Beneficiary  $beneficiary
+     * @param User $user
+     * @param Beneficiary $beneficiary
      */
     public function __construct($user, $beneficiary)
     {
@@ -30,7 +33,7 @@ class BeneficiaryAdded
     /**
      * Get the channels the event should broadcast on.
      *
-     * @return array<int, \Illuminate\Broadcasting\Channel>
+     * @return array<int, Channel>
      */
     public function broadcastOn(): array
     {

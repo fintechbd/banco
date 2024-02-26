@@ -3,10 +3,10 @@
 namespace Fintech\Banco\Repositories\Eloquent;
 
 use Fintech\Banco\Interfaces\BankBranchRepository as InterfacesBankBranchRepository;
+use Fintech\Banco\Models\BankBranch;
 use Fintech\Core\Repositories\EloquentRepository;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Model;
 use InvalidArgumentException;
 
 /**
@@ -16,9 +16,9 @@ class BankBranchRepository extends EloquentRepository implements InterfacesBankB
 {
     public function __construct()
     {
-        $model = app(config('fintech.banco.bank_branch_model', \Fintech\Banco\Models\BankBranch::class));
+        $model = app(config('fintech.banco.bank_branch_model', BankBranch::class));
 
-        if (! $model instanceof Model) {
+        if (!$model instanceof Model) {
             throw new InvalidArgumentException("Eloquent repository require model class to be `Illuminate\Database\Eloquent\Model` instance.");
         }
 
@@ -36,7 +36,7 @@ class BankBranchRepository extends EloquentRepository implements InterfacesBankB
         $query = $this->model->newQuery();
 
         //Searching
-        if (! empty($filters['search'])) {
+        if (!empty($filters['search'])) {
             if (is_numeric($filters['search'])) {
                 $query->where($this->model->getKeyName(), 'like', "%{$filters['search']}%");
             } else {
@@ -45,7 +45,7 @@ class BankBranchRepository extends EloquentRepository implements InterfacesBankB
             }
         }
 
-        if (! empty($filters['bank_id'])) {
+        if (!empty($filters['bank_id'])) {
             $query->where('bank_id', '=', $filters['bank_id']);
         }
 

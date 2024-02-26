@@ -2,11 +2,11 @@
 
 namespace Fintech\Banco\Models;
 
+use Fintech\Core\Abstracts\BaseModel;
 use Fintech\Core\Traits\AuditableTrait;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class BankBranch extends Model
+class BankBranch extends BaseModel
 {
     use AuditableTrait;
     use SoftDeletes;
@@ -40,7 +40,7 @@ class BankBranch extends Model
     */
     public function bank()
     {
-        return $this->belongsTo(config('fintech.banco.bank_model', \Fintech\Banco\Models\Bank::class));
+        return $this->belongsTo(config('fintech.banco.bank_model', Bank::class));
     }
 
     /*

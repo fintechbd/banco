@@ -3,6 +3,7 @@
 namespace Fintech\Banco\Repositories\Mongodb;
 
 use Fintech\Banco\Interfaces\BeneficiaryRepository as InterfacesBeneficiaryRepository;
+use Fintech\Banco\Models\Beneficiary;
 use Fintech\Core\Repositories\MongodbRepository;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Collection;
@@ -16,9 +17,9 @@ class BeneficiaryRepository extends MongodbRepository implements InterfacesBenef
 {
     public function __construct()
     {
-        $model = app(config('fintech.banco.beneficiary_model', \Fintech\Banco\Models\Beneficiary::class));
+        $model = app(config('fintech.banco.beneficiary_model', Beneficiary::class));
 
-        if (! $model instanceof Model) {
+        if (!$model instanceof Model) {
             throw new InvalidArgumentException("Mongodb repository require model class to be `MongoDB\Laravel\Eloquent\Model` instance.");
         }
 
@@ -36,7 +37,7 @@ class BeneficiaryRepository extends MongodbRepository implements InterfacesBenef
         $query = $this->model->newQuery();
 
         //Searching
-        if (isset($filters['search']) && ! empty($filters['search'])) {
+        if (isset($filters['search']) && !empty($filters['search'])) {
             if (is_numeric($filters['search'])) {
                 $query->where($this->model->getKeyName(), 'like', "%{$filters['search']}%");
             } else {
@@ -45,7 +46,7 @@ class BeneficiaryRepository extends MongodbRepository implements InterfacesBenef
         }
 
         //Display Trashed
-        if (isset($filters['trashed']) && ! empty($filters['trashed'])) {
+        if (isset($filters['trashed']) && !empty($filters['trashed'])) {
             $query->onlyTrashed();
         }
 

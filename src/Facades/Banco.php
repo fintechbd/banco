@@ -2,13 +2,17 @@
 
 namespace Fintech\Banco\Facades;
 
+use Fintech\Banco\Services\BankBranchService;
+use Fintech\Banco\Services\BankService;
+use Fintech\Banco\Services\BeneficiaryService;
+use Fintech\Banco\Services\BeneficiaryTypeService;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \Fintech\Banco\Services\BankService bank()
- * @method static \Fintech\Banco\Services\BankBranchService bankBranch()
- * @method static \Fintech\Banco\Services\BeneficiaryService beneficiary()
- * @method static \Fintech\Banco\Services\BeneficiaryTypeService beneficiaryType()
+ * @method static BankService bank()
+ * @method static BankBranchService bankBranch()
+ * @method static BeneficiaryService beneficiary()
+ * @method static BeneficiaryTypeService beneficiaryType()
  *                                                                                 // Crud Service Method Point Do not Remove //
  *
  * @see \Fintech\Banco\Banco

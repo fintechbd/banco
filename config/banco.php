@@ -1,6 +1,15 @@
 <?php
 
 // config for Fintech/Banco
+use Fintech\Banco\Models\Bank;
+use Fintech\Banco\Models\BankBranch;
+use Fintech\Banco\Models\Beneficiary;
+use Fintech\Banco\Models\BeneficiaryType;
+use Fintech\Banco\Repositories\Eloquent\BankBranchRepository;
+use Fintech\Banco\Repositories\Eloquent\BankRepository;
+use Fintech\Banco\Repositories\Eloquent\BeneficiaryRepository;
+use Fintech\Banco\Repositories\Eloquent\BeneficiaryTypeRepository;
+
 return [
 
     /*
@@ -31,7 +40,7 @@ return [
     |
     | This value will be used to across system where model is needed
     */
-    'bank_model' => \Fintech\Banco\Models\Bank::class,
+    'bank_model' => Bank::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -40,7 +49,7 @@ return [
     |
     | This value will be used to across system where model is needed
     */
-    'bank_branch_model' => \Fintech\Banco\Models\BankBranch::class,
+    'bank_branch_model' => BankBranch::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -49,7 +58,7 @@ return [
     |
     | This value will be used to across system where model is needed
     */
-    'beneficiary_model' => \Fintech\Banco\Models\Beneficiary::class,
+    'beneficiary_model' => Beneficiary::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -58,7 +67,7 @@ return [
     |
     | This value will be used to across system where model is needed
     */
-    'beneficiary_type_model' => \Fintech\Banco\Models\BeneficiaryType::class,
+    'beneficiary_type_model' => BeneficiaryType::class,
 
     //** Model Config Point Do not Remove **//
 
@@ -88,13 +97,13 @@ return [
     */
 
     'repositories' => [
-        \Fintech\Banco\Interfaces\BankRepository::class => \Fintech\Banco\Repositories\Eloquent\BankRepository::class,
+        \Fintech\Banco\Interfaces\BankRepository::class => BankRepository::class,
 
-        \Fintech\Banco\Interfaces\BankBranchRepository::class => \Fintech\Banco\Repositories\Eloquent\BankBranchRepository::class,
+        \Fintech\Banco\Interfaces\BankBranchRepository::class => BankBranchRepository::class,
 
-        \Fintech\Banco\Interfaces\BeneficiaryRepository::class => \Fintech\Banco\Repositories\Eloquent\BeneficiaryRepository::class,
+        \Fintech\Banco\Interfaces\BeneficiaryRepository::class => BeneficiaryRepository::class,
 
-        \Fintech\Banco\Interfaces\BeneficiaryTypeRepository::class => \Fintech\Banco\Repositories\Eloquent\BeneficiaryTypeRepository::class,
+        \Fintech\Banco\Interfaces\BeneficiaryTypeRepository::class => BeneficiaryTypeRepository::class,
 
         //** Repository Binding Config Point Do not Remove **//
     ],

@@ -1,9 +1,9 @@
 <?php
 
+use Fintech\Banco\Facades\Banco;
 use Illuminate\Database\Eloquent\Model as MYSQLDBLEBUPAY;
 use Illuminate\Support\Str;
 use MongoDB\Laravel\Eloquent\Model as MONGODB;
-
 use function Pest\Laravel\deleteJson;
 use function Pest\Laravel\getJson;
 use function Pest\Laravel\postJson;
@@ -11,7 +11,7 @@ use function Pest\Laravel\putJson;
 
 function createBeneficiaryType(): MYSQLDBLEBUPAY|MONGODB|null
 {
-    return \Fintech\Banco\Facades\Banco::beneficiaryType()->create(
+    return Banco::beneficiaryType()->create(
         [
             'beneficiary_type_name' => 'Cash Pickup',
             'beneficiary_type_data' => [
@@ -212,18 +212,18 @@ test('Beneficiary Type not found expected message No query results for model [Fi
 
 test('Beneficiary Type detail expected status code 200', function () {
     $preStoreBeneficiaryType = createBeneficiaryType();
-    getJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id'])->assertStatus(200);
+    getJson('/api/banco/beneficiary-types/' . $preStoreBeneficiaryType['id'])->assertStatus(200);
 });
 
 test('Beneficiary Type detail expected message Beneficiary Type name are same', function () {
     $preStoreBeneficiaryType = createBeneficiaryType();
-    $beneficiaryType = getJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id']);
+    $beneficiaryType = getJson('/api/banco/beneficiary-types/' . $preStoreBeneficiaryType['id']);
     expect($beneficiaryType->json()['data']['beneficiary_type_name'])->toBe($preStoreBeneficiaryType['beneficiary_type_name']);
 });
 
 test('Beneficiary Type update expect status code 200', function () {
     $preStoreBeneficiaryType = createBeneficiaryType();
-    $beneficiaryType = putJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id'], [
+    $beneficiaryType = putJson('/api/banco/beneficiary-types/' . $preStoreBeneficiaryType['id'], [
         'beneficiary_type_name' => Str::random(20),
         'beneficiary_type_data' => [
             [
@@ -243,7 +243,7 @@ test('Beneficiary Type update expect status code 200', function () {
 
 test('Beneficiary Type update expect message Beneficiary Type updated successfully.', function () {
     $preStoreBeneficiaryType = createBeneficiaryType();
-    $beneficiaryType = putJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id'], [
+    $beneficiaryType = putJson('/api/banco/beneficiary-types/' . $preStoreBeneficiaryType['id'], [
         'beneficiary_type_name' => Str::random(20),
         'beneficiary_type_data' => [
             [
@@ -265,7 +265,7 @@ test('Beneficiary Type update expect message Beneficiary Type updated successful
 test('Beneficiary Type update unique validation check expect message The beneficiary type name has already been taken.', function () {
     $preStoreBeneficiaryType = createBeneficiaryType();
     $preStoreBeneficiaryType2 = createBeneficiaryType();
-    $beneficiaryType = putJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id'], [
+    $beneficiaryType = putJson('/api/banco/beneficiary-types/' . $preStoreBeneficiaryType['id'], [
         'beneficiary_type_name' => $preStoreBeneficiaryType2['beneficiary_type_name'],
         'beneficiary_type_data' => [
             [
@@ -287,7 +287,7 @@ test('Beneficiary Type update unique validation check expect message The benefic
 test('Beneficiary Type update unique validation check expect message The beneficiary type name duplicate allow same beneficiary type id.
 ', function () {
     $preStoreBeneficiaryType = createBeneficiaryType();
-    $beneficiaryType = putJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id'], [
+    $beneficiaryType = putJson('/api/banco/beneficiary-types/' . $preStoreBeneficiaryType['id'], [
         'beneficiary_type_name' => $preStoreBeneficiaryType['beneficiary_type_name'],
         'beneficiary_type_data' => [
             [
@@ -308,7 +308,7 @@ test('Beneficiary Type update unique validation check expect message The benefic
 
 test('Beneficiary Type deleted expected status code 200', function () {
     $preStoreBeneficiaryType = createBeneficiaryType();
-    deleteJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id'])->assertStatus(200);
+    deleteJson('/api/banco/beneficiary-types/' . $preStoreBeneficiaryType['id'])->assertStatus(200);
 });
 
 test('Beneficiary Type deleted expected status code 404', function () {
@@ -318,7 +318,7 @@ test('Beneficiary Type deleted expected status code 404', function () {
 
 test('Beneficiary Type deleted expected message The Beneficiary Type deleted successfully.', function () {
     $preStoreBeneficiaryType = createBeneficiaryType();
-    $beneficiaryType = deleteJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id']);
+    $beneficiaryType = deleteJson('/api/banco/beneficiary-types/' . $preStoreBeneficiaryType['id']);
     expect($beneficiaryType['message'])->toBe(trans('core::messages.resource.deleted', ['model' => 'BeneficiaryType']));
 });
 
@@ -331,12 +331,12 @@ test('Beneficiary Type deleted expected message No query results for model [Fint
 test('Beneficiary Type restored expected status code 200', function () {
     $preStoreBeneficiaryType = createBeneficiaryType();
     $preStoreBeneficiaryType->delete();
-    postJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id'].'/restore')->assertStatus(200);
+    postJson('/api/banco/beneficiary-types/' . $preStoreBeneficiaryType['id'] . '/restore')->assertStatus(200);
 });
 
 test('Beneficiary Type restored expected message The Beneficiary Type restored successfully.', function () {
     $preStoreBeneficiaryType = createBeneficiaryType();
     $preStoreBeneficiaryType->delete();
-    $beneficiaryType = postJson('/api/banco/beneficiary-types/'.$preStoreBeneficiaryType['id'].'/restore')->assertStatus(200);
+    $beneficiaryType = postJson('/api/banco/beneficiary-types/' . $preStoreBeneficiaryType['id'] . '/restore')->assertStatus(200);
     expect($beneficiaryType['message'])->toBe(trans('core::messages.resource.restored', ['model' => 'BeneficiaryType']));
 });

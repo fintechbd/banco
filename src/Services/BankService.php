@@ -16,20 +16,6 @@ class BankService
     {
     }
 
-    /**
-     * @return mixed
-     */
-    public function list(array $filters = [])
-    {
-        return $this->bankRepository->list($filters);
-
-    }
-
-    public function create(array $inputs = [])
-    {
-        return $this->bankRepository->create($inputs);
-    }
-
     public function find($id, $onlyTrashed = false)
     {
         return $this->bankRepository->find($id, $onlyTrashed);
@@ -55,8 +41,22 @@ class BankService
         return $this->permissionRepository->list($filters);
     }
 
+    /**
+     * @return mixed
+     */
+    public function list(array $filters = [])
+    {
+        return $this->bankRepository->list($filters);
+
+    }
+
     public function import(array $filters)
     {
         return $this->permissionRepository->create($filters);
+    }
+
+    public function create(array $inputs = [])
+    {
+        return $this->bankRepository->create($inputs);
     }
 }

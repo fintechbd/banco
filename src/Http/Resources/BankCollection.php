@@ -24,7 +24,8 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
  * @property mixed $links
  * @property mixed $created_at
  * @property mixed $updated_at
- */ class BankCollection extends ResourceCollection
+ */
+class BankCollection extends ResourceCollection
 {
     /**
      * Transform the resource collection into an array.

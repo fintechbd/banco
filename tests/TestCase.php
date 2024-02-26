@@ -10,6 +10,19 @@ class TestCase extends Orchestra
 {
     use DatabaseMigrations;
 
+    public function getEnvironmentSetUp($app): void
+    {
+        config()->set('app.env', 'testing');
+        config()->set('database.default', 'testing');
+
+        $migrations = [
+        ];
+
+        foreach ($migrations as $migration) {
+            $migration->up();
+        }
+    }
+
     protected function setUp(): void
     {
         parent::setUp();
@@ -24,18 +37,5 @@ class TestCase extends Orchestra
         return [
             BancoServiceProvider::class,
         ];
-    }
-
-    public function getEnvironmentSetUp($app): void
-    {
-        config()->set('app.env', 'testing');
-        config()->set('database.default', 'testing');
-
-        $migrations = [
-        ];
-
-        foreach ($migrations as $migration) {
-            $migration->up();
-        }
     }
 }

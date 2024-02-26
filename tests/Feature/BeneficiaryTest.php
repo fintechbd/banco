@@ -1,8 +1,8 @@
 <?php
 
+use Fintech\Banco\Facades\Banco;
 use Illuminate\Database\Eloquent\Model as MYSQLDBLEBUPAY;
 use MongoDB\Laravel\Eloquent\Model as MONGODB;
-
 use function Pest\Laravel\deleteJson;
 use function Pest\Laravel\getJson;
 use function Pest\Laravel\postJson;
@@ -10,7 +10,7 @@ use function Pest\Laravel\putJson;
 
 function createBeneficiary(): MYSQLDBLEBUPAY|MONGODB|null
 {
-    return \Fintech\Banco\Facades\Banco::beneficiary()->create([
+    return Banco::beneficiary()->create([
         'user_id' => 1,
         'city_id' => 1,
         'state_id' => 1,
@@ -418,18 +418,18 @@ test('Beneficiary not found expected message No query results for model [Fintech
 
 test('Beneficiary detail expected status code 200', function () {
     $preStoreBeneficiary = createBeneficiary();
-    getJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'])->assertStatus(200);
+    getJson('/api/banco/beneficiaries/' . $preStoreBeneficiary['id'])->assertStatus(200);
 });
 
 test('Beneficiary detail expected message Beneficiary name are same', function () {
     $preStoreBeneficiary = createBeneficiary();
-    $beneficiary = getJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id']);
+    $beneficiary = getJson('/api/banco/beneficiaries/' . $preStoreBeneficiary['id']);
     expect($beneficiary->json()['data']['beneficiary_name'])->toBe($preStoreBeneficiary['beneficiary_name']);
 });
 
 test('Beneficiary update expect status code 200', function () {
     $preStoreBeneficiary = createBeneficiary();
-    putJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'], [
+    putJson('/api/banco/beneficiaries/' . $preStoreBeneficiary['id'], [
         'user_id' => $preStoreBeneficiary['user_id'],
         'city_id' => 1,
         'state_id' => 1,
@@ -452,7 +452,7 @@ test('Beneficiary update expect status code 200', function () {
 
 test('Beneficiary update expect message Beneficiary updated successfully.', function () {
     $preStoreBeneficiary = createBeneficiary();
-    $beneficiary = putJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'], [
+    $beneficiary = putJson('/api/banco/beneficiaries/' . $preStoreBeneficiary['id'], [
         'user_id' => $preStoreBeneficiary['user_id'],
         'city_id' => 1,
         'state_id' => 1,
@@ -477,7 +477,7 @@ test('Beneficiary update expect message Beneficiary updated successfully.', func
 test('Beneficiary update unique validation check expect message The beneficiary mobile has already been taken.', function () {
     $preStoreBeneficiary = createBeneficiary();
     $preStoreBeneficiary2 = createBeneficiary();
-    $beneficiary = putJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'], [
+    $beneficiary = putJson('/api/banco/beneficiaries/' . $preStoreBeneficiary['id'], [
         'user_id' => $preStoreBeneficiary['beneficiary_type_id'],
         'city_id' => 1,
         'state_id' => 1,
@@ -501,7 +501,7 @@ test('Beneficiary update unique validation check expect message The beneficiary 
 
 test('Beneficiary deleted expected status code 200', function () {
     $preStoreBeneficiary = createBeneficiary();
-    deleteJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'])->assertStatus(200);
+    deleteJson('/api/banco/beneficiaries/' . $preStoreBeneficiary['id'])->assertStatus(200);
 });
 
 test('Beneficiary deleted expected status code 404', function () {
@@ -511,7 +511,7 @@ test('Beneficiary deleted expected status code 404', function () {
 
 test('Beneficiary deleted expected message The Beneficiary deleted successfully.', function () {
     $preStoreBeneficiary = createBeneficiary();
-    $beneficiary = deleteJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id']);
+    $beneficiary = deleteJson('/api/banco/beneficiaries/' . $preStoreBeneficiary['id']);
     expect($beneficiary['message'])->toBe(trans('core::messages.resource.deleted', ['model' => 'Beneficiary']));
 });
 
@@ -524,12 +524,12 @@ test('Beneficiary deleted expected message No query results for model [Fintech\B
 test('Beneficiary restored expected status code 200', function () {
     $preStoreBeneficiary = createBeneficiary();
     $preStoreBeneficiary->delete();
-    postJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'].'/restore')->assertStatus(200);
+    postJson('/api/banco/beneficiaries/' . $preStoreBeneficiary['id'] . '/restore')->assertStatus(200);
 });
 
 test('Beneficiary restored expected message The Beneficiary restored successfully.', function () {
     $preStoreBeneficiary = createBeneficiary();
     $preStoreBeneficiary->delete();
-    $beneficiary = postJson('/api/banco/beneficiaries/'.$preStoreBeneficiary['id'].'/restore')->assertStatus(200);
+    $beneficiary = postJson('/api/banco/beneficiaries/' . $preStoreBeneficiary['id'] . '/restore')->assertStatus(200);
     expect($beneficiary['message'])->toBe(trans('core::messages.resource.restored', ['model' => 'Beneficiary']));
 });

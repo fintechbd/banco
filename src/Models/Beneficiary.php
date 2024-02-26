@@ -3,18 +3,18 @@
 namespace Fintech\Banco\Models;
 
 use Fintech\Auth\Models\User;
+use Fintech\Core\Abstracts\BaseModel;
 use Fintech\Core\Traits\AuditableTrait;
 use Fintech\MetaData\Models\City;
 use Fintech\MetaData\Models\Country;
 use Fintech\MetaData\Models\Relation;
 use Fintech\MetaData\Models\State;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
-class Beneficiary extends Model implements HasMedia
+class Beneficiary extends BaseModel implements HasMedia
 {
     use AuditableTrait;
     use InteractsWithMedia;
@@ -48,6 +48,7 @@ class Beneficiary extends Model implements HasMedia
             ->singleFile()
             ->useDisk(config('filesystems.default', 'public'));
     }
+
     /*
     |--------------------------------------------------------------------------
     | RELATIONS

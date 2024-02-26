@@ -3,10 +3,10 @@
 namespace Fintech\Banco\Repositories\Eloquent;
 
 use Fintech\Banco\Interfaces\BankRepository as InterfacesBankRepository;
+use Fintech\Banco\Models\Bank;
 use Fintech\Core\Repositories\EloquentRepository;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\JoinClause;
 use InvalidArgumentException;
 
@@ -17,9 +17,9 @@ class BankRepository extends EloquentRepository implements InterfacesBankReposit
 {
     public function __construct()
     {
-        $model = app(config('fintech.banco.bank_model', \Fintech\Banco\Models\Bank::class));
+        $model = app(config('fintech.banco.bank_model', Bank::class));
 
-        if (! $model instanceof Model) {
+        if (!$model instanceof Model) {
             throw new InvalidArgumentException("Eloquent repository require model class to be `Illuminate\Database\Eloquent\Model` instance.");
         }
 
@@ -37,7 +37,7 @@ class BankRepository extends EloquentRepository implements InterfacesBankReposit
         $query = $this->model->newQuery();
 
         //Searching
-        if (! empty($filters['search'])) {
+        if (!empty($filters['search'])) {
             if (is_numeric($filters['search'])) {
                 $query->where($this->model->getKeyName(), 'like', "%{$filters['search']}%");
             } else {
@@ -49,19 +49,19 @@ class BankRepository extends EloquentRepository implements InterfacesBankReposit
             }
         }
 
-        if (! empty($filters['country_id'])) {
+        if (!empty($filters['country_id'])) {
             $query->where('country_id', '=', $filters['country_id']);
         }
 
-        if (! empty($filters['currency'])) {
+        if (!empty($filters['currency'])) {
             $query->where('currency', '=', $filters['currency']);
         }
 
-        if (! empty($filters['transaction_type'])) {
+        if (!empty($filters['transaction_type'])) {
             $query->where('transaction_type', '=', $filters['transaction_type']);
         }
 
-        if (! empty($filters['beneficiary_type_id'])) {
+        if (!empty($filters['beneficiary_type_id'])) {
             $query->select('banks.*')
                 ->join('bank_beneficiary_type', function (JoinClause $join) use ($filters) {
                     return $join->on('banks.id', '=', 'bank_beneficiary_type.bank_id')
@@ -69,7 +69,7 @@ class BankRepository extends EloquentRepository implements InterfacesBankReposit
                 });
         }
 
-        if (! empty($filters['category'])) {
+        if (!empty($filters['category'])) {
             $query->where('category', '=', $filters['category']);
         }
 

@@ -72,7 +72,7 @@ class BeneficiaryController extends Controller
 
             $beneficiary = Banco::beneficiary()->create($inputs);
 
-            if (! $beneficiary) {
+            if (!$beneficiary) {
                 throw (new StoreOperationException)->setModel(config('fintech.banco.beneficiary_model'));
             }
             event(new BeneficiaryAdded($request->user(), $beneficiary));
@@ -102,7 +102,7 @@ class BeneficiaryController extends Controller
 
             $beneficiary = Banco::beneficiary()->find($id);
 
-            if (! $beneficiary) {
+            if (!$beneficiary) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.beneficiary_model'), $id);
             }
 
@@ -133,13 +133,13 @@ class BeneficiaryController extends Controller
 
             $beneficiary = Banco::beneficiary()->find($id);
 
-            if (! $beneficiary) {
+            if (!$beneficiary) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.beneficiary_model'), $id);
             }
 
             $inputs = $request->validated();
 
-            if (! Banco::beneficiary()->update($id, $inputs)) {
+            if (!Banco::beneficiary()->update($id, $inputs)) {
 
                 throw (new UpdateOperationException)->setModel(config('fintech.banco.beneficiary_model'), $id);
             }
@@ -173,11 +173,11 @@ class BeneficiaryController extends Controller
 
             $beneficiary = Banco::beneficiary()->find($id);
 
-            if (! $beneficiary) {
+            if (!$beneficiary) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.beneficiary_model'), $id);
             }
 
-            if (! Banco::beneficiary()->destroy($id)) {
+            if (!Banco::beneficiary()->destroy($id)) {
 
                 throw (new DeleteOperationException())->setModel(config('fintech.banco.beneficiary_model'), $id);
             }
@@ -209,11 +209,11 @@ class BeneficiaryController extends Controller
 
             $beneficiary = Banco::beneficiary()->find($id, true);
 
-            if (! $beneficiary) {
+            if (!$beneficiary) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.beneficiary_model'), $id);
             }
 
-            if (! Banco::beneficiary()->restore($id)) {
+            if (!Banco::beneficiary()->restore($id)) {
 
                 throw (new RestoreOperationException())->setModel(config('fintech.banco.beneficiary_model'), $id);
             }

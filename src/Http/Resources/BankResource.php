@@ -4,6 +4,7 @@ namespace Fintech\Banco\Http\Resources;
 
 use Fintech\Banco\Models\BeneficiaryType;
 use Fintech\Core\Facades\Core;
+use Fintech\MetaData\Models\Country;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -12,7 +13,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
  * @method getFirstMediaUrl(string $string)
  *
  * @property int $country_id
- * @property \Fintech\MetaData\Models\Country $country
+ * @property Country $country
  * @property int $beneficiary_type_id
  * @property BeneficiaryType $beneficiaryType
  * @property string $name

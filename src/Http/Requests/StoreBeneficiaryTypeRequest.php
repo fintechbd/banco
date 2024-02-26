@@ -3,6 +3,7 @@
 namespace Fintech\Banco\Http\Requests;
 
 use Fintech\Banco\Models\BeneficiaryType;
+use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 
 class StoreBeneficiaryTypeRequest extends FormRequest
@@ -18,11 +19,11 @@ class StoreBeneficiaryTypeRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array|string>
+     * @return array<string, ValidationRule|array|string>
      */
     public function rules(): array
     {
-        $uniqueRule = 'unique:'.config('fintech.banco.beneficiary_type_model', BeneficiaryType::class).',beneficiary_type_name';
+        $uniqueRule = 'unique:' . config('fintech.banco.beneficiary_type_model', BeneficiaryType::class) . ',beneficiary_type_name';
 
         return [
             'beneficiary_type_name' => ['required', 'string', 'max:255', $uniqueRule],

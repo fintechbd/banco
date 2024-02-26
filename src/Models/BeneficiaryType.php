@@ -2,12 +2,12 @@
 
 namespace Fintech\Banco\Models;
 
+use Fintech\Core\Abstracts\BaseModel;
 use Fintech\Core\Traits\AuditableTrait;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class BeneficiaryType extends Model
+class BeneficiaryType extends BaseModel
 {
     use AuditableTrait;
     use SoftDeletes;

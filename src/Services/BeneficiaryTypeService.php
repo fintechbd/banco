@@ -16,20 +16,6 @@ class BeneficiaryTypeService
     {
     }
 
-    /**
-     * @return mixed
-     */
-    public function list(array $filters = [])
-    {
-        return $this->beneficiaryTypeRepository->list($filters);
-
-    }
-
-    public function create(array $inputs = [])
-    {
-        return $this->beneficiaryTypeRepository->create($inputs);
-    }
-
     public function find($id, $onlyTrashed = false)
     {
         return $this->beneficiaryTypeRepository->find($id, $onlyTrashed);
@@ -55,8 +41,22 @@ class BeneficiaryTypeService
         return $this->permissionRepository->list($filters);
     }
 
+    /**
+     * @return mixed
+     */
+    public function list(array $filters = [])
+    {
+        return $this->beneficiaryTypeRepository->list($filters);
+
+    }
+
     public function import(array $filters)
     {
         return $this->permissionRepository->create($filters);
+    }
+
+    public function create(array $inputs = [])
+    {
+        return $this->beneficiaryTypeRepository->create($inputs);
     }
 }
