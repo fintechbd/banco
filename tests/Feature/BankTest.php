@@ -4,6 +4,7 @@ use Fintech\Banco\Facades\Banco;
 use Illuminate\Database\Eloquent\Model as MYSQLDBLEBUPAY;
 use Illuminate\Support\Str;
 use MongoDB\Laravel\Eloquent\Model as MONGODB;
+
 use function Pest\Laravel\deleteJson;
 use function Pest\Laravel\getJson;
 use function Pest\Laravel\postJson;
@@ -230,18 +231,18 @@ test('Bank not found expected message No query results for model [Fintech\Banco\
 
 test('Bank detail expected status code 200', function () {
     $preStoreBank = createBank();
-    getJson('/api/banco/banks/' . $preStoreBank['id'])->assertStatus(200);
+    getJson('/api/banco/banks/'.$preStoreBank['id'])->assertStatus(200);
 });
 
 test('Bank detail expected message bank name are same', function () {
     $preStoreBank = createBank();
-    $bank = getJson('/api/banco/banks/' . $preStoreBank['id']);
+    $bank = getJson('/api/banco/banks/'.$preStoreBank['id']);
     expect($bank->json()['data']['bank_name'])->toBe($preStoreBank['bank_name']);
 });
 
 test('Bank update expect status code 200', function () {
     $preStoreBank = createBank();
-    $bank = putJson('/api/banco/banks/' . $preStoreBank['id'], [
+    $bank = putJson('/api/banco/banks/'.$preStoreBank['id'], [
         'country_id' => 1,
         'beneficiary_type_id' => '1',
         'bank_name' => Str::random(20),
@@ -258,7 +259,7 @@ test('Bank update expect status code 200', function () {
 
 test('Bank update expect message Bank updated successfully.', function () {
     $preStoreBank = createBank();
-    $bank = putJson('/api/banco/banks/' . $preStoreBank['id'], [
+    $bank = putJson('/api/banco/banks/'.$preStoreBank['id'], [
         'country_id' => 1,
         'beneficiary_type_id' => '1',
         'bank_name' => Str::random(20),
@@ -277,7 +278,7 @@ test('Bank update expect message Bank updated successfully.', function () {
 test('Bank update unique validation check expect message The bank name has already been taken.', function () {
     $preStoreBank = createBank();
     $preStoreBank2 = createBank();
-    $bank = putJson('/api/banco/banks/' . $preStoreBank['id'], [
+    $bank = putJson('/api/banco/banks/'.$preStoreBank['id'], [
         'country_id' => 1,
         'beneficiary_type_id' => '1',
         'bank_name' => $preStoreBank2['bank_name'],
@@ -296,7 +297,7 @@ test('Bank update unique validation check expect message The bank name has alrea
 test('Bank update unique validation check expect message The bank name duplicate allow same bank id.
 ', function () {
     $preStoreBank = createBank();
-    $bank = putJson('/api/banco/banks/' . $preStoreBank['id'], [
+    $bank = putJson('/api/banco/banks/'.$preStoreBank['id'], [
         'country_id' => 1,
         'beneficiary_type_id' => '1',
         'bank_name' => $preStoreBank['bank_name'],
@@ -314,7 +315,7 @@ test('Bank update unique validation check expect message The bank name duplicate
 
 test('Bank deleted expected status code 200', function () {
     $preStoreBank = createBank();
-    deleteJson('/api/banco/banks/' . $preStoreBank['id'])->assertStatus(200);
+    deleteJson('/api/banco/banks/'.$preStoreBank['id'])->assertStatus(200);
 });
 
 test('Bank deleted expected status code 404', function () {
@@ -324,7 +325,7 @@ test('Bank deleted expected status code 404', function () {
 
 test('Bank deleted expected message The Bank deleted successfully.', function () {
     $preStoreBank = createBank();
-    $bank = deleteJson('/api/banco/banks/' . $preStoreBank['id']);
+    $bank = deleteJson('/api/banco/banks/'.$preStoreBank['id']);
     expect($bank['message'])->toBe(trans('core::messages.resource.deleted', ['model' => 'Bank']));
 });
 
@@ -337,12 +338,12 @@ test('Bank deleted expected message No query results for model [Fintech\Banco\Mo
 test('Bank restored expected status code 200', function () {
     $preStoreBank = createBank();
     $preStoreBank->delete();
-    postJson('/api/banco/banks/' . $preStoreBank['id'] . '/restore')->assertStatus(200);
+    postJson('/api/banco/banks/'.$preStoreBank['id'].'/restore')->assertStatus(200);
 });
 
 test('Bank restored expected message The Bank restored successfully.', function () {
     $preStoreBank = createBank();
     $preStoreBank->delete();
-    $bank = postJson('/api/banco/banks/' . $preStoreBank['id'] . '/restore')->assertStatus(200);
+    $bank = postJson('/api/banco/banks/'.$preStoreBank['id'].'/restore')->assertStatus(200);
     expect($bank['message'])->toBe(trans('core::messages.resource.restored', ['model' => 'Bank']));
 });

@@ -14,7 +14,7 @@ class BranchSeeder extends Seeder
         $data = $this->data();
 
         foreach (array_chunk($data, 1000) as $count => $block) {
-            $content = file_get_contents(__DIR__ . '/Branches/BranchSeeder.stub');
+            $content = file_get_contents(__DIR__.'/Branches/BranchSeeder.stub');
             $count++;
             $name = "Branch{$count}Seeder";
 
@@ -24,7 +24,7 @@ class BranchSeeder extends Seeder
             ];
 
             file_put_contents(
-                __DIR__ . "/Branches/Branch{$count}Seeder.php",
+                __DIR__."/Branches/Branch{$count}Seeder.php",
                 str_replace(
                     array_keys($replacements),
                     array_values($replacements),

@@ -23,7 +23,7 @@ class StoreBankRequest extends FormRequest
      */
     public function rules(): array
     {
-        $uniqueRule = 'unique:' . config('fintech.banco.bank_model', Bank::class) . ',name,null,id,country_id,' . $this->input('country_id') . ',deleted_at,null';
+        $uniqueRule = 'unique:'.config('fintech.banco.bank_model', Bank::class).',name,null,id,country_id,'.$this->input('country_id').',deleted_at,null';
 
         return [
             'country_id' => ['required', 'integer'],

@@ -7,7 +7,6 @@ use Fintech\Banco\Models\BeneficiaryType;
 use Fintech\Core\Repositories\EloquentRepository;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Collection;
-use InvalidArgumentException;
 
 /**
  * Class BeneficiaryTypeRepository
@@ -31,20 +30,20 @@ class BeneficiaryTypeRepository extends EloquentRepository implements Interfaces
         $modelTable = $this->model->getTable();
 
         //Searching
-        if (!empty($filters['search'])) {
+        if (! empty($filters['search'])) {
             if (is_numeric($filters['search'])) {
                 $query->where($this->model->getKeyName(), 'like', "%{$filters['search']}%");
             } else {
-                $query->where($modelTable . '.beneficiary_type_name', 'like', "%{$filters['search']}%");
+                $query->where($modelTable.'.beneficiary_type_name', 'like', "%{$filters['search']}%");
             }
         }
 
-        if (isset($filters['beneficiary_type_name']) && !empty($filters['beneficiary_type_name'])) {
-            $query->where($modelTable . '.beneficiary_type_name', $filters['beneficiary_type_name']);
+        if (isset($filters['beneficiary_type_name']) && ! empty($filters['beneficiary_type_name'])) {
+            $query->where($modelTable.'.beneficiary_type_name', $filters['beneficiary_type_name']);
         }
 
-        if (isset($filters['id']) && !empty($filters['id'])) {
-            $query->where($modelTable . '.id', $filters['id']);
+        if (isset($filters['id']) && ! empty($filters['id'])) {
+            $query->where($modelTable.'.id', $filters['id']);
         }
 
         //Display Trashed

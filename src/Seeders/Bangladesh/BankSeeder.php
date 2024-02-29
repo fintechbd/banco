@@ -14,12 +14,12 @@ class BankSeeder extends Seeder
     {
         foreach ($this->data() as $bank) {
             if ($bank['logo_png'] != null) {
-                $image_png = __DIR__ . '/../../../resources/img/bank_logo_png/' . $bank['logo_png'];
-                $bank['logo_png'] = 'data:image/png;base64,' . base64_encode(file_get_contents($image_png));
+                $image_png = __DIR__.'/../../../resources/img/bank_logo_png/'.$bank['logo_png'];
+                $bank['logo_png'] = 'data:image/png;base64,'.base64_encode(file_get_contents($image_png));
             }
             if ($bank['logo_svg'] != null) {
-                $image_svg = __DIR__ . '/../../../resources/img/bank_logo_svg/' . $bank['logo_svg'];
-                $bank['logo_svg'] = 'data:image/svg+xml;base64,' . base64_encode(file_get_contents($image_svg));
+                $image_svg = __DIR__.'/../../../resources/img/bank_logo_svg/'.$bank['logo_svg'];
+                $bank['logo_svg'] = 'data:image/svg+xml;base64,'.base64_encode(file_get_contents($image_svg));
             }
             Banco::bank()->create($bank);
         }

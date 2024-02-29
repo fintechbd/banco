@@ -7,7 +7,6 @@ use Fintech\Banco\Models\BankBranch;
 use Fintech\Core\Repositories\EloquentRepository;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Collection;
-use InvalidArgumentException;
 
 /**
  * Class BankBranchRepository
@@ -30,7 +29,7 @@ class BankBranchRepository extends EloquentRepository implements InterfacesBankB
         $query = $this->model->newQuery();
 
         //Searching
-        if (!empty($filters['search'])) {
+        if (! empty($filters['search'])) {
             if (is_numeric($filters['search'])) {
                 $query->where($this->model->getKeyName(), 'like', "%{$filters['search']}%");
             } else {
@@ -39,7 +38,7 @@ class BankBranchRepository extends EloquentRepository implements InterfacesBankB
             }
         }
 
-        if (!empty($filters['bank_id'])) {
+        if (! empty($filters['bank_id'])) {
             $query->where('bank_id', '=', $filters['bank_id']);
         }
 

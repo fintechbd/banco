@@ -4,6 +4,7 @@ use Fintech\Banco\Facades\Banco;
 use Illuminate\Database\Eloquent\Model as MYSQLDBLEBUPAY;
 use Illuminate\Support\Str;
 use MongoDB\Laravel\Eloquent\Model as MONGODB;
+
 use function Pest\Laravel\deleteJson;
 use function Pest\Laravel\getJson;
 use function Pest\Laravel\postJson;
@@ -171,18 +172,18 @@ test('Bank Branch not found expected message No query results for model [Fintech
 
 test('Bank Branch detail expected status code 200', function () {
     $preStoreBankBranch = createBankBranch();
-    getJson('/api/banco/bank-branches/' . $preStoreBankBranch['id'])->assertStatus(200);
+    getJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'])->assertStatus(200);
 });
 
 test('Bank Branch detail expected message bank branch name are same', function () {
     $preStoreBankBranch = createBankBranch();
-    $bankBranch = getJson('/api/banco/bank-branches/' . $preStoreBankBranch['id']);
+    $bankBranch = getJson('/api/banco/bank-branches/'.$preStoreBankBranch['id']);
     expect($bankBranch->json()['data']['name'])->toBe($preStoreBankBranch['name']);
 });
 
 test('Bank Branch update expect status code 200', function () {
     $preStoreBankBranch = createBankBranch();
-    putJson('/api/banco/bank-branches/' . $preStoreBankBranch['id'], [
+    putJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'], [
         'bank_id' => 1,
         'name' => Str::random(20),
         'bank_branch_data' => [
@@ -196,7 +197,7 @@ test('Bank Branch update expect status code 200', function () {
 
 test('Bank Branch update expect message Bank Branch updated successfully.', function () {
     $preStoreBankBranch = createBankBranch();
-    $bankBranch = putJson('/api/banco/bank-branches/' . $preStoreBankBranch['id'], [
+    $bankBranch = putJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'], [
         'bank_id' => 1,
         'name' => Str::random(20),
         'bank_branch_data' => [
@@ -211,7 +212,7 @@ test('Bank Branch update expect message Bank Branch updated successfully.', func
 
 test('Bank Branch deleted expected status code 200', function () {
     $preStoreBankBranch = createBankBranch();
-    deleteJson('/api/banco/bank-branches/' . $preStoreBankBranch['id'])->assertStatus(200);
+    deleteJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'])->assertStatus(200);
 });
 
 test('Bank Branch deleted expected status code 404', function () {
@@ -221,7 +222,7 @@ test('Bank Branch deleted expected status code 404', function () {
 
 test('Bank Branch deleted expected message The Bank Branch deleted successfully.', function () {
     $preStoreBankBranch = createBankBranch();
-    $bankBranch = deleteJson('/api/banco/bank-branches/' . $preStoreBankBranch['id']);
+    $bankBranch = deleteJson('/api/banco/bank-branches/'.$preStoreBankBranch['id']);
     expect($bankBranch['message'])->toBe(trans('core::messages.resource.deleted', ['model' => 'BankBranch']));
 });
 
@@ -234,12 +235,12 @@ test('Bank Branch deleted expected message No query results for model [Fintech\B
 test('Bank Branch restored expected status code 200', function () {
     $preStoreBankBranch = createBankBranch();
     $preStoreBankBranch->delete();
-    postJson('/api/banco/bank-branches/' . $preStoreBankBranch['id'] . '/restore')->assertStatus(200);
+    postJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'].'/restore')->assertStatus(200);
 });
 
 test('Bank Branch restored expected message The Bank Branch restored successfully.', function () {
     $preStoreBankBranch = createBankBranch();
     $preStoreBankBranch->delete();
-    $bankBranch = postJson('/api/banco/bank-branches/' . $preStoreBankBranch['id'] . '/restore')->assertStatus(200);
+    $bankBranch = postJson('/api/banco/bank-branches/'.$preStoreBankBranch['id'].'/restore')->assertStatus(200);
     expect($bankBranch['message'])->toBe(trans('core::messages.resource.restored', ['model' => 'BankBranch']));
 });

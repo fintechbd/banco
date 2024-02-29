@@ -21,8 +21,8 @@ class BeneficiaryAdded
     /**
      * Create a new event instance.
      *
-     * @param User $user
-     * @param Beneficiary $beneficiary
+     * @param  User  $user
+     * @param  Beneficiary  $beneficiary
      */
     public function __construct($user, $beneficiary)
     {

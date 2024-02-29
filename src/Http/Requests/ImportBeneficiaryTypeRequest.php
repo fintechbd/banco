@@ -23,7 +23,7 @@ class ImportBeneficiaryTypeRequest extends FormRequest
      */
     public function rules(): array
     {
-        $uniqueRule = 'unique:' . config('fintech.banco.beneficiary_type_model', BeneficiaryType::class) . ',beneficiary_type_name';
+        $uniqueRule = 'unique:'.config('fintech.banco.beneficiary_type_model', BeneficiaryType::class).',beneficiary_type_name';
 
         return [
             'beneficiary_type_name' => ['required', 'string', 'max:255', $uniqueRule],
