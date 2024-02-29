@@ -18,13 +18,7 @@ class BeneficiaryRepository extends EloquentRepository implements InterfacesBene
 {
     public function __construct()
     {
-        $model = app(config('fintech.banco.beneficiary_model', Beneficiary::class));
-
-        if (!$model instanceof Model) {
-            throw new InvalidArgumentException("Eloquent repository require model class to be `Illuminate\Database\Eloquent\Model` instance.");
-        }
-
-        $this->model = $model;
+        parent::__construct(config('fintech.banco.beneficiary_model', Beneficiary::class));
     }
 
     /**

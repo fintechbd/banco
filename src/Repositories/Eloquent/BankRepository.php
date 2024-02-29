@@ -17,13 +17,7 @@ class BankRepository extends EloquentRepository implements InterfacesBankReposit
 {
     public function __construct()
     {
-        $model = app(config('fintech.banco.bank_model', Bank::class));
-
-        if (!$model instanceof Model) {
-            throw new InvalidArgumentException("Eloquent repository require model class to be `Illuminate\Database\Eloquent\Model` instance.");
-        }
-
-        $this->model = $model;
+        parent::__construct(config('fintech.banco.bank_model', Bank::class));
     }
 
     /**
