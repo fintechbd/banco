@@ -2,22 +2,19 @@
 
 namespace Fintech\Banco\Repositories\Eloquent;
 
-use Fintech\Core\Repositories\EloquentRepository;
 use Fintech\Banco\Interfaces\BankAccountRepository as InterfacesBankAccountRepository;
+use Fintech\Core\Repositories\EloquentRepository;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Model;
-use InvalidArgumentException;
 
 /**
  * Class BankAccountRepository
- * @package Fintech\Banco\Repositories\Eloquent
  */
 class BankAccountRepository extends EloquentRepository implements InterfacesBankAccountRepository
 {
     public function __construct()
     {
-       parent::__construct(config('fintech.banco.bank_account_model', \Fintech\Banco\Models\BankAccount::class));
+        parent::__construct(config('fintech.banco.bank_account_model', \Fintech\Banco\Models\BankAccount::class));
     }
 
     /**

@@ -2,26 +2,22 @@
 
 namespace Fintech\Banco\Services;
 
-
 use Fintech\Banco\Interfaces\BankAccountRepository;
 
 /**
  * Class BankAccountService
- * @package Fintech\Banco\Services
- *
  */
 class BankAccountService
 {
     /**
      * BankAccountService constructor.
-     * @param BankAccountRepository $bankAccountRepository
      */
-    public function __construct(BankAccountRepository $bankAccountRepository) {
+    public function __construct(BankAccountRepository $bankAccountRepository)
+    {
         $this->bankAccountRepository = $bankAccountRepository;
     }
 
     /**
-     * @param array $filters
      * @return mixed
      */
     public function list(array $filters = [])

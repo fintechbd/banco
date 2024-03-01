@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Facade;
  * @method static BankBranchService bankBranch()
  * @method static BeneficiaryService beneficiary()
  * @method static BeneficiaryTypeService beneficiaryType()
- *                                                         @method static \Fintech\Banco\Services\BankAccountService bankAccount()
- * // Crud Service Method Point Do not Remove //
+ * @method static \Fintech\Banco\Services\BankAccountService bankAccount()
+ *                                                                         // Crud Service Method Point Do not Remove //
  *
  * @see \Fintech\Banco\Banco
  */

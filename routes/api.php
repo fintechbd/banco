@@ -35,8 +35,8 @@ if (Config::get('fintech.banco.enabled')) {
             Route::post('beneficiary-types/{beneficiary_type}/restore', [BeneficiaryTypeController::class, 'restore'])->name('beneficiary-types.restore');
 
             Route::apiResource('bank-accounts', \Fintech\Banco\Http\Controllers\BankAccountController::class);
-    Route::post('bank-accounts/{bank_account}/restore', [\Fintech\Banco\Http\Controllers\BankAccountController::class, 'restore'])->name('bank-accounts.restore');
+            Route::post('bank-accounts/{bank_account}/restore', [\Fintech\Banco\Http\Controllers\BankAccountController::class, 'restore'])->name('bank-accounts.restore');
 
-    //DO NOT REMOVE THIS LINE//
+            //DO NOT REMOVE THIS LINE//
         });
 }

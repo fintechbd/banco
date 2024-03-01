@@ -69,7 +69,6 @@ return [
     */
     'beneficiary_type_model' => BeneficiaryType::class,
 
-    
     /*
     |--------------------------------------------------------------------------
     | BankAccount Model
