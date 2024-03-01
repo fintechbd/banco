@@ -41,5 +41,14 @@ class Banco
         return app(BeneficiaryService::class);
     }
 
+    /**
+     * @return \Fintech\Banco\Services\BankAccountService
+     */
+    public function bankAccount()
+    {
+        return app(\Fintech\Banco\Services\BankAccountService::class);
+    }
+
     //** Crud Service Method Point Do not Remove **//
+
 }

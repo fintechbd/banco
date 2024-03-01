@@ -69,6 +69,16 @@ return [
     */
     'beneficiary_type_model' => BeneficiaryType::class,
 
+    
+    /*
+    |--------------------------------------------------------------------------
+    | BankAccount Model
+    |--------------------------------------------------------------------------
+    |
+    | This value will be used to across system where model is needed
+    */
+    'bank_account_model' => \Fintech\Banco\Models\BankAccount::class,
+
     //** Model Config Point Do not Remove **//
 
     /*
@@ -104,6 +114,8 @@ return [
         \Fintech\Banco\Interfaces\BeneficiaryRepository::class => BeneficiaryRepository::class,
 
         \Fintech\Banco\Interfaces\BeneficiaryTypeRepository::class => BeneficiaryTypeRepository::class,
+
+        \Fintech\Banco\Interfaces\BankAccountRepository::class => \Fintech\Banco\Repositories\Eloquent\BankAccountRepository::class,
 
         //** Repository Binding Config Point Do not Remove **//
     ],
