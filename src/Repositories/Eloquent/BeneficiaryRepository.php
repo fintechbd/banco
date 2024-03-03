@@ -39,9 +39,9 @@ class BeneficiaryRepository extends EloquentRepository implements InterfacesBene
             $modelTable.'.beneficiary_type_id', '=',
             get_table('banco.beneficiary_type').'.id');
         $query->leftJoin(
-            get_table('metadata.country'),
+            'countries',
             $modelTable.'.country_id', '=',
-            get_table('metadata.country').'.id');
+            'countries.id');
         $query->leftJoin(
             get_table('metadata.state'),
             $modelTable.'.state_id', '=',
@@ -124,12 +124,12 @@ class BeneficiaryRepository extends EloquentRepository implements InterfacesBene
 
         $select = [
             /*get_table('banco.beneficiary_type').'.*',
-            get_table('metadata.country').'.*',
+            'countries.*',
             get_table('metadata.state').'.*',
             get_table('metadata.city').'.*',
             get_table('metadata.relation').'.*',*/
             DB::raw(get_table('banco.beneficiary_type').'.beneficiary_type_name AS beneficiary_type_name'),
-            DB::raw(get_table('metadata.country').'.name AS country_name'),
+            DB::raw('countries.name AS country_name'),
             DB::raw(get_table('metadata.state').'.name AS state_name'),
             DB::raw(get_table('metadata.city').'.name AS city_name'),
             DB::raw(get_table('metadata.relation').'.name AS relation_name'),
