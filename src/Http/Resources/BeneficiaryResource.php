@@ -14,7 +14,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
  * @property string $state
  * @property int $country_id
  * @property string $country
- * @property Collection|array $beneficiaryTypes
+ * @property Collection|array $beneficiaryType
  * @property int $relation_id
  * @property string $relation
  * @property string $beneficiary_name
@@ -36,7 +36,7 @@ class BeneficiaryResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        $data = [
+        return [
             'id' => $this->getKey() ?? null,
             'user_id' => $this->user_id ?? null,
             'name' => $this->user->name ?? null,
@@ -46,7 +46,8 @@ class BeneficiaryResource extends JsonResource
             'state' => $this->state->name ?? null,
             'country_id' => $this->country_id ?? null,
             'country' => $this->country->name ?? null,
-            'beneficiary_types' => ($this->beneficiaryTypes) ? $this->beneficiaryTypes->toArray() : [],
+            'beneficiary_type_id' => $beneficiary->beneficiary_type_id ?? null,
+            'beneficiary_type_name' => $beneficiary->beneficiaryType?->beneficiary_type_name ?? null,
             'relation_id' => $this->relation_id ?? null,
             'relation' => $this->relation->name ?? null,
             'beneficiary_name' => $this->beneficiary_name ?? null,
@@ -59,8 +60,6 @@ class BeneficiaryResource extends JsonResource
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];
-
-        return $data;
 
     }
 }
