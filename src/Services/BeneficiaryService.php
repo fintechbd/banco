@@ -10,7 +10,6 @@ use Fintech\Core\Enums\Transaction\OrderStatus;
 use Fintech\Core\Facades\Core;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Support\Collection;
-use MongoDB\Laravel\Eloquent\Model;
 
 /**
  * Class BeneficiaryService
