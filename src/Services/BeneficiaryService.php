@@ -52,7 +52,7 @@ class BeneficiaryService
 
     }
 
-    public function import(array $filters): Model|Model|null
+    public function import(array $filters): Model|null
     {
         return $this->beneficiaryRepository->create($filters);
     }
