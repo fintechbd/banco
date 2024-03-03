@@ -2,22 +2,19 @@
 
 namespace Fintech\Banco\Repositories\Mongodb;
 
-use Fintech\Core\Repositories\MongodbRepository;
 use Fintech\Banco\Interfaces\BankAccountRepository as InterfacesBankAccountRepository;
+use Fintech\Core\Repositories\MongodbRepository;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Collection;
-use MongoDB\Laravel\Eloquent\Model;
-use InvalidArgumentException;
 
 /**
  * Class BankAccountRepository
- * @package Fintech\Banco\Repositories\Mongodb
  */
 class BankAccountRepository extends MongodbRepository implements InterfacesBankAccountRepository
 {
     public function __construct()
     {
-       parent::__construct(config('fintech.banco.bank_account_model', \Fintech\Banco\Models\BankAccount::class));
+        parent::__construct(config('fintech.banco.bank_account_model', \Fintech\Banco\Models\BankAccount::class));
     }
 
     /**

@@ -1,34 +1,33 @@
 <?php
 
 namespace Fintech\Banco\Http\Controllers;
+
 use Exception;
-use Fintech\Core\Exceptions\StoreOperationException;
-use Fintech\Core\Exceptions\UpdateOperationException;
-use Fintech\Core\Exceptions\DeleteOperationException;
-use Fintech\Core\Exceptions\RestoreOperationException;
-use Fintech\Core\Traits\ApiResponseTrait;
 use Fintech\Banco\Facades\Banco;
-use Fintech\Banco\Http\Resources\BankAccountResource;
-use Fintech\Banco\Http\Resources\BankAccountCollection;
 use Fintech\Banco\Http\Requests\ImportBankAccountRequest;
+use Fintech\Banco\Http\Requests\IndexBankAccountRequest;
 use Fintech\Banco\Http\Requests\StoreBankAccountRequest;
 use Fintech\Banco\Http\Requests\UpdateBankAccountRequest;
-use Fintech\Banco\Http\Requests\IndexBankAccountRequest;
+use Fintech\Banco\Http\Resources\BankAccountCollection;
+use Fintech\Banco\Http\Resources\BankAccountResource;
+use Fintech\Core\Exceptions\DeleteOperationException;
+use Fintech\Core\Exceptions\RestoreOperationException;
+use Fintech\Core\Exceptions\StoreOperationException;
+use Fintech\Core\Exceptions\UpdateOperationException;
+use Fintech\Core\Traits\ApiResponseTrait;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;
 
 /**
  * Class BankAccountController
- * @package Fintech\Banco\Http\Controllers
  *
  * @lrd:start
  * This class handle create, display, update, delete & restore
  * operation related to BankAccount
- * @lrd:end
  *
+ * @lrd:end
  */
-
 class BankAccountController extends Controller
 {
     use ApiResponseTrait;
@@ -38,10 +37,8 @@ class BankAccountController extends Controller
      * Return a listing of the *BankAccount* resource as collection.
      *
      * *```paginate=false``` returns all resource as list not pagination*
-     * @lrd:end
      *
-     * @param IndexBankAccountRequest $request
-     * @return BankAccountCollection|JsonResponse
+     * @lrd:end
      */
     public function index(IndexBankAccountRequest $request): BankAccountCollection|JsonResponse
     {
@@ -61,10 +58,9 @@ class BankAccountController extends Controller
     /**
      * @lrd:start
      * Create a new *BankAccount* resource in storage.
+     *
      * @lrd:end
      *
-     * @param StoreBankAccountRequest $request
-     * @return JsonResponse
      * @throws StoreOperationException
      */
     public function store(StoreBankAccountRequest $request): JsonResponse
@@ -74,14 +70,14 @@ class BankAccountController extends Controller
 
             $bankAccount = Banco::bankAccount()->create($inputs);
 
-            if (!$bankAccount) {
+            if (! $bankAccount) {
                 throw (new StoreOperationException)->setModel(config('fintech.banco.bank_account_model'));
             }
 
             return $this->created([
                 'message' => __('core::messages.resource.created', ['model' => 'Bank Account']),
-                'id' => $bankAccount->id
-             ]);
+                'id' => $bankAccount->id,
+            ]);
 
         } catch (Exception $exception) {
 
@@ -92,10 +88,9 @@ class BankAccountController extends Controller
     /**
      * @lrd:start
      * Return a specified *BankAccount* resource found by id.
+     *
      * @lrd:end
      *
-     * @param string|int $id
-     * @return BankAccountResource|JsonResponse
      * @throws ModelNotFoundException
      */
     public function show(string|int $id): BankAccountResource|JsonResponse
@@ -104,7 +99,7 @@ class BankAccountController extends Controller
 
             $bankAccount = Banco::bankAccount()->find($id);
 
-            if (!$bankAccount) {
+            if (! $bankAccount) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.bank_account_model'), $id);
             }
 
@@ -123,11 +118,9 @@ class BankAccountController extends Controller
     /**
      * @lrd:start
      * Update a specified *BankAccount* resource using id.
+     *
      * @lrd:end
      *
-     * @param UpdateBankAccountRequest $request
-     * @param string|int $id
-     * @return JsonResponse
      * @throws ModelNotFoundException
      * @throws UpdateOperationException
      */
@@ -137,13 +130,13 @@ class BankAccountController extends Controller
 
             $bankAccount = Banco::bankAccount()->find($id);
 
-            if (!$bankAccount) {
+            if (! $bankAccount) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.bank_account_model'), $id);
             }
 
             $inputs = $request->validated();
 
-            if (!Banco::bankAccount()->update($id, $inputs)) {
+            if (! Banco::bankAccount()->update($id, $inputs)) {
 
                 throw (new UpdateOperationException)->setModel(config('fintech.banco.bank_account_model'), $id);
             }
@@ -163,10 +156,11 @@ class BankAccountController extends Controller
     /**
      * @lrd:start
      * Soft delete a specified *BankAccount* resource using id.
+     *
      * @lrd:end
      *
-     * @param string|int $id
      * @return JsonResponse
+     *
      * @throws ModelNotFoundException
      * @throws DeleteOperationException
      */
@@ -176,11 +170,11 @@ class BankAccountController extends Controller
 
             $bankAccount = Banco::bankAccount()->find($id);
 
-            if (!$bankAccount) {
+            if (! $bankAccount) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.bank_account_model'), $id);
             }
 
-            if (!Banco::bankAccount()->destroy($id)) {
+            if (! Banco::bankAccount()->destroy($id)) {
 
                 throw (new DeleteOperationException())->setModel(config('fintech.banco.bank_account_model'), $id);
             }
@@ -201,9 +195,9 @@ class BankAccountController extends Controller
      * @lrd:start
      * Restore the specified *BankAccount* resource from trash.
      * ** ```Soft Delete``` needs to enabled to use this feature**
+     *
      * @lrd:end
      *
-     * @param string|int $id
      * @return JsonResponse
      */
     public function restore(string|int $id)
@@ -212,11 +206,11 @@ class BankAccountController extends Controller
 
             $bankAccount = Banco::bankAccount()->find($id, true);
 
-            if (!$bankAccount) {
+            if (! $bankAccount) {
                 throw (new ModelNotFoundException)->setModel(config('fintech.banco.bank_account_model'), $id);
             }
 
-            if (!Banco::bankAccount()->restore($id)) {
+            if (! Banco::bankAccount()->restore($id)) {
 
                 throw (new RestoreOperationException())->setModel(config('fintech.banco.bank_account_model'), $id);
             }
@@ -239,9 +233,6 @@ class BankAccountController extends Controller
      * After export job is done system will fire  export completed event
      *
      * @lrd:end
-     *
-     * @param IndexBankAccountRequest $request
-     * @return JsonResponse
      */
     public function export(IndexBankAccountRequest $request): JsonResponse
     {
@@ -265,7 +256,6 @@ class BankAccountController extends Controller
      *
      * @lrd:end
      *
-     * @param ImportBankAccountRequest $request
      * @return BankAccountCollection|JsonResponse
      */
     public function import(ImportBankAccountRequest $request): JsonResponse

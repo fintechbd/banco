@@ -2,8 +2,8 @@
 
 namespace Fintech\Banco\Seeders;
 
-use Illuminate\Database\Seeder;
 use Fintech\Banco\Facades\Banco;
+use Illuminate\Database\Seeder;
 
 class BankAccountSeeder extends Seeder
 {
@@ -24,6 +24,6 @@ class BankAccountSeeder extends Seeder
 
     private function data()
     {
-        return array();
+        return [];
     }
 }
