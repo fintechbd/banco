@@ -38,7 +38,7 @@ class BeneficiaryTypeService
 
     public function export(array $filters)
     {
-        return $this->permissionRepository->list($filters);
+        return $this->beneficiaryTypeRepository->list($filters);
     }
 
     /**
@@ -52,7 +52,7 @@ class BeneficiaryTypeService
 
     public function import(array $filters)
     {
-        return $this->permissionRepository->create($filters);
+        return $this->beneficiaryTypeRepository->create($filters);
     }
 
     public function create(array $inputs = [])

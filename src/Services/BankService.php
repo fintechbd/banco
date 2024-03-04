@@ -38,7 +38,7 @@ class BankService
 
     public function export(array $filters)
     {
-        return $this->permissionRepository->list($filters);
+        return $this->bankRepository->list($filters);
     }
 
     /**
@@ -52,7 +52,7 @@ class BankService
 
     public function import(array $filters)
     {
-        return $this->permissionRepository->create($filters);
+        return $this->bankRepository->create($filters);
     }
 
     public function create(array $inputs = [])
