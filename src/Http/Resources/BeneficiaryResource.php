@@ -13,6 +13,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
  * @property int $state_id
  * @property string $state
  * @property int $country_id
+ * @property int $beneficiary_type_id
  * @property string $country
  * @property Collection|array $beneficiaryType
  * @property int $relation_id
