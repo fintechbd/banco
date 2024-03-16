@@ -70,7 +70,7 @@ class BeneficiaryService
         $inputs['beneficiary_data']['bank_name'] = null;
         $inputs['beneficiary_data']['bank_branch_name'] = null;
 
-        if (!empty($inputs['beneficiary_data']['bank_id'])) {
+        if (! empty($inputs['beneficiary_data']['bank_id'])) {
             if ($bank = Banco::bank()->find($inputs['beneficiary_data']['bank_id'])) {
                 $inputs['beneficiary_data']['bank_name'] = $bank->name ?? null;
                 if ($bankBranch = Banco::bankBranch()->find($inputs['beneficiary_data']['bank_branch_id'])) {
@@ -79,7 +79,7 @@ class BeneficiaryService
             }
         }
 
-        if (!empty($inputs['beneficiary_data']['instant_bank_id'])) {
+        if (! empty($inputs['beneficiary_data']['instant_bank_id'])) {
             if ($bank = Banco::bank()->find($inputs['beneficiary_data']['instant_bank_id'])) {
                 $inputs['beneficiary_data']['instant_bank_name'] = $bank->name ?? null;
                 if ($bankBranch = Banco::bankBranch()->find($inputs['beneficiary_data']['instant_bank_branch_id'])) {
@@ -88,13 +88,13 @@ class BeneficiaryService
             }
         }
 
-        if (!empty($inputs['beneficiary_data']['cash_id'])) {
+        if (! empty($inputs['beneficiary_data']['cash_id'])) {
             if ($bank = Banco::bank()->find($inputs['beneficiary_data']['cash_id'])) {
                 $inputs['beneficiary_data']['cash_name'] = $bank->name ?? null;
             }
         }
 
-        if (!empty($inputs['beneficiary_data']['wallet_id'])) {
+        if (! empty($inputs['beneficiary_data']['wallet_id'])) {
             if ($bank = Banco::bank()->find($inputs['beneficiary_data']['wallet_id'])) {
                 $inputs['beneficiary_data']['wallet_name'] = $bank->name ?? null;
             }
@@ -121,36 +121,36 @@ class BeneficiaryService
     public function manageBeneficiaryData($data): array
     {
         $get_beneficiary = Banco::beneficiary()->find($data['beneficiary_id']);
-        if (!$get_beneficiary) {
+        if (! $get_beneficiary) {
             throw new Exception('Beneficiary Data not found');
         }
         $get_beneficiary_type_name = Banco::beneficiaryType()->find($data['beneficiary_type_id'])->beneficiary_type_name ?? null;
-        if (!$get_beneficiary_type_name) {
+        if (! $get_beneficiary_type_name) {
             throw new Exception('Beneficiary Type Data not found');
         }
         $sender = $get_beneficiary->user;
         $profile = $sender->profile;
         if (isset($data['bank_id'])) {
             $get_bank = Banco::bank()->find($data['bank_id']);
-            if (!$get_bank) {
+            if (! $get_bank) {
                 throw new Exception('Bank Data not found');
             }
             if (isset($data['bank_id'])) {
                 $get_branch = Banco::bankBranch()->find($data['bank_branch_id']);
-                if (!$get_branch) {
+                if (! $get_branch) {
                     throw new Exception('Bank Data not found');
                 }
             }
         }
         if (isset($data['cash_id'])) {
             $get_bank = Banco::bank()->find($data['cash_id']);
-            if (!$get_bank) {
+            if (! $get_bank) {
                 throw new Exception('Bank Data not found');
             }
         }
         if (isset($data['wallet_id'])) {
             $get_bank = Banco::bank()->find($data['wallet_id']);
-            if (!$get_bank) {
+            if (! $get_bank) {
                 throw new Exception('Bank Data not found');
             }
         }
