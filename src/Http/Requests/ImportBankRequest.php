@@ -2,7 +2,6 @@
 
 namespace Fintech\Banco\Http\Requests;
 
-use Fintech\Banco\Models\Bank;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 
